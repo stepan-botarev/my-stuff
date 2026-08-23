@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Stuff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand logo" aria-label="My Stuff">
+    <span class="lg">M</span><span class="lg">y</span><span class="lg-space"></span><span class="lg">S</span><span class="lg">t</span><span class="lg">u</span><span class="lg">f</span><span class="lg">f</span>
+  </div>
+  <div class="lang-switch" role="group" aria-label="Language switch">
+    <button class="lang-btn is-active" data-lang="ru">RU</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="de">DE</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="zh">ZH</button>
+  </div>
+</header>
+
+<main class="list" id="product-list"></main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox-inner">
+    <button class="lb-close" id="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-arrow lb-prev" id="lb-prev" aria-label="Previous">&#8249;</button>
+    <img class="lb-img" id="lb-img" src="" alt="">
+    <button class="lb-arrow lb-next" id="lb-next" aria-label="Next">&#8250;</button>
+    <div class="lb-dots" id="lb-dots"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
