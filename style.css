@@ -75,13 +75,13 @@ html, body {
   width: 11px;
 }
 
-.logo .lg:nth-child(1) { --tilt: -7deg; text-shadow: 4px 4px 0 var(--green); }
-.logo .lg:nth-child(2) { --tilt: 5deg;  text-shadow: 4px 4px 0 var(--yellow); }
-.logo .lg:nth-child(4) { --tilt: -4deg; text-shadow: 4px 4px 0 var(--orange); }
-.logo .lg:nth-child(5) { --tilt: 6deg;  text-shadow: 4px 4px 0 var(--red); }
-.logo .lg:nth-child(6) { --tilt: -5deg; text-shadow: 4px 4px 0 var(--blue); }
-.logo .lg:nth-child(7) { --tilt: 4deg;  text-shadow: 4px 4px 0 var(--green); }
-.logo .lg:nth-child(8) { --tilt: -6deg; text-shadow: 4px 4px 0 var(--yellow); }
+.logo .lg:nth-child(1) { --tilt: -7deg; text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--green); }
+.logo .lg:nth-child(2) { --tilt: 5deg;  text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--yellow); }
+.logo .lg:nth-child(4) { --tilt: -4deg; text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--orange); }
+.logo .lg:nth-child(5) { --tilt: 6deg;  text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--red); }
+.logo .lg:nth-child(6) { --tilt: -5deg; text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--blue); }
+.logo .lg:nth-child(7) { --tilt: 4deg;  text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--green); }
+.logo .lg:nth-child(8) { --tilt: -6deg; text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--yellow); }
 
 .lang-switch {
   display: flex;
@@ -275,7 +275,7 @@ html, body {
 
 .product-price {
   font-weight: 700;
-  color: var(--coral);
+  color: var(--blue);
   font-size: 16px;
 }
 
