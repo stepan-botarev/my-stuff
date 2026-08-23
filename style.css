@@ -6,7 +6,7 @@
   --yellow: #F5B921;
   --orange: #F2811D;
   --red: #E8412C;
-  --blue: #2F86D0;
+  --blue: #6E4FFF;
   /* совместимость со старыми названиями акцентов */
   --coral: var(--red);
   --gold: var(--yellow);
@@ -123,17 +123,10 @@ html, body {
 }
 
 .separator {
-  height: 2px;
+  height: 1px;
   margin: 6px 0;
-  background: linear-gradient(90deg,
-    transparent 0%,
-    var(--green) 15%,
-    var(--yellow) 35%,
-    var(--orange) 50%,
-    var(--red) 65%,
-    var(--blue) 85%,
-    transparent 100%);
-  opacity: 0.6;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 50%, transparent 100%);
+  opacity: 0.55;
 }
 
 .product {
@@ -253,7 +246,7 @@ html, body {
 
 .product-num {
   font-size: 12px;
-  color: var(--green);
+  color: var(--yellow);
   letter-spacing: 1px;
   margin-bottom: 6px;
 }
@@ -403,38 +396,6 @@ html, body {
 .lb-dot.is-active {
   opacity: 1;
   background: var(--coral);
-}
-
-/* ---------- Corner signature ---------- */
-
-.corner-mark {
-  display: flex;
-  justify-content: flex-end;
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 8px 28px 36px;
-}
-
-.corner-mark span {
-  font-family: "Baloo 2", sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  color: var(--paper);
-  -webkit-text-stroke: 1.4px var(--ink);
-  paint-order: stroke fill;
-  transform: rotate(-4deg);
-  display: inline-block;
-  text-shadow:
-    1px 1px 0 var(--green),
-    2px 2px 0 var(--green),
-    3px 3px 0 var(--yellow),
-    4px 4px 0 var(--yellow),
-    5px 5px 0 var(--orange),
-    6px 6px 0 var(--orange),
-    7px 7px 0 var(--red),
-    8px 8px 0 var(--red),
-    9px 9px 0 var(--blue);
 }
 
 /* ---------- Responsive ---------- */
