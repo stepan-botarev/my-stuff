@@ -1,8 +1,8 @@
 const STRINGS = {
-  ru: { write: "Написать", greeting: "Здравствуйте! Интересует: ", reserved: "Забронировано" },
-  en: { write: "Write", greeting: "Hi! I'm interested in: ", reserved: "Reserved" },
-  de: { write: "Schreiben", greeting: "Hallo! Ich interessiere mich für: ", reserved: "Reserviert" },
-  zh: { write: "联系", greeting: "您好!我对这个感兴趣: ", reserved: "已预订" }
+  ru: { write: "Написать", greeting: "Hi, Stepan! Интересует: ", reserved: "Забронировано" },
+  en: { write: "Write", greeting: "Hi, Stepan! I'm interested in: ", reserved: "Reserved" },
+  de: { write: "Schreiben", greeting: "Hi, Stepan! Ich interessiere mich für: ", reserved: "Reserviert" },
+  zh: { write: "联系", greeting: "Hi, Stepan! 我对这个感兴趣: ", reserved: "已预订" }
 };
 
 let currentLang = "ru";
