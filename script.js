@@ -1,7 +1,7 @@
 const STRINGS = {
-  ru: { write: "Написать", greeting: "Hi, Stepan! Интересует: ", reserved: "Забронировано" },
+  ru: { write: "Написать", greeting: "Привет, Степан! Интересует: ", reserved: "Забронировано" },
   en: { write: "Write", greeting: "Hi, Stepan! I'm interested in: ", reserved: "Reserved" },
-  de: { write: "Schreiben", greeting: "Hi, Stepan! Ich interessiere mich für: ", reserved: "Reserviert" },
+  de: { write: "Schreiben", greeting: "Hallo, Stepan! Ich interessiere mich für: ", reserved: "Reserviert" },
   zh: { write: "联系", greeting: "Hi, Stepan! 我对这个感兴趣: ", reserved: "已预订" }
 };
 
