@@ -11,6 +11,11 @@
 
 * { box-sizing: border-box; }
 
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -42,6 +47,8 @@ html, body {
 .logo {
   display: inline-flex;
   align-items: flex-end;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .logo .lg {
@@ -52,6 +59,8 @@ html, body {
   line-height: 1;
   color: var(--paper);
   -webkit-text-stroke: 2.6px var(--ink);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   paint-order: stroke fill;
   transform: rotate(var(--tilt, 0deg));
 }
@@ -158,19 +167,22 @@ html, body {
 
 .reserved-badge {
   position: absolute;
-  top: 10px;
-  left: -8px;
+  top: 8px;
+  left: 8px;
+  right: 8px;
   z-index: 2;
   background: var(--ink);
   color: var(--paper);
   font-family: "Baloo 2", sans-serif;
   font-weight: 800;
   font-size: 10px;
-  letter-spacing: 0.4px;
-  padding: 4px 10px;
-  transform: rotate(-9deg);
+  letter-spacing: 0.2px;
+  padding: 4px 6px;
+  text-align: center;
   box-shadow: 2px 2px 0 var(--coral);
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product.is-reserved .product-photo img {
@@ -179,8 +191,8 @@ html, body {
 
 .like-btn {
   position: absolute;
-  top: 6px;
-  right: 6px;
+  bottom: 6px;
+  left: 6px;
   z-index: 2;
   display: flex;
   align-items: center;
