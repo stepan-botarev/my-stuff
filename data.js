@@ -13,9 +13,8 @@ const PRODUCTS = [
     "price": "2 500 ₽",
     "reserved": false,
     "images": [
-      "images/item1-1.svg",
-      "images/item1-2.svg",
-      "images/item1-3.svg"
+      "images/item1-1788278718433-n8gn.png",
+      "images/item1-1788278721055-x4nb.png"
     ],
     "title": {
       "ru": "Виниловый проигрыватель",
