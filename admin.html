@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Stuff — admin</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  body { padding-bottom: 60px; }
+
+  .admin-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+
+  .admin-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .admin-title {
+    font-family: "DM Serif Display", serif;
+    font-size: 24px;
+  }
+
+  .admin-sub {
+    font-size: 12px;
+    opacity: 0.65;
+  }
+
+  .panel {
+    border: 2px solid var(--ink);
+    border-radius: 14px;
+    background: var(--paper);
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 0 var(--yellow);
+  }
+
+  .panel h2 {
+    font-family: "Baloo 2", sans-serif;
+    font-size: 16px;
+    margin: 0 0 12px;
+  }
+
+  label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    opacity: 0.7;
+    margin: 10px 0 4px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  textarea,
+  select {
+    width: 100%;
+    font-family: "Space Mono", monospace;
+    font-size: 13px;
+    padding: 8px 10px;
+    border: 1.5px solid var(--ink);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--ink);
+    box-sizing: border-box;
+  }
+
+  textarea { resize: vertical; min-height: 54px; }
+
+  .row { display: flex; gap: 10px; }
+  .row > * { flex: 1; }
+
+  .checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .checkbox-row input { width: auto; }
+
+  .lang-tabs {
+    display: flex;
+    gap: 4px;
+    margin-top: 12px;
+  }
+
+  .lang-tab-btn {
+    font-family: "Space Mono", monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border: 1.5px solid var(--ink);
+    background: var(--bg);
+    color: var(--ink);
+    cursor: pointer;
+    border-radius: 999px;
+    opacity: 0.55;
+  }
+  .lang-tab-btn.is-active { opacity: 1; background: var(--coral); color: var(--paper); }
+
+  .lang-pane { display: none; margin-top: 8px; }
+  .lang-pane.is-active { display: block; }
+
+  .btn {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    border: 2px solid var(--ink);
+    border-radius: 999px;
+    padding: 8px 18px;
+    cursor: pointer;
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow: 3px 3px 0 var(--coral);
+  }
+  .btn:hover { transform: translate(1px, 1px); box-shadow: 2px 2px 0 var(--coral); }
+  .btn:disabled { opacity: 0.5; cursor: default; transform: none; }
+
+  .btn-primary { box-shadow: 3px 3px 0 var(--green); }
+  .btn-primary:hover { box-shadow: 2px 2px 0 var(--green); }
+  .btn-danger { box-shadow: 3px 3px 0 var(--red); }
+  .btn-danger:hover { box-shadow: 2px 2px 0 var(--red); }
+  .btn-small { font-size: 11px; padding: 5px 12px; }
+
+  .product-card { position: relative; }
+  .product-card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  .product-num-badge {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    color: var(--yellow);
+    font-size: 14px;
+  }
+
+  .img-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .img-thumb {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 1.5px solid var(--ink);
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--bg);
+  }
+  .img-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .img-thumb button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 16px;
+    height: 16px;
+    line-height: 14px;
+    font-size: 11px;
+    border: none;
+    border-radius: 50%;
+    background: var(--red);
+    color: var(--paper);
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .actions-bar {
+    position: sticky;
+    bottom: 0;
+    background: var(--bg);
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-top: 2px solid var(--ink);
+    margin-top: 24px;
+  }
+
+  .status-msg { font-size: 12px; }
+  .status-msg.ok { color: var(--green); }
+  .status-msg.err { color: var(--red); }
+
+  .gate {
+    max-width: 420px;
+    margin: 80px auto;
+    text-align: center;
+  }
+
+  .hidden { display: none !important; }
+
+  .spinner {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--ink);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    vertical-align: middle;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<div class="admin-wrap">
+
+  <div id="gate" class="gate panel">
+    <h2>Вход в админку</h2>
+    <label for="tokenInput">GitHub Personal Access Token</label>
+    <input type="password" id="tokenInput" placeholder="ghp_...">
+    <label for="repoInput">Репозиторий (owner/repo)</label>
+    <input type="text" id="repoInput" value="stepan-botarev/my-stuff">
+    <label for="branchInput">Ветка</label>
+    <input type="text" id="branchInput" value="main">
+    <div style="margin-top:16px;">
+      <button class="btn btn-primary" id="loginBtn">Войти</button>
+    </div>
+    <p style="font-size:11px; opacity:0.65; margin-top:14px;">
+      Токен хранится только в этом браузере (localStorage) и используется для прямых запросов к api.github.com.
+      Создать: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained token,
+      доступ только к репозиторию my-stuff, разрешение <b>Contents: Read and write</b>.
+    </p>
+  </div>
+
+  <div id="app" class="hidden">
+    <div class="admin-header">
+      <div>
+        <div class="admin-title">My Stuff — админка</div>
+        <div class="admin-sub" id="repoLabel"></div>
+      </div>
+      <button class="btn btn-small" id="logoutBtn">Выйти</button>
+    </div>
+
+    <div class="panel">
+      <h2>WhatsApp</h2>
+      <label for="waNumber">Номер (без + и пробелов)</label>
+      <input type="text" id="waNumber" placeholder="4917623657623">
+    </div>
+
+    <div id="productsList"></div>
+
+    <button class="btn" id="addProductBtn">+ Добавить товар</button>
+
+    <div class="actions-bar">
+      <button class="btn btn-primary" id="publishBtn">Опубликовать на сайт</button>
+      <span id="statusMsg" class="status-msg"></span>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const LS_TOKEN = "myStuffAdminToken";
+const LS_REPO = "myStuffAdminRepo";
+const LS_BRANCH = "myStuffAdminBranch";
+const LANGS = ["ru", "en", "de", "zh"];
+const LANG_LABELS = { ru: "RU", en: "EN", de: "DE", zh: "ZH" };
+
+let state = {
+  token: "",
+  repo: "",
+  branch: "main",
+  waNumber: "",
+  products: [],
+  dataSha: null,
+  pendingImages: [] // {file, path}
+};
+
+const gateEl = document.getElementById("gate");
+const appEl = document.getElementById("app");
+const productsListEl = document.getElementById("productsList");
+const statusEl = document.getElementById("statusMsg");
+
+function setStatus(text, kind) {
+  statusEl.textContent = text || "";
+  statusEl.className = "status-msg" + (kind ? " " + kind : "");
+}
+
+function ghHeaders() {
+  const h = { "Accept": "application/vnd.github+json" };
+  if (state.token) h["Authorization"] = "Bearer " + state.token;
+  return h;
+}
+
+function utf8ToBase64(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
+function base64ToUtf8(b64) {
+  return decodeURIComponent(escape(atob(b64.replace(/\n/g, ""))));
+}
+
+async function fetchDataJs() {
+  const url = `https://api.github.com/repos/${state.repo}/contents/data.js?ref=${state.branch}`;
+  const res = await fetch(url, { headers: ghHeaders() });
+  if (!res.ok) throw new Error("Не удалось загрузить data.js (" + res.status + ")");
+  const json = await res.json();
+  state.dataSha = json.sha;
+  const text = base64ToUtf8(json.content);
+  const sandbox = new Function(text + "\nreturn { WHATSAPP_NUMBER, PRODUCTS };");
+  const result = sandbox();
+  state.waNumber = result.WHATSAPP_NUMBER;
+  state.products = result.PRODUCTS;
+}
+
+function emptyLangObj() {
+  const o = {};
+  LANGS.forEach((l) => (o[l] = ""));
+  return o;
+}
+
+function addProduct() {
+  const nextId = state.products.length
+    ? Math.max(...state.products.map((p) => p.id)) + 1
+    : 1;
+  state.products.push({
+    id: nextId,
+    price: "",
+    reserved: false,
+    images: [],
+    title: emptyLangObj(),
+    desc: emptyLangObj()
+  });
+  renderProducts();
+}
+
+function removeProduct(idx) {
+  if (!confirm("Удалить товар?")) return;
+  state.products.splice(idx, 1);
+  renderProducts();
+}
+
+function renderProducts() {
+  productsListEl.innerHTML = "";
+  state.products.forEach((product, idx) => {
+    const card = document.createElement("div");
+    card.className = "panel product-card";
+
+    const head = document.createElement("div");
+    head.className = "product-card-head";
+    const numBadge = document.createElement("span");
+    numBadge.className = "product-num-badge";
+    numBadge.textContent = String(product.id).padStart(2, "0");
+    const delBtn = document.createElement("button");
+    delBtn.className = "btn btn-danger btn-small";
+    delBtn.textContent = "Удалить";
+    delBtn.addEventListener("click", () => removeProduct(idx));
+    head.appendChild(numBadge);
+    head.appendChild(delBtn);
+    card.appendChild(head);
+
+    const priceRow = document.createElement("div");
+    priceRow.className = "row";
+
+    const priceWrap = document.createElement("div");
+    const priceLabel = document.createElement("label");
+    priceLabel.textContent = "Цена";
+    const priceInput = document.createElement("input");
+    priceInput.type = "text";
+    priceInput.value = product.price;
+    priceInput.addEventListener("input", () => (product.price = priceInput.value));
+    priceWrap.appendChild(priceLabel);
+    priceWrap.appendChild(priceInput);
+    priceRow.appendChild(priceWrap);
+    card.appendChild(priceRow);
+
+    const reservedRow = document.createElement("div");
+    reservedRow.className = "checkbox-row";
+    const reservedCb = document.createElement("input");
+    reservedCb.type = "checkbox";
+    reservedCb.checked = !!product.reserved;
+    reservedCb.addEventListener("change", () => (product.reserved = reservedCb.checked));
+    const reservedLabel = document.createElement("span");
+    reservedLabel.textContent = "Забронировано";
+    reservedRow.appendChild(reservedCb);
+    reservedRow.appendChild(reservedLabel);
+    card.appendChild(reservedRow);
+
+    // Images
+    const imgLabel = document.createElement("label");
+    imgLabel.textContent = "Фото";
+    card.appendChild(imgLabel);
+
+    const imgList = document.createElement("div");
+    imgList.className = "img-list";
+    function renderImgList() {
+      imgList.innerHTML = "";
+      product.images.forEach((src, i) => {
+        const thumb = document.createElement("div");
+        thumb.className = "img-thumb";
+        const img = document.createElement("img");
+        img.src = src.startsWith("data:") ? src : src;
+        thumb.appendChild(img);
+        const rm = document.createElement("button");
+        rm.textContent = "×";
+        rm.addEventListener("click", () => {
+          product.images.splice(i, 1);
+          renderImgList();
+        });
+        thumb.appendChild(rm);
+        imgList.appendChild(thumb);
+      });
+    }
+    renderImgList();
+    card.appendChild(imgList);
+
+    const fileInput = document.createElement("input");
+    fileInput.type = "file";
+    fileInput.accept = "image/*";
+    fileInput.multiple = true;
+    fileInput.style.marginTop = "8px";
+    fileInput.addEventListener("change", async () => {
+      for (const file of fileInput.files) {
+        const ext = file.name.split(".").pop().toLowerCase();
+        const safeName = `item${product.id}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}.${ext}`;
+        const path = `images/${safeName}`;
+        const dataUrl = await fileToDataUrl(file);
+        state.pendingImages.push({ file, path, dataUrl });
+        product.images.push(path);
+      }
+      renderImgList();
+      fileInput.value = "";
+    });
+    card.appendChild(fileInput);
+
+    // Language tabs for title/desc
+    const tabs = document.createElement("div");
+    tabs.className = "lang-tabs";
+    const panes = document.createElement("div");
+
+    LANGS.forEach((lang, i) => {
+      const tabBtn = document.createElement("button");
+      tabBtn.type = "button";
+      tabBtn.className = "lang-tab-btn" + (i === 0 ? " is-active" : "");
+      tabBtn.textContent = LANG_LABELS[lang];
+      tabBtn.addEventListener("click", () => {
+        tabs.querySelectorAll(".lang-tab-btn").forEach((b) => b.classList.remove("is-active"));
+        tabBtn.classList.add("is-active");
+        panes.querySelectorAll(".lang-pane").forEach((p) => p.classList.remove("is-active"));
+        pane.classList.add("is-active");
+      });
+      tabs.appendChild(tabBtn);
+
+      const pane = document.createElement("div");
+      pane.className = "lang-pane" + (i === 0 ? " is-active" : "");
+
+      const titleLabel = document.createElement("label");
+      titleLabel.textContent = "Название (" + LANG_LABELS[lang] + ")";
+      const titleInput = document.createElement("input");
+      titleInput.type = "text";
+      titleInput.value = product.title[lang] || "";
+      titleInput.addEventListener("input", () => (product.title[lang] = titleInput.value));
+
+      const descLabel = document.createElement("label");
+      descLabel.textContent = "Описание (" + LANG_LABELS[lang] + ")";
+      const descInput = document.createElement("textarea");
+      descInput.value = product.desc[lang] || "";
+      descInput.addEventListener("input", () => (product.desc[lang] = descInput.value));
+
+      pane.appendChild(titleLabel);
+      pane.appendChild(titleInput);
+      pane.appendChild(descLabel);
+      pane.appendChild(descInput);
+      panes.appendChild(pane);
+    });
+
+    card.appendChild(tabs);
+    card.appendChild(panes);
+
+    productsListEl.appendChild(card);
+  });
+}
+
+function fileToDataUrl(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+function buildDataJsSource() {
+  const productsJson = JSON.stringify(state.products, null, 2);
+  return `// ЗАПОЛНЕНИЕ САЙТА — редактируй здесь (или через admin.html)
+// -----------------------------------------------------------------
+// Твой WhatsApp номер в международном формате, без + и без пробелов
+// Например: 79991234567
+const WHATSAPP_NUMBER = "${state.waNumber}";
+
+// Список товаров. Порядок в массиве = порядок на сайте.
+// images: первая картинка — превью в списке, все — доступны в галерее.
+// reserved: true — товар помечается как "забронирован".
+const PRODUCTS = ${productsJson};
+`;
+}
+
+async function uploadPendingImages() {
+  for (const item of state.pendingImages) {
+    const base64 = item.dataUrl.split(",")[1];
+    const url = `https://api.github.com/repos/${state.repo}/contents/${item.path}`;
+    const res = await fetch(url, {
+      method: "PUT",
+      headers: { ...ghHeaders(), "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message: `Загружено фото ${item.path} через админку`,
+        content: base64,
+        branch: state.branch
+      })
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(`Не удалось загрузить ${item.path}: ${err.message || res.status}`);
+    }
+  }
+  state.pendingImages = [];
+}
+
+async function publish() {
+  const btn = document.getElementById("publishBtn");
+  btn.disabled = true;
+  setStatus("Публикую…");
+  try {
+    if (state.pendingImages.length) {
+      setStatus(`Загружаю фото (0/${state.pendingImages.length})…`);
+      await uploadPendingImages();
+    }
+
+    setStatus("Сохраняю data.js…");
+    const url = `https://api.github.com/repos/${state.repo}/contents/data.js`;
+    const source = buildDataJsSource();
+    const res = await fetch(url, {
+      method: "PUT",
+      headers: { ...ghHeaders(), "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message: "Обновление содержимого сайта через админку",
+        content: utf8ToBase64(source),
+        sha: state.dataSha,
+        branch: state.branch
+      })
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.message || ("HTTP " + res.status));
+    }
+    const json = await res.json();
+    state.dataSha = json.content.sha;
+    setStatus("Опубликовано! Сайт обновится примерно через минуту.", "ok");
+  } catch (e) {
+    setStatus("Ошибка: " + e.message, "err");
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+async function login() {
+  const token = document.getElementById("tokenInput").value.trim();
+  const repo = document.getElementById("repoInput").value.trim();
+  const branch = document.getElementById("branchInput").value.trim() || "main";
+  if (!token || !repo) {
+    alert("Заполни токен и репозиторий");
+    return;
+  }
+  state.token = token;
+  state.repo = repo;
+  state.branch = branch;
+  localStorage.setItem(LS_TOKEN, token);
+  localStorage.setItem(LS_REPO, repo);
+  localStorage.setItem(LS_BRANCH, branch);
+  await boot();
+}
+
+function logout() {
+  localStorage.removeItem(LS_TOKEN);
+  localStorage.removeItem(LS_REPO);
+  localStorage.removeItem(LS_BRANCH);
+  location.reload();
+}
+
+async function boot() {
+  setStatus("");
+  try {
+    await fetchDataJs();
+    document.getElementById("waNumber").value = state.waNumber;
+    document.getElementById("repoLabel").textContent = `${state.repo} @ ${state.branch}`;
+    renderProducts();
+    gateEl.classList.add("hidden");
+    appEl.classList.remove("hidden");
+  } catch (e) {
+    alert("Не удалось загрузить данные: " + e.message);
+  }
+}
+
+document.getElementById("loginBtn").addEventListener("click", login);
+document.getElementById("logoutBtn").addEventListener("click", logout);
+document.getElementById("addProductBtn").addEventListener("click", addProduct);
+document.getElementById("publishBtn").addEventListener("click", publish);
+document.getElementById("waNumber").addEventListener("input", (e) => (state.waNumber = e.target.value.trim()));
+
+// Автовход, если токен уже сохранён
+(function initFromStorage() {
+  const token = localStorage.getItem(LS_TOKEN);
+  const repo = localStorage.getItem(LS_REPO);
+  const branch = localStorage.getItem(LS_BRANCH) || "main";
+  if (token && repo) {
+    document.getElementById("tokenInput").value = token;
+    document.getElementById("repoInput").value = repo;
+    document.getElementById("branchInput").value = branch;
+    state.token = token;
+    state.repo = repo;
+    state.branch = branch;
+    boot();
+  }
+})();
+</script>
+</body>
+</html>
