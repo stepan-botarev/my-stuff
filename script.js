@@ -72,6 +72,7 @@ function render() {
 
     const card = document.createElement("article");
     card.className = "product" + (product.reserved ? " is-reserved" : "");
+    card.id = `product-${product.id}`;
 
     const photoWrap = document.createElement("div");
     photoWrap.className = "product-photo";

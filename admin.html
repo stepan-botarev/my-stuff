@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Stuff — admin</title>
+<title>My Stuff Editor</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,8 +161,11 @@
     border-radius: 6px;
     overflow: hidden;
     background: var(--bg);
+    cursor: grab;
   }
-  .img-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .img-thumb.is-dragging { opacity: 0.35; }
+  .img-thumb.is-dragover { outline: 2px dashed var(--coral); outline-offset: 2px; }
+  .img-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
   .img-thumb button {
     position: absolute;
     top: 1px;
@@ -241,10 +244,13 @@
   <div id="app" class="hidden">
     <div class="admin-header">
       <div>
-        <div class="admin-title">My Stuff — админка</div>
+        <div class="admin-title">My Stuff Editor</div>
         <div class="admin-sub" id="repoLabel"></div>
       </div>
-      <button class="btn btn-small" id="logoutBtn">Выйти</button>
+      <div style="display:flex; gap:8px;">
+        <a class="btn btn-small" id="previewLink" href="./" target="_blank" rel="noopener">Смотреть сайт</a>
+        <button class="btn btn-small" id="logoutBtn">Выйти</button>
+      </div>
     </div>
 
     <div class="panel">
@@ -258,7 +264,7 @@
     <button class="btn" id="addProductBtn">+ Добавить товар</button>
 
     <div class="actions-bar">
-      <button class="btn btn-primary" id="publishBtn">Опубликовать на сайт</button>
+      <button class="btn btn-primary" id="publishBtn" disabled>Сохранить</button>
       <span id="statusMsg" class="status-msg"></span>
     </div>
   </div>
@@ -279,17 +285,26 @@ let state = {
   waNumber: "",
   products: [],
   dataSha: null,
-  pendingImages: [] // {file, path}
+  dirty: false,
+  pendingImages: [] // {file, path, dataUrl}
 };
 
 const gateEl = document.getElementById("gate");
 const appEl = document.getElementById("app");
 const productsListEl = document.getElementById("productsList");
 const statusEl = document.getElementById("statusMsg");
+const publishBtn = document.getElementById("publishBtn");
 
 function setStatus(text, kind) {
   statusEl.textContent = text || "";
   statusEl.className = "status-msg" + (kind ? " " + kind : "");
+}
+
+function markDirty() {
+  state.dirty = true;
+  publishBtn.disabled = false;
+  publishBtn.textContent = "Сохранить";
+  setStatus("");
 }
 
 function ghHeaders() {
@@ -336,12 +351,14 @@ function addProduct() {
     title: emptyLangObj(),
     desc: emptyLangObj()
   });
+  markDirty();
   renderProducts();
 }
 
 function removeProduct(idx) {
   if (!confirm("Удалить товар?")) return;
   state.products.splice(idx, 1);
+  markDirty();
   renderProducts();
 }
 
@@ -356,12 +373,23 @@ function renderProducts() {
     const numBadge = document.createElement("span");
     numBadge.className = "product-num-badge";
     numBadge.textContent = String(product.id).padStart(2, "0");
+    const headBtns = document.createElement("div");
+    headBtns.style.display = "flex";
+    headBtns.style.gap = "8px";
+    const previewBtn = document.createElement("a");
+    previewBtn.className = "btn btn-small";
+    previewBtn.textContent = "Превью";
+    previewBtn.href = `./#product-${product.id}`;
+    previewBtn.target = "_blank";
+    previewBtn.rel = "noopener";
     const delBtn = document.createElement("button");
     delBtn.className = "btn btn-danger btn-small";
     delBtn.textContent = "Удалить";
     delBtn.addEventListener("click", () => removeProduct(idx));
+    headBtns.appendChild(previewBtn);
+    headBtns.appendChild(delBtn);
     head.appendChild(numBadge);
-    head.appendChild(delBtn);
+    head.appendChild(headBtns);
     card.appendChild(head);
 
     const priceRow = document.createElement("div");
@@ -373,7 +401,10 @@ function renderProducts() {
     const priceInput = document.createElement("input");
     priceInput.type = "text";
     priceInput.value = product.price;
-    priceInput.addEventListener("input", () => (product.price = priceInput.value));
+    priceInput.addEventListener("input", () => {
+      product.price = priceInput.value;
+      markDirty();
+    });
     priceWrap.appendChild(priceLabel);
     priceWrap.appendChild(priceInput);
     priceRow.appendChild(priceWrap);
@@ -384,7 +415,10 @@ function renderProducts() {
     const reservedCb = document.createElement("input");
     reservedCb.type = "checkbox";
     reservedCb.checked = !!product.reserved;
-    reservedCb.addEventListener("change", () => (product.reserved = reservedCb.checked));
+    reservedCb.addEventListener("change", () => {
+      product.reserved = reservedCb.checked;
+      markDirty();
+    });
     const reservedLabel = document.createElement("span");
     reservedLabel.textContent = "Забронировано";
     reservedRow.appendChild(reservedCb);
@@ -398,21 +432,61 @@ function renderProducts() {
 
     const imgList = document.createElement("div");
     imgList.className = "img-list";
+
+    function imgSrcFor(path) {
+      const pending = state.pendingImages.find((p) => p.path === path);
+      return pending ? pending.dataUrl : path;
+    }
+
+    let dragFromIndex = null;
+
     function renderImgList() {
       imgList.innerHTML = "";
       product.images.forEach((src, i) => {
         const thumb = document.createElement("div");
         thumb.className = "img-thumb";
+        thumb.draggable = true;
+        thumb.title = "Перетащи, чтобы изменить порядок";
+
         const img = document.createElement("img");
-        img.src = src.startsWith("data:") ? src : src;
+        img.src = imgSrcFor(src);
         thumb.appendChild(img);
+
         const rm = document.createElement("button");
         rm.textContent = "×";
         rm.addEventListener("click", () => {
           product.images.splice(i, 1);
+          markDirty();
           renderImgList();
         });
         thumb.appendChild(rm);
+
+        thumb.addEventListener("dragstart", (e) => {
+          dragFromIndex = i;
+          thumb.classList.add("is-dragging");
+          e.dataTransfer.effectAllowed = "move";
+        });
+        thumb.addEventListener("dragend", () => {
+          thumb.classList.remove("is-dragging");
+        });
+        thumb.addEventListener("dragover", (e) => {
+          e.preventDefault();
+          thumb.classList.add("is-dragover");
+        });
+        thumb.addEventListener("dragleave", () => {
+          thumb.classList.remove("is-dragover");
+        });
+        thumb.addEventListener("drop", (e) => {
+          e.preventDefault();
+          thumb.classList.remove("is-dragover");
+          if (dragFromIndex === null || dragFromIndex === i) return;
+          const [moved] = product.images.splice(dragFromIndex, 1);
+          product.images.splice(i, 0, moved);
+          dragFromIndex = null;
+          markDirty();
+          renderImgList();
+        });
+
         imgList.appendChild(thumb);
       });
     }
@@ -433,6 +507,7 @@ function renderProducts() {
         state.pendingImages.push({ file, path, dataUrl });
         product.images.push(path);
       }
+      markDirty();
       renderImgList();
       fileInput.value = "";
     });
@@ -464,13 +539,19 @@ function renderProducts() {
       const titleInput = document.createElement("input");
       titleInput.type = "text";
       titleInput.value = product.title[lang] || "";
-      titleInput.addEventListener("input", () => (product.title[lang] = titleInput.value));
+      titleInput.addEventListener("input", () => {
+        product.title[lang] = titleInput.value;
+        markDirty();
+      });
 
       const descLabel = document.createElement("label");
       descLabel.textContent = "Описание (" + LANG_LABELS[lang] + ")";
       const descInput = document.createElement("textarea");
       descInput.value = product.desc[lang] || "";
-      descInput.addEventListener("input", () => (product.desc[lang] = descInput.value));
+      descInput.addEventListener("input", () => {
+        product.desc[lang] = descInput.value;
+        markDirty();
+      });
 
       pane.appendChild(titleLabel);
       pane.appendChild(titleInput);
@@ -532,16 +613,15 @@ async function uploadPendingImages() {
 }
 
 async function publish() {
-  const btn = document.getElementById("publishBtn");
-  btn.disabled = true;
-  setStatus("Публикую…");
+  publishBtn.disabled = true;
+  setStatus("Сохраняю…");
   try {
     if (state.pendingImages.length) {
       setStatus(`Загружаю фото (0/${state.pendingImages.length})…`);
       await uploadPendingImages();
     }
 
-    setStatus("Сохраняю data.js…");
+    setStatus("Сохраняю данные…");
     const url = `https://api.github.com/repos/${state.repo}/contents/data.js`;
     const source = buildDataJsSource();
     const res = await fetch(url, {
@@ -560,11 +640,12 @@ async function publish() {
     }
     const json = await res.json();
     state.dataSha = json.content.sha;
-    setStatus("Опубликовано! Сайт обновится примерно через минуту.", "ok");
+    state.dirty = false;
+    publishBtn.textContent = "Сохранено ✓";
+    setStatus("Сайт обновится примерно через минуту.", "ok");
   } catch (e) {
     setStatus("Ошибка: " + e.message, "err");
-  } finally {
-    btn.disabled = false;
+    publishBtn.disabled = false;
   }
 }
 
@@ -610,7 +691,10 @@ document.getElementById("loginBtn").addEventListener("click", login);
 document.getElementById("logoutBtn").addEventListener("click", logout);
 document.getElementById("addProductBtn").addEventListener("click", addProduct);
 document.getElementById("publishBtn").addEventListener("click", publish);
-document.getElementById("waNumber").addEventListener("input", (e) => (state.waNumber = e.target.value.trim()));
+document.getElementById("waNumber").addEventListener("input", (e) => {
+  state.waNumber = e.target.value.trim();
+  markDirty();
+});
 
 // Автовход, если токен уже сохранён
 (function initFromStorage() {
