@@ -138,7 +138,16 @@ function render() {
 
     const priceTag = document.createElement("div");
     priceTag.className = "price-tag";
-    priceTag.textContent = product.price;
+    const priceMatch = product.price.match(/^(.*\d)\s*([^\d\s]+)$/);
+    if (priceMatch) {
+      priceTag.textContent = priceMatch[1] + " ";
+      const currencyEl = document.createElement("span");
+      currencyEl.className = "price-currency";
+      currencyEl.textContent = priceMatch[2];
+      priceTag.appendChild(currencyEl);
+    } else {
+      priceTag.textContent = product.price;
+    }
     photoCol.appendChild(priceTag);
 
     const info = document.createElement("div");
