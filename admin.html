@@ -75,7 +75,7 @@
     box-sizing: border-box;
   }
 
-  textarea { resize: vertical; min-height: 54px; }
+  textarea { resize: vertical; min-height: 160px; }
 
   .row { display: flex; gap: 10px; }
   .row > * { flex: 1; }
@@ -275,8 +275,24 @@
 const LS_TOKEN = "myStuffAdminToken";
 const LS_REPO = "myStuffAdminRepo";
 const LS_BRANCH = "myStuffAdminBranch";
-const LANGS = ["ru", "en", "de", "zh"];
-const LANG_LABELS = { ru: "RU", en: "EN", de: "DE", zh: "ZH" };
+const LANGS = ["en", "de", "ru", "uk", "es", "zh"];
+const LANG_LABELS = { en: "EN", de: "DE", ru: "RU", uk: "UK", es: "ES", zh: "ZH" };
+const LS_LOCATIONS = "myStuffAdminLocations";
+
+function getSavedLocations() {
+  try {
+    return JSON.parse(localStorage.getItem(LS_LOCATIONS)) || [];
+  } catch {
+    return [];
+  }
+}
+function addSavedLocation(loc) {
+  const list = getSavedLocations();
+  if (!list.includes(loc)) {
+    list.push(loc);
+    localStorage.setItem(LS_LOCATIONS, JSON.stringify(list));
+  }
+}
 
 let state = {
   token: "",
@@ -347,6 +363,8 @@ function addProduct() {
     id: nextId,
     price: "",
     reserved: false,
+    condition: "",
+    location: "",
     images: [],
     title: emptyLangObj(),
     desc: emptyLangObj()
@@ -400,10 +418,20 @@ function renderProducts() {
     priceLabel.textContent = "Цена";
     const priceInput = document.createElement("input");
     priceInput.type = "text";
+    priceInput.placeholder = "Например: 15 €";
     priceInput.value = product.price;
     priceInput.addEventListener("input", () => {
       product.price = priceInput.value;
       markDirty();
+    });
+    priceInput.addEventListener("blur", () => {
+      const v = priceInput.value.trim();
+      // Если ввели только число — сами добавляем знак евро
+      if (v && /^\d[\d\s.,]*$/.test(v)) {
+        priceInput.value = v + " €";
+        product.price = priceInput.value;
+        markDirty();
+      }
     });
     priceWrap.appendChild(priceLabel);
     priceWrap.appendChild(priceInput);
@@ -424,6 +452,69 @@ function renderProducts() {
     reservedRow.appendChild(reservedCb);
     reservedRow.appendChild(reservedLabel);
     card.appendChild(reservedRow);
+
+    // Состояние
+    const condLabel = document.createElement("label");
+    condLabel.textContent = "Состояние";
+    const condInput = document.createElement("input");
+    condInput.type = "text";
+    condInput.placeholder = "Например: Б/у, хорошее состояние";
+    condInput.value = product.condition || "";
+    condInput.addEventListener("input", () => {
+      product.condition = condInput.value;
+      markDirty();
+    });
+    card.appendChild(condLabel);
+    card.appendChild(condInput);
+
+    // Где забрать (с сохранёнными локациями)
+    const locLabel = document.createElement("label");
+    locLabel.textContent = "Где забрать";
+    const locRow = document.createElement("div");
+    locRow.style.display = "flex";
+    locRow.style.gap = "6px";
+    const locInput = document.createElement("input");
+    locInput.type = "text";
+    locInput.placeholder = "Например: Berlin, Kreuzberg";
+    locInput.value = product.location || "";
+    locInput.addEventListener("input", () => {
+      product.location = locInput.value;
+      markDirty();
+    });
+    const locSaveBtn = document.createElement("button");
+    locSaveBtn.type = "button";
+    locSaveBtn.className = "btn btn-small";
+    locSaveBtn.textContent = "+ Запомнить";
+    locSaveBtn.addEventListener("click", () => {
+      const val = locInput.value.trim();
+      if (!val) return;
+      addSavedLocation(val);
+      renderProducts();
+    });
+    locRow.appendChild(locInput);
+    locRow.appendChild(locSaveBtn);
+    card.appendChild(locLabel);
+    card.appendChild(locRow);
+
+    const locChips = document.createElement("div");
+    locChips.style.display = "flex";
+    locChips.style.flexWrap = "wrap";
+    locChips.style.gap = "6px";
+    locChips.style.marginTop = "8px";
+    getSavedLocations().forEach((loc) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "btn btn-small";
+      chip.style.opacity = "0.75";
+      chip.textContent = loc;
+      chip.addEventListener("click", () => {
+        product.location = loc;
+        locInput.value = loc;
+        markDirty();
+      });
+      locChips.appendChild(chip);
+    });
+    if (getSavedLocations().length) card.appendChild(locChips);
 
     // Images
     const imgLabel = document.createElement("label");
@@ -591,19 +682,41 @@ const PRODUCTS = ${productsJson};
 `;
 }
 
+async function fetchWithTimeout(url, options, timeoutMs) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...options, signal: controller.signal });
+  } catch (e) {
+    if (e.name === "AbortError") {
+      throw new Error("превышено время ожидания (" + Math.round(timeoutMs / 1000) + "с)");
+    }
+    throw e;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 async function uploadPendingImages() {
-  for (const item of state.pendingImages) {
+  const total = state.pendingImages.length;
+  for (let i = 0; i < total; i++) {
+    const item = state.pendingImages[i];
+    setStatus(`Загружаю фото (${i + 1}/${total})…`);
     const base64 = item.dataUrl.split(",")[1];
     const url = `https://api.github.com/repos/${state.repo}/contents/${item.path}`;
-    const res = await fetch(url, {
-      method: "PUT",
-      headers: { ...ghHeaders(), "Content-Type": "application/json" },
-      body: JSON.stringify({
-        message: `Загружено фото ${item.path} через админку`,
-        content: base64,
-        branch: state.branch
-      })
-    });
+    const res = await fetchWithTimeout(
+      url,
+      {
+        method: "PUT",
+        headers: { ...ghHeaders(), "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: `Загружено фото ${item.path} через админку`,
+          content: base64,
+          branch: state.branch
+        })
+      },
+      30000
+    );
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       throw new Error(`Не удалось загрузить ${item.path}: ${err.message || res.status}`);
@@ -617,23 +730,31 @@ async function publish() {
   setStatus("Сохраняю…");
   try {
     if (state.pendingImages.length) {
-      setStatus(`Загружаю фото (0/${state.pendingImages.length})…`);
       await uploadPendingImages();
     }
 
     setStatus("Сохраняю данные…");
     const url = `https://api.github.com/repos/${state.repo}/contents/data.js`;
+    // подтягиваем свежий sha на случай, если файл менялся с момента загрузки
+    const freshRes = await fetchWithTimeout(url + `?ref=${state.branch}`, { headers: ghHeaders() }, 30000);
+    if (!freshRes.ok) throw new Error("Не удалось получить текущую версию сайта (" + freshRes.status + ")");
+    const freshJson = await freshRes.json();
+
     const source = buildDataJsSource();
-    const res = await fetch(url, {
-      method: "PUT",
-      headers: { ...ghHeaders(), "Content-Type": "application/json" },
-      body: JSON.stringify({
-        message: "Обновление содержимого сайта через админку",
-        content: utf8ToBase64(source),
-        sha: state.dataSha,
-        branch: state.branch
-      })
-    });
+    const res = await fetchWithTimeout(
+      url,
+      {
+        method: "PUT",
+        headers: { ...ghHeaders(), "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: "Обновление содержимого сайта через админку",
+          content: utf8ToBase64(source),
+          sha: freshJson.sha,
+          branch: state.branch
+        })
+      },
+      30000
+    );
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       throw new Error(err.message || ("HTTP " + res.status));

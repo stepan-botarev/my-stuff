@@ -1,11 +1,13 @@
 const STRINGS = {
-  ru: { write: "Написать", greeting: "Привет, Степан! Интересует: ", reserved: "Забронировано" },
   en: { write: "Write", greeting: "Hi, Stepan! I'm interested in: ", reserved: "Reserved" },
   de: { write: "Schreiben", greeting: "Hallo, Stepan! Ich interessiere mich für: ", reserved: "Reserviert" },
+  ru: { write: "Написать", greeting: "Привет, Степан! Интересует: ", reserved: "Забронировано" },
+  uk: { write: "Написати", greeting: "Привіт, Степане! Цікавить: ", reserved: "Заброньовано" },
+  es: { write: "Escribir", greeting: "¡Hola, Stepan! Me interesa: ", reserved: "Reservado" },
   zh: { write: "联系", greeting: "Hi, Stepan! 我对这个感兴趣: ", reserved: "已预订" }
 };
 
-let currentLang = "ru";
+let currentLang = "en";
 let lightboxImages = [];
 let lightboxIndex = 0;
 
@@ -121,6 +123,15 @@ function render() {
     });
     photoWrap.appendChild(likeBtn);
 
+    const photoCol = document.createElement("div");
+    photoCol.className = "photo-col";
+    photoCol.appendChild(photoWrap);
+
+    const priceTag = document.createElement("div");
+    priceTag.className = "price-tag";
+    priceTag.textContent = product.price;
+    photoCol.appendChild(priceTag);
+
     const info = document.createElement("div");
 
     const num = document.createElement("div");
@@ -136,12 +147,23 @@ function render() {
     desc.className = "product-desc";
     desc.textContent = product.desc[currentLang];
 
+    const meta = document.createElement("div");
+    meta.className = "product-meta";
+    if (product.condition) {
+      const condLine = document.createElement("div");
+      condLine.className = "meta-line";
+      condLine.textContent = product.condition;
+      meta.appendChild(condLine);
+    }
+    if (product.location) {
+      const locLine = document.createElement("div");
+      locLine.className = "meta-line";
+      locLine.textContent = "📍 " + product.location;
+      meta.appendChild(locLine);
+    }
+
     const footer = document.createElement("div");
     footer.className = "product-footer";
-
-    const price = document.createElement("span");
-    price.className = "product-price";
-    price.textContent = product.price;
 
     const writeBtn = document.createElement("a");
     writeBtn.className = `btn-write btn-c${(index % 4) + 1}`;
@@ -150,15 +172,15 @@ function render() {
     writeBtn.target = "_blank";
     writeBtn.rel = "noopener noreferrer";
 
-    footer.appendChild(price);
     footer.appendChild(writeBtn);
 
     info.appendChild(num);
     info.appendChild(title);
     info.appendChild(desc);
+    if (meta.children.length) info.appendChild(meta);
     info.appendChild(footer);
 
-    card.appendChild(photoWrap);
+    card.appendChild(photoCol);
     card.appendChild(info);
     listEl.appendChild(card);
   });

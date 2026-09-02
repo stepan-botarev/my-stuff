@@ -137,6 +137,20 @@ html, body {
   align-items: start;
 }
 
+.photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.price-tag {
+  font-weight: 700;
+  color: var(--blue);
+  font-size: 16px;
+  text-align: center;
+}
+
 .product-photo {
   position: relative;
   width: 128px;
@@ -273,10 +287,14 @@ html, body {
   flex-wrap: wrap;
 }
 
-.product-price {
-  font-weight: 700;
-  color: var(--blue);
-  font-size: 16px;
+.product-meta {
+  margin: -4px 0 14px;
+}
+
+.meta-line {
+  font-size: 12px;
+  opacity: 0.75;
+  line-height: 1.5;
 }
 
 .btn-write {
