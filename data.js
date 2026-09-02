@@ -29,6 +29,6 @@ const PRODUCTS = [
       "zh": "一点90年代复古感，一点跳蚤市场风，一点独立音乐气质 🌙\n黑色可调节肩带，一个拉链夹层。可以放手机、护照或钱包、钥匙以及其他随身小物。\n\n保存状态良好，使用时很爱惜。\n可在汉堡市中心及周边较中心区域的地铁/城市快铁站当面交易 🌻"
     },
     "location": "Meet-up at an U-/S-Bahn station in central Hamburg or the surrounding central area",
-    "condition": ""
+    "condition": "good"
   }
 ];
