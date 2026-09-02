@@ -276,7 +276,15 @@ const LS_TOKEN = "myStuffAdminToken";
 const LS_REPO = "myStuffAdminRepo";
 const LS_BRANCH = "myStuffAdminBranch";
 const LANGS = ["en", "de", "ru", "uk", "es", "zh"];
-const LANG_LABELS = { en: "EN", de: "DE", ru: "RU", uk: "UK", es: "ES", zh: "ZH" };
+const LANG_LABELS = { en: "EN", de: "DE", ru: "RU", uk: "UA", es: "ES", zh: "CN" };
+// Уровни состояния — на сайте переводятся автоматически (см. CONDITION_LABELS в script.js),
+// звёзды видны только здесь, в редакторе, для быстрой ориентации.
+const CONDITION_OPTIONS = [
+  { value: "new", label: "★★★★ Как новое" },
+  { value: "good", label: "★★★ Хорошее" },
+  { value: "fair", label: "★★ Нормальное" },
+  { value: "old", label: "★ Старое" }
+];
 const LS_LOCATIONS = "myStuffAdminLocations";
 
 function getSavedLocations() {
@@ -456,16 +464,24 @@ function renderProducts() {
     // Состояние
     const condLabel = document.createElement("label");
     condLabel.textContent = "Состояние";
-    const condInput = document.createElement("input");
-    condInput.type = "text";
-    condInput.placeholder = "Например: Б/у, хорошее состояние";
-    condInput.value = product.condition || "";
-    condInput.addEventListener("input", () => {
-      product.condition = condInput.value;
+    const condSelect = document.createElement("select");
+    const condPlaceholderOpt = document.createElement("option");
+    condPlaceholderOpt.value = "";
+    condPlaceholderOpt.textContent = "— не указано —";
+    condSelect.appendChild(condPlaceholderOpt);
+    CONDITION_OPTIONS.forEach((opt) => {
+      const o = document.createElement("option");
+      o.value = opt.value;
+      o.textContent = opt.label;
+      if (product.condition === opt.value) o.selected = true;
+      condSelect.appendChild(o);
+    });
+    condSelect.addEventListener("change", () => {
+      product.condition = condSelect.value;
       markDirty();
     });
     card.appendChild(condLabel);
-    card.appendChild(condInput);
+    card.appendChild(condSelect);
 
     // Где забрать (с сохранёнными локациями)
     const locLabel = document.createElement("label");

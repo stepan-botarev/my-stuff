@@ -7,6 +7,15 @@ const STRINGS = {
   zh: { write: "联系", greeting: "Hi, Stepan! 我对这个感兴趣: ", reserved: "已预订" }
 };
 
+// Уровни состояния товара — единое значение (new/good/fair/old),
+// текст на сайте подставляется автоматически по текущему языку.
+const CONDITION_LABELS = {
+  new: { en: "Like new", de: "Wie neu", ru: "Как новое", uk: "Як нове", es: "Como nuevo", zh: "全新" },
+  good: { en: "Good", de: "Gut", ru: "Хорошее", uk: "Добре", es: "Bueno", zh: "良好" },
+  fair: { en: "Fair", de: "Normal", ru: "Нормальное", uk: "Нормальне", es: "Normal", zh: "一般" },
+  old: { en: "Old", de: "Alt", ru: "Старое", uk: "Старе", es: "Viejo", zh: "旧" }
+};
+
 let currentLang = "en";
 let lightboxImages = [];
 let lightboxIndex = 0;
@@ -149,10 +158,10 @@ function render() {
 
     const meta = document.createElement("div");
     meta.className = "product-meta";
-    if (product.condition) {
+    if (product.condition && CONDITION_LABELS[product.condition]) {
       const condLine = document.createElement("div");
       condLine.className = "meta-line";
-      condLine.textContent = product.condition;
+      condLine.textContent = CONDITION_LABELS[product.condition][currentLang];
       meta.appendChild(condLine);
     }
     if (product.location) {
