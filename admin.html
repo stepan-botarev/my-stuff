@@ -418,120 +418,6 @@ function renderProducts() {
     head.appendChild(headBtns);
     card.appendChild(head);
 
-    const priceRow = document.createElement("div");
-    priceRow.className = "row";
-
-    const priceWrap = document.createElement("div");
-    const priceLabel = document.createElement("label");
-    priceLabel.textContent = "Цена";
-    const priceInput = document.createElement("input");
-    priceInput.type = "text";
-    priceInput.placeholder = "Например: 15 €";
-    priceInput.value = product.price;
-    priceInput.addEventListener("input", () => {
-      product.price = priceInput.value;
-      markDirty();
-    });
-    priceInput.addEventListener("blur", () => {
-      const v = priceInput.value.trim();
-      // Если ввели только число — сами добавляем знак евро
-      if (v && /^\d[\d\s.,]*$/.test(v)) {
-        priceInput.value = v + " €";
-        product.price = priceInput.value;
-        markDirty();
-      }
-    });
-    priceWrap.appendChild(priceLabel);
-    priceWrap.appendChild(priceInput);
-    priceRow.appendChild(priceWrap);
-    card.appendChild(priceRow);
-
-    const reservedRow = document.createElement("div");
-    reservedRow.className = "checkbox-row";
-    const reservedCb = document.createElement("input");
-    reservedCb.type = "checkbox";
-    reservedCb.checked = !!product.reserved;
-    reservedCb.addEventListener("change", () => {
-      product.reserved = reservedCb.checked;
-      markDirty();
-    });
-    const reservedLabel = document.createElement("span");
-    reservedLabel.textContent = "Забронировано";
-    reservedRow.appendChild(reservedCb);
-    reservedRow.appendChild(reservedLabel);
-    card.appendChild(reservedRow);
-
-    // Состояние
-    const condLabel = document.createElement("label");
-    condLabel.textContent = "Состояние";
-    const condSelect = document.createElement("select");
-    const condPlaceholderOpt = document.createElement("option");
-    condPlaceholderOpt.value = "";
-    condPlaceholderOpt.textContent = "— не указано —";
-    condSelect.appendChild(condPlaceholderOpt);
-    CONDITION_OPTIONS.forEach((opt) => {
-      const o = document.createElement("option");
-      o.value = opt.value;
-      o.textContent = opt.label;
-      if (product.condition === opt.value) o.selected = true;
-      condSelect.appendChild(o);
-    });
-    condSelect.addEventListener("change", () => {
-      product.condition = condSelect.value;
-      markDirty();
-    });
-    card.appendChild(condLabel);
-    card.appendChild(condSelect);
-
-    // Где забрать (с сохранёнными локациями)
-    const locLabel = document.createElement("label");
-    locLabel.textContent = "Где забрать";
-    const locRow = document.createElement("div");
-    locRow.style.display = "flex";
-    locRow.style.gap = "6px";
-    const locInput = document.createElement("input");
-    locInput.type = "text";
-    locInput.placeholder = "Например: Berlin, Kreuzberg";
-    locInput.value = product.location || "";
-    locInput.addEventListener("input", () => {
-      product.location = locInput.value;
-      markDirty();
-    });
-    const locSaveBtn = document.createElement("button");
-    locSaveBtn.type = "button";
-    locSaveBtn.className = "btn btn-small";
-    locSaveBtn.textContent = "+ Запомнить";
-    locSaveBtn.addEventListener("click", () => {
-      const val = locInput.value.trim();
-      if (!val) return;
-      addSavedLocation(val);
-      renderProducts();
-    });
-    locRow.appendChild(locInput);
-    locRow.appendChild(locSaveBtn);
-    card.appendChild(locLabel);
-    card.appendChild(locRow);
-
-    const locChips = document.createElement("div");
-    locChips.style.display = "flex";
-    locChips.style.flexWrap = "wrap";
-    locChips.style.gap = "6px";
-    locChips.style.marginTop = "8px";
-    getSavedLocations().forEach((loc) => {
-      const chip = document.createElement("button");
-      chip.type = "button";
-      chip.className = "btn btn-small";
-      chip.style.opacity = "0.75";
-      chip.textContent = loc;
-      chip.addEventListener("click", () => {
-        product.location = loc;
-        locInput.value = loc;
-        markDirty();
-      });
-      locChips.appendChild(chip);
-    });
-    if (getSavedLocations().length) card.appendChild(locChips);
-
     // Images
     const imgLabel = document.createElement("label");
     imgLabel.textContent = "Фото";
@@ -669,6 +555,120 @@ function renderProducts() {
 
     card.appendChild(tabs);
     card.appendChild(panes);
+
+    const priceRow = document.createElement("div");
+    priceRow.className = "row";
+
+    const priceWrap = document.createElement("div");
+    const priceLabel = document.createElement("label");
+    priceLabel.textContent = "Цена";
+    const priceInput = document.createElement("input");
+    priceInput.type = "text";
+    priceInput.placeholder = "Например: 15 €";
+    priceInput.value = product.price;
+    priceInput.addEventListener("input", () => {
+      product.price = priceInput.value;
+      markDirty();
+    });
+    priceInput.addEventListener("blur", () => {
+      const v = priceInput.value.trim();
+      // Если ввели только число — сами добавляем знак евро
+      if (v && /^\d[\d\s.,]*$/.test(v)) {
+        priceInput.value = v + " €";
+        product.price = priceInput.value;
+        markDirty();
+      }
+    });
+    priceWrap.appendChild(priceLabel);
+    priceWrap.appendChild(priceInput);
+    priceRow.appendChild(priceWrap);
+    card.appendChild(priceRow);
+
+    const reservedRow = document.createElement("div");
+    reservedRow.className = "checkbox-row";
+    const reservedCb = document.createElement("input");
+    reservedCb.type = "checkbox";
+    reservedCb.checked = !!product.reserved;
+    reservedCb.addEventListener("change", () => {
+      product.reserved = reservedCb.checked;
+      markDirty();
+    });
+    const reservedLabel = document.createElement("span");
+    reservedLabel.textContent = "Забронировано";
+    reservedRow.appendChild(reservedCb);
+    reservedRow.appendChild(reservedLabel);
+    card.appendChild(reservedRow);
+
+    // Состояние
+    const condLabel = document.createElement("label");
+    condLabel.textContent = "Состояние";
+    const condSelect = document.createElement("select");
+    const condPlaceholderOpt = document.createElement("option");
+    condPlaceholderOpt.value = "";
+    condPlaceholderOpt.textContent = "— не указано —";
+    condSelect.appendChild(condPlaceholderOpt);
+    CONDITION_OPTIONS.forEach((opt) => {
+      const o = document.createElement("option");
+      o.value = opt.value;
+      o.textContent = opt.label;
+      if (product.condition === opt.value) o.selected = true;
+      condSelect.appendChild(o);
+    });
+    condSelect.addEventListener("change", () => {
+      product.condition = condSelect.value;
+      markDirty();
+    });
+    card.appendChild(condLabel);
+    card.appendChild(condSelect);
+
+    // Где забрать (с сохранёнными локациями)
+    const locLabel = document.createElement("label");
+    locLabel.textContent = "Где забрать";
+    const locRow = document.createElement("div");
+    locRow.style.display = "flex";
+    locRow.style.gap = "6px";
+    const locInput = document.createElement("input");
+    locInput.type = "text";
+    locInput.placeholder = "Например: Berlin, Kreuzberg";
+    locInput.value = product.location || "";
+    locInput.addEventListener("input", () => {
+      product.location = locInput.value;
+      markDirty();
+    });
+    const locSaveBtn = document.createElement("button");
+    locSaveBtn.type = "button";
+    locSaveBtn.className = "btn btn-small";
+    locSaveBtn.textContent = "+ Запомнить";
+    locSaveBtn.addEventListener("click", () => {
+      const val = locInput.value.trim();
+      if (!val) return;
+      addSavedLocation(val);
+      renderProducts();
+    });
+    locRow.appendChild(locInput);
+    locRow.appendChild(locSaveBtn);
+    card.appendChild(locLabel);
+    card.appendChild(locRow);
+
+    const locChips = document.createElement("div");
+    locChips.style.display = "flex";
+    locChips.style.flexWrap = "wrap";
+    locChips.style.gap = "6px";
+    locChips.style.marginTop = "8px";
+    getSavedLocations().forEach((loc) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "btn btn-small";
+      chip.style.opacity = "0.75";
+      chip.textContent = loc;
+      chip.addEventListener("click", () => {
+        product.location = loc;
+        locInput.value = loc;
+        markDirty();
+      });
+      locChips.appendChild(chip);
+    });
+    if (getSavedLocations().length) card.appendChild(locChips);
 
     productsListEl.appendChild(card);
   });
