@@ -16,6 +16,10 @@ const CONDITION_LABELS = {
   old: { en: "Old", de: "Alt", ru: "Старое", uk: "Старе", es: "Viejo", zh: "旧" }
 };
 
+const CONDITION_PREFIX = {
+  en: "Condition: ", de: "Zustand: ", ru: "Состояние: ", uk: "Стан: ", es: "Estado: ", zh: "状况："
+};
+
 let currentLang = "en";
 let lightboxImages = [];
 let lightboxIndex = 0;
@@ -170,13 +174,17 @@ function render() {
     if (product.condition && CONDITION_LABELS[product.condition]) {
       const condLine = document.createElement("div");
       condLine.className = "meta-line";
-      condLine.textContent = CONDITION_LABELS[product.condition][currentLang];
+      condLine.textContent = CONDITION_PREFIX[currentLang] + CONDITION_LABELS[product.condition][currentLang];
       meta.appendChild(condLine);
     }
-    if (product.location) {
+    const locationText =
+      product.location && typeof product.location === "object"
+        ? product.location[currentLang] || product.location.en
+        : product.location;
+    if (locationText) {
       const locLine = document.createElement("div");
       locLine.className = "meta-line";
-      locLine.textContent = "📍 " + product.location;
+      locLine.textContent = "📍 " + locationText;
       meta.appendChild(locLine);
     }
 

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Stuff Editor</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/svg+xml" href="admin-favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Baloo+2:wght@800&display=swap" rel="stylesheet">
@@ -206,6 +206,31 @@
 
   .hidden { display: none !important; }
 
+  .magic-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(36, 31, 26, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 20px;
+  }
+
+  .magic-modal {
+    max-width: 560px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 6px 6px 0 var(--coral);
+  }
+
+  .magic-modal code {
+    background: var(--bg);
+    padding: 1px 4px;
+    border-radius: 4px;
+  }
+
   .spinner {
     display: inline-block;
     width: 14px;
@@ -269,6 +294,23 @@
     </div>
   </div>
 
+</div>
+
+<div id="magicOverlay" class="magic-overlay hidden">
+  <div class="magic-modal panel">
+    <h2>✨ Волшебная кнопка</h2>
+    <p style="font-size:12px; opacity:0.7; margin-top:-6px;">
+      Вставь текст блоками по языкам — заголовки <code>## English</code>, <code>## Deutsch</code>,
+      <code>## Русский</code>, <code>## Українська</code>, <code>## Español</code>, <code>## 中文</code>,
+      внутри — строки <code>Название: …</code> и <code>Описание: …</code>. Разберём и разложим сами.
+    </p>
+    <textarea id="magicText" style="min-height:280px;" placeholder="## English&#10;Название: ...&#10;Описание: ...&#10;&#10;## Deutsch&#10;Название: ...&#10;Описание: ..."></textarea>
+    <div id="magicPreview" style="font-size:12px; margin-top:10px;"></div>
+    <div style="display:flex; gap:10px; margin-top:14px;">
+      <button class="btn btn-primary" id="magicApplyBtn">Заполнить</button>
+      <button class="btn" id="magicCancelBtn">Отмена</button>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -355,6 +397,14 @@ async function fetchDataJs() {
   const result = sandbox();
   state.waNumber = result.WHATSAPP_NUMBER;
   state.products = result.PRODUCTS;
+  // На случай старых данных: приводим location к объекту {ru,en,...}
+  state.products.forEach((p) => {
+    if (!p.location || typeof p.location === "string") {
+      const legacy = p.location || "";
+      p.location = emptyLangObj();
+      LANGS.forEach((l) => (p.location[l] = legacy));
+    }
+  });
 }
 
 function emptyLangObj() {
@@ -372,7 +422,7 @@ function addProduct() {
     price: "",
     reserved: false,
     condition: "",
-    location: "",
+    location: emptyLangObj(),
     images: [],
     title: emptyLangObj(),
     desc: emptyLangObj()
@@ -402,17 +452,16 @@ function renderProducts() {
     const headBtns = document.createElement("div");
     headBtns.style.display = "flex";
     headBtns.style.gap = "8px";
-    const previewBtn = document.createElement("a");
-    previewBtn.className = "btn btn-small";
-    previewBtn.textContent = "Превью";
-    previewBtn.href = `./#product-${product.id}`;
-    previewBtn.target = "_blank";
-    previewBtn.rel = "noopener";
+    const magicBtn = document.createElement("button");
+    magicBtn.type = "button";
+    magicBtn.className = "btn btn-small";
+    magicBtn.textContent = "✨ Волшебная кнопка";
+    magicBtn.addEventListener("click", () => openMagicModal(product));
     const delBtn = document.createElement("button");
     delBtn.className = "btn btn-danger btn-small";
     delBtn.textContent = "Удалить";
     delBtn.addEventListener("click", () => removeProduct(idx));
-    headBtns.appendChild(previewBtn);
+    headBtns.appendChild(magicBtn);
     headBtns.appendChild(delBtn);
     head.appendChild(numBadge);
     head.appendChild(headBtns);
@@ -493,10 +542,11 @@ function renderProducts() {
     fileInput.style.marginTop = "8px";
     fileInput.addEventListener("change", async () => {
       for (const file of fileInput.files) {
-        const ext = file.name.split(".").pop().toLowerCase();
-        const safeName = `item${product.id}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}.${ext}`;
+        const safeName = `item${product.id}-${Date.now()}-${Math.random().toString(36).slice(2, 6)}.jpg`;
         const path = `images/${safeName}`;
-        const dataUrl = await fileToDataUrl(file);
+        setStatus(`Сжимаю фото ${file.name}…`);
+        const dataUrl = await compressImageFile(file);
+        setStatus("");
         state.pendingImages.push({ file, path, dataUrl });
         product.images.push(path);
       }
@@ -546,10 +596,58 @@ function renderProducts() {
         markDirty();
       });
 
+      const locLabel = document.createElement("label");
+      locLabel.textContent = "Где забрать (" + LANG_LABELS[lang] + ")";
+      const locRow = document.createElement("div");
+      locRow.style.display = "flex";
+      locRow.style.gap = "6px";
+      const locInput = document.createElement("input");
+      locInput.type = "text";
+      locInput.placeholder = "Например: Berlin, Kreuzberg";
+      locInput.value = product.location[lang] || "";
+      locInput.addEventListener("input", () => {
+        product.location[lang] = locInput.value;
+        markDirty();
+      });
+      const locSaveBtn = document.createElement("button");
+      locSaveBtn.type = "button";
+      locSaveBtn.className = "btn btn-small";
+      locSaveBtn.textContent = "+ Запомнить";
+      locSaveBtn.addEventListener("click", () => {
+        const val = locInput.value.trim();
+        if (!val) return;
+        addSavedLocation(val);
+        renderProducts();
+      });
+      locRow.appendChild(locInput);
+      locRow.appendChild(locSaveBtn);
+
+      const locChips = document.createElement("div");
+      locChips.style.display = "flex";
+      locChips.style.flexWrap = "wrap";
+      locChips.style.gap = "6px";
+      locChips.style.marginTop = "8px";
+      getSavedLocations().forEach((loc) => {
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "btn btn-small";
+        chip.style.opacity = "0.75";
+        chip.textContent = loc;
+        chip.addEventListener("click", () => {
+          product.location[lang] = loc;
+          locInput.value = loc;
+          markDirty();
+        });
+        locChips.appendChild(chip);
+      });
+
       pane.appendChild(titleLabel);
       pane.appendChild(titleInput);
       pane.appendChild(descLabel);
       pane.appendChild(descInput);
+      pane.appendChild(locLabel);
+      pane.appendChild(locRow);
+      if (getSavedLocations().length) pane.appendChild(locChips);
       panes.appendChild(pane);
     });
 
@@ -621,55 +719,6 @@ function renderProducts() {
     card.appendChild(condLabel);
     card.appendChild(condSelect);
 
-    // Где забрать (с сохранёнными локациями)
-    const locLabel = document.createElement("label");
-    locLabel.textContent = "Где забрать";
-    const locRow = document.createElement("div");
-    locRow.style.display = "flex";
-    locRow.style.gap = "6px";
-    const locInput = document.createElement("input");
-    locInput.type = "text";
-    locInput.placeholder = "Например: Berlin, Kreuzberg";
-    locInput.value = product.location || "";
-    locInput.addEventListener("input", () => {
-      product.location = locInput.value;
-      markDirty();
-    });
-    const locSaveBtn = document.createElement("button");
-    locSaveBtn.type = "button";
-    locSaveBtn.className = "btn btn-small";
-    locSaveBtn.textContent = "+ Запомнить";
-    locSaveBtn.addEventListener("click", () => {
-      const val = locInput.value.trim();
-      if (!val) return;
-      addSavedLocation(val);
-      renderProducts();
-    });
-    locRow.appendChild(locInput);
-    locRow.appendChild(locSaveBtn);
-    card.appendChild(locLabel);
-    card.appendChild(locRow);
-
-    const locChips = document.createElement("div");
-    locChips.style.display = "flex";
-    locChips.style.flexWrap = "wrap";
-    locChips.style.gap = "6px";
-    locChips.style.marginTop = "8px";
-    getSavedLocations().forEach((loc) => {
-      const chip = document.createElement("button");
-      chip.type = "button";
-      chip.className = "btn btn-small";
-      chip.style.opacity = "0.75";
-      chip.textContent = loc;
-      chip.addEventListener("click", () => {
-        product.location = loc;
-        locInput.value = loc;
-        markDirty();
-      });
-      locChips.appendChild(chip);
-    });
-    if (getSavedLocations().length) card.appendChild(locChips);
-
     productsListEl.appendChild(card);
   });
 }
@@ -678,6 +727,38 @@ function fileToDataUrl(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+// Уменьшаем и пережимаем фото перед загрузкой — иначе тяжёлые фото
+// с телефона (5-10+ МБ) не успевают уйти за 30-45 секунд и виснут.
+function compressImageFile(file, maxDim = 1600, quality = 0.82) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        let { width, height } = img;
+        if (width > maxDim || height > maxDim) {
+          if (width > height) {
+            height = Math.round(height * (maxDim / width));
+            width = maxDim;
+          } else {
+            width = Math.round(width * (maxDim / height));
+            height = maxDim;
+          }
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(img, 0, 0, width, height);
+        resolve(canvas.toDataURL("image/jpeg", quality));
+      };
+      img.onerror = () => reject(new Error("Не удалось прочитать изображение"));
+      img.src = reader.result;
+    };
     reader.onerror = reject;
     reader.readAsDataURL(file);
   });
@@ -731,7 +812,7 @@ async function uploadPendingImages() {
           branch: state.branch
         })
       },
-      30000
+      45000
     );
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
@@ -752,7 +833,7 @@ async function publish() {
     setStatus("Сохраняю данные…");
     const url = `https://api.github.com/repos/${state.repo}/contents/data.js`;
     // подтягиваем свежий sha на случай, если файл менялся с момента загрузки
-    const freshRes = await fetchWithTimeout(url + `?ref=${state.branch}`, { headers: ghHeaders() }, 30000);
+    const freshRes = await fetchWithTimeout(url + `?ref=${state.branch}`, { headers: ghHeaders() }, 45000);
     if (!freshRes.ok) throw new Error("Не удалось получить текущую версию сайта (" + freshRes.status + ")");
     const freshJson = await freshRes.json();
 
@@ -769,7 +850,7 @@ async function publish() {
           branch: state.branch
         })
       },
-      30000
+      45000
     );
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
@@ -823,6 +904,82 @@ async function boot() {
     alert("Не удалось загрузить данные: " + e.message);
   }
 }
+
+// ---------- Волшебная кнопка: разбор многоязычного текста ----------
+
+const LANG_NAME_MAP = {
+  english: "en", englisch: "en", anglais: "en",
+  deutsch: "de", german: "de", немецкий: "de",
+  русский: "ru", russian: "ru", russisch: "ru",
+  українська: "uk", ukrainian: "uk", ukrainisch: "uk",
+  "español": "es", espanol: "es", spanish: "es", spanisch: "es",
+  "中文": "zh", chinese: "zh", mandarin: "zh", chinesisch: "zh"
+};
+
+function parseMagicText(text) {
+  const normalized = text.replace(/\r\n/g, "\n");
+  const parts = normalized.split(/^##\s+(.+?)\s*$/m);
+  const result = {};
+  for (let i = 1; i < parts.length; i += 2) {
+    const headingRaw = (parts[i] || "").trim();
+    const content = parts[i + 1] || "";
+    const key = headingRaw.toLowerCase().replace(/[^\p{L}]/gu, "");
+    const lang = LANG_NAME_MAP[key];
+    if (!lang) continue;
+    const titleMatch = content.match(/(?:Название|Title|Name)\s*:\s*(.+)/i);
+    const descMatch = content.match(/(?:Описание|Description)\s*:\s*([\s\S]*)/i);
+    const title = titleMatch ? titleMatch[1].trim() : "";
+    const desc = descMatch ? descMatch[1].trim() : "";
+    if (title || desc) result[lang] = { title, desc };
+  }
+  return result;
+}
+
+let magicTargetProduct = null;
+
+function openMagicModal(product) {
+  magicTargetProduct = product;
+  document.getElementById("magicText").value = "";
+  document.getElementById("magicPreview").textContent = "";
+  document.getElementById("magicOverlay").classList.remove("hidden");
+}
+
+function closeMagicModal() {
+  document.getElementById("magicOverlay").classList.add("hidden");
+  magicTargetProduct = null;
+}
+
+function applyMagicText() {
+  if (!magicTargetProduct) return;
+  const text = document.getElementById("magicText").value;
+  const parsed = parseMagicText(text);
+  const langs = Object.keys(parsed);
+  if (!langs.length) {
+    document.getElementById("magicPreview").textContent =
+      "Не нашёл ни одного языка. Проверь формат: ## English, Название:, Описание:";
+    return;
+  }
+  langs.forEach((lang) => {
+    if (parsed[lang].title) magicTargetProduct.title[lang] = parsed[lang].title;
+    if (parsed[lang].desc) magicTargetProduct.desc[lang] = parsed[lang].desc;
+  });
+  markDirty();
+  renderProducts();
+  closeMagicModal();
+}
+
+document.getElementById("magicApplyBtn").addEventListener("click", applyMagicText);
+document.getElementById("magicCancelBtn").addEventListener("click", closeMagicModal);
+document.getElementById("magicOverlay").addEventListener("click", (e) => {
+  if (e.target.id === "magicOverlay") closeMagicModal();
+});
+document.getElementById("magicText").addEventListener("input", (e) => {
+  const parsed = parseMagicText(e.target.value);
+  const langs = Object.keys(parsed);
+  document.getElementById("magicPreview").textContent = langs.length
+    ? "Распознано: " + langs.map((l) => LANG_LABELS[l] || l).join(", ")
+    : "";
+});
 
 document.getElementById("loginBtn").addEventListener("click", login);
 document.getElementById("logoutBtn").addEventListener("click", logout);
