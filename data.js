@@ -18,17 +18,21 @@ const PRODUCTS = [
     ],
     "title": {
       "ru": "Поясная ретро-сумка с принтом в стиле Ван Гога",
-      "en": "Retro Belt Bag with Van Gogh Print",
-      "de": "Bauchtasche mit Van-Gogh-Print",
-      "zh": "男女通用复古腰包 / 胸包｜梵高风格印花"
+      "en": "Retro belt bag with a Van Gogh print",
+      "de": "Retro-Bauchtasche mit Van-Gogh-Print",
+      "zh": "复古腰包，梵高风格印花",
+      "uk": "Ретро поясна сумка з принтом у стилі Ван Гога",
+      "es": "Bolso de cintura retro con estampado estilo Van Gogh"
     },
     "desc": {
-      "ru": "Немного вайба 90-х, немного барахолки, немного инди 🌙\n\nЧёрный регулируемый ремень, одно отделение на молнии. Помещаются телефон, паспорт или кошелёк, ключи и всякая мелочь.\n\nХорошее состояние, носилась аккуратно.\nПередача на станции U-/S-Bahn в центральной части Гамбурга и в разумных пределах вокруг центра 🌻",
-      "en": "A little 90s vibe, a little flea market, a little indie 🌙\nBlack adjustable strap, one zippered compartment. Fits a phone, passport or wallet, keys and various small essentials.\n\nGood condition, carefully used.\nMeet-up at an U-/S-Bahn station in central Hamburg or the surrounding central area. Shipping also possible 🌻",
-      "de": "Ein bisschen 90er-Vibe, ein bisschen Flohmarkt, ein bisschen Indie 🌙\nSchwarzer verstellbarer Gurt, ein Fach mit Reißverschluss. Platz für Handy, Reisepass oder Portemonnaie, Schlüssel und allerlei Kleinkram.\n\nGuter Zustand, sorgfältig getragen.\nÜbergabe an einer U-Bahn-Station im erweiterten Hamburger Zentrum. Versand auch möglich 🌻",
-      "zh": "一点90年代复古感，一点跳蚤市场风，一点独立音乐气质 🌙\n黑色可调节肩带，一个拉链夹层。可以放手机、护照或钱包、钥匙以及其他随身小物。\n\n保存状态良好，使用时很爱惜。\n可在汉堡市中心及周边较中心区域的地铁/城市快铁站当面交易 🌻"
+      "ru": "Немного вайба 90-х, немного барахолки, немного инди 🌙\n\nЧёрный регулируемый ремень, одно отделение на молнии. Помещаются телефон, паспорт или кошелёк, ключи и всякая мелочь. Носилась аккуратно.\n\nПередача на станции U-/S-Bahn в центральной части Гамбурга 🌻",
+      "en": "A bit of 90s vibe, a bit of flea market, a bit of indie 🌙\n\nBlack adjustable strap, one zip compartment. Fits a phone, ID or wallet, keys and small bits. Gently worn.\n\nHandover at U-/S-Bahn stations in central Hamburg 🌻",
+      "de": "Ein bisschen 90er-Vibe, ein bisschen Flohmarkt, ein bisschen Indie 🌙\n\nSchwarzer verstellbarer Gurt, ein Reißverschlussfach. Handy, Ausweis oder Portemonnaie, Schlüssel und Kleinkram passen rein. Wurde sorgsam getragen.\n\nÜbergabe an U-/S-Bahn-Stationen in der Hamburger Innenstadt 🌻",
+      "zh": "一点90年代的味道，一点旧货市场的感觉，一点独立风 🌙\n\n黑色可调节腰带，一个拉链隔层。可放手机、证件或钱包、钥匙和零碎小物。使用爱惜，成色良好。\n\n可在汉堡市中心的地铁（U-/S-Bahn）站面交 🌻",
+      "uk": "Трохи вайбу 90-х, трохи барахолки, трохи інді 🌙\n\nЧорний регульований ремінь, одне відділення на змійці. Вміщаються телефон, паспорт або гаманець, ключі та різні дрібнички. Носилася обережно.\n\nПередача на станціях U-/S-Bahn у центральній частині Гамбурга 🌻",
+      "es": "Un poco de vibra noventera, un poco de mercadillo, un poco de indie 🌙\n\nCorrea negra ajustable, un compartimento con cremallera. Caben el móvil, el DNI o la cartera, las llaves y pequeñas cosas. Usado con cuidado.\n\nEntrega en estaciones de U-/S-Bahn en el centro de Hamburgo 🌻"
     },
-    "location": "Meet-up at an U-/S-Bahn station in central Hamburg or the surrounding central area",
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
     "condition": "good"
   }
 ];
