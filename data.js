@@ -446,7 +446,13 @@ const PRODUCTS = [
       "es": "",
       "zh": ""
     },
-    "images": [],
+    "images": [
+      "images/item13-1788541995741-trtu.jpg",
+      "images/item13-1788541995838-30d6.jpg",
+      "images/item13-1788541995905-ncn9.jpg",
+      "images/item13-1788541995967-623t.jpg",
+      "images/item13-1788542004842-vv94.jpg"
+    ],
     "title": {
       "en": "Phone lock box for focused work — against getting sucked into Instagram and doomscrolling",
       "de": "Handy-Schließbox für fokussiertes Arbeiten — gegen Instagram-Sog und Doomscrolling",
