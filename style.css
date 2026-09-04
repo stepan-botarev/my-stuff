@@ -7,6 +7,7 @@
   --orange: #F2811D;
   --red: #E8412C;
   --blue: #6E4FFF;
+  --soft-pink: #FBE0E6;
   /* совместимость со старыми названиями акцентов */
   --coral: var(--red);
   --gold: var(--yellow);
@@ -26,7 +27,7 @@ html, body {
   padding: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: "Space Mono", monospace;
+  font-family: "Inter", sans-serif;
 }
 
 /* ---------- Header ---------- */
@@ -167,7 +168,7 @@ html, body {
   border: 1px solid var(--ink);
   cursor: pointer;
   overflow: hidden;
-  background: var(--bg);
+  background: var(--soft-pink);
 }
 
 .product-photo img {
@@ -275,8 +276,10 @@ html, body {
 }
 
 .product-title {
-  font-family: "DM Serif Display", serif;
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
   font-size: 21px;
+  line-height: 1.25;
   margin: 0 0 8px;
   cursor: pointer;
 }
@@ -299,13 +302,17 @@ html, body {
 }
 
 .product-meta {
-  margin: -4px 0 14px;
+  margin: 2px 0 14px;
+  padding: 10px 12px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 10px;
 }
 
 .meta-line {
   font-size: 12px;
   opacity: 0.75;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .btn-write {
