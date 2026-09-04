@@ -143,5 +143,39 @@ const PRODUCTS = [
       "es": "Camisa color crema con un pequeño estampado floral rosa y verde. Combinaba bien tanto con vaqueros como con pantalones de vestir 🌺\nTalla L, unisex, 100% algodón. Bien cuidada",
       "zh": "米白色衬衫，粉绿碎花印花。搭配牛仔裤或西裤都好看 🌺\nL码，男女同款，100% 纯棉。保养良好"
     }
+  },
+  {
+    "id": 5,
+    "price": "13 €",
+    "reserved": false,
+    "condition": "good",
+    "location": {
+      "en": "",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus"
+    },
+    "images": [
+      "images/item5-1788517053870-yj7m.jpg",
+      "images/item5-1788517053998-4wmk.jpg"
+    ],
+    "title": {
+      "en": "Corduroy overshirt jacket — H&M Relaxed Fit, size M",
+      "de": "Cord-Overshirt-Jacke — H&M Relaxed Fit, Größe M",
+      "ru": "Вельветовая куртка-рубашка — H&M Relaxed Fit, размер M",
+      "uk": "Вельветова куртка-сорочка — H&M Relaxed Fit, розмір M",
+      "es": "Chaqueta camisera de pana — H&M Relaxed Fit, talla M",
+      "zh": "灯芯绒衬衫夹克 —— H&M Relaxed Fit，M码"
+    },
+    "desc": {
+      "en": "Olive green corduroy, cotton, with two flap chest pockets. Walked through a sunny but still cool spring Belgrade in it 🌿\nSize M, unisex, cotton/corduroy. Well looked after",
+      "de": "Olivgrüner Cord, Baumwolle, mit zwei Brusttaschen mit Klappe. Bin damit durch ein sonniges, aber noch kühles Frühlings-Belgrad spaziert 🌿\nGröße M, Unisex, Baumwolle/Cord. Gut gepflegt",
+      "ru": "Оливковый вельвет, хлопок, два накладных кармана с клапанами. Гулял в ней по солнечному, но ещё прохладному весеннему Белграду 🌿\nРазмер M, унисекс, хлопок/вельвет. Ухоженная",
+      "uk": "Оливковий вельвет, бавовна, два накладні кармани з клапанами. Гуляв у ній по сонячному, але ще прохолодному весняному Белграду 🌿\nРозмір M, унісекс, бавовна/вельвет. Доглянута",
+      "es": "Pana verde oliva, algodón, con dos bolsillos de pecho con solapa. La usé para caminar por un Belgrado primaveral, soleado pero aún fresco 🌿\nTalla M, unisex, algodón/pana. Bien cuidada",
+      "zh": "橄榄绿灯芯绒，棉质，胸前两个带盖口袋。穿着它走过阳光明媚但还有些凉的贝尔格莱德春天 🌿\nM码，男女同款，棉/灯芯绒。保养良好"
+    }
   }
 ];
