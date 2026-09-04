@@ -327,7 +327,7 @@ const PRODUCTS = [
   },
   {
     "id": 10,
-    "price": "",
+    "price": "2 €",
     "reserved": false,
     "condition": "",
     "material": "",
