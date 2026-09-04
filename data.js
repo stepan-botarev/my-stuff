@@ -252,5 +252,42 @@ const PRODUCTS = [
       "es": "Nueva, sin usar. Es una pieza genial, solo que no acerté con la talla.\n\nPiel sintética con efecto vintage/desgastado, corte oversize, bolsillo en el pecho, manga media 🤎\n\nUnisex, talla XL",
       "zh": "全新未穿。款式很酷，就是尺码没选对。\n\n做旧仿皮质感，oversize版型，胸前口袋，中袖 🤎\n\n男女同款，XL码"
     }
+  },
+  {
+    "id": 8,
+    "price": "5 €",
+    "reserved": false,
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item8-1788519956086-p1w0.jpg",
+      "images/item8-1788519956154-zyka.jpg",
+      "images/item8-1788519956218-9dva.jpg"
+    ],
+    "title": {
+      "en": "Weird but useful \"Game of Threats\" drawstring bag by Kaspersky",
+      "de": "Ungewöhnlicher Turnbeutel mit „Game of Threats\"-Print von Kaspersky",
+      "ru": "Странный, но удобный мешок-рюкзак с принтом \"Game of Threats\" от Kaspersky",
+      "uk": "Мішок-рюкзак з принтом \"Game of Threats\"",
+      "es": "Mochila con cordón y estampado \"Game of Threats\" de Kaspersky",
+      "zh": "Kaspersky \"Game of Threats\" 印花束口包"
+    },
+    "desc": {
+      "en": "Retro design in petrol, black and red — for collectors of weird merch, or anyone who just needs a practical bag for shoes, a t-shirt and sweatpants.\n\nDrawstring closure, light and practical for everyday use, sport or festivals.\n\nGood used condition 🎴",
+      "de": "Retro-Design in Petrol, Schwarz und Rot – für Sammler von ungewöhnlichem Merch oder einfach für alle, die einen praktischen Beutel für Schuhe, ein T-Shirt und eine Trainingshose brauchen.\n\nKordelzug, leicht und praktisch für Alltag, Sport oder Festivals.\n\nGuter gebrauchter Zustand 🎴",
+      "ru": "Ретро-дизайн в цветах петроль, чёрный и красный — для коллекционеров странного мерча или просто для тех, кому нужен практичный мешок для кроссовок, футболки и спортивных штанов.\n\nЗатяжной шнурок, лёгкий и удобный для повседневной жизни, спорта или фестивалей.\n\nХорошее состояние, б/у 🎴",
+      "uk": "Ретро-дизайн у кольорах петроль, чорний та червоний — для колекціонерів незвичного мерчу або просто для тих, кому потрібен практичний мішок для кросівок, футболки та спортивних штанів.\n\nЗатягувальний шнурок, легкий і практичний для повсякдення, спорту чи фестивалів.\n\nХороший стан, б/у 🎴",
+      "es": "Diseño retro llamativo en petróleo, negro y rojo — para coleccionistas de merchandising poco común, o para quienes simplemente necesitan una mochila práctica para zapatillas, una camiseta y pantalones de deporte.\n\nCierre con cordón, ligera y práctica para el día a día, deporte o festivales.\n\nBuen estado de uso 🎴",
+      "zh": "复古设计，孔雀蓝、黑色与红色搭配，十分抢眼 —— 适合收藏另类周边的人，也适合只是需要一个实用袋子装鞋子、T恤和运动裤的人。\n\n束口设计，轻便实用，适合日常、运动或音乐节使用。\n\n二手良好状态 🎴"
+    }
   }
 ];
