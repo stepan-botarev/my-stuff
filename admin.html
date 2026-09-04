@@ -304,9 +304,9 @@
       <input type="text" id="waNumber" placeholder="4917623657623">
     </div>
 
-    <div id="productsList"></div>
+    <button class="btn" id="addProductBtn" style="margin-bottom:16px;">+ Добавить товар</button>
 
-    <button class="btn" id="addProductBtn">+ Добавить товар</button>
+    <div id="productsList"></div>
 
     <div class="actions-bar">
       <button class="btn btn-primary" id="publishBtn" disabled>Сохранить</button>
@@ -467,7 +467,10 @@ function removeProduct(idx) {
 
 function renderProducts() {
   productsListEl.innerHTML = "";
-  state.products.forEach((product, idx) => {
+  // Показываем последние добавленные товары сверху (на самом сайте порядок не меняется)
+  const order = state.products.map((_, i) => i).reverse();
+  order.forEach((idx) => {
+    const product = state.products[idx];
     const card = document.createElement("div");
     card.className = "panel product-card";
 

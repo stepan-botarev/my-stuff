@@ -9,7 +9,7 @@
   --blue: #6E4FFF;
   --soft-pink: #FBE0E6;
   --bubblegum: #FF4FA3;
-  --lead: #4A4842;
+  --lead: #35334F;
   /* совместимость со старыми названиями акцентов */
   --coral: var(--red);
   --gold: var(--yellow);
