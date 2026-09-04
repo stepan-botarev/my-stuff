@@ -177,5 +177,39 @@ const PRODUCTS = [
       "es": "Pana verde oliva, algodón, con dos bolsillos de pecho con solapa. La usé para caminar por un Belgrado primaveral, soleado pero aún fresco 🌿\nTalla M, unisex, algodón/pana. Bien cuidada",
       "zh": "橄榄绿灯芯绒，棉质，胸前两个带盖口袋。穿着它走过阳光明媚但还有些凉的贝尔格莱德春天 🌿\nM码，男女同款，棉/灯芯绒。保养良好"
     }
+  },
+  {
+    "id": 6,
+    "price": "5 €",
+    "reserved": false,
+    "condition": "fair",
+    "location": {
+      "en": "",
+      "de": "",
+      "ru": "",
+      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item6-1788517567444-vmsa.jpg",
+      "images/item6-1788517567566-ir3w.jpg"
+    ],
+    "title": {
+      "en": "Retro jeans — slightly wider on top, slightly narrower at the bottom",
+      "de": "Retro-Jeans — oben etwas weiter, unten etwas schmaler",
+      "ru": "Ретро-джинсы — чуть шире сверху, чуть уже снизу",
+      "uk": "Ретро-джинси — трохи ширші зверху, трохи вужчі знизу",
+      "es": "Jeans retro — un poco más anchos arriba, un poco más estrechos abajo",
+      "zh": "复古牛仔裤 —— 上宽下窄"
+    },
+    "desc": {
+      "en": "Jeans I swiped from my dad 🤫\n\nSlightly worn at the very bottom of the legs, otherwise in good shape.\n\nProbably unisex, 100% cotton 👖",
+      "de": "Jeans, die ich meinem Vater geklaut habe 🤫\n\nGanz unten an den Beinen leicht abgetragen, sonst in gutem Zustand \n\nWahrscheinlich Unisex, 100 % Baumwolle 👖",
+      "ru": "Джинсы, которые я стащил у отца 🤫\n\nНемножко потёрты в самом низу, но в целом в порядке.\n\nНаверное, унисекс, 100% хлопок 👖",
+      "uk": "Джинси, які я стягнув у батька 🤫\n\nТрохи потерті у самому низу, але загалом в порядку.\n\nМабуть, унісекс, 100% бавовна 👖",
+      "es": "Jeans que le robé a mi padre 🤫\n\nUn poco desgastados en la parte más baja de las piernas, pero en buen estado en general.\n\nProbablemente unisex, 100% algodón 👖",
+      "zh": "从爸爸那里顺来的牛仔裤 🤫\n\n裤脚最下方略有磨损，整体状态不错。 \n\n应该是男女同款，100% 纯棉 👖"
+    }
   }
 ];
