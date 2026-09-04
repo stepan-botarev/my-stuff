@@ -506,5 +506,43 @@ const PRODUCTS = [
       "es": "La compré hace un año. En excelente estado, tiene un par de rayones en la carcasa, por lo demás es una máquina estupenda.\n\nSe entrega con una alfombra antivibración que evita que se mueva o vibre durante el centrifugado.\n\nLa compré por 300 €, la dejo en 175 € 🧺\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
       "zh": "一年前买的。状态非常好，外壳上有几处划痕，其他方面都很棒。\n\n附赠一块防震垫（Antivibrationsmatte），可以防止甩干时机器晃动和\"走位\"。\n\n购买价300欧元，现在175欧元出手 🧺\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
     }
+  },
+  {
+    "id": 15,
+    "price": "45 €",
+    "reserved": false,
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Glinde, Möllner Landstraße 89",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item15-1788546428704-2t1f.jpg",
+      "images/item15-1788546428804-lvwr.jpg",
+      "images/item15-1788546428872-egpr.jpg",
+      "images/item15-1788546428937-9t8c.jpg"
+    ],
+    "title": {
+      "en": "IKEA BRUKSVARA wardrobe with sliding doors, 80×191 cm",
+      "de": "IKEA BRUKSVARA Kleiderschrank mit Schiebetüren, 80×191 cm",
+      "ru": "Шкаф IKEA BRUKSVARA с раздвижными дверями, 80×191 см",
+      "uk": "Шафа IKEA BRUKSVARA з розсувними дверима, 80×191 см",
+      "es": "Armario IKEA BRUKSVARA con puertas correderas, 80×191 cm",
+      "zh": "IKEA BRUKSVARA 推拉门衣柜，80×191厘米"
+    },
+    "desc": {
+      "en": "Great wardrobe, plenty of storage space. Comes with a bonus: a fabric insert with compartments for storing things, for free.\n\nOnly downside: I chipped the back panel slightly during assembly, but I painted over it with white paint and you really can't see it.\n\nNew price is €99, letting it go for €45 📦\n\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
+      "de": "Toller Schrank mit viel Stauraum. Dazu gibt's als Bonus einen Stoffeinsatz mit Fächern zur Aufbewahrung von Sachen, gratis dazu.\n\nEinziges Manko: Beim Aufbau habe ich die Rückwand leicht beschädigt, aber mit weißer Farbe übermalt — man sieht wirklich nichts mehr davon.\n\nNeupreis liegt bei 99 €, gebe ihn für 45 € ab 📦\n\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
+      "ru": "Отличный шкаф, много места для хранения. В подарок идёт тканая вставка с отсеками для вещей.\n\nЕдинственный минус: при сборке чуть повредил заднюю стенку, но замазал белой краской — вообще ничего не заметно.\n\nНовый стоит 99 €, отдам за 45 € 📦\n\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
+      "uk": "Чудова шафа, багато місця для зберігання. У подарунок йде тканинна вставка з відсіками для речей.\n\nЄдиний мінус: під час збирання трохи пошкодив задню стінку, але замазав білою фарбою — взагалі непомітно.\n\nНова коштує 99 €, віддам за 45 € 📦\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
+      "es": "Armario estupendo, con mucho espacio de almacenamiento. Incluye de regalo un organizador de tela con compartimentos para guardar cosas.\n\nÚnico inconveniente: durante el montaje dañé un poco el panel trasero, pero lo tapé con pintura blanca — de verdad no se nota nada.\n\nEl precio nuevo es de 99 €, lo dejo en 45 € 📦\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
+      "zh": "很棒的衣柜，收纳空间很大。附赠一个带收纳格的布艺插件，可以分类放东西。\n\n唯一的小瑕疵：组装时不小心碰坏了一点背板，但用白色油漆涂了一下，基本看不出来。\n\n全新售价99欧元，现在45欧元出手 📦\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
+    }
   }
 ];
