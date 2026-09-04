@@ -469,5 +469,42 @@ const PRODUCTS = [
       "es": "Una caja bloqueadora para el móvil de la marca británica Virtus Project. Genial de verdad: metes el móvil, pones un tiempo de entre 5 minutos y varias horas, y se bloquea. Si entra una llamada urgente, hay una pequeña almohadilla que puedes empujar hacia fuera para contestar — pero contra distracciones como mensajería, TikTok y reels, es de hierro. Nada de apps o extensiones caras que al final siempre acabas evitando — esto sí funciona!\n\nSi eres TDAH como yo, esto por fin te va a ayudar a encontrar algo de paz mental. Y si tienes un hijo adicto a TikTok, es un buen empujón hacia los estudios.\n\nSi no necesitara el dinero ahora mismo, no lo vendería. Con el envío desde Reino Unido me costó 70 €, pero mereció la pena. ¡Lo dejo en 25 €! 🐈‍⬛",
       "zh": "一个来自英国品牌 Virtus Project 的手机锁盒。真的很好用：把手机放进去，设定5分钟到几个小时的时间，它就会锁住。如果有紧急电话，上面有个小垫可以顶出来接听 —— 但对于消息软件、抖音、reels这类干扰，它是铁面无私的。不用买昂贵的App或插件、最后还是会被绕过去 —— 这个真的管用！\n\n如果你也像我一样有多动症/注意力不集中的问题，这东西终于能帮你找回一点平静。如果你家孩子沉迷抖音/TikTok，这也是推他去学习的好办法。\n\n如果不是现在急需用钱，我是不会卖的。从英国寄过来花了70欧元，但真的值。现在25欧元出手！🐈‍⬛"
     }
+  },
+  {
+    "id": 14,
+    "price": "175 €",
+    "reserved": false,
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Glinde, Möllner Landstraße 89  ",
+      "de": "",
+      "ru": "",
+      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item14-1788543649832-xdkh.jpg",
+      "images/item14-1788543649955-zqf8.jpg",
+      "images/item14-1788543650035-u8nm.jpg"
+    ],
+    "title": {
+      "en": "Bomann WA 7175 washing machine, 7 kg, 1400 rpm",
+      "de": "Bomann WA 7175 Waschmaschine, 7 kg, 1400 U/min",
+      "ru": "Стиральная машина Bomann WA 7175, 7 кг, 1400 об/мин",
+      "uk": "Пральна машина Bomann WA 7175, 7 кг, 1400 об/хв",
+      "es": "Lavadora Bomann WA 7175, 7 kg, 1400 rpm",
+      "zh": "Bomann WA 7175 洗衣机，7公斤，1400转/分钟"
+    },
+    "desc": {
+      "en": "Bought a year ago. In excellent condition, though there are a couple of scratches on the housing — otherwise a great machine.\n\nComes with an anti-vibration mat that keeps it from shaking and shifting during the spin cycle.\n\nBought for €300, letting it go for €175 🧺\n\nPickup only, from Glinde (10 minutes from Hamburg).",
+      "de": "Vor einem Jahr gekauft. In sehr gutem Zustand, ein paar Kratzer am Gehäuse, sonst eine tolle Maschine.\n\nInklusive Antivibrationsmatte, die dafür sorgt, dass sie beim Schleudern nicht wandert und wackelt.\n\nGekauft für 300 €, gebe sie für 175 € ab 🧺\n\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
+      "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю вместе с антивибрационным ковриком (Antivibrationsmatte) — он защищает от дрожания и \"сползания\" машинки при отжиме.\n\nКупил за 300 €, отдам за 175 € 🧺\n\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
+      "uk": "Купив рік тому. У відмінному стані, є пара подряпин на корпусі, в іншому чудова машинка.\n\nВіддаю разом з антивібраційним килимком (Antivibrationsmatte) — він захищає від тремтіння і \"сповзання\" машинки під час віджиму.\n\nКупив за 300 €, віддам за 175 € 🧺\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
+      "es": "La compré hace un año. En excelente estado, tiene un par de rayones en la carcasa, por lo demás es una máquina estupenda.\n\nSe entrega con una alfombra antivibración que evita que se mueva o vibre durante el centrifugado.\n\nLa compré por 300 €, la dejo en 175 € 🧺\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
+      "zh": "一年前买的。状态非常好，外壳上有几处划痕，其他方面都很棒。\n\n附赠一块防震垫（Antivibrationsmatte），可以防止甩干时机器晃动和\"走位\"。\n\n购买价300欧元，现在175欧元出手 🧺\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
+    }
   }
 ];
