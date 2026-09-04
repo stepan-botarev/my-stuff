@@ -289,5 +289,40 @@ const PRODUCTS = [
       "es": "Diseño retro llamativo en petróleo, negro y rojo — para coleccionistas de merchandising rarito, o para quienes simplemente necesitan una mochila práctica para zapatillas, una camiseta y pantalones de deporte.\n\nCierre con cordón, ligera y práctica para el día a día, deporte o festivales.\n\nBuen estado de uso 🎴",
       "zh": "复古设计，孔雀蓝、黑色与红色搭配，十分抢眼 —— 适合收藏稀奇周边的人，也适合只是需要一个实用袋子装鞋子、T恤和运动裤的人。\n\n束口设计，轻便实用，适合日常、运动或音乐节使用。\n\n二手良好状态 🎴"
     }
+  },
+  {
+    "id": 9,
+    "price": "3 €",
+    "reserved": false,
+    "condition": "new",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item9-1788521005707-n6x9.jpg"
+    ],
+    "title": {
+      "en": "Hot water bottle with fleece cover — Fashy, from DM",
+      "de": "Wärmflasche mit Fleecebezug — Fashy, von DM",
+      "ru": "Грелка с флисовым чехлом — Fashy, из DM",
+      "uk": "Грілка з флісовим чохлом — Fashy, з DM",
+      "es": "Bolsa de agua caliente con funda de forro polar — Fashy, de DM",
+      "zh": "绒面暖水袋 —— Fashy，购自DM"
+    },
+    "desc": {
+      "en": "Used literally once. Selling because I'm into minimalism. But if you want to get cozy in bed under a blanket, with tea, cookies and Netflix, this bottle is exactly what you're missing!\n\nAnd if, like me, you love Majorelle blue 💙\n\nFleece cover, good condition, practically new",
+      "de": "Buchstäblich einmal benutzt. Verkaufe sie, weil ich den Minimalismus liebe. Aber wenn du dich gemütlich ins Bett kuscheln willst, mit Decke, Tee, Keksen und Netflix, dann ist diese Wärmflasche genau das, was dir fehlt!\n\nUnd falls du, wie ich, Majorelle-Blau liebst 💙\n\nFleecebezug, guter Zustand, praktisch neu",
+      "ru": "Использовал буквально один раз. Продаю, потому что люблю минимализм. Но если вам хочется уютно устроиться на кроватке под пледом, с чаем, печеньками и нетфликсом, эта грелка — как раз то, чего вам не хватает!\n\nА ещё — если вы, как я, любите мажорелево-синий 💙\n\nФлисовый чехол, хорошее состояние, практически новая",
+      "uk": "Використав буквально один раз. Продаю, бо люблю мінімалізм. Але якщо вам хочеться затишно влаштуватись у ліжку під ковдрою, з чаєм, печивом і нетфліксом, ця грілка — саме те, чого вам не вистачає!\n\nА ще — якщо ви, як і я, любите мажорелевий синій 💙\n\nФліосвий чохол, хороший стан, практично нова",
+      "es": "La usé literalmente una vez. La vendo porque me gusta el minimalismo. Pero si quieres acurrucarte en la cama bajo una manta, con té, galletas y Netflix, esta bolsa es justo lo que te falta!\n\nY si, como yo, te encanta el azul Majorelle 💙\n\nFunda de forro polar, buen estado, prácticamente nueva",
+      "zh": "真的只用过一次。因为喜欢极简主义所以出售。但如果你想窝在床上，裹着毯子，配一杯茶、几块饼干和Netflix，这个暖水袋正是你缺的那一件！\n\n而且，如果你像我一样喜欢马约雷勒蓝 💙\n\n绒面外套，状态良好，几乎全新"
+    }
   }
 ];
