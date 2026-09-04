@@ -327,13 +327,13 @@ const PRODUCTS = [
   },
   {
     "id": 10,
-    "price": "3 €",
+    "price": "",
     "reserved": false,
-    "condition": "new",
+    "condition": "",
     "material": "",
     "size": "",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "",
       "de": "",
       "ru": "",
       "uk": "",
@@ -341,7 +341,7 @@ const PRODUCTS = [
       "zh": ""
     },
     "images": [
-      "images/item10-1788523157421-njk2.jpg"
+      "images/item10-1788523462109-chna.jpg"
     ],
     "title": {
       "en": "IKEA striped pillowcase, cotton",
