@@ -216,5 +216,41 @@ const PRODUCTS = [
       "es": "Jeans que le robé a mi padre 🤫\n\nUn poco desgastados en la parte más baja de las piernas, pero en buen estado en general.\n\nProbablemente unisex, 100% algodón 👖",
       "zh": "从爸爸那里顺来的牛仔裤 🤫\n\n裤脚最下方略有磨损，整体状态不错。 \n\n应该是男女同款，100% 纯棉 👖"
     }
+  },
+  {
+    "id": 7,
+    "price": "10 €",
+    "reserved": false,
+    "condition": "new",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "",
+      "de": "",
+      "ru": "",
+      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item7-1788518334841-c8nd.jpg",
+      "images/item7-1788518334936-drk9.jpg"
+    ],
+    "title": {
+      "en": "Faux leather oversized overshirt jacket — Zara, size XL",
+      "de": "Oversize-Overshirt aus Kunstleder — Zara, Größe XL",
+      "ru": "Оверсайз-рубашка-куртка из искусственной кожи — Zara, размер XL",
+      "uk": "Оверсайз-сорочка-куртка зі штучної шкіри — Zara, розмір XL",
+      "es": "Camisa-chaqueta oversize de piel sintética — Zara, talla XL",
+      "zh": "仿皮oversize衬衫外套 —— Zara，XL码"
+    },
+    "desc": {
+      "en": "Brand new, never worn. Really cool piece, just didn't get the size right.\n\nFaded/distressed vintage-look faux leather, oversized fit, chest pocket, half-sleeve 🤎\n\nUnisex, size XL",
+      "de": "Ganz neu, nie getragen. Richtig schönes Teil, nur die Größe hat nicht gepasst.\n\nKunstleder im Used-Look, Oversize-Schnitt, Brusttasche, Halbarm 🤎\n\nUnisex, Größe XL",
+      "ru": "Новая, не носил. Классная, но не угадал с размером.\n\nИскусственная кожа с эффектом потёртости, оверсайз-крой, накладной карман, укороченный рукав 🤎\n\nУнисекс, размер XL\n\n",
+      "uk": "Нова, не носив. Класна, але не вгадав з розміром.\n\nШтучна шкіра з ефектом потертості, оверсайз-крій, накладна кишеня, укорочений рукав 🤎\n\nУнісекс, розмір XL",
+      "es": "Nueva, sin usar. Es una pieza genial, solo que no acerté con la talla.\n\nPiel sintética con efecto vintage/desgastado, corte oversize, bolsillo en el pecho, manga media 🤎\n\nUnisex, talla XL",
+      "zh": "全新未穿。款式很酷，就是尺码没选对。\n\n做旧仿皮质感，oversize版型，胸前口袋，中袖 🤎\n\n男女同款，XL码"
+    }
   }
 ];
