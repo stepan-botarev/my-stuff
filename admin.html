@@ -320,9 +320,10 @@
   <div class="magic-modal panel">
     <h2>✨ Волшебная кнопка</h2>
     <p style="font-size:12px; opacity:0.7; margin-top:-6px;">
-      Вставь текст блоками по языкам — заголовки <code>**English**</code>, <code>**Deutsch**</code>,
-      <code>**Русский**</code>, <code>**Українська**</code>, <code>**Español**</code>, <code>**中文**</code>,
-      внутри — строки <code>Название: …</code> и <code>Описание: …</code>. Разберём и разложим сами.
+      Вставь текст блоками по языкам — заголовком языка может быть <code>English</code>,
+      <code>**English**</code> или <code>## English</code> (так же для Deutsch, Русский, Українська, Español, 中文) —
+      всё, что до следующего названия языка, относится к этому блоку.
+      Внутри — строки <code>Название: …</code> и <code>Описание: …</code>. Разберём и разложим сами.
     </p>
     <textarea id="magicText" style="min-height:280px;" placeholder="**English**&#10;Название: ...&#10;Описание: ...&#10;&#10;**Deutsch**&#10;Название: ...&#10;Описание: ..."></textarea>
     <div id="magicPreview" style="font-size:12px; margin-top:10px;"></div>
@@ -1010,20 +1011,31 @@ const LANG_NAME_MAP = {
 
 function parseMagicText(text) {
   const normalized = text.replace(/\r\n/g, "\n");
-  const parts = normalized.split(/^\*\*\s*(.+?)\s*\*\*\s*$/m);
-  const result = {};
-  for (let i = 1; i < parts.length; i += 2) {
-    const headingRaw = (parts[i] || "").trim();
-    const content = parts[i + 1] || "";
-    const key = headingRaw.toLowerCase().replace(/[^\p{L}]/gu, "");
+  const lines = normalized.split("\n");
+
+  // Строка-заголовок языка: "## English", "**English**" или просто "English" —
+  // распознаём, если вся строка (без markdown-обвязки) — это только название языка.
+  const headings = [];
+  lines.forEach((line, i) => {
+    let candidate = line.trim();
+    if (!candidate) return;
+    candidate = candidate.replace(/^#+\s*/, "").replace(/^\*\*\s*/, "").replace(/\s*\*\*$/, "").trim();
+    const key = candidate.toLowerCase().replace(/[^\p{L}]/gu, "");
     const lang = LANG_NAME_MAP[key];
-    if (!lang) continue;
+    if (lang) headings.push({ lang, lineIndex: i });
+  });
+
+  const result = {};
+  headings.forEach((h, idx) => {
+    const startLine = h.lineIndex + 1;
+    const endLine = idx + 1 < headings.length ? headings[idx + 1].lineIndex : lines.length;
+    const content = lines.slice(startLine, endLine).join("\n");
     const titleMatch = content.match(/(?:Название|Title|Name)\s*:\s*(.+)/i);
     const descMatch = content.match(/(?:Описание|Description)\s*:\s*([\s\S]*)/i);
     const title = titleMatch ? titleMatch[1].trim() : "";
     const desc = descMatch ? descMatch[1].trim() : "";
-    if (title || desc) result[lang] = { title, desc };
-  }
+    if (title || desc) result[h.lang] = { title, desc };
+  });
   return result;
 }
 

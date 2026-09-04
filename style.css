@@ -291,10 +291,8 @@ html, body {
   line-height: 1.55;
   margin: 0 0 14px;
   opacity: 0.85;
-  max-width: 46ch;
   white-space: pre-wrap;
   text-align: justify;
-  text-align-last: justify;
 }
 
 .product-footer {
