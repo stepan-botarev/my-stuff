@@ -7,7 +7,7 @@
 <link rel="icon" type="image/svg+xml" href="admin-favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Baloo+2:wght@800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Baloo+2:wght@800&family=Nunito:wght@800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
   body { padding-bottom: 60px; }
@@ -320,11 +320,11 @@
   <div class="magic-modal panel">
     <h2>✨ Волшебная кнопка</h2>
     <p style="font-size:12px; opacity:0.7; margin-top:-6px;">
-      Вставь текст блоками по языкам — заголовки <code>## English</code>, <code>## Deutsch</code>,
-      <code>## Русский</code>, <code>## Українська</code>, <code>## Español</code>, <code>## 中文</code>,
+      Вставь текст блоками по языкам — заголовки <code>**English**</code>, <code>**Deutsch**</code>,
+      <code>**Русский**</code>, <code>**Українська**</code>, <code>**Español**</code>, <code>**中文**</code>,
       внутри — строки <code>Название: …</code> и <code>Описание: …</code>. Разберём и разложим сами.
     </p>
-    <textarea id="magicText" style="min-height:280px;" placeholder="## English&#10;Название: ...&#10;Описание: ...&#10;&#10;## Deutsch&#10;Название: ...&#10;Описание: ..."></textarea>
+    <textarea id="magicText" style="min-height:280px;" placeholder="**English**&#10;Название: ...&#10;Описание: ...&#10;&#10;**Deutsch**&#10;Название: ...&#10;Описание: ..."></textarea>
     <div id="magicPreview" style="font-size:12px; margin-top:10px;"></div>
     <div style="display:flex; gap:10px; margin-top:14px;">
       <button class="btn btn-primary" id="magicApplyBtn">Заполнить</button>
@@ -994,7 +994,7 @@ const LANG_NAME_MAP = {
 
 function parseMagicText(text) {
   const normalized = text.replace(/\r\n/g, "\n");
-  const parts = normalized.split(/^##\s+(.+?)\s*$/m);
+  const parts = normalized.split(/^\*\*\s*(.+?)\s*\*\*\s*$/m);
   const result = {};
   for (let i = 1; i < parts.length; i += 2) {
     const headingRaw = (parts[i] || "").trim();
@@ -1057,7 +1057,7 @@ function applyMagicText() {
   const langs = Object.keys(parsed);
   if (!langs.length && !Object.keys(meta).length) {
     document.getElementById("magicPreview").textContent =
-      "Не нашёл ни одного языка. Проверь формат: ## English, Название:, Описание:";
+      "Не нашёл ни одного языка. Проверь формат: **English**, Название:, Описание:";
     return;
   }
   langs.forEach((lang) => {
