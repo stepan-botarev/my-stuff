@@ -33,7 +33,7 @@ const PRODUCTS = [
       "es": "Un poco de vibra noventera, un poco de mercadillo, un poco de indie 🌙\n\nCorrea negra ajustable, un compartimento con cremallera. Caben el móvil, el DNI o la cartera, las llaves y pequeñas cosas. Usado con cuidado.\n\nEntrega en estaciones de U-/S-Bahn en el centro de Hamburgo 🌻"
     },
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
       "ru": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
       "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
@@ -48,7 +48,7 @@ const PRODUCTS = [
     "reserved": false,
     "condition": "new",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
       "ru": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
       "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
@@ -84,7 +84,7 @@ const PRODUCTS = [
     "reserved": false,
     "condition": "good",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
@@ -119,7 +119,7 @@ const PRODUCTS = [
     "reserved": false,
     "condition": "good",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
@@ -154,7 +154,7 @@ const PRODUCTS = [
     "reserved": false,
     "condition": "good",
     "location": {
-      "en": "",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
@@ -189,7 +189,7 @@ const PRODUCTS = [
     "reserved": false,
     "condition": "fair",
     "location": {
-      "en": "",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
@@ -225,7 +225,7 @@ const PRODUCTS = [
     "material": "",
     "size": "",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
@@ -261,7 +261,7 @@ const PRODUCTS = [
     "material": "",
     "size": "",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
@@ -298,7 +298,7 @@ const PRODUCTS = [
     "material": "",
     "size": "",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
@@ -333,7 +333,7 @@ const PRODUCTS = [
     "material": "",
     "size": "",
     "location": {
-      "en": "",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
@@ -368,7 +368,7 @@ const PRODUCTS = [
     "material": "",
     "size": "",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
@@ -403,7 +403,7 @@ const PRODUCTS = [
     "material": "",
     "size": "",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
@@ -439,7 +439,7 @@ const PRODUCTS = [
     "material": "",
     "size": "",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
       "uk": "",
