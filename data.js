@@ -324,5 +324,40 @@ const PRODUCTS = [
       "es": "La usé literalmente una vez. La vendo porque me gusta el minimalismo. Pero si quieres acurrucarte en la cama bajo una manta, con té, galletas y Netflix, esta bolsa es justo lo que te falta!\n\nY si, como yo, te encanta el azul Majorelle 💙\n\nFunda de forro polar, buen estado, prácticamente nueva",
       "zh": "真的只用过一次。因为喜欢极简主义所以出售。但如果你想窝在床上，裹着毯子，配一杯茶、几块饼干和Netflix，这个暖水袋正是你缺的那一件！\n\n而且，如果你像我一样喜欢马约雷勒蓝 💙\n\n绒面外套，状态良好，几乎全新"
     }
+  },
+  {
+    "id": 10,
+    "price": "3 €",
+    "reserved": false,
+    "condition": "new",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item10-1788523157421-njk2.jpg"
+    ],
+    "title": {
+      "en": "IKEA striped pillowcase, cotton",
+      "de": "IKEA-Kissenbezug mit Streifen, Baumwolle",
+      "ru": "Полосатая наволочка IKEA, хлопок",
+      "uk": "Смугаста наволочка IKEA, бавовна",
+      "es": "Funda de almohada a rayas de IKEA, algodón",
+      "zh": "IKEA条纹枕套，纯棉"
+    },
+    "desc": {
+      "en": "Almost new. Bought it right before moving from Lübeck to Hamburg — had a whole room layout planned in my head, and this pillowcase just didn't fit into it.\n\nColorful stripes: blue, pink, black, green, orange, beige 🌈\n\n100% cotton, practically unused",
+      "de": "Fast neu. Gekauft kurz vor dem Umzug von Lübeck nach Hamburg — hatte mir das ganze Zimmer schon im Kopf ausgemalt, und dieser Kissenbezug hat einfach nicht dazu gepasst.\n\nBunte Streifen: Blau, Rosa, Schwarz, Grün, Orange, Beige 🌈\n\n100 % Baumwolle, praktisch ungenutzt",
+      "ru": "Почти новая. Купил перед переездом из Любека в Гамбург, придумал в голове, как обустрою комнату, и эта наволочка в него не вписалась.\n\nЯркие полосы: синий, розовый, чёрный, зелёный, оранжевый, бежевый 🌈\n\n100% хлопок, практически не использовалась",
+      "uk": "Майже нова. Купив перед переїздом з Любека до Гамбурга, придумав у голові, як облаштую кімнату, і ця наволочка в нього не вписалась.\n\nЯскраві смуги: синій, рожевий, чорний, зелений, оранжевий, бежевий 🌈\n\n100% бавовна, практично не використовувалась",
+      "es": "Casi nueva. La compré justo antes de mudarme de Lübeck a Hamburgo — ya tenía toda la habitación planeada en mi cabeza, y esta funda simplemente no encajaba.\n\nRayas coloridas: azul, rosa, negro, verde, naranja, beige 🌈\n\n100% algodón, prácticamente sin usar",
+      "zh": "几乎全新。是在从吕贝克搬到汉堡之前买的 —— 当时脑子里已经把房间布置好了，结果这个枕套没能融入进去。\n\n彩色条纹：蓝、粉、黑、绿、橙、米色 🌈\n\n100% 纯棉，几乎没用过"
+    }
   }
 ];
