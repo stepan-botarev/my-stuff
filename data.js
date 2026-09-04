@@ -430,5 +430,38 @@ const PRODUCTS = [
       "es": "Hub USB-C compacto con varios puertos extra, para ese portátil que se pasó de minimalista.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente, buen estado",
       "zh": "小巧的USB-C扩展器，为那些接口太\"极简\"的笔记本电脑补上急需的端口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好"
     }
+  },
+  {
+    "id": 13,
+    "price": "25 €",
+    "reserved": false,
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [],
+    "title": {
+      "en": "Phone lock box for focused work — against getting sucked into Instagram and doomscrolling",
+      "de": "Handy-Schließbox für fokussiertes Arbeiten — gegen Instagram-Sog und Doomscrolling",
+      "ru": "Локер для телефона для сфокусированной работы — против залипания в инстаграме и думскроллинга",
+      "uk": "Локер для телефону для сфокусованої роботи — проти залипання в інстаграмі та думскролінгу",
+      "es": "Caja bloqueadora para el móvil, para trabajo enfocado — contra el enganche a Instagram y el doomscrolling",
+      "zh": "专注工作手机锁盒 —— 对抗刷Instagram停不下来和无尽刷屏（doomscrolling）"
+    },
+    "desc": {
+      "en": "A locker for your phone from the British brand Virtus Project. Genius, really: you put your phone in, set a time from 5 minutes to several hours, and it locks. If an urgent call comes in, there's a little pad you can push out to answer it — but against distractions like messengers, TikTok and reels, it's iron-clad. No expensive apps or extensions you end up bypassing anyway — this actually works!\n\nIf you're ADHD like me, this thing will finally help you find some zen. And if you have a TikTok-addicted kid, it's a solid nudge toward homework.\n\nIf I didn't need the cash right now, I wouldn't be selling it. Cost me €70 shipped from the UK, worth every cent. Letting it go for €25! 🐈‍⬛",
+      "de": "Eine Sperrbox für dein Handy von der britischen Marke Virtus Project. Wirklich genial: Handy rein, Zeit einstellen (5 Minuten bis mehrere Stunden), und es ist gesperrt. Kommt ein dringender Anruf rein, gibt es ein kleines Pad, das man raushebeln kann, um ranzugehen — aber gegen Ablenkungen wie Messenger, TikTok und Reels ist es eisenhart. Keine teuren Apps oder Erweiterungen, die man am Ende doch umgeht — das funktioniert wirklich!\n\nWenn du auch ADHS hast wie ich, wird dir das Ding endlich zu etwas Zen im Kopf verhelfen. Und falls du ein TikTok-süchtiges Kind hast, ist es ein guter Anstoß Richtung Lernen.\n\nWenn ich das Geld jetzt nicht bräuchte, würde ich es nicht verkaufen. Mit Versand aus Großbritannien hat es 70 € gekostet, war's aber wert. Für 25 € gebe ich es ab! 🐈‍⬛",
+      "ru": "Локер для телефона от британской фирмы Virtus Project. Классная штука: кладёшь телефон, ставишь время от 5 минут до нескольких часов — и локер блокирует его. Если будет срочный звонок, там есть подушечка, которую можно вытолкнуть и ответить. А вот от отвлечений типа мессенджеров, тиктока и рилсов защищает железно. Никаких дорогих приложений и расширений, которые всё равно можно обойти — тут реально работает!\n\nЕсли вы такой же СДВГшник, как я, эта штука наконец поможет обрести дзен. А если у вас тикток-зависимый ребёнок — хороший способ подтолкнуть его к учёбе.\n\nЕсли бы не нужны были деньги прямо сейчас, не продавал бы. С доставкой из Британии обошлось в 70 евро, но того стоило. Отдам за 25! 🐈‍⬛",
+      "uk": "Локер для телефону від британської фірми Virtus Project. Класна річ: кладеш телефон, ставиш час від 5 хвилин до кількох годин — і локер блокує його. Якщо буде терміновий дзвінок, там є подушечка, яку можна виштовхнути і відповісти. А от від відволікань типу месенджерів, тіктоку та рілсів захищає залізно. Ніяких дорогих застосунків і розширень, які все одно можна обійти — тут реально працює!\n\nЯкщо ви такий же СДУГшник, як я, ця штука нарешті допоможе знайти дзен. А якщо у вас тікток-залежна дитина — хороший спосіб підштовхнути її до навчання.\n\nЯкби не потрібні були гроші прямо зараз, не продавав би. З доставкою з Британії вийшло 70 євро, але воно того вартувало. Віддам за 25! 🐈‍⬛",
+      "es": "Una caja bloqueadora para el móvil de la marca británica Virtus Project. Genial de verdad: metes el móvil, pones un tiempo de entre 5 minutos y varias horas, y se bloquea. Si entra una llamada urgente, hay una pequeña almohadilla que puedes empujar hacia fuera para contestar — pero contra distracciones como mensajería, TikTok y reels, es de hierro. Nada de apps o extensiones caras que al final siempre acabas evitando — esto sí funciona!\n\nSi eres TDAH como yo, esto por fin te va a ayudar a encontrar algo de paz mental. Y si tienes un hijo adicto a TikTok, es un buen empujón hacia los estudios.\n\nSi no necesitara el dinero ahora mismo, no lo vendería. Con el envío desde Reino Unido me costó 70 €, pero mereció la pena. ¡Lo dejo en 25 €! 🐈‍⬛",
+      "zh": "一个来自英国品牌 Virtus Project 的手机锁盒。真的很好用：把手机放进去，设定5分钟到几个小时的时间，它就会锁住。如果有紧急电话，上面有个小垫可以顶出来接听 —— 但对于消息软件、抖音、reels这类干扰，它是铁面无私的。不用买昂贵的App或插件、最后还是会被绕过去 —— 这个真的管用！\n\n如果你也像我一样有多动症/注意力不集中的问题，这东西终于能帮你找回一点平静。如果你家孩子沉迷抖音/TikTok，这也是推他去学习的好办法。\n\n如果不是现在急需用钱，我是不会卖的。从英国寄过来花了70欧元，但真的值。现在25欧元出手！🐈‍⬛"
+    }
   }
 ];
