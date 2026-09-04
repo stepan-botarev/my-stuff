@@ -112,33 +112,36 @@ const PRODUCTS = [
   },
   {
     "id": 4,
-    "price": "",
+    "price": "5 €",
     "reserved": false,
-    "condition": "",
+    "condition": "good",
     "location": {
-      "en": "",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
       "de": "",
       "ru": "",
       "uk": "",
       "es": "",
       "zh": ""
     },
-    "images": [],
+    "images": [
+      "images/item4-1788516681636-oam5.jpg",
+      "images/item4-1788516681752-vk9b.jpg"
+    ],
     "title": {
-      "en": "",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
+      "en": "Floral short-sleeve shirt — United Colors of Benetton, size L",
+      "de": "Blumenhemd mit Kurzarm — United Colors of Benetton, Größe L",
+      "ru": "Рубашка с цветочным принтом с коротким рукавом — United Colors of Benetton, размер L",
+      "uk": "Сорочка з квітковим принтом з коротким рукавом — United Colors of Benetton, розмір L",
+      "es": "Camisa floral de manga corta — United Colors of Benetton, talla L",
+      "zh": "碎花短袖衬衫 —— United Colors of Benetton，L码"
     },
     "desc": {
-      "en": "",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
+      "en": "Cream shirt with a small pink and green floral print. Worn well with both jeans and trousers 🌺\nSize L, unisex, 100% cotton. Well looked after",
+      "de": "Cremefarbenes Hemd mit kleinem rosa-grünem Blumenmuster. Sah gut aus zu Jeans genauso wie zu Stoffhosen 🌺\nGröße L, Unisex, 100 % Baumwolle. Gut gepflegt",
+      "ru": "Кремовая рубашка с мелким розово-зелёным цветочным принтом. Хорошо носилась и с джинсами, и с брюками 🌺\nРазмер L, унисекс, 100% хлопок. Ухоженная",
+      "uk": "Кремова сорочка з дрібним рожево-зеленим квітковим принтом. Добре носилась і з джинсами, і з брюками 🌺\nРозмір L, унісекс, 100% бавовна. Доглянута",
+      "es": "Camisa color crema con un pequeño estampado floral rosa y verde. Combinaba bien tanto con vaqueros como con pantalones de vestir 🌺\nTalla L, unisex, 100% algodón. Bien cuidada",
+      "zh": "米白色衬衫，粉绿碎花印花。搭配牛仔裤或西裤都好看 🌺\nL码，男女同款，100% 纯棉。保养良好"
     }
   }
 ];
