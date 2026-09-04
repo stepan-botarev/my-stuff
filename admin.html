@@ -1011,6 +1011,30 @@ function parseMagicText(text) {
   return result;
 }
 
+// Состояние/Материал/Размер — общие для товара (не по языкам),
+// ищем эти теги в любом месте вставленного текста. Адрес намеренно не трогаем.
+function parseMagicMeta(text) {
+  const normalized = text.replace(/\r\n/g, "\n");
+  const meta = {};
+
+  const condMatch = normalized.match(/(?:Состояние|Стан|Condition|Zustand|Estado)\s*:\s*(.+)/i);
+  if (condMatch) {
+    const v = condMatch[1].trim().toLowerCase();
+    if (/нов|new|neu|nuevo/.test(v)) meta.condition = "new";
+    else if (/хорош|добр|good|gut|bueno/.test(v)) meta.condition = "good";
+    else if (/норм|fair|normal/.test(v)) meta.condition = "fair";
+    else if (/стар|old|alt|viejo/.test(v)) meta.condition = "old";
+  }
+
+  const materialMatch = normalized.match(/(?:Материал|Матеріал|Material)\s*:\s*(.+)/i);
+  if (materialMatch) meta.material = materialMatch[1].trim();
+
+  const sizeMatch = normalized.match(/(?:Размер|Розмір|Size|Größe|Talla)\s*:\s*(.+)/i);
+  if (sizeMatch) meta.size = sizeMatch[1].trim();
+
+  return meta;
+}
+
 let magicTargetProduct = null;
 
 function openMagicModal(product) {
@@ -1029,8 +1053,9 @@ function applyMagicText() {
   if (!magicTargetProduct) return;
   const text = document.getElementById("magicText").value;
   const parsed = parseMagicText(text);
+  const meta = parseMagicMeta(text);
   const langs = Object.keys(parsed);
-  if (!langs.length) {
+  if (!langs.length && !Object.keys(meta).length) {
     document.getElementById("magicPreview").textContent =
       "Не нашёл ни одного языка. Проверь формат: ## English, Название:, Описание:";
     return;
@@ -1039,6 +1064,9 @@ function applyMagicText() {
     if (parsed[lang].title) magicTargetProduct.title[lang] = parsed[lang].title;
     if (parsed[lang].desc) magicTargetProduct.desc[lang] = parsed[lang].desc;
   });
+  if (meta.condition) magicTargetProduct.condition = meta.condition;
+  if (meta.material) magicTargetProduct.material = meta.material;
+  if (meta.size) magicTargetProduct.size = meta.size;
   markDirty();
   renderProducts();
   closeMagicModal();
@@ -1051,10 +1079,13 @@ document.getElementById("magicOverlay").addEventListener("click", (e) => {
 });
 document.getElementById("magicText").addEventListener("input", (e) => {
   const parsed = parseMagicText(e.target.value);
+  const meta = parseMagicMeta(e.target.value);
   const langs = Object.keys(parsed);
-  document.getElementById("magicPreview").textContent = langs.length
-    ? "Распознано: " + langs.map((l) => LANG_LABELS[l] || l).join(", ")
-    : "";
+  const metaKeys = Object.keys(meta);
+  const bits = [];
+  if (langs.length) bits.push("языки: " + langs.map((l) => LANG_LABELS[l] || l).join(", "));
+  if (metaKeys.length) bits.push("теги: " + metaKeys.join(", "));
+  document.getElementById("magicPreview").textContent = bits.length ? "Распознано — " + bits.join("; ") : "";
 });
 
 document.getElementById("loginBtn").addEventListener("click", login);
