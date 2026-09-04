@@ -181,7 +181,10 @@ function render() {
       if (!value) return;
       const line = document.createElement("div");
       line.className = "meta-line";
-      line.textContent = `${META_ICONS[kind]} ${META_LABELS[kind][currentLang]}${value}`;
+      const labelEl = document.createElement("strong");
+      labelEl.textContent = `${META_ICONS[kind]} ${META_LABELS[kind][currentLang]}`;
+      line.appendChild(labelEl);
+      line.appendChild(document.createTextNode(value));
       meta.appendChild(line);
     }
 
