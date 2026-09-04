@@ -182,6 +182,26 @@
     padding: 0;
   }
 
+  .loc-chip {
+    position: relative;
+    display: inline-block;
+  }
+  .loc-chip-rm {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 16px;
+    height: 16px;
+    line-height: 14px;
+    font-size: 11px;
+    border: none;
+    border-radius: 50%;
+    background: var(--red);
+    color: var(--paper);
+    cursor: pointer;
+    padding: 0;
+  }
+
   .actions-bar {
     position: sticky;
     bottom: 0;
@@ -343,6 +363,10 @@ function addSavedLocation(loc) {
     localStorage.setItem(LS_LOCATIONS, JSON.stringify(list));
   }
 }
+function removeSavedLocation(loc) {
+  const list = getSavedLocations().filter((l) => l !== loc);
+  localStorage.setItem(LS_LOCATIONS, JSON.stringify(list));
+}
 
 let state = {
   token: "",
@@ -422,6 +446,8 @@ function addProduct() {
     price: "",
     reserved: false,
     condition: "",
+    material: "",
+    size: "",
     location: emptyLangObj(),
     images: [],
     title: emptyLangObj(),
@@ -628,6 +654,9 @@ function renderProducts() {
       locChips.style.gap = "6px";
       locChips.style.marginTop = "8px";
       getSavedLocations().forEach((loc) => {
+        const chipWrap = document.createElement("span");
+        chipWrap.className = "loc-chip";
+
         const chip = document.createElement("button");
         chip.type = "button";
         chip.className = "btn btn-small";
@@ -638,7 +667,20 @@ function renderProducts() {
           locInput.value = loc;
           markDirty();
         });
-        locChips.appendChild(chip);
+
+        const chipRm = document.createElement("button");
+        chipRm.type = "button";
+        chipRm.className = "loc-chip-rm";
+        chipRm.textContent = "×";
+        chipRm.title = "Удалить сохранённую локацию";
+        chipRm.addEventListener("click", () => {
+          removeSavedLocation(loc);
+          renderProducts();
+        });
+
+        chipWrap.appendChild(chip);
+        chipWrap.appendChild(chipRm);
+        locChips.appendChild(chipWrap);
       });
 
       pane.appendChild(titleLabel);
@@ -718,6 +760,40 @@ function renderProducts() {
     });
     card.appendChild(condLabel);
     card.appendChild(condSelect);
+
+    const materialRow = document.createElement("div");
+    materialRow.className = "row";
+    const materialWrap = document.createElement("div");
+    const materialLabel = document.createElement("label");
+    materialLabel.textContent = "Материал";
+    const materialInput = document.createElement("input");
+    materialInput.type = "text";
+    materialInput.placeholder = "Например: 100% вискоза";
+    materialInput.value = product.material || "";
+    materialInput.addEventListener("input", () => {
+      product.material = materialInput.value;
+      markDirty();
+    });
+    materialWrap.appendChild(materialLabel);
+    materialWrap.appendChild(materialInput);
+
+    const sizeWrap = document.createElement("div");
+    const sizeLabel = document.createElement("label");
+    sizeLabel.textContent = "Размер";
+    const sizeInput = document.createElement("input");
+    sizeInput.type = "text";
+    sizeInput.placeholder = "Например: M";
+    sizeInput.value = product.size || "";
+    sizeInput.addEventListener("input", () => {
+      product.size = sizeInput.value;
+      markDirty();
+    });
+    sizeWrap.appendChild(sizeLabel);
+    sizeWrap.appendChild(sizeInput);
+
+    materialRow.appendChild(materialWrap);
+    materialRow.appendChild(sizeWrap);
+    card.appendChild(materialRow);
 
     productsListEl.appendChild(card);
   });

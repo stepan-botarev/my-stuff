@@ -16,8 +16,13 @@ const CONDITION_LABELS = {
   old: { en: "Old", de: "Alt", ru: "Старое", uk: "Старе", es: "Viejo", zh: "旧" }
 };
 
-const CONDITION_PREFIX = {
-  en: "Condition: ", de: "Zustand: ", ru: "Состояние: ", uk: "Стан: ", es: "Estado: ", zh: "状况："
+const META_ICONS = { condition: "👍", material: "🧶", size: "👖", location: "📍" };
+
+const META_LABELS = {
+  condition: { en: "Condition: ", de: "Zustand: ", ru: "Состояние: ", uk: "Стан: ", es: "Estado: ", zh: "状况：" },
+  material: { en: "Material: ", de: "Material: ", ru: "Материал: ", uk: "Матеріал: ", es: "Material: ", zh: "材质：" },
+  size: { en: "Size: ", de: "Größe: ", ru: "Размер: ", uk: "Розмір: ", es: "Talla: ", zh: "尺码：" },
+  location: { en: "Handover: ", de: "Übergabe: ", ru: "Где забрать: ", uk: "Де забрати: ", es: "Entrega: ", zh: "交接地点：" }
 };
 
 let currentLang = "en";
@@ -171,22 +176,27 @@ function render() {
 
     const meta = document.createElement("div");
     meta.className = "product-meta";
-    if (product.condition && CONDITION_LABELS[product.condition]) {
-      const condLine = document.createElement("div");
-      condLine.className = "meta-line";
-      condLine.textContent = CONDITION_PREFIX[currentLang] + CONDITION_LABELS[product.condition][currentLang];
-      meta.appendChild(condLine);
+
+    function addMetaLine(kind, value) {
+      if (!value) return;
+      const line = document.createElement("div");
+      line.className = "meta-line";
+      line.textContent = `${META_ICONS[kind]} ${META_LABELS[kind][currentLang]}${value}`;
+      meta.appendChild(line);
     }
+
+    const conditionText =
+      product.condition && CONDITION_LABELS[product.condition]
+        ? CONDITION_LABELS[product.condition][currentLang]
+        : "";
+    addMetaLine("condition", conditionText);
+    addMetaLine("material", product.material);
+    addMetaLine("size", product.size);
     const locationText =
       product.location && typeof product.location === "object"
         ? product.location[currentLang] || product.location.en
         : product.location;
-    if (locationText) {
-      const locLine = document.createElement("div");
-      locLine.className = "meta-line";
-      locLine.textContent = "📍 " + locationText;
-      meta.appendChild(locLine);
-    }
+    addMetaLine("location", locationText);
 
     const footer = document.createElement("div");
     footer.className = "product-footer";
