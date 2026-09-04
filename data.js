@@ -225,7 +225,7 @@ const PRODUCTS = [
     "material": "",
     "size": "",
     "location": {
-      "en": "",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
       "de": "",
       "ru": "",
       "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
