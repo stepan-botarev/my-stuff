@@ -329,7 +329,7 @@ const PRODUCTS = [
     "id": 10,
     "price": "2 €",
     "reserved": false,
-    "condition": "new",
+    "condition": "",
     "material": "",
     "size": "",
     "location": {
@@ -338,7 +338,7 @@ const PRODUCTS = [
       "ru": "",
       "uk": "",
       "es": "",
-      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus"
+      "zh": ""
     },
     "images": [
       "images/item10-1788523462109-chna.jpg"
@@ -358,6 +358,41 @@ const PRODUCTS = [
       "uk": "Майже нова. Купив перед переїздом з Любека до Гамбурга, придумав у голові, як облаштую кімнату, і ця наволочка в нього не вписалась.\n\nЯскраві смуги: синій, рожевий, чорний, зелений, оранжевий, бежевий 🌈\n\n100% бавовна, практично не використовувалась",
       "es": "Casi nueva. La compré justo antes de mudarme de Lübeck a Hamburgo — ya tenía toda la habitación planeada en mi cabeza, y esta funda simplemente no encajaba.\n\nRayas coloridas: azul, rosa, negro, verde, naranja, beige 🌈\n\n100% algodón, prácticamente sin usar",
       "zh": "几乎全新。是在从吕贝克搬到汉堡之前买的 —— 当时脑子里已经把房间布置好了，结果这个枕套没能融入进去。\n\n彩色条纹：蓝、粉、黑、绿、橙、米色 🌈\n\n100% 纯棉，几乎没用过"
+    }
+  },
+  {
+    "id": 11,
+    "price": "7 €",
+    "reserved": false,
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item11-1788528434514-o2nb.jpg"
+    ],
+    "title": {
+      "en": "Rosmarino thermal bottle, black",
+      "de": "Rosmarino Thermosflasche, schwarz",
+      "ru": "Термобутылка Rosmarino, чёрная",
+      "uk": "Термобутилка Rosmarino, чорна",
+      "es": "Botella térmica Rosmarino, negra",
+      "zh": "Rosmarino保温瓶，黑色"
+    },
+    "desc": {
+      "en": "In good condition. A couple of barely noticeable scratches, touched up with a special marker. Giving it up because I want fewer black things in my life — but for anyone who loves black 🖤, this is a great find.\n\nStainless steel, keeps drinks hot/cold, practically like new",
+      "de": "In gutem Zustand. Ein paar kaum sichtbare Kratzer, mit einem speziellen Stift ausgebessert. Ich gebe sie ab, weil ich weniger schwarze Sachen will — aber für alle, die Schwarz lieben 🖤, ist das ein echter Fund.\n\nEdelstahl, hält Getränke warm/kalt, praktisch wie neu",
+      "ru": "В нормальном состоянии. Есть пара незаметных царапин, замазанных специальным фломастером. Отказываюсь от неё, потому что хочу меньше чёрных вещей, но для тех, у кого цвет настроения чёрный 🖤 — хорошая находка.\n\nНержавеющая сталь, держит горячее/холодное, практически как новая",
+      "uk": "У нормальному стані. Є пара непомітних подряпин, замазаних спеціальним фломастером. Відмовляюсь від неї, бо хочу менше чорних речей, але для тих, у кого колір настрою чорний 🖤 — це гарна знахідка.\n\nНержавіюча сталь, тримає гаряче/холодне, практично як нова",
+      "es": "En buen estado. Tiene un par de rayones casi imperceptibles, retocados con un marcador especial. Me deshago de ella porque quiero menos cosas negras en mi vida, pero para quienes aman el negro 🖤, es un buen hallazgo.\n\nAcero inoxidable, mantiene bebidas frías/calientes, prácticamente como nueva",
+      "zh": "状态良好。有几处几乎看不出的划痕，用专用记号笔修补过了。我想少一些黑色的东西所以出手 —— 但对于喜欢黑色的人 🖤，这绝对是个好东西。\n\n不锈钢材质，保温保冷，几乎和新的一样"
     }
   }
 ];
