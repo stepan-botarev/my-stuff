@@ -329,7 +329,7 @@ const PRODUCTS = [
     "id": 10,
     "price": "2 €",
     "reserved": false,
-    "condition": "",
+    "condition": "new",
     "material": "",
     "size": "",
     "location": {
@@ -338,7 +338,7 @@ const PRODUCTS = [
       "ru": "",
       "uk": "",
       "es": "",
-      "zh": ""
+      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus"
     },
     "images": [
       "images/item10-1788523462109-chna.jpg"
