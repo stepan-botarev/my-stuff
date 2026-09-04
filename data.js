@@ -394,5 +394,41 @@ const PRODUCTS = [
       "es": "En buen estado. Tiene un par de rayones casi imperceptibles, retocados con un marcador especial. Me deshago de ella porque quiero menos cosas negras en mi vida, pero para quienes aman el negro 🖤, es un buen hallazgo.\n\nAcero inoxidable, mantiene bebidas frías/calientes, prácticamente como nueva",
       "zh": "状态良好。有几处几乎看不出的划痕，用专用记号笔修补过了。我想少一些黑色的东西所以出手 —— 但对于喜欢黑色的人 🖤，这绝对是个好东西。\n\n不锈钢材质，保温保冷，几乎和新的一样"
     }
+  },
+  {
+    "id": 12,
+    "price": "6 €",
+    "reserved": false,
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item12-1788531104777-phxc.jpg",
+      "images/item12-1788531104896-4s5m.jpg"
+    ],
+    "title": {
+      "en": "USB-C hub — Deppa",
+      "de": "USB-C-Hub — Deppa",
+      "ru": "USB-C-хаб — Deppa",
+      "uk": "USB-C-хаб — Deppa",
+      "es": "Hub USB-C — Deppa",
+      "zh": "USB-C 扩展器 —— Deppa"
+    },
+    "desc": {
+      "en": "Compact USB-C hub with plenty of extra ports for a laptop that's a bit too minimalist.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× memory card slot (SD/microSD)\n\nWorks perfectly, good condition ",
+      "de": "Kompakter USB-C-Hub mit genug zusätzlichen Anschlüssen für einen Laptop, der es mit dem Minimalismus etwas übertrieben hat.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× Speicherkartenslot (SD/microSD)\n\nFunktioniert einwandfrei, guter Zustand",
+      "ru": "Компактный USB-C хаб с набором портов для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карты памяти (SD/microSD)\n\nРаботает исправно, хорошее состояние",
+      "uk": "Компактний USB-C хаб з набором портів для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для картки пам'яті (SD/microSD)\n\nПрацює справно, хороший стан",
+      "es": "Hub USB-C compacto con varios puertos extra, para ese portátil que se pasó de minimalista.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente, buen estado",
+      "zh": "小巧的USB-C扩展器，为那些接口太\"极简\"的笔记本电脑补上急需的端口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好"
+    }
   }
 ];
