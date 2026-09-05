@@ -149,8 +149,8 @@ function renderAboutMe() {
     const minimizeBtn = document.createElement("button");
     minimizeBtn.className = "about-minimize";
     minimizeBtn.innerHTML =
-      '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
-    minimizeBtn.setAttribute("aria-label", "Minimize");
+      '<svg viewBox="0 0 24 24" width="14" height="14"><path d="M7 7l8 8M15 7l-8 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
+    minimizeBtn.setAttribute("aria-label", "Close");
     minimizeBtn.addEventListener("click", () => setAboutMinimized(true));
     bubble.appendChild(minimizeBtn);
 
@@ -307,10 +307,6 @@ function render() {
 
     const info = document.createElement("div");
 
-    const num = document.createElement("div");
-    num.className = "product-num";
-    num.textContent = String(product.id).padStart(2, "0");
-
     const title = document.createElement("h2");
     title.className = "product-title";
     title.textContent = product.title[currentLang];
@@ -359,7 +355,6 @@ function render() {
 
     footer.appendChild(writeBtn);
 
-    info.appendChild(num);
     info.appendChild(title);
     info.appendChild(desc);
     if (meta.children.length) info.appendChild(meta);
