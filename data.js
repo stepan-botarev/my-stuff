@@ -869,6 +869,46 @@ const PRODUCTS = [
       "es": "Un libro de una de mis filósofas favoritas, María Zambrano. Aquí reflexiona sobre qué es España —la imaginada y la real— a través de su literatura, sus mitos, su arte y sus pensadores. Zambrano es una pensadora muy seria, pero al mismo tiempo te acompaña con delicadeza hacia la profundidad de su pensamiento 🧘\n\nEdición en español de la colección «Los libros de Sísifo» de Edhasa. Un libro precioso para quien se interese por la filosofía, España, la literatura o simplemente por una lectura lenta y reflexiva ✨\n\nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo.",
       "zh": "我最喜欢的哲学家之一玛丽亚·桑布拉诺的作品。她在书中通过西班牙的文学、神话、艺术与思想家，思考西班牙究竟是什么——想象中的西班牙，以及真实的西班牙。桑布拉诺是一位非常严肃的思想家，但她也会温柔地带领读者走入她思想的深处 🧘\n\n这是 Edhasa 出版社“Los libros de Sísifo”系列的西班牙语版本。适合对哲学、西班牙、文学感兴趣，或喜欢慢慢深入阅读的人 ✨\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接。"
     }
+  },
+  {
+    "id": 24,
+    "price": "470 €",
+    "reserved": false,
+    "hidden": false,
+    "category": "tech",
+    "condition": "new",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Glinde, Möllner Landstraße 89",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item24-1788606795359-2tcb.jpg",
+      "images/item24-1788606795540-zqmn.jpg",
+      "images/item24-1788606795676-suld.jpg",
+      "images/item24-1788606795826-cjrk.jpg"
+    ],
+    "title": {
+      "en": "ADAM Audio A5X active studio monitors — pair",
+      "de": "ADAM Audio A5X aktive Studiomonitore — Paar",
+      "ru": "Активные студийные мониторы ADAM Audio A5X — пара",
+      "uk": "Активні студійні монітори ADAM Audio A5X — пара",
+      "es": "Monitores de estudio activos ADAM Audio A5X — pareja",
+      "zh": "ADAM Audio A5X 有源近场录音室监听音箱 — 一对"
+    },
+    "desc": {
+      "en": "The final boss of my moving sale — the thing that is hardest for me to part with. I would not be selling them, but unfortunately I need the money more right now. ❤️‍🩹 This is a pair of ADAM Audio A5X active studio monitors — a real gift for anyone who truly loves music. They are suitable both for everyday listening and serious sound-engineering work: mixing, production, and working with audio 🎶\n\nI bought them new for around €1,000 a few years ago, when this model was still being sold. The monitors are in excellent condition. There is only one small chip, covered with a black marker, so you will most likely not even notice where it is. I also have the original foam inserts, which make it possible to transport the monitors safely in boxes 📦\n\nSpecifications: active 2-way nearfield monitors; X-ART tweeters; 5.5-inch woofers; 50 Hz–50 kHz frequency response; 50 W + 50 W amplification per monitor; XLR and RCA inputs. Each monitor measures 28×17×22 cm and weighs around 6.6 kg 🔊\n\nPrice: €450 for both monitors.\nPickup from Glinde is strongly preferred because the monitors are valuable and heavy; a personal handover in central Hamburg may be possible by arrangement 🌿",
+      "de": "Der Endboss meines Umzugsverkaufs — die Sache, von der ich mich am schwersten trennen kann. Ich würde sie nicht verkaufen, aber leider brauche ich das Geld im Moment mehr. ❤️‍🩹 Das ist ein Paar aktiver Studiomonitore ADAM Audio A5X — ein echtes Geschenk für alle, die Musik wirklich lieben. Sie eignen sich sowohl zum normalen Musikhören als auch für ernsthafte Arbeiten in der Tontechnik: Mixing, Produktion und Audiobearbeitung 🎶\n\nIch habe sie vor einigen Jahren neu für etwa 1.000 € gekauft, als dieses Modell noch verkauft wurde. Die Monitore sind in ausgezeichnetem Zustand. Es gibt nur eine kleine Macke, die mit schwarzem Marker überdeckt wurde — wahrscheinlich bemerkt man nicht einmal, wo sie ist. Außerdem habe ich die originalen Schaumstoffhalterungen, mit denen sich die Monitore sicher in Kartons transportieren lassen 📦\n\nTechnische Daten: aktive 2-Wege-Nahfeldmonitore; X-ART-Hochtöner; 5,5-Zoll-Tieftöner; Frequenzbereich 50 Hz–50 kHz; 50 W + 50 W Verstärkerleistung pro Monitor; XLR- und RCA-Eingänge. Jeder Monitor misst 28×17×22 cm und wiegt etwa 6,6 kg 🔊\n\nPreis: 450 € für beide Monitore.\nAbholung in Glinde ist wegen des Werts und Gewichts der Monitore sehr erwünscht; eine persönliche Übergabe in der Hamburger Innenstadt ist nach Absprache eventuell möglich 🌿",
+      "ru": "Финальный босс моей распродажи — вещь, с которой мне тяжелее всего расставаться. Я не стал бы их продавать, но сейчас, увы, деньги нужнее. ❤️‍🩹 Это пара активных студийных мониторов ADAM Audio A5X — просто подарок для тех, кто по-настоящему любит музыку. Они подходят и для обычного прослушивания, и для серьёзной звукорежиссёрской работы: сведения, продакшна и работы со звуком 🎶\n\nНесколько лет назад я покупал их новыми примерно за 1000 €, когда эта модель ещё продавалась. Мониторы в прекрасном состоянии. Есть только один небольшой скол, замазанный чёрным маркером, так что вы, скорее всего, даже не поймёте, где он. Также есть оригинальные пенопластовые держатели, с которыми мониторы можно безопасно перевозить в коробках 📦\n\nХарактеристики: активные двухполосные мониторы ближнего поля; твитеры X-ART; 5,5-дюймовые низкочастотные динамики; частотный диапазон 50 Гц–50 кГц; усиление 50 Вт + 50 Вт на каждый монитор; входы XLR и RCA. Размер каждого монитора — 28×17×22 см, вес — около 6,6 кг 🔊\n\nЦена: 450 € за оба монитора.\nИз-за ценности и веса мониторов очень желателен самовывоз из Глинде; личную передачу в центре Гамбурга, возможно, получится организовать по договорённости 🌿",
+      "uk": "Фінальний бос мого розпродажу — річ, із якою мені найважче розлучатися. Я б не став їх продавати, але зараз, на жаль, гроші потрібніші. ❤️‍🩹 Це пара активних студійних моніторів ADAM Audio A5X — справжній подарунок для тих, хто по-справжньому любить музику. Вони підходять і для звичайного прослуховування, і для серйозної звукорежисерської роботи: зведення, продакшну та роботи зі звуком 🎶\n\nКілька років тому я купив їх новими приблизно за 1000 €, коли ця модель ще продавалася. Монітори у чудовому стані. Є лише один невеликий скол, замальований чорним маркером, тож ви, найімовірніше, навіть не зрозумієте, де він. Також є оригінальні пінопластові тримачі, з якими монітори можна безпечно перевозити в коробках 📦\n\nХарактеристики: активні двосмугові монітори ближнього поля; твітери X-ART; 5,5-дюймові низькочастотні динаміки; частотний діапазон 50 Гц–50 кГц; підсилення 50 Вт + 50 Вт на кожен монітор; входи XLR та RCA. Розмір кожного монітора — 28×17×22 см, вага — близько 6,6 кг 🔊\n\nЦіна: 450 € за обидва монітори.\nЧерез цінність і вагу моніторів дуже бажаний самовивіз із Глінде; особисту передачу в центрі Гамбурга, можливо, вдасться організувати за домовленістю 🌿",
+      "es": "El jefe final de mi venta por mudanza — la cosa de la que más me cuesta desprenderme. No los vendería, pero por desgracia ahora necesito más el dinero. ❤️‍🩹 Es una pareja de monitores de estudio activos ADAM Audio A5X: un verdadero regalo para quien ama la música de verdad. Van bien tanto para escuchar música normalmente como para trabajos serios de ingeniería de sonido: mezcla, producción y trabajo con audio 🎶\n\nLos compré nuevos por unos 1.000 € hace algunos años, cuando este modelo todavía se vendía. Los monitores están en excelente estado. Solo tienen un pequeño desconchón, cubierto con rotulador negro, así que probablemente ni siquiera notarás dónde está. También conservo los soportes de espuma originales, con los que se pueden transportar de forma segura dentro de cajas 📦\n\nEspecificaciones: monitores activos de campo cercano de 2 vías; tweeters X-ART; woofers de 5,5 pulgadas; respuesta de frecuencia de 50 Hz a 50 kHz; amplificación de 50 W + 50 W por monitor; entradas XLR y RCA. Cada monitor mide 28×17×22 cm y pesa aproximadamente 6,6 kg 🔊\n\nPrecio: 450 € por los dos monitores.\nPor su valor y peso, se prefiere mucho la recogida en Glinde; quizá se pueda organizar una entrega en persona en el centro de Hamburgo previo acuerdo 🌿",
+      "zh": "这是我搬家出售清单里的最终 Boss——也是我最难割舍的一样东西。我本来不会卖掉它们，但很遗憾，现在钱对我更重要。❤️‍🩹 这是一对 ADAM Audio A5X 有源录音室监听音箱，对真正热爱音乐的人来说简直是一份礼物。它们既适合日常听音乐，也适合严肃的声音工程工作：混音、制作和音频处理 🎶\n\n几年前、这款型号仍在销售时，我以约 1,000 欧元的价格买了全新的这对音箱。音箱状态极佳。只有一处很小的磕碰，已经用黑色记号笔补过，你大概率甚至找不到它在哪里。我也保留了原装泡沫固定件，可以把音箱放在箱子里安全运输 📦\n\n参数：有源两分频近场监听音箱；X-ART 高音单元；5.5 英寸低音单元；频率响应 50 Hz–50 kHz；每只音箱配备 50 W + 50 W 功放；支持 XLR 和 RCA 输入。每只尺寸为 28×17×22 厘米，重量约 6.6 千克 🔊\n\n价格：两只音箱一共 450 欧元。\n由于音箱贵重且较重，强烈建议在 Glinde 自取；如事先协商，也许可以安排在汉堡市中心当面交接 🌿"
+    }
   }
 ];
 
