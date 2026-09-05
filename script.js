@@ -232,8 +232,9 @@ function renderAboutMe() {
     const fab = document.createElement("button");
     fab.className = "about-fab";
     fab.setAttribute("aria-label", "Open");
-    fab.innerHTML = data.photo
-      ? `<img src="${data.photo}" alt="">`
+    const fabPhoto = data.fabPhoto || data.photo;
+    fab.innerHTML = fabPhoto
+      ? `<img src="${fabPhoto}" alt="">`
       : '<svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 4h16v12H7l-3 3V4z" fill="currentColor"/></svg>';
     fab.addEventListener("click", () => setAboutMinimized(false));
 

@@ -372,6 +372,9 @@
       <label>Фото (необязательно)</label>
       <div id="aboutPhotoPreview" style="margin-bottom:8px;"></div>
       <input type="file" id="aboutPhotoInput" accept="image/*">
+      <label>Фото для кругляшка (необязательно — если не указано, берётся то же фото, но обрезанное в круг)</label>
+      <div id="aboutFabPhotoPreview" style="margin-bottom:8px;"></div>
+      <input type="file" id="aboutFabPhotoInput" accept="image/*">
       <div id="aboutMeLangs"></div>
     </div>
 
@@ -509,6 +512,7 @@ let state = {
   products: [],
   aboutMe: null,
   pendingAboutPhoto: null, // {path, dataUrl}
+  pendingAboutFabPhoto: null, // {path, dataUrl}
   dataSha: null,
   dirty: false,
   pendingImages: [] // {file, path, dataUrl}
@@ -573,6 +577,7 @@ async function fetchDataJs() {
   if (!state.aboutMe.title) state.aboutMe.title = emptyLangObj();
   if (!state.aboutMe.text) state.aboutMe.text = emptyLangObj();
   if (typeof state.aboutMe.photo !== "string") state.aboutMe.photo = "";
+  if (typeof state.aboutMe.fabPhoto !== "string") state.aboutMe.fabPhoto = "";
 }
 
 function emptyLangObj() {
@@ -689,6 +694,33 @@ function renderAboutMePanel() {
     wrap.appendChild(rm);
     photoPreview.appendChild(wrap);
   }
+
+  // Фото для кругляшка
+  const fabPhotoPreview = document.getElementById("aboutFabPhotoPreview");
+  fabPhotoPreview.innerHTML = "";
+  const currentFabPhotoSrc = state.pendingAboutFabPhoto
+    ? state.pendingAboutFabPhoto.dataUrl
+    : state.aboutMe.fabPhoto;
+  if (currentFabPhotoSrc) {
+    const wrap = document.createElement("div");
+    wrap.className = "img-thumb";
+    wrap.style.width = "100px";
+    wrap.style.height = "100px";
+    wrap.style.borderRadius = "50%";
+    const img = document.createElement("img");
+    img.src = currentFabPhotoSrc;
+    wrap.appendChild(img);
+    const rm = document.createElement("button");
+    rm.textContent = "×";
+    rm.addEventListener("click", () => {
+      state.aboutMe.fabPhoto = "";
+      state.pendingAboutFabPhoto = null;
+      markDirty();
+      renderAboutMePanel();
+    });
+    wrap.appendChild(rm);
+    fabPhotoPreview.appendChild(wrap);
+  }
 }
 
 document.getElementById("aboutPhotoInput").addEventListener("change", async (e) => {
@@ -700,6 +732,20 @@ document.getElementById("aboutPhotoInput").addEventListener("change", async (e) 
   state.pendingAboutPhoto = { path, dataUrl };
   state.pendingImages.push({ file, path, dataUrl });
   state.aboutMe.photo = path;
+  markDirty();
+  renderAboutMePanel();
+  e.target.value = "";
+});
+
+document.getElementById("aboutFabPhotoInput").addEventListener("change", async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const ext = file.name.split(".").pop().toLowerCase();
+  const path = `images/about-fab-${Date.now()}.${ext}`;
+  const dataUrl = await fileToDataUrl(file);
+  state.pendingAboutFabPhoto = { path, dataUrl };
+  state.pendingImages.push({ file, path, dataUrl });
+  state.aboutMe.fabPhoto = path;
   markDirty();
   renderAboutMePanel();
   e.target.value = "";
@@ -1032,24 +1078,38 @@ function renderProducts() {
     const materialWrap = document.createElement("div");
     const materialLabel = document.createElement("label");
     materialLabel.textContent = "Материал";
-    const materialSelect = document.createElement("select");
-    const materialPlaceholderOpt = document.createElement("option");
-    materialPlaceholderOpt.value = "";
-    materialPlaceholderOpt.textContent = "— не указано —";
-    materialSelect.appendChild(materialPlaceholderOpt);
-    MATERIAL_OPTIONS.forEach((mat) => {
-      const o = document.createElement("option");
-      o.value = mat;
-      o.textContent = mat;
-      if (product.material === mat) o.selected = true;
-      materialSelect.appendChild(o);
-    });
-    materialSelect.addEventListener("change", () => {
-      product.material = materialSelect.value;
+    const materialInput = document.createElement("input");
+    materialInput.type = "text";
+    materialInput.placeholder = "Например: хлопок, полиэстер — не указано, если пусто";
+    materialInput.value = product.material || "";
+    materialInput.addEventListener("input", () => {
+      product.material = materialInput.value;
       markDirty();
     });
+    const materialChips = document.createElement("div");
+    materialChips.style.display = "flex";
+    materialChips.style.flexWrap = "wrap";
+    materialChips.style.gap = "6px";
+    materialChips.style.marginTop = "8px";
+    MATERIAL_OPTIONS.forEach((mat) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "btn btn-small";
+      chip.style.opacity = "0.75";
+      chip.textContent = mat;
+      chip.addEventListener("click", () => {
+        const current = materialInput.value.trim();
+        const parts = current ? current.split(",").map((s) => s.trim()).filter(Boolean) : [];
+        if (!parts.includes(mat)) parts.push(mat);
+        materialInput.value = parts.join(", ");
+        product.material = materialInput.value;
+        markDirty();
+      });
+      materialChips.appendChild(chip);
+    });
     materialWrap.appendChild(materialLabel);
-    materialWrap.appendChild(materialSelect);
+    materialWrap.appendChild(materialInput);
+    materialWrap.appendChild(materialChips);
 
     const sizeWrap = document.createElement("div");
     const sizeLabel = document.createElement("label");
@@ -1297,6 +1357,7 @@ async function publish() {
     state.dataSha = json.content.sha;
     state.dirty = false;
     state.pendingAboutPhoto = null;
+    state.pendingAboutFabPhoto = null;
     publishBtn.textContent = "Сохранено ✓";
     setStatus("Сайт обновится примерно через минуту.", "ok");
   } catch (e) {
@@ -1404,19 +1465,7 @@ function parseMagicMeta(text) {
   }
 
   const materialMatch = normalized.match(/(?:Материал|Матеріал|Material)\s*:\s*(.+)/i);
-  if (materialMatch) {
-    const v = materialMatch[1].trim().toLowerCase();
-    if (/хлопок|cotton|baumwolle/.test(v)) meta.material = "Хлопок 100%";
-    else if (/полиэстер|polyester/.test(v)) meta.material = "Полиэстер";
-    else if (/вискоз|viscose|viskose/.test(v)) meta.material = "Вискоза";
-    else if (/шерст|wool|wolle/.test(v)) meta.material = "Шерсть";
-    else if (/кож|leather|leder/.test(v)) meta.material = "Кожа";
-    else if (/пластик|plastic|kunststoff/.test(v)) meta.material = "Пластик";
-    else if (/металл|сталь|metal|stahl/.test(v)) meta.material = "Металл";
-    else if (/дерев|wood|holz/.test(v)) meta.material = "Дерево";
-    else if (/стекл|glass|glas/.test(v)) meta.material = "Стекло";
-    else if (/смеш|mix|blend/.test(v)) meta.material = "Смешанный состав";
-  }
+  if (materialMatch) meta.material = materialMatch[1].trim();
 
   const sizeMatch = normalized.match(/(?:Размер|Розмір|Size|Größe|Talla)\s*:\s*(.+)/i);
   if (sizeMatch) meta.size = sizeMatch[1].trim();
