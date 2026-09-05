@@ -909,6 +909,44 @@ const PRODUCTS = [
       "es": "Un libro de una de mis filósofas favoritas, María Zambrano. Aquí reflexiona sobre qué es España —la imaginada y la real— a través de su literatura, sus mitos, su arte y sus pensadores. Zambrano es una pensadora muy seria, pero al mismo tiempo te acompaña con delicadeza hacia la profundidad de su pensamiento 🧘\n\nEdición en español de la colección «Los libros de Sísifo» de Edhasa. Un libro precioso para quien se interese por la filosofía, España, la literatura o simplemente por una lectura lenta y reflexiva ✨\n\nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo.",
       "zh": "我最喜欢的哲学家之一玛丽亚·桑布拉诺的作品。她在书中通过西班牙的文学、神话、艺术与思想家，思考西班牙究竟是什么——想象中的西班牙，以及真实的西班牙。桑布拉诺是一位非常严肃的思想家，但她也会温柔地带领读者走入她思想的深处 🧘\n\n这是 Edhasa 出版社“Los libros de Sísifo”系列的西班牙语版本。适合对哲学、西班牙、文学感兴趣，或喜欢慢慢深入阅读的人 ✨\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接。"
     }
+  },
+  {
+    "id": 25,
+    "price": "5 €",
+    "reserved": false,
+    "hidden": false,
+    "category": "misc",
+    "condition": "fair",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item25-1788613323161-hz4m.jpg",
+      "images/item25-1788613323246-efyd.jpg"
+    ],
+    "title": {
+      "en": "Im Berufssprachkurs B2 — German course and workbook, Hueber",
+      "de": "Im Berufssprachkurs B2 — Kurs- und Arbeitsbuch Deutsch, Hueber",
+      "ru": "Im Berufssprachkurs B2 — курс и рабочая тетрадь по немецкому, Hueber",
+      "uk": "Im Berufssprachkurs B2 — курс і робочий зошит з німецької, Hueber",
+      "es": "Im Berufssprachkurs B2 — libro de curso y ejercicios de alemán, Hueber",
+      "zh": "Im Berufssprachkurs B2 — Hueber 德语 B2 课程与练习册"
+    },
+    "desc": {
+      "en": "A B2 German coursebook that will prepare you for working in Germany and also give you a good foundation for everyday communication. Grab it if you want to score 210 out of 240 points in the B2 exam, like I did 😀\n\n2022 edition, ISBN 978-3-19-441190-6. Inside you will find my notes and some completed exercises. The book is a good fit for someone who does not mind that and wants to save money. New price is €25; I’m letting it go for €5 ✍️\n\nHandover at a U-Bahn or S-Bahn station in central Hamburg 🇩🇪",
+      "de": "Ein Deutschlehrbuch auf B2-Niveau, das dich auf die Arbeit in Deutschland vorbereitet und dir zugleich eine gute Grundlage für die alltägliche Kommunikation gibt. Schnapp es dir, wenn du die B2-Prüfung mit 210 von 240 Punkten bestehen möchtest — so wie ich 😀\n\nAusgabe von 2022, ISBN 978-3-19-441190-6. Im Buch gibt es meine Notizen und einige ausgefüllte Aufgaben. Es passt gut für jemanden, den das nicht stört und der dabei etwas Geld sparen möchte. Neu kostet es 25 €, ich gebe es für 5 € ab ✍️\n\nÜbergabe an einer U- oder S-Bahn-Station in der Hamburger Innenstadt 🇩🇪",
+      "ru": "Учебник немецкого языка уровня B2, который подготовит вас к работе в Германии, да и в целом даст хорошую базу для повседневного общения. Спешите забрать, если хотите сдать экзамен B2 на 210 из 240 баллов, как я 😀\n\nИздание 2022 года, ISBN 978-3-19-441190-6. Внутри — мои пометки и часть заполненных заданий. Книга подойдёт тому, кого это не смущает и тем, кто хочет сэкономить. Новая стоит 25 €, отдам за 5 € ✍️\n\nПередача на станции U-/S-Bahn в центральной части Гамбурга 🇩🇪",
+      "uk": "Підручник німецької мови рівня B2, який підготує вас до роботи в Німеччині й загалом дасть хорошу основу для повсякденного спілкування. Поспішайте забрати, якщо хочете скласти іспит B2 на 210 із 240 балів, як я 😀\n\nВидання 2022 року, ISBN 978-3-19-441190-6. Усередині — мої нотатки та частина виконаних завдань. Книга підійде тому, кого це не бентежить, і тим, хто хоче заощадити. Нова коштує 25 €, віддам за 5 € ✍️\n\nПередача на станції U-/S-Bahn у центральній частині Гамбурга 🇩🇪",
+      "es": "Un libro de alemán de nivel B2 que te preparará para trabajar en Alemania y que, además, te dará una buena base para la comunicación cotidiana. ¡Date prisa si quieres sacar 210 de 240 puntos en el examen B2, como yo! 😀\n\nEdición de 2022, ISBN 978-3-19-441190-6. Dentro encontrarás mis apuntes y algunos ejercicios completados. Es ideal para quien no tenga problema con ello y quiera ahorrar dinero. Nuevo cuesta 25 €, lo dejo en 5 € ✍️\n\nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo 🇩🇪",
+      "zh": "一本 B2 级德语教材，既能帮助你为在德国工作做准备，也能为日常交流打下扎实基础。如果你也想像我一样在 B2 考试中取得 240 分中的 210 分，就快来带走它吧 😀\n\n2022 年版，ISBN 978-3-19-441190-6。书中有我的笔记和一部分已完成的练习。适合不介意这些、同时希望省钱的人。全新售价 25 欧元，现在 5 欧元出手 ✍️\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接。🇩🇪"
+    }
   }
 ];
 
