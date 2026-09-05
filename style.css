@@ -9,6 +9,7 @@
   --blue: #6E4FFF;
   --soft-pink: #FBE0E6;
   --bubblegum: #FF4FA3;
+  --light-pink: #F9C4D8;
   --lead: #24223A;
   /* совместимость со старыми названиями акцентов */
   --coral: var(--red);
@@ -145,15 +146,20 @@ html, body {
   transition: transform 0.12s ease, box-shadow 0.12s ease;
 }
 
+.heart-suit {
+  display: inline-block;
+  vertical-align: -0.05em;
+}
+
 .cat-pill:hover {
   transform: translate(1px, 1px);
   box-shadow: 2px 2px 0 var(--yellow);
 }
 
 .cat-pill.is-active {
-  background: var(--bubblegum);
+  background: var(--light-pink);
   border-color: var(--ink);
-  color: var(--paper);
+  color: var(--ink);
   box-shadow: 3px 3px 0 var(--blue);
 }
 
@@ -366,10 +372,8 @@ html, body {
 }
 
 .like-btn .heart {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  transition: fill 0.12s ease;
+  font-size: 13px;
+  line-height: 1;
 }
 
 .like-btn:hover {
@@ -390,10 +394,6 @@ html, body {
   color: var(--paper);
 }
 
-.like-btn.is-liked .heart {
-  fill: currentColor;
-  stroke: currentColor;
-}
 
 .product-num {
   font-size: 12px;

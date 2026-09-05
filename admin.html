@@ -413,6 +413,7 @@
     <p style="font-size:12px; opacity:0.7; margin-top:-6px;">
       Перетаскивай строки, чтобы поменять порядок — влияет на порядок на сайте.
     </p>
+    <p id="orderScopeLabel" style="font-size:11px; opacity:0.6; margin-top:-8px;"></p>
     <div id="orderList" style="display:flex; flex-direction:column; gap:6px; max-height:60vh; overflow:auto;"></div>
     <div style="margin-top:14px;">
       <button class="btn btn-primary" id="orderCloseBtn">Готово</button>
@@ -714,6 +715,12 @@ function renderAdminCategoryBar() {
   bar.appendChild(nonePill);
 }
 
+function matchesAdminFilter(product) {
+  if (adminCategoryFilter === "all") return true;
+  if (adminCategoryFilter === "none") return !product.category;
+  return product.category === adminCategoryFilter;
+}
+
 function renderProducts() {
   renderAdminCategoryBar();
   productsListEl.innerHTML = "";
@@ -721,11 +728,7 @@ function renderProducts() {
   const order = state.products
     .map((_, i) => i)
     .reverse()
-    .filter((idx) => {
-      if (adminCategoryFilter === "all") return true;
-      if (adminCategoryFilter === "none") return !state.products[idx].category;
-      return state.products[idx].category === adminCategoryFilter;
-    });
+    .filter((idx) => matchesAdminFilter(state.products[idx]));
   order.forEach((idx) => {
     const product = state.products[idx];
     const card = document.createElement("div");
@@ -1401,12 +1404,27 @@ function closeOrderOverlay() {
   document.getElementById("orderOverlay").classList.add("hidden");
 }
 
+function adminFilterLabel() {
+  if (adminCategoryFilter === "all") return "Все";
+  if (adminCategoryFilter === "none") return "Без категории";
+  const opt = CATEGORY_OPTIONS.find((o) => o.value === adminCategoryFilter);
+  return opt ? opt.label : adminCategoryFilter;
+}
+
 function renderOrderList() {
   const listEl = document.getElementById("orderList");
   listEl.innerHTML = "";
+  document.getElementById("orderScopeLabel").textContent = "Категория: " + adminFilterLabel();
   let dragFromIndex = null;
 
-  state.products.forEach((product, idx) => {
+  // Только объявления текущей категории (фильтр над списком) — перетаскивание
+  // меняет порядок лишь внутри неё, остальные слоты не трогает.
+  const slots = state.products
+    .map((_, i) => i)
+    .filter((i) => matchesAdminFilter(state.products[i]));
+
+  slots.forEach((slotIdx, localIdx) => {
+    const product = state.products[slotIdx];
     const row = document.createElement("div");
     row.className = "order-row";
     row.draggable = true;
@@ -1423,7 +1441,7 @@ function renderOrderList() {
     row.appendChild(title);
 
     row.addEventListener("dragstart", (e) => {
-      dragFromIndex = idx;
+      dragFromIndex = localIdx;
       row.classList.add("is-dragging");
       e.dataTransfer.effectAllowed = "move";
     });
@@ -1436,9 +1454,11 @@ function renderOrderList() {
     row.addEventListener("drop", (e) => {
       e.preventDefault();
       row.classList.remove("is-dragover");
-      if (dragFromIndex === null || dragFromIndex === idx) return;
-      const [moved] = state.products.splice(dragFromIndex, 1);
-      state.products.splice(idx, 0, moved);
+      if (dragFromIndex === null || dragFromIndex === localIdx) return;
+      const subset = slots.map((i) => state.products[i]);
+      const [moved] = subset.splice(dragFromIndex, 1);
+      subset.splice(localIdx, 0, moved);
+      slots.forEach((origSlot, k) => (state.products[origSlot] = subset[k]));
       dragFromIndex = null;
       markDirty();
       renderOrderList();

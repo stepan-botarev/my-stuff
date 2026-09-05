@@ -231,14 +231,16 @@ function render() {
     likeBtn.disabled = alreadyLiked;
     likeBtn.setAttribute("aria-label", "Like");
     likeBtn.innerHTML =
-      '<svg class="heart" viewBox="0 0 24 24" width="14" height="14"><path d="M12 21s-7.2-4.6-10-9.3C.4 8.6 2 5 5.6 5c2 0 3.4 1 4.4 2.6C11 6 12.4 5 14.4 5 18 5 19.6 8.6 18 11.7 15.2 16.4 12 21 12 21z"/></svg>' +
+      `<span class="heart">${alreadyLiked ? "♥" : "♡"}</span>` +
       '<span class="like-count">·</span>';
+    const heartEl = likeBtn.querySelector(".heart");
     const likeCountEl = likeBtn.querySelector(".like-count");
     likeBtn.addEventListener("click", async (e) => {
       e.stopPropagation();
       if (likeBtn.disabled) return;
       likeBtn.disabled = true;
       likeBtn.classList.add("is-liked");
+      heartEl.textContent = "♥";
       likedIds.add(product.id);
       saveLikedLocal(likedIds);
       const current = parseInt(likeCountEl.textContent, 10) || 0;
