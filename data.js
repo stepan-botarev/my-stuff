@@ -7,6 +7,8 @@ const WHATSAPP_NUMBER = "4917623657623";
 // Список товаров. Порядок в массиве = порядок на сайте.
 // images: первая картинка — превью в списке, все — доступны в галерее.
 // reserved: true — товар помечается как "забронирован".
+// hidden: true — товар скрыт с сайта, но остаётся в списке для повторной публикации.
+// category: одна из tech / furniture / clothing / misc (или пусто).
 const PRODUCTS = [
   {
     "id": 1,
@@ -543,6 +545,63 @@ const PRODUCTS = [
       "uk": "Чудова шафа, багато місця для зберігання. У подарунок йде тканинна вставка з відсіками для речей.\n\nЄдиний мінус: під час збирання трохи пошкодив задню стінку, але замазав білою фарбою — взагалі непомітно.\n\nНова коштує 99 €, віддам за 45 € 📦\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
       "es": "Armario estupendo, con mucho espacio de almacenamiento. Incluye de regalo un organizador de tela con compartimentos para guardar cosas.\n\nÚnico inconveniente: durante el montaje dañé un poco el panel trasero, pero lo tapé con pintura blanca — de verdad no se nota nada.\n\nEl precio nuevo es de 99 €, lo dejo en 45 € 📦\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
       "zh": "很棒的衣柜，收纳空间很大。附赠一个带收纳格的布艺插件，可以分类放东西。\n\n唯一的小瑕疵：组装时不小心碰坏了一点背板，但用白色油漆涂了一下，基本看不出来。\n\n全新售价99欧元，现在45欧元出手 📦\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
+    },
+    "category": "furniture"
+  },
+  {
+    "id": 16,
+    "price": "25 €",
+    "reserved": false,
+    "hidden": false,
+    "category": "",
+    "condition": "good",
+    "material": "",
+    "size": "140×60 cm",
+    "location": {
+      "en": "Glinde, Möllner Landstraße 89",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [],
+    "title": {
+      "en": "IKEA LAGKAPTEN / ADILS desk, oak effect/white",
+      "de": "IKEA LAGKAPTEN / ADILS Schreibtisch, Eicheneffekt/weiß ",
+      "ru": "Стол IKEA LAGKAPTEN / ADILS, эффект дуба/белый ",
+      "uk": "Стіл IKEA LAGKAPTEN / ADILS, ефект дуба/білий ",
+      "es": "Escritorio IKEA LAGKAPTEN / ADILS, efecto roble/blanco ",
+      "zh": "IKEA LAGKAPTEN / ADILS 书桌，橡木纹/白色，140×60厘米"
+    },
+    "desc": {
+      "en": "Solid, spacious desk — great for a home office or study setup. In perfect condition, no scratches or marks.\n\nNew price is €45, letting it go for €25 📦\n\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
+      "de": "Stabiler, geräumiger Schreibtisch — super fürs Homeoffice oder zum Lernen. In einwandfreiem Zustand, keine Kratzer oder Macken.\n\nNeupreis liegt bei 45 €, gebe ihn für 25 € ab 📦\n\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
+      "ru": "Прочный, просторный стол — отлично подойдёт для домашнего офиса или учёбы. В идеальном состоянии, без царапин и следов использования.\n\nНовый стоит 45 €, отдам за 25 € 📦\n\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
+      "uk": "Міцний, просторий стіл — чудово підійде для домашнього офісу або навчання. У ідеальному стані, без подряпин і слідів використання.\n\nНовий коштує 45 €, віддам за 25 € 📦\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
+      "es": "Escritorio resistente y espacioso — perfecto para teletrabajo o estudio. En perfecto estado, sin rayones ni marcas.\n\nEl precio nuevo es de 45 €, lo dejo en 25 € 📦\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
+      "zh": "结实宽敞的书桌，非常适合居家办公或学习。状态完美，没有划痕或使用痕迹。\n\n全新售价45欧元，现在25欧元出手 📦\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
     }
   }
 ];
+
+// Всплывающее окошко "Обо мне" в углу сайта.
+const ABOUT_ME = {
+  "title": {
+    "en": "About me",
+    "de": "Über mich",
+    "ru": "Обо мне",
+    "uk": "Про мене",
+    "es": "Sobre mí",
+    "zh": "关于我"
+  },
+  "text": {
+    "en": "Hi! I'm Stephen. I've been living in Germany for two years now, and this August I got into university in Berlin. So I'm moving out from near Hamburg and selling off things I either can't take with me or just feel ready to let go of — because everything changes, and I'm not quite the same person who bought them.\n\nStill, these are all things I chose with care and tried to look after well. I like the idea of minimalism and sustainability — where every item finds its use. So I'd really appreciate your help finding these things new owners!\n\nMessage me and share with friends 🌿",
+    "de": "Hallo! Ich heiße Stefan. Ich lebe seit zwei Jahren in Deutschland und habe im August einen Studienplatz an einer Uni in Berlin bekommen. Deshalb ziehe ich aus der Nähe von Hamburg weg und verkaufe Dinge, die ich entweder nicht mitnehmen kann oder mit denen ich einfach bereit bin, mich zu verabschieden — denn alles verändert sich, und ich bin nicht mehr ganz derselbe Mensch, der sie einst gekauft hat.\n\nTrotzdem sind das alles Dinge, die ich mit Bedacht ausgesucht und sorgsam behandelt habe. Ich mag den Gedanken von Minimalismus und Nachhaltigkeit — dass jedes Ding seinen Nutzen findet. Deshalb würde ich mich sehr freuen, wenn ihr mir helft, all diesen Sachen neue Besitzer:innen zu finden!\n\nSchreibt mir und leitet es gerne an Freunde weiter 🌿",
+    "ru": "Привет! Меня зовут Стёпа. Я уже два года живу в Германии и в августе поступил в университет в Берлине. Поэтому теперь переезжаю из-под Гамбурга и распродаю вещи, которые не получится перевезти и те, с которыми просто хочется попрощаться, потому что всё меняется, и я уже не тот человек, что когда-то купил их.\n\nТем не менее это всё вещи, которые я выбирал с душой и с которыми старался бережно обходиться. Мне нравится идея минимализма и устойчивости — когда каждой вещи всегда находится применение. Поэтому я буду рад, если вы поможете найти всем этим вещицам новых хозяев и хозяек!\n\nПишите и пересылайте друзьям 🌿",
+    "uk": "Привіт! Мене звати Степан. Я вже два роки живу в Німеччині і в серпні вступив до університету в Берліні. Тому тепер переїжджаю з-під Гамбурга і розпродаю речі, які не вийде перевезти, та ті, з якими просто хочеться попрощатися, бо все змінюється, і я вже не та людина, яка колись їх купила.\n\nПроте це все речі, які я обирав з душею і намагався дбайливо з ними поводитися. Мені подобається ідея мінімалізму та сталості — коли кожній речі завжди знаходиться застосування. Тож я буду радий, якщо ви допоможете знайти всім цим речам нових господарів і господинь!\n\nПишіть і пересилайте друзям 🌿",
+    "es": "¡Hola! Me llamo Esteban. Llevo dos años viviendo en Alemania y en agosto entré a la universidad en Berlín. Por eso ahora me mudo desde cerca de Hamburgo y estoy vendiendo cosas que no podré llevarme, y otras de las que simplemente siento que es hora de despedirme — porque todo cambia, y ya no soy exactamente la misma persona que las compró en su momento.\n\nAun así, son todas cosas que elegí con cariño y traté de cuidar bien. Me gusta la idea del minimalismo y la sostenibilidad — que cada cosa siempre encuentre su uso. Así que agradecería mucho vuestra ayuda para encontrarles nuevos dueños y dueñas a todas estas cositas.\n\nEscribidme y compartid con amigos 🌿",
+    "zh": "你好！我叫Stepan。我在德国已经生活两年了，今年8月考上了柏林的大学。所以现在我要从汉堡附近搬走，把一些带不走的东西，还有一些单纯想告别的东西卖掉——因为一切都在变化，我也不再是当初买这些东西时的那个自己了。\n\n不过这些都是我用心挑选、尽力好好爱护过的东西。我喜欢极简和可持续的理念——希望每件物品都能找到自己的用处。所以如果大家能帮忙给这些小物件找到新主人，我会非常感激！\n\n欢迎留言，也欢迎转发给朋友们 🌿"
+  },
+  "photo": ""
+};
