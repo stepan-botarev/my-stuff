@@ -86,8 +86,8 @@ const PRODUCTS = [
     "hidden": false,
     "category": "tech",
     "condition": "new",
-    "material": "Пластик",
-    "size": "43,9 × 34 × 25,8 cm",
+    "material": "пластик, металл",
+    "size": "43,9 × 34 × 25,8 см",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item19-1788602683882-f6wb.jpg",
