@@ -46,10 +46,9 @@ let currentCategory = "all";
 let lightboxImages = [];
 let lightboxIndex = 0;
 
-// Лайки видны всем посетителям сайта (общий публичный счётчик через Abacus).
-// Лайк можно поставить только один раз с одного браузера (без "отмены") —
-// локально в localStorage запоминаем, что уже лайкнули, чтобы не накручивать счётчик.
-const LIKES_NS = "mystuff-shop-jr9qlodk";
+// "Избранное" — чисто локальная отметка (localStorage), без общего счётчика:
+// публичный счётчик умел только расти и не позволял снять лайк, что мешало
+// сделать сердечко переключаемым. Можно свободно ставить и снимать.
 const LIKES_KEY = "myStuffLikes";
 
 function getLikedLocal() {
@@ -63,28 +62,6 @@ function saveLikedLocal(likes) {
   localStorage.setItem(LIKES_KEY, JSON.stringify([...likes]));
 }
 let likedIds = getLikedLocal();
-
-async function fetchLikeCount(id) {
-  try {
-    const res = await fetch(`https://abacus.jasoncameron.dev/get/${LIKES_NS}/item-${id}`);
-    if (!res.ok) return 0;
-    const data = await res.json();
-    return data.value ?? 0;
-  } catch {
-    return null;
-  }
-}
-
-async function hitLikeCount(id) {
-  try {
-    const res = await fetch(`https://abacus.jasoncameron.dev/hit/${LIKES_NS}/item-${id}`);
-    if (!res.ok) return null;
-    const data = await res.json();
-    return data.value ?? null;
-  } catch {
-    return null;
-  }
-}
 
 const listEl = document.getElementById("product-list");
 const lightboxEl = document.getElementById("lightbox");
@@ -224,32 +201,24 @@ function render() {
     }
     photoWrap.addEventListener("click", () => openLightbox(product.images, 0));
 
-    const alreadyLiked = likedIds.has(product.id);
     const likeBtn = document.createElement("button");
     likeBtn.type = "button";
-    likeBtn.className = "like-btn" + (alreadyLiked ? " is-liked" : "");
-    likeBtn.disabled = alreadyLiked;
-    likeBtn.setAttribute("aria-label", "Like");
-    likeBtn.innerHTML =
-      `<span class="heart">${alreadyLiked ? "♥" : "♡"}</span>` +
-      '<span class="like-count">·</span>';
+    likeBtn.className = "like-btn" + (likedIds.has(product.id) ? " is-liked" : "");
+    likeBtn.setAttribute("aria-label", "Favorite");
+    likeBtn.innerHTML = `<span class="heart">${likedIds.has(product.id) ? "♥" : "♡"}</span>`;
     const heartEl = likeBtn.querySelector(".heart");
-    const likeCountEl = likeBtn.querySelector(".like-count");
-    likeBtn.addEventListener("click", async (e) => {
+    likeBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      if (likeBtn.disabled) return;
-      likeBtn.disabled = true;
-      likeBtn.classList.add("is-liked");
-      heartEl.textContent = "♥";
-      likedIds.add(product.id);
+      const isLiked = likedIds.has(product.id);
+      if (isLiked) {
+        likedIds.delete(product.id);
+      } else {
+        likedIds.add(product.id);
+      }
       saveLikedLocal(likedIds);
-      const current = parseInt(likeCountEl.textContent, 10) || 0;
-      likeCountEl.textContent = current + 1;
-      const newValue = await hitLikeCount(product.id);
-      if (newValue != null) likeCountEl.textContent = newValue;
-    });
-    fetchLikeCount(product.id).then((value) => {
-      likeCountEl.textContent = value != null ? value : "0";
+      likeBtn.classList.toggle("is-liked", !isLiked);
+      heartEl.textContent = isLiked ? "♡" : "♥";
+      if (currentCategory === "favorites") render();
     });
     photoWrap.appendChild(likeBtn);
 
