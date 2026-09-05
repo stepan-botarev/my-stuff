@@ -565,7 +565,11 @@ const PRODUCTS = [
       "es": "",
       "zh": ""
     },
-    "images": [],
+    "images": [
+      "images/item16-1788597103301-1icf.jpg",
+      "images/item16-1788597103403-u80m.jpg",
+      "images/item16-1788597103538-b984.jpg"
+    ],
     "title": {
       "en": "IKEA LAGKAPTEN / ADILS desk, oak effect/white",
       "de": "IKEA LAGKAPTEN / ADILS Schreibtisch, Eicheneffekt/weiß ",
