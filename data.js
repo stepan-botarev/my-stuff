@@ -793,6 +793,44 @@ const PRODUCTS = [
       "es": "Si eres un vagabundo del Dharma como yo y, después de ver Hacia rutas salvajes, quisiste irte a vivir para siempre en los bosques, este set de camping es para ti. También viene muy bien para festivales, viajes o noches improvisadas fuera de casa. Todo está en excelente estado 🎒\n\nEl saco de dormir es un QUECHUA Basic 20 °C (190×72 cm); se puede abrir completamente y utilizar como manta cuando hace calor. La esterilla de espuma es gruesa, pero ligera y fácil de enrollar; mide 180×50 cm. La resistente taza de camping azul de metal tiene un agradable color azul Majorelle, perfecta para té o café al aire libre 🍵\n\nPrecios nuevos en Decathlon: saco 15 €, esterilla 9 € y taza alrededor de 10 € — en total 34 €. Dejo todo el set por 20 € 🏕️  \nTambién se puede comprar por separado: saco 10 €, esterilla 5 € y taza 5 €.  \nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo 🌿",
       "zh": "如果你和我一样是个“达摩流浪者”，看完《荒野生存》后曾想永远走进森林，那么这套露营装备就是为你准备的。当然，它也很适合音乐节、旅行或临时过夜。所有物品都处于极佳状态 🎒\n\n睡袋是 QUECHUA Basic 20 °C 款（190×72 厘米），天气暖和时可以完全打开，当作毯子使用。泡沫防潮垫较厚，同时轻便且容易卷起，尺寸为 180×50 厘米。蓝色金属露营杯结实耐用，是很舒服的马若雷勒蓝色，适合在户外喝茶或咖啡 🍵\n\nDecathlon 的全新价格：睡袋 15 欧元、泡沫垫 9 欧元、杯子约 10 欧元——总计 34 欧元。整套一起 20 欧元出手 🏕️  \n也可以单独购买：睡袋 10 欧元、泡沫垫 5 欧元、杯子 5 欧元。  \n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接 🌿"
     }
+  },
+  {
+    "id": 22,
+    "price": "7 €",
+    "reserved": false,
+    "hidden": false,
+    "category": "misc",
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt"
+    },
+    "images": [
+      "images/item22-1788605535389-76ry.jpg",
+      "images/item22-1788605535506-jqp1.jpg"
+    ],
+    "title": {
+      "en": "Rare Spanish-language book: La otra voz: Poesía y fin de siglo — Octavio Paz 🇲🇽",
+      "de": "Seltenes spanischsprachiges Buch: La otra voz: Poesía y fin de siglo — Octavio Paz 🇲🇽",
+      "ru": "Книга на испанском: La otra voz: Poesía y fin de siglo — Октавио Пас 🇲🇽",
+      "uk": "Книга іспанською: La otra voz: Poesía y fin de siglo — Октавіо Пас 🇲🇽",
+      "es": "Libro raro en español: La otra voz: Poesía y fin de siglo — Octavio Paz 🇲🇽",
+      "zh": "珍稀西班牙语书籍：La otra voz: Poesía y fin de siglo《另一种声音：诗歌与世纪末》— 奥克塔维奥·帕斯 🇲🇽"
+    },
+    "desc": {
+      "en": "A rare Spanish-language edition by Octavio Paz — one of the most important Spanish-language thinkers and writers of the 20th century, a Mexican poet, essayist, and Nobel Prize winner in Literature. This is a collection of essays about poetry, modernity, and the end of the century; a thoughtful find for anyone interested in literature, philosophy, and the Spanish-speaking world 📚\n\nPublished by Seix Barral in 1990, the same year Paz received the Nobel Prize in Literature. Paperback, 141 pages, in good condition. A beautiful small book to keep on a shelf, take on a trip, or give to someone who reads Spanish 🇲🇽\n\nHandover at a U-Bahn or S-Bahn station in central Hamburg 📖",
+      "de": "Eine seltene spanischsprachige Ausgabe von Octavio Paz — einem der wichtigsten spanischsprachigen Denker und Schriftsteller des 20. Jahrhunderts, mexikanischem Dichter und Essayisten sowie Literaturnobelpreisträger. Es ist eine Essaysammlung über Poesie, Moderne und das Ende des Jahrhunderts; für alle, die sich für Literatur, Philosophie und die spanischsprachige Welt interessieren 📚\n\nErschienen bei Seix Barral im Jahr 1990 — im selben Jahr, in dem Paz den Nobelpreis für Literatur erhielt. Taschenbuch mit 141 Seiten, in gutem Zustand. Eine schöne kleine Ausgabe fürs Regal, für unterwegs oder als Geschenk für jemanden, der Spanisch liest 🇲🇽\n\nÜbergabe an einer U- oder S-Bahn-Station in der Hamburger Innenstadt 📖",
+      "ru": "Раритетное испаноязычное издание Октавио Паса — одного из важнейших испаноязычных мыслителей и писателей XX века, мексиканского поэта, эссеиста и нобелевского лауреата по литературе. Это сборник эссе о поэзии и конце XX века — для тех, кому интересны литература, философия и испаноязычный мир 📚\n\nИздана Seix Barral в 1990 году — в том же году, когда Пас получил Нобелевскую премию по литературе. Мягкая обложка, 141 страница, хорошее состояние. Красивое небольшое издание для полки, поездки или в подарок тому, кто читает по-испански 🇲🇽\n\nПередача на станции U-/S-Bahn в центральной части Гамбурга 📖",
+      "uk": "Раритетне іспаномовне видання Октавіо Паса — одного з найважливіших іспаномовних мислителів і письменників XX століття, мексиканського поета, есеїста та нобелівського лауреата з літератури. Це збірка есеїв про поезію і кінець століття — для тих, кому цікаві література, філософія та іспаномовний світ 📚\n\nВидана Seix Barral у 1990 році — того ж року, коли Пас отримав Нобелівську премію з літератури. М’яка обкладинка, 141 сторінка, хороший стан. Гарне невелике видання для полиці, подорожі або як подарунок тому, хто читає іспанською 🇲🇽\n\nПередача на станції U-/S-Bahn у центральній частині Гамбурга 📖",
+      "es": "Una edición poco común en español de Octavio Paz, uno de los pensadores y escritores más importantes de la lengua española del siglo XX: poeta y ensayista mexicano, ganador del Premio Nobel de Literatura. Es una colección de ensayos sobre la poesía, la modernidad y el fin de siglo; para quienes se interesan por la literatura, la filosofía y el mundo hispanohablante 📚\n\nPublicado por Seix Barral en 1990, el mismo año en que Paz recibió el Premio Nobel de Literatura. Tapa blanda, 141 páginas y en buen estado. Una edición bonita y compacta para tener en la estantería, llevar de viaje o regalar a alguien que lee en español 🇲🇽\n\nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo 📖",
+      "zh": "奥克塔维奥·帕斯的珍稀西班牙语版本。他是 20 世纪最重要的西班牙语思想家和作家之一，也是墨西哥诗人、散文家及诺贝尔文学奖得主。这是一本关于诗歌、现代性与世纪末的随笔集，是喜爱文学、哲学和西班牙语世界读者的一次特别发现 📚\n\n由 Seix Barral 于 1990 年出版——同一年帕斯获得诺贝尔文学奖。平装本，共 141 页，保存良好。一本适合放在书架上、旅行时随身携带，或送给阅读西班牙语的朋友的小书 🇲🇽\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接 📖"
+    }
   }
 ];
 
