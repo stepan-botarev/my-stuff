@@ -15,7 +15,7 @@ const PRODUCTS = [
     "price": "180 €",
     "reserved": false,
     "condition": "good",
-    "material": "",
+    "material": "Пластик, Металл",
     "size": "84.5 x 59.5 x 46.5 cm",
     "location": "Glinde, Möllner Landstraße 89  ",
     "images": [
