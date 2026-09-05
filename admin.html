@@ -181,6 +181,50 @@
   }
   .img-thumb.is-dragging { opacity: 0.35; }
   .img-thumb.is-dragover { outline: 2px dashed var(--coral); outline-offset: 2px; }
+
+  .order-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1.5px solid var(--ink);
+    border-radius: 8px;
+    background: var(--bg);
+    padding: 8px 12px;
+    cursor: grab;
+  }
+  .order-row.is-dragging { opacity: 0.35; }
+  .order-row.is-dragover { outline: 2px dashed var(--coral); outline-offset: 2px; }
+  .order-row .order-num {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    color: var(--yellow);
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+  .order-row .order-title {
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .cat-filter-pill {
+    font-family: "Space Mono", monospace;
+    font-size: 11px;
+    padding: 5px 12px;
+    border: 1.5px solid var(--ink);
+    background: var(--bg);
+    color: var(--ink);
+    cursor: pointer;
+    border-radius: 999px;
+    opacity: 0.6;
+  }
+  .cat-filter-pill.is-active {
+    opacity: 1;
+    background: var(--coral);
+    color: var(--paper);
+  }
+  .product-card.is-category-hidden { display: none; }
   .img-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
   .img-thumb button {
     position: absolute;
@@ -333,6 +377,8 @@
 
     <button class="btn" id="addProductBtn" style="margin-bottom:16px;">+ Добавить товар</button>
 
+    <div id="adminCategoryBar" style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;"></div>
+
     <div id="productsList"></div>
 
     <div class="actions-bar">
@@ -357,6 +403,19 @@
     <div style="display:flex; gap:10px; margin-top:14px;">
       <button class="btn btn-primary" id="magicApplyBtn">Заполнить</button>
       <button class="btn" id="magicCancelBtn">Отмена</button>
+    </div>
+  </div>
+</div>
+
+<div id="orderOverlay" class="magic-overlay hidden">
+  <div class="magic-modal panel" style="max-width: 480px;">
+    <h2>📋 Порядок объявлений</h2>
+    <p style="font-size:12px; opacity:0.7; margin-top:-6px;">
+      Перетаскивай строки, чтобы поменять порядок — влияет на порядок на сайте.
+    </p>
+    <div id="orderList" style="display:flex; flex-direction:column; gap:6px; max-height:60vh; overflow:auto;"></div>
+    <div style="margin-top:14px;">
+      <button class="btn btn-primary" id="orderCloseBtn">Готово</button>
     </div>
   </div>
 </div>
@@ -416,6 +475,8 @@ const DEFAULT_ABOUT_ME = {
   },
   photo: ""
 };
+
+let adminCategoryFilter = "all";
 
 let state = {
   token: "",
@@ -619,10 +680,52 @@ document.getElementById("aboutPhotoInput").addEventListener("change", async (e) 
   e.target.value = "";
 });
 
+function renderAdminCategoryBar() {
+  const bar = document.getElementById("adminCategoryBar");
+  bar.innerHTML = "";
+  const allPill = document.createElement("button");
+  allPill.type = "button";
+  allPill.className = "cat-filter-pill" + (adminCategoryFilter === "all" ? " is-active" : "");
+  allPill.textContent = "Все";
+  allPill.addEventListener("click", () => {
+    adminCategoryFilter = "all";
+    renderProducts();
+  });
+  bar.appendChild(allPill);
+  CATEGORY_OPTIONS.forEach((opt) => {
+    const pill = document.createElement("button");
+    pill.type = "button";
+    pill.className = "cat-filter-pill" + (adminCategoryFilter === opt.value ? " is-active" : "");
+    pill.textContent = opt.label;
+    pill.addEventListener("click", () => {
+      adminCategoryFilter = opt.value;
+      renderProducts();
+    });
+    bar.appendChild(pill);
+  });
+  const nonePill = document.createElement("button");
+  nonePill.type = "button";
+  nonePill.className = "cat-filter-pill" + (adminCategoryFilter === "none" ? " is-active" : "");
+  nonePill.textContent = "Без категории";
+  nonePill.addEventListener("click", () => {
+    adminCategoryFilter = "none";
+    renderProducts();
+  });
+  bar.appendChild(nonePill);
+}
+
 function renderProducts() {
+  renderAdminCategoryBar();
   productsListEl.innerHTML = "";
   // Показываем последние добавленные товары сверху (на самом сайте порядок не меняется)
-  const order = state.products.map((_, i) => i).reverse();
+  const order = state.products
+    .map((_, i) => i)
+    .reverse()
+    .filter((idx) => {
+      if (adminCategoryFilter === "all") return true;
+      if (adminCategoryFilter === "none") return !state.products[idx].category;
+      return state.products[idx].category === adminCategoryFilter;
+    });
   order.forEach((idx) => {
     const product = state.products[idx];
     const card = document.createElement("div");
@@ -632,6 +735,9 @@ function renderProducts() {
     head.className = "product-card-head";
     const numBadge = document.createElement("span");
     numBadge.className = "product-num-badge";
+    numBadge.style.cursor = "pointer";
+    numBadge.title = "Показать порядок всех объявлений";
+    numBadge.addEventListener("click", openOrderOverlay);
     numBadge.textContent = String(product.id).padStart(2, "0");
     if (product.hidden) {
       const hiddenTag = document.createElement("span");
@@ -1280,6 +1386,78 @@ function closeMagicModal() {
   document.getElementById("magicOverlay").classList.add("hidden");
   magicTargetProduct = null;
 }
+
+function productPreviewTitle(product) {
+  const t = product.title || {};
+  return t[LANGS[0]] || Object.values(t).find(Boolean) || "(без названия)";
+}
+
+function openOrderOverlay() {
+  renderOrderList();
+  document.getElementById("orderOverlay").classList.remove("hidden");
+}
+
+function closeOrderOverlay() {
+  document.getElementById("orderOverlay").classList.add("hidden");
+}
+
+function renderOrderList() {
+  const listEl = document.getElementById("orderList");
+  listEl.innerHTML = "";
+  let dragFromIndex = null;
+
+  state.products.forEach((product, idx) => {
+    const row = document.createElement("div");
+    row.className = "order-row";
+    row.draggable = true;
+
+    const num = document.createElement("span");
+    num.className = "order-num";
+    num.textContent = String(product.id).padStart(2, "0");
+
+    const title = document.createElement("span");
+    title.className = "order-title";
+    title.textContent = productPreviewTitle(product) + (product.hidden ? " (скрыто)" : "");
+
+    row.appendChild(num);
+    row.appendChild(title);
+
+    row.addEventListener("dragstart", (e) => {
+      dragFromIndex = idx;
+      row.classList.add("is-dragging");
+      e.dataTransfer.effectAllowed = "move";
+    });
+    row.addEventListener("dragend", () => row.classList.remove("is-dragging"));
+    row.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      row.classList.add("is-dragover");
+    });
+    row.addEventListener("dragleave", () => row.classList.remove("is-dragover"));
+    row.addEventListener("drop", (e) => {
+      e.preventDefault();
+      row.classList.remove("is-dragover");
+      if (dragFromIndex === null || dragFromIndex === idx) return;
+      const [moved] = state.products.splice(dragFromIndex, 1);
+      state.products.splice(idx, 0, moved);
+      dragFromIndex = null;
+      markDirty();
+      renderOrderList();
+    });
+
+    listEl.appendChild(row);
+  });
+}
+
+document.getElementById("orderCloseBtn").addEventListener("click", () => {
+  closeOrderOverlay();
+  renderProducts();
+});
+document.getElementById("orderOverlay").addEventListener("click", (e) => {
+  if (e.target.id === "orderOverlay") {
+    closeOrderOverlay();
+    renderProducts();
+  }
+});
 
 function applyMagicText() {
   if (!magicTargetProduct) return;

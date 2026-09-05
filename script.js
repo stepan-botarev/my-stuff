@@ -35,6 +35,7 @@ const CATEGORY_LABELS = {
   misc: { ru: "Всякие мелочи", en: "Miscellaneous", de: "Kleinkram", uk: "Всяка всячина", es: "Cositas", zh: "杂物" }
 };
 const ALL_CATEGORY_LABEL = { ru: "Все", en: "All", de: "Alle", uk: "Усі", es: "Todo", zh: "全部" };
+const FAVORITES_LABEL = { ru: "Избранное", en: "Favorites", de: "Favoriten", uk: "Обране", es: "Favoritos", zh: "收藏" };
 
 // "Обо мне" — опциональный блок, работает только если ABOUT_ME определён в data.js
 // (редактор admin.html добавит его туда автоматически при первом сохранении).
@@ -105,7 +106,6 @@ function renderCategoryBar() {
   const usedCategories = CATEGORY_ORDER.filter((cat) =>
     PRODUCTS.some((p) => !p.hidden && p.category === cat)
   );
-  if (!usedCategories.length) return;
 
   const allBtn = document.createElement("button");
   allBtn.type = "button";
@@ -128,6 +128,16 @@ function renderCategoryBar() {
     });
     bar.appendChild(btn);
   });
+
+  const favBtn = document.createElement("button");
+  favBtn.type = "button";
+  favBtn.className = "cat-pill" + (currentCategory === "favorites" ? " is-active" : "");
+  favBtn.innerHTML = `<span class="heart-suit">♥</span> ${FAVORITES_LABEL[currentLang]}`;
+  favBtn.addEventListener("click", () => {
+    currentCategory = "favorites";
+    render();
+  });
+  bar.appendChild(favBtn);
 }
 
 let aboutBubbleEl = null;
@@ -177,9 +187,12 @@ function renderAboutMe() {
 function render() {
   listEl.innerHTML = "";
   renderCategoryBar();
-  const visibleProducts = PRODUCTS.filter(
-    (p) => !p.hidden && (currentCategory === "all" || p.category === currentCategory)
-  );
+  const visibleProducts = PRODUCTS.filter((p) => {
+    if (p.hidden) return false;
+    if (currentCategory === "all") return true;
+    if (currentCategory === "favorites") return likedIds.has(p.id);
+    return p.category === currentCategory;
+  });
   visibleProducts.forEach((product, index) => {
     if (index > 0) {
       const sep = document.createElement("div");
