@@ -83,7 +83,7 @@ const PRODUCTS = [
     "id": 19,
     "price": "49 €",
     "reserved": false,
-    "hidden": false,
+    "hidden": true,
     "category": "tech",
     "condition": "new",
     "material": "пластик, металл",
@@ -571,7 +571,7 @@ const PRODUCTS = [
     "hidden": false,
     "category": "tech",
     "condition": "new",
-    "material": "Пластик",
+    "material": "Пластик, Дерево, Металл",
     "size": "28 × 17 × 22 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
