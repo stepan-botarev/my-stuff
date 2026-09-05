@@ -146,20 +146,24 @@ function renderAboutMe() {
     minimizeBtn.addEventListener("click", () => setAboutMinimized(true));
     bubble.appendChild(minimizeBtn);
 
+    const scroll = document.createElement("div");
+    scroll.className = "about-scroll";
+
     if (data.photo) {
       const img = document.createElement("img");
       img.className = "about-photo";
       img.src = data.photo;
-      bubble.appendChild(img);
+      scroll.appendChild(img);
     }
 
     const h = document.createElement("div");
     h.className = "about-title";
-    bubble.appendChild(h);
+    scroll.appendChild(h);
 
     const p = document.createElement("div");
     p.className = "about-text";
-    bubble.appendChild(p);
+    scroll.appendChild(p);
+    bubble.appendChild(scroll);
 
     const replyRow = document.createElement("div");
     replyRow.className = "about-reply-row";
@@ -171,7 +175,7 @@ function renderAboutMe() {
     sendBtn.className = "about-send-btn";
     sendBtn.setAttribute("aria-label", "Send");
     sendBtn.innerHTML =
-      '<svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 11.5L20.5 3l-6 17.5-4-7-7.5-4z" fill="currentColor"/></svg>';
+      '<svg viewBox="0 0 24 24" width="18" height="18"><path d="M2 21l21-9L2 3v7l15 2-15 2z" fill="currentColor"/></svg>';
     const sendToWhatsApp = () => {
       const msg = replyInput.value.trim();
       if (!msg) return;

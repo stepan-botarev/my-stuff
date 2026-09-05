@@ -184,15 +184,21 @@ html, body {
 
 .about-bubble {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: min(360px, calc(100vw - 32px));
   max-height: min(70vh, 520px);
-  overflow-y: auto;
   background: var(--paper);
   border: 2px solid var(--ink);
   border-radius: 16px;
   padding: 20px 20px 14px;
-  box-shadow: 5px 5px 0 var(--coral);
+  box-shadow: 5px 5px 0 var(--blue);
   font-family: "Inter", sans-serif;
+}
+
+.about-scroll {
+  overflow-y: auto;
+  min-height: 0;
 }
 
 .about-widget.is-minimized .about-bubble {
@@ -211,7 +217,7 @@ html, body {
   background: var(--paper);
   color: var(--ink);
   cursor: pointer;
-  box-shadow: 4px 4px 0 var(--coral);
+  box-shadow: 4px 4px 0 var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,6 +282,7 @@ html, body {
 
 .about-reply-row {
   display: flex;
+  flex-shrink: 0;
   gap: 8px;
   margin-top: 14px;
   padding-top: 12px;
