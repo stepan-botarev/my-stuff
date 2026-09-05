@@ -44,6 +44,30 @@ const CONDITION_LABELS = {
   old: { en: "Old", de: "Alt", ru: "Старое", uk: "Старе", es: "Viejo", tr: "Eski", ar: "قديم", fa: "قدیمی", zh: "旧" }
 };
 
+// Материал — фиксированный набор значений (как состояние), переводится
+// автоматически. Можно указать несколько через запятую — на сайте каждое
+// переведётся по отдельности. Неизвестное (свободный текст) слово
+// показываем как есть, без перевода — для старых объявлений.
+const MATERIAL_LABELS = {
+  cotton: { en: "Cotton 100%", de: "Baumwolle 100%", ru: "Хлопок 100%", uk: "Бавовна 100%", es: "Algodón 100%", tr: "Pamuk %100", ar: "قطن 100%", fa: "پنبه ۱۰۰٪", zh: "纯棉" },
+  polyester: { en: "Polyester", de: "Polyester", ru: "Полиэстер", uk: "Поліестер", es: "Poliéster", tr: "Polyester", ar: "بوليستر", fa: "پلی‌استر", zh: "聚酯纤维" },
+  viscose: { en: "Viscose", de: "Viskose", ru: "Вискоза", uk: "Віскоза", es: "Viscosa", tr: "Viskon", ar: "فسكوز", fa: "ویسکوز", zh: "粘胶纤维" },
+  wool: { en: "Wool", de: "Wolle", ru: "Шерсть", uk: "Вовна", es: "Lana", tr: "Yün", ar: "صوف", fa: "پشم", zh: "羊毛" },
+  leather: { en: "Leather", de: "Leder", ru: "Кожа", uk: "Шкіра", es: "Cuero", tr: "Deri", ar: "جلد", fa: "چرم", zh: "皮革" },
+  plastic: { en: "Plastic", de: "Kunststoff", ru: "Пластик", uk: "Пластик", es: "Plástico", tr: "Plastik", ar: "بلاستيك", fa: "پلاستیک", zh: "塑料" },
+  metal: { en: "Metal", de: "Metall", ru: "Металл", uk: "Метал", es: "Metal", tr: "Metal", ar: "معدن", fa: "فلز", zh: "金属" },
+  wood: { en: "Wood", de: "Holz", ru: "Дерево", uk: "Дерево", es: "Madera", tr: "Ahşap", ar: "خشب", fa: "چوب", zh: "木材" },
+  glass: { en: "Glass", de: "Glas", ru: "Стекло", uk: "Скло", es: "Vidrio", tr: "Cam", ar: "زجاج", fa: "شیشه", zh: "玻璃" },
+  mixed: { en: "Mixed materials", de: "Materialmix", ru: "Смешанный состав", uk: "Змішаний склад", es: "Materiales mixtos", tr: "Karışık malzeme", ar: "خليط من الخامات", fa: "ترکیبی", zh: "混合材质" }
+};
+function translateMaterial(raw) {
+  if (!raw) return "";
+  return raw.split(",").map((s) => s.trim()).filter(Boolean).map((tok) => {
+    const entry = MATERIAL_LABELS[tok.toLowerCase()];
+    return entry ? entry[currentLang] || entry.en : tok;
+  }).join(", ");
+}
+
 const META_ICONS = { condition: "👍", material: "🧶", size: "📐", location: "📍" };
 
 const META_LABELS = {
@@ -103,6 +127,8 @@ const listEl = document.getElementById("product-list");
 const lightboxEl = document.getElementById("lightbox");
 const lbImgEl = document.getElementById("lb-img");
 const lbDotsEl = document.getElementById("lb-dots");
+const lbPrevEl = document.getElementById("lb-prev");
+const lbNextEl = document.getElementById("lb-next");
 
 function waLink(product) {
   const text = encodeURIComponent(
@@ -367,7 +393,7 @@ function render() {
         ? CONDITION_LABELS[product.condition][currentLang]
         : "";
     addMetaLine("condition", conditionText);
-    addMetaLine("material", product.material);
+    addMetaLine("material", translateMaterial(product.material));
     addMetaLine("size", product.size);
     // "Где забрать" — единое значение для всех языков (как состояние).
     // Пока в data.js могут ещё встречаться старые товары, где location
@@ -418,6 +444,9 @@ function closeLightbox() {
 
 function updateLightbox() {
   lbImgEl.src = lightboxImages[lightboxIndex];
+  const hasMultiple = lightboxImages.length > 1;
+  lbPrevEl.hidden = !hasMultiple;
+  lbNextEl.hidden = !hasMultiple;
   lbDotsEl.innerHTML = "";
   lightboxImages.forEach((_, i) => {
     const dot = document.createElement("span");

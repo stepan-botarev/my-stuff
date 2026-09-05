@@ -447,21 +447,39 @@ const CATEGORY_OPTIONS = [
   { value: "clothing", label: "👘 Одежда" },
   { value: "misc", label: "🧦 Всякие мелочи" }
 ];
-// Материал — фиксированный список самых частых вариантов, чтобы не печатать
-// вручную. Значение хранится как обычная строка и показывается на сайте
-// одинаково на всех языках (как и раньше).
+// Материал — фиксированный набор (как состояние), переводится на сайте
+// автоматически (см. MATERIAL_LABELS в script.js). В data.js хранится
+// как английские ключи через запятую ("plastic,metal"), а здесь в
+// админке показываются русские названия — value/label как у CONDITION_OPTIONS.
 const MATERIAL_OPTIONS = [
-  "Хлопок 100%",
-  "Полиэстер",
-  "Вискоза",
-  "Шерсть",
-  "Кожа",
-  "Пластик",
-  "Металл",
-  "Дерево",
-  "Стекло",
-  "Смешанный состав"
+  { value: "cotton", label: "хлопок 100%" },
+  { value: "polyester", label: "полиэстер" },
+  { value: "viscose", label: "вискоза" },
+  { value: "wool", label: "шерсть" },
+  { value: "leather", label: "кожа" },
+  { value: "plastic", label: "пластик" },
+  { value: "metal", label: "металл" },
+  { value: "wood", label: "дерево" },
+  { value: "glass", label: "стекло" },
+  { value: "mixed", label: "смешанный состав" }
 ];
+function materialKeyToLabel(key) {
+  const opt = MATERIAL_OPTIONS.find((o) => o.value === key.toLowerCase());
+  return opt ? opt.label : key;
+}
+function materialLabelToKey(label) {
+  const norm = label.trim().toLowerCase();
+  const opt = MATERIAL_OPTIONS.find((o) => o.label === norm);
+  return opt ? opt.value : label.trim();
+}
+function materialKeysToDisplay(raw) {
+  if (!raw) return "";
+  return raw.split(",").map((s) => s.trim()).filter(Boolean).map(materialKeyToLabel).join(", ");
+}
+function materialDisplayToKeys(display) {
+  if (!display) return "";
+  return display.split(",").map((s) => s.trim()).filter(Boolean).map(materialLabelToKey).join(",");
+}
 const LS_LOCATIONS = "myStuffAdminLocations";
 
 function getSavedLocations() {
@@ -1080,36 +1098,40 @@ function renderProducts() {
     materialLabel.textContent = "Материал";
     const materialInput = document.createElement("input");
     materialInput.type = "text";
-    materialInput.placeholder = "Например: хлопок, полиэстер — не указано, если пусто";
-    materialInput.value = product.material || "";
+    materialInput.placeholder = "Например: хлопок, металл — не указано, если пусто";
+    materialInput.value = materialKeysToDisplay(product.material || "");
     materialInput.addEventListener("input", () => {
-      product.material = materialInput.value;
+      product.material = materialDisplayToKeys(materialInput.value);
       markDirty();
     });
-    const materialChips = document.createElement("div");
-    materialChips.style.display = "flex";
-    materialChips.style.flexWrap = "wrap";
-    materialChips.style.gap = "6px";
-    materialChips.style.marginTop = "8px";
-    MATERIAL_OPTIONS.forEach((mat) => {
-      const chip = document.createElement("button");
-      chip.type = "button";
-      chip.className = "btn btn-small";
-      chip.style.opacity = "0.75";
-      chip.textContent = mat;
-      chip.addEventListener("click", () => {
-        const current = materialInput.value.trim();
-        const parts = current ? current.split(",").map((s) => s.trim()).filter(Boolean) : [];
-        if (!parts.includes(mat)) parts.push(mat);
-        materialInput.value = parts.join(", ");
-        product.material = materialInput.value;
-        markDirty();
-      });
-      materialChips.appendChild(chip);
+    const materialPickRow = document.createElement("div");
+    materialPickRow.style.marginTop = "6px";
+    const materialPick = document.createElement("select");
+    const materialPickPlaceholder = document.createElement("option");
+    materialPickPlaceholder.value = "";
+    materialPickPlaceholder.textContent = "+ добавить материал";
+    materialPick.appendChild(materialPickPlaceholder);
+    MATERIAL_OPTIONS.forEach((opt) => {
+      const o = document.createElement("option");
+      o.value = opt.label;
+      o.textContent = opt.label;
+      materialPick.appendChild(o);
     });
+    materialPick.addEventListener("change", () => {
+      const mat = materialPick.value;
+      if (!mat) return;
+      const current = materialInput.value.trim();
+      const parts = current ? current.split(",").map((s) => s.trim()).filter(Boolean) : [];
+      if (!parts.includes(mat)) parts.push(mat);
+      materialInput.value = parts.join(", ");
+      product.material = materialDisplayToKeys(materialInput.value);
+      markDirty();
+      materialPick.value = "";
+    });
+    materialPickRow.appendChild(materialPick);
     materialWrap.appendChild(materialLabel);
     materialWrap.appendChild(materialInput);
-    materialWrap.appendChild(materialChips);
+    materialWrap.appendChild(materialPickRow);
 
     const sizeWrap = document.createElement("div");
     const sizeLabel = document.createElement("label");
@@ -1465,7 +1487,7 @@ function parseMagicMeta(text) {
   }
 
   const materialMatch = normalized.match(/(?:Материал|Матеріал|Material)\s*:\s*(.+)/i);
-  if (materialMatch) meta.material = materialMatch[1].trim();
+  if (materialMatch) meta.material = materialDisplayToKeys(materialMatch[1].trim());
 
   const sizeMatch = normalized.match(/(?:Размер|Розмір|Size|Größe|Talla)\s*:\s*(.+)/i);
   if (sizeMatch) meta.size = sizeMatch[1].trim();
