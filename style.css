@@ -186,7 +186,7 @@ html, body {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: min(360px, calc(100vw - 32px));
+  width: min(420px, calc(100vw - 32px));
   max-height: min(70vh, 520px);
   background: var(--paper);
   border: 2px solid var(--ink);
@@ -254,12 +254,13 @@ html, body {
 }
 
 .about-photo {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 12px;
+  float: left;
+  width: 84px;
+  height: 84px;
+  border-radius: 12px;
+  margin: 0 12px 8px 0;
   display: block;
   object-fit: cover;
-  max-height: 160px;
 }
 
 .about-title {
@@ -268,8 +269,8 @@ html, body {
   font-size: 14px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  color: var(--coral);
-  margin-bottom: 10px;
+  color: var(--blue);
+  margin: 4px 0 6px;
   padding-right: 24px;
 }
 
