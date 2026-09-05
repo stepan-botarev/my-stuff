@@ -1,3 +1,11 @@
+// Единый SVG-контур сердца для лайков и Favorites — одна и та же форма
+// что для контура, что для заливки (раньше ♥/♡ рисовались разными
+// Unicode-глифами и выглядели по-разному, особенно в залитом виде).
+const HEART_PATH = "M12 20.6s-7.2-4.4-9.7-8.6C0.5 8.4 2.3 4.9 6.1 4.9c2.1 0 3.7 1.1 5.9 3.4 2.2-2.3 3.8-3.4 5.9-3.4 3.8 0 5.6 3.5 3.8 7.1-2.5 4.2-9.7 8.6-9.7 8.6z";
+function heartIcon(filled) {
+  return `<svg class="heart-icon${filled ? " is-filled" : ""}" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="${HEART_PATH}"/></svg>`;
+}
+
 const STRINGS = {
   en: { write: "Write", greeting: "Hi, Stepan! I'm interested in: ", reserved: "Reserved" },
   de: { write: "Schreiben", greeting: "Hallo, Stepan! Ich interessiere mich für: ", reserved: "Reserviert" },
@@ -109,7 +117,7 @@ function renderCategoryBar() {
   const favBtn = document.createElement("button");
   favBtn.type = "button";
   favBtn.className = "cat-pill" + (currentCategory === "favorites" ? " is-active" : "");
-  favBtn.innerHTML = `<span class="heart-suit">♥</span> ${FAVORITES_LABEL[currentLang]}`;
+  favBtn.innerHTML = `${heartIcon(true)} ${FAVORITES_LABEL[currentLang]}`;
   favBtn.addEventListener("click", () => {
     currentCategory = "favorites";
     render();
@@ -153,6 +161,8 @@ function renderAboutMe() {
       const img = document.createElement("img");
       img.className = "about-photo";
       img.src = data.photo;
+      img.style.cursor = "pointer";
+      img.addEventListener("click", () => openLightbox([data.photo], 0));
       scroll.appendChild(img);
     }
 
@@ -261,8 +271,7 @@ function render() {
     likeBtn.type = "button";
     likeBtn.className = "like-btn" + (likedIds.has(product.id) ? " is-liked" : "");
     likeBtn.setAttribute("aria-label", "Favorite");
-    likeBtn.innerHTML = `<span class="heart">${likedIds.has(product.id) ? "♥" : "♡"}</span>`;
-    const heartEl = likeBtn.querySelector(".heart");
+    likeBtn.innerHTML = heartIcon(likedIds.has(product.id));
     likeBtn.addEventListener("click", (e) => {
       e.stopPropagation();
       const isLiked = likedIds.has(product.id);
@@ -273,7 +282,7 @@ function render() {
       }
       saveLikedLocal(likedIds);
       likeBtn.classList.toggle("is-liked", !isLiked);
-      heartEl.textContent = isLiked ? "♡" : "♥";
+      likeBtn.innerHTML = heartIcon(!isLiked);
       if (currentCategory === "favorites") render();
     });
     photoWrap.appendChild(likeBtn);
