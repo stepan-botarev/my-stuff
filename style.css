@@ -395,11 +395,17 @@ html, body {
   position: absolute;
   bottom: 6px;
   right: 6px;
-  font-size: 11px;
-  background: var(--ink);
-  color: var(--bg);
-  border: 1px solid var(--paper);
-  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 3px 7px;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  line-height: 1;
   letter-spacing: 0.5px;
 }
 
@@ -628,35 +634,19 @@ html, body {
 
 @media (max-width: 480px) {
   .product {
-    display: block;
-  }
-  .product::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .photo-col {
-    float: right;
-    width: 120px;
-    margin: 0 0 12px 14px;
+    grid-template-columns: 150px 1fr;
+    gap: 16px;
   }
   .product-photo {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     padding: 6px;
-  }
-  .price-tag {
-    justify-content: center;
-    margin-top: 6px;
   }
   .product-title {
     font-size: 20px;
   }
   .product-desc {
     font-size: 14px;
-  }
-  .product-meta {
-    clear: both;
   }
 }
 
@@ -670,7 +660,7 @@ html, body {
     padding: 4px 16px 14px;
   }
   .cat-pill {
-    font-size: 11px;
-    padding: 6px 12px;
+    font-size: 13px;
+    padding: 7px 14px;
   }
 }
