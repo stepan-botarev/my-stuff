@@ -831,6 +831,44 @@ const PRODUCTS = [
       "es": "Una edición poco común en español de Octavio Paz, uno de los pensadores y escritores más importantes de la lengua española del siglo XX: poeta y ensayista mexicano, ganador del Premio Nobel de Literatura. Es una colección de ensayos sobre la poesía, la modernidad y el fin de siglo; para quienes se interesan por la literatura, la filosofía y el mundo hispanohablante 📚\n\nPublicado por Seix Barral en 1990, el mismo año en que Paz recibió el Premio Nobel de Literatura. Tapa blanda, 141 páginas y en buen estado. Una edición bonita y compacta para tener en la estantería, llevar de viaje o regalar a alguien que lee en español 🇲🇽\n\nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo 📖",
       "zh": "奥克塔维奥·帕斯的珍稀西班牙语版本。他是 20 世纪最重要的西班牙语思想家和作家之一，也是墨西哥诗人、散文家及诺贝尔文学奖得主。这是一本关于诗歌、现代性与世纪末的随笔集，是喜爱文学、哲学和西班牙语世界读者的一次特别发现 📚\n\n由 Seix Barral 于 1990 年出版——同一年帕斯获得诺贝尔文学奖。平装本，共 141 页，保存良好。一本适合放在书架上、旅行时随身携带，或送给阅读西班牙语的朋友的小书 🇲🇽\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接 📖"
     }
+  },
+  {
+    "id": 23,
+    "price": "",
+    "reserved": false,
+    "hidden": false,
+    "category": "",
+    "condition": "",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item23-1788606261187-ntwk.jpg",
+      "images/item23-1788606261297-dah8.jpg"
+    ],
+    "title": {
+      "en": "España, sueño y verdad — María Zambrano 🇪🇸",
+      "de": "España, sueño y verdad — María Zambrano 🇪🇸",
+      "ru": "España, sueño y verdad — Мария Самбрано 🇪🇸",
+      "uk": "España, sueño y verdad — Марія Самбрано 🇪🇸",
+      "es": "España, sueño y verdad — María Zambrano 🇪🇸",
+      "zh": "España, sueño y verdad《西班牙：梦与真实》— 玛丽亚·桑布拉诺 🇪🇸"
+    },
+    "desc": {
+      "en": "A book by one of my favourite philosophers, María Zambrano. Here she reflects on what Spain is — both imagined and real — through its literature, myths, art, and thinkers. Zambrano is a very serious thinker, yet she gently accompanies you into the depth of her thought 🧘\n\nThis Spanish-language edition is from the “Los libros de Sísifo” series by Edhasa. A beautiful book for anyone interested in philosophy, Spain, literature, or simply a slow and thoughtful kind of reading ✨\n\nHandover at a U-Bahn or S-Bahn station in central Hamburg.",
+      "de": "Ein Buch von einer meiner liebsten Philosophinnen: María Zambrano. Darin denkt sie darüber nach, was Spanien ist — das erträumte ebenso wie das wirkliche — anhand seiner Literatur, Mythen, Kunst und Denker:innen. Zambrano ist eine sehr ernsthafte Denkerin, begleitet einen dabei aber behutsam in die Tiefe ihres Denkens 🧘\n\nDiese spanischsprachige Ausgabe gehört zur Reihe „Los libros de Sísifo“ von Edhasa. Ein schönes Buch für alle, die sich für Philosophie, Spanien, Literatur oder einfach für langsames, nachdenkliches Lesen interessieren 🌿\n\nÜbergabe an einer U- oder S-Bahn-Station in der Hamburger Innenstadt.",
+      "ru": "Книга одной из моих любимых философок — Марии Самбрано. В ней она рассуждает о том, что такое Испания: вымышленная и настоящая, — через её литературу, мифы, искусство и мыслителей. Самбрано — очень серьёзная мыслительница, но при этом она бережно сопровождает тебя на глубину своей мысли 🧘\n\nИспаноязычное издание из серии «Los libros de Sísifo» издательства Edhasa. Хорошая книга для тех, кому интересны философия, Испания, литература или просто медленное вдумчивое чтение ✨\n\nПередача на станции U-/S-Bahn в центральной части Гамбурга.",
+      "uk": "Книга однієї з моїх улюблених філософок — Марії Самбрано. У ній вона розмірковує про те, що таке Іспанія: уявна та справжня, — через її літературу, міфи, мистецтво й мислителів. Самбрано — дуже серйозна мислителька, але водночас вона дбайливо супроводжує тебе в глибину своєї думки 🧘\n\nІспаномовне видання із серії «Los libros de Sísifo» видавництва Edhasa. Гарна книга для тих, кому цікаві філософія, Іспанія, література або просто повільне вдумливе читання ✨\n\nПередача на станції U-/S-Bahn у центральній частині Гамбурга.",
+      "es": "Un libro de una de mis filósofas favoritas, María Zambrano. Aquí reflexiona sobre qué es España —la imaginada y la real— a través de su literatura, sus mitos, su arte y sus pensadores. Zambrano es una pensadora muy seria, pero al mismo tiempo te acompaña con delicadeza hacia la profundidad de su pensamiento 🧘\n\nEdición en español de la colección «Los libros de Sísifo» de Edhasa. Un libro precioso para quien se interese por la filosofía, España, la literatura o simplemente por una lectura lenta y reflexiva ✨\n\nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo.",
+      "zh": "我最喜欢的哲学家之一玛丽亚·桑布拉诺的作品。她在书中通过西班牙的文学、神话、艺术与思想家，思考西班牙究竟是什么——想象中的西班牙，以及真实的西班牙。桑布拉诺是一位非常严肃的思想家，但她也会温柔地带领读者走入她思想的深处 🧘\n\n这是 Edhasa 出版社“Los libros de Sísifo”系列的西班牙语版本。适合对哲学、西班牙、文学感兴趣，或喜欢慢慢深入阅读的人 ✨\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接。"
+    }
   }
 ];
 
