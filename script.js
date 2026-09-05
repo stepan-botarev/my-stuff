@@ -12,42 +12,53 @@ const STRINGS = {
   ru: { write: "Написать", greeting: "Привет, Степан! Интересует: ", reserved: "Забронировано" },
   uk: { write: "Написати", greeting: "Привіт, Степане! Цікавить: ", reserved: "Заброньовано" },
   es: { write: "Escribir", greeting: "¡Hola, Stepan! Me interesa: ", reserved: "Reservado" },
+  tr: { write: "Yaz", greeting: "Merhaba Stepan! Şununla ilgileniyorum: ", reserved: "Rezerve edildi" },
+  ar: { write: "مراسلة", greeting: "مرحبًا ستيفان! أنا مهتم بـ: ", reserved: "محجوز" },
+  fa: { write: "پیام بده", greeting: "سلام استپان! به این علاقه دارم: ", reserved: "رزرو شده" },
   zh: { write: "联系", greeting: "Hi, Stepan! 我对这个感兴趣: ", reserved: "已预订" }
 };
 
 // Уровни состояния товара — единое значение (new/good/fair/old),
 // текст на сайте подставляется автоматически по текущему языку.
 const CONDITION_LABELS = {
-  new: { en: "Like new", de: "Wie neu", ru: "Как новое", uk: "Як нове", es: "Como nuevo", zh: "全新" },
-  good: { en: "Good", de: "Gut", ru: "Хорошее", uk: "Добре", es: "Bueno", zh: "良好" },
-  fair: { en: "Fair", de: "Normal", ru: "Нормальное", uk: "Нормальне", es: "Normal", zh: "一般" },
-  old: { en: "Old", de: "Alt", ru: "Старое", uk: "Старе", es: "Viejo", zh: "旧" }
+  new: { en: "Like new", de: "Wie neu", ru: "Как новое", uk: "Як нове", es: "Como nuevo", tr: "Yeni gibi", ar: "شبه جديد", fa: "مثل نو", zh: "全新" },
+  good: { en: "Good", de: "Gut", ru: "Хорошее", uk: "Добре", es: "Bueno", tr: "İyi", ar: "جيد", fa: "خوب", zh: "良好" },
+  fair: { en: "Fair", de: "Normal", ru: "Нормальное", uk: "Нормальне", es: "Normal", tr: "Normal", ar: "عادي", fa: "معمولی", zh: "一般" },
+  old: { en: "Old", de: "Alt", ru: "Старое", uk: "Старе", es: "Viejo", tr: "Eski", ar: "قديم", fa: "قدیمی", zh: "旧" }
 };
 
 const META_ICONS = { condition: "👍", material: "🧶", size: "📐", location: "📍" };
 
 const META_LABELS = {
-  condition: { en: "Condition: ", de: "Zustand: ", ru: "Состояние: ", uk: "Стан: ", es: "Estado: ", zh: "状况：" },
-  material: { en: "Material: ", de: "Material: ", ru: "Материал: ", uk: "Матеріал: ", es: "Material: ", zh: "材质：" },
-  size: { en: "Size: ", de: "Größe: ", ru: "Размер: ", uk: "Розмір: ", es: "Talla: ", zh: "尺码：" },
-  location: { en: "Handover: ", de: "Übergabe: ", ru: "Где забрать: ", uk: "Де забрати: ", es: "Entrega: ", zh: "交接地点：" }
+  condition: { en: "Condition: ", de: "Zustand: ", ru: "Состояние: ", uk: "Стан: ", es: "Estado: ", tr: "Durum: ", ar: "الحالة: ", fa: "وضعیت: ", zh: "状况：" },
+  material: { en: "Material: ", de: "Material: ", ru: "Материал: ", uk: "Матеріал: ", es: "Material: ", tr: "Malzeme: ", ar: "الخامة: ", fa: "جنس: ", zh: "材质：" },
+  size: { en: "Size: ", de: "Größe: ", ru: "Размер: ", uk: "Розмір: ", es: "Talla: ", tr: "Beden: ", ar: "المقاس: ", fa: "سایز: ", zh: "尺码：" },
+  location: { en: "Handover: ", de: "Übergabe: ", ru: "Где забрать: ", uk: "Де забрати: ", es: "Entrega: ", tr: "Teslim yeri: ", ar: "مكان الاستلام: ", fa: "محل تحویل: ", zh: "交接地点：" }
 };
 
 // Категории товаров — фиксированный список, переводится автоматически.
 const CATEGORY_ORDER = ["tech", "furniture", "clothing", "misc"];
 const CATEGORY_ICONS = { tech: "💻", furniture: "🪑", clothing: "👘", misc: "🧦" };
 const CATEGORY_LABELS = {
-  tech: { ru: "Техника", en: "Electronics", de: "Elektronik", uk: "Техніка", es: "Electrónica", zh: "电子产品" },
-  furniture: { ru: "Мебель", en: "Furniture", de: "Möbel", uk: "Меблі", es: "Muebles", zh: "家具" },
-  clothing: { ru: "Одежда", en: "Clothing", de: "Klamotten", uk: "Одяг", es: "Ropa", zh: "服装" },
-  misc: { ru: "Всякие мелочи", en: "Miscellaneous", de: "Kleinkram", uk: "Всяка всячина", es: "Cositas", zh: "杂物" }
+  tech: { ru: "Техника", en: "Electronics", de: "Elektronik", uk: "Техніка", es: "Electrónica", tr: "Elektronik", ar: "إلكترونيات", fa: "لوازم الکترونیکی", zh: "电子产品" },
+  furniture: { ru: "Мебель", en: "Furniture", de: "Möbel", uk: "Меблі", es: "Muebles", tr: "Mobilya", ar: "أثاث", fa: "مبلمان", zh: "家具" },
+  clothing: { ru: "Одежда", en: "Clothing", de: "Klamotten", uk: "Одяг", es: "Ropa", tr: "Giyim", ar: "ملابس", fa: "پوشاک", zh: "服装" },
+  misc: { ru: "Всякие мелочи", en: "Miscellaneous", de: "Kleinkram", uk: "Всяка всячина", es: "Cositas", tr: "Ufak tefek", ar: "أغراض متنوعة", fa: "متفرقه", zh: "杂物" }
 };
-const ALL_CATEGORY_LABEL = { ru: "Все", en: "All", de: "Alle", uk: "Усі", es: "Todo", zh: "全部" };
-const FAVORITES_LABEL = { ru: "Избранное", en: "Favorites", de: "Favoriten", uk: "Обране", es: "Favoritos", zh: "收藏" };
+const ALL_CATEGORY_LABEL = { ru: "Все", en: "All", de: "Alle", uk: "Усі", es: "Todo", tr: "Tümü", ar: "الكل", fa: "همه", zh: "全部" };
+const FAVORITES_LABEL = { ru: "Избранное", en: "Favorites", de: "Favoriten", uk: "Обране", es: "Favoritos", tr: "Favoriler", ar: "المفضلة", fa: "علاقه‌مندی‌ها", zh: "收藏" };
 
 // "Обо мне" — опциональный блок, работает только если ABOUT_ME определён в data.js
 // (редактор admin.html добавит его туда автоматически при первом сохранении).
 const ABOUT_ME_DATA = typeof ABOUT_ME !== "undefined" ? ABOUT_ME : null;
+
+// Достаёт перевод из мульти-языкового объекта, с откатом на английский —
+// нужно, чтобы старые товары не ломались при переключении на язык,
+// который ещё не был заполнен через админку (tr/ar/fa добавлены позже).
+function tr(obj) {
+  if (!obj) return "";
+  return obj[currentLang] || obj.en || "";
+}
 
 let currentLang = "en";
 let currentCategory = "all";
@@ -78,7 +89,7 @@ const lbDotsEl = document.getElementById("lb-dots");
 
 function waLink(product) {
   const text = encodeURIComponent(
-    STRINGS[currentLang].greeting + product.title[currentLang]
+    STRINGS[currentLang].greeting + tr(product.title)
   );
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
 }
@@ -128,15 +139,16 @@ function renderCategoryBar() {
 const ABOUT_MINIMIZED_KEY = "myStuffAboutMinimized";
 const ABOUT_PLACEHOLDER = {
   en: "Write a message…", de: "Nachricht schreiben…", ru: "Написать сообщение…",
-  uk: "Написати повідомлення…", es: "Escribe un mensaje…", zh: "写点什么…"
+  uk: "Написати повідомлення…", es: "Escribe un mensaje…",
+  tr: "Bir mesaj yaz…", ar: "اكتب رسالة…", fa: "پیام بنویس…", zh: "写点什么…"
 };
 
 let aboutWidgetEl = null;
 function renderAboutMe() {
   const data = ABOUT_ME_DATA;
   if (!data) return;
-  const title = data.title && data.title[currentLang];
-  const text = data.text && data.text[currentLang];
+  const title = tr(data.title);
+  const text = tr(data.text);
   if (!title && !text) return;
 
   if (!aboutWidgetEl) {
@@ -251,7 +263,7 @@ function render() {
     photoWrap.className = "product-photo";
     const img = document.createElement("img");
     img.src = product.images[0];
-    img.alt = product.title[currentLang];
+    img.alt = tr(product.title);
     img.loading = "lazy";
     img.decoding = "async";
     photoWrap.appendChild(img);
@@ -311,12 +323,12 @@ function render() {
 
     const title = document.createElement("h2");
     title.className = "product-title";
-    title.textContent = product.title[currentLang];
+    title.textContent = tr(product.title);
     title.addEventListener("click", () => openLightbox(product.images, 0));
 
     const desc = document.createElement("p");
     desc.className = "product-desc";
-    desc.textContent = product.desc[currentLang];
+    desc.textContent = tr(product.desc);
 
     const meta = document.createElement("div");
     meta.className = "product-meta";
@@ -415,10 +427,12 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowRight") step(1);
 });
 
+const RTL_LANGS = ["ar", "fa"];
 document.querySelectorAll(".lang-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     currentLang = btn.dataset.lang;
     document.documentElement.lang = currentLang;
+    document.documentElement.dir = RTL_LANGS.includes(currentLang) ? "rtl" : "ltr";
     document.querySelectorAll(".lang-btn").forEach((b) =>
       b.classList.toggle("is-active", b === btn)
     );

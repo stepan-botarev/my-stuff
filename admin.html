@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Baloo+2:wght@800&family=Nunito:wght@800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20260905q">
+<link rel="stylesheet" href="style.css?v=20260905s">
 <style>
   body { padding-bottom: 60px; }
 
@@ -394,7 +394,7 @@
     <h2>✨ Волшебная кнопка</h2>
     <p style="font-size:12px; opacity:0.7; margin-top:-6px;">
       Вставь текст блоками по языкам — заголовком языка может быть <code>English</code>,
-      <code>**English**</code> или <code>## English</code> (так же для Deutsch, Русский, Українська, Español, 中文) —
+      <code>**English**</code> или <code>## English</code> (так же для Deutsch, Русский, Українська, Español, Türkçe, العربية, فارسی, 中文) —
       всё, что до следующего названия языка, относится к этому блоку.
       Внутри — строки <code>Название: …</code> и <code>Описание: …</code>. Разберём и разложим сами.
     </p>
@@ -425,8 +425,8 @@
 const LS_TOKEN = "myStuffAdminToken";
 const LS_REPO = "myStuffAdminRepo";
 const LS_BRANCH = "myStuffAdminBranch";
-const LANGS = ["en", "de", "ru", "uk", "es", "zh"];
-const LANG_LABELS = { en: "EN", de: "DE", ru: "RU", uk: "UA", es: "ES", zh: "CN" };
+const LANGS = ["en", "de", "ru", "uk", "es", "tr", "ar", "fa", "zh"];
+const LANG_LABELS = { en: "EN", de: "DE", ru: "RU", uk: "UA", es: "ES", tr: "TR", ar: "AR", fa: "FA", zh: "CN" };
 // Уровни состояния — на сайте переводятся автоматически (см. CONDITION_LABELS в script.js),
 // звёзды видны только здесь, в редакторе, для быстрой ориентации.
 const CONDITION_OPTIONS = [
@@ -464,7 +464,8 @@ function removeSavedLocation(loc) {
 
 const DEFAULT_ABOUT_ME = {
   title: {
-    en: "About me", de: "Über mich", ru: "Обо мне", uk: "Про мене", es: "Sobre mí", zh: "关于我"
+    en: "About me", de: "Über mich", ru: "Обо мне", uk: "Про мене", es: "Sobre mí",
+    tr: "Hakkımda", ar: "عني", fa: "درباره من", zh: "关于我"
   },
   text: {
     en: "Hi! I'm Stephen. I've been living in Germany for two years now, and this August I got into university in Berlin. So I'm moving out from near Hamburg and selling off things I either can't take with me or just feel ready to let go of — because everything changes, and I'm not quite the same person who bought them.\n\nStill, these are all things I chose with care and tried to look after well. I like the idea of minimalism and sustainability — where every item finds its use. So I'd really appreciate your help finding these things new owners!\n\nMessage me and share with friends 🌿",
@@ -472,6 +473,9 @@ const DEFAULT_ABOUT_ME = {
     ru: "Привет! Меня зовут Стёпа. Я уже два года живу в Германии и в августе поступил в университет в Берлине. Поэтому теперь переезжаю из-под Гамбурга и распродаю вещи, которые не получится перевезти и те, с которыми просто хочется попрощаться, потому что всё меняется, и я уже не тот человек, что когда-то купил их.\n\nТем не менее это всё вещи, которые я выбирал с душой и с которыми старался бережно обходиться. Мне нравится идея минимализма и устойчивости — когда каждой вещи всегда находится применение. Поэтому я буду рад, если вы поможете найти всем этим вещицам новых хозяев и хозяек!\n\nПишите и пересылайте друзьям 🌿",
     uk: "Привіт! Мене звати Степан. Я вже два роки живу в Німеччині і в серпні вступив до університету в Берліні. Тому тепер переїжджаю з-під Гамбурга і розпродаю речі, які не вийде перевезти, та ті, з якими просто хочеться попрощатися, бо все змінюється, і я вже не та людина, яка колись їх купила.\n\nПроте це все речі, які я обирав з душею і намагався дбайливо з ними поводитися. Мені подобається ідея мінімалізму та сталості — коли кожній речі завжди знаходиться застосування. Тож я буду радий, якщо ви допоможете знайти всім цим речам нових господарів і господинь!\n\nПишіть і пересилайте друзям 🌿",
     es: "¡Hola! Me llamo Esteban. Llevo dos años viviendo en Alemania y en agosto entré a la universidad en Berlín. Por eso ahora me mudo desde cerca de Hamburgo y estoy vendiendo cosas que no podré llevarme, y otras de las que simplemente siento que es hora de despedirme — porque todo cambia, y ya no soy exactamente la misma persona que las compró en su momento.\n\nAun así, son todas cosas que elegí con cariño y traté de cuidar bien. Me gusta la idea del minimalismo y la sostenibilidad — que cada cosa siempre encuentre su uso. Así que agradecería mucho vuestra ayuda para encontrarles nuevos dueños y dueñas a todas estas cositas.\n\nEscribidme y compartid con amigos 🌿",
+    tr: "Merhaba! Ben Stepan. İki yıldır Almanya'da yaşıyorum ve bu Ağustos'ta Berlin'de üniversiteye girdim. Bu yüzden Hamburg yakınlarından taşınıyorum ve ya yanımda götüremediğim ya da artık vedalaşmaya hazır olduğum eşyaları satıyorum — çünkü her şey değişiyor ve onları satın alan kişi artık tam olarak ben değilim.\n\nYine de bunların hepsi özenle seçtiğim ve iyi baktığım eşyalar. Minimalizm ve sürdürülebilirlik fikrini seviyorum — her eşyanın bir kullanımı olsun istiyorum. Bu yüzden bu eşyalara yeni sahipler bulmama yardım ederseniz çok sevinirim!\n\nYazın ve arkadaşlarınızla paylaşın 🌿",
+    ar: "مرحبًا! أنا ستيفان. أعيش في ألمانيا منذ سنتين، وفي أغسطس الماضي التحقت بالجامعة في برلين. لذلك أنا الآن أنتقل من منطقة قريبة من هامبورغ وأبيع أشياء إما لا أستطيع أخذها معي أو ببساطة شعرت أنني مستعد للتخلي عنها — لأن كل شيء يتغير، ولم أعد تمامًا نفس الشخص الذي اشتراها.\n\nومع ذلك، فهذه كلها أشياء اخترتها بعناية وحاولت الاعتناء بها جيدًا. أحب فكرة البساطة والاستدامة — أن يجد كل شيء استخدامه. لذا سأكون ممتنًا جدًا لمساعدتكم في إيجاد أصحاب جدد لهذه الأشياء!\n\nراسلوني وشاركوا مع الأصدقاء 🌿",
+    fa: "سلام! من استپان هستم. دو ساله که در آلمان زندگی می‌کنم و امسال آگوست وارد دانشگاهی در برلین شدم. به همین خاطر از نزدیکی هامبورگ اسباب‌کشی می‌کنم و وسایلی را که یا نمی‌توانم با خودم ببرم یا فقط احساس می‌کنم وقتش رسیده که از آن‌ها جدا شوم می‌فروشم — چون همه‌چیز تغییر می‌کند و من دیگر همان آدمی نیستم که این‌ها را خریده بود.\n\nبا این حال، همه این‌ها وسایلی هستند که با دقت انتخاب کردم و سعی کردم خوب از آن‌ها مراقبت کنم. من به ایده مینیمالیسم و پایداری علاقه دارم — جایی که هر وسیله‌ای کاربردش را پیدا می‌کند. پس واقعاً ممنون می‌شوم اگر در پیدا کردن صاحب جدید برای این وسایل کمکم کنید!\n\nپیام بدهید و با دوستانتان به اشتراک بگذارید 🌿",
     zh: "你好！我叫Stepan。我在德国已经生活两年了，今年8月考上了柏林的大学。所以现在我要从汉堡附近搬走，把一些带不走的东西，还有一些单纯想告别的东西卖掉——因为一切都在变化，我也不再是当初买这些东西时的那个自己了。\n\n不过这些都是我用心挑选、尽力好好爱护过的东西。我喜欢极简和可持续的理念——希望每件物品都能找到自己的用处。所以如果大家能帮忙给这些小物件找到新主人，我会非常感激！\n\n欢迎留言，也欢迎转发给朋友们 🌿"
   },
   photo: ""
@@ -1319,6 +1323,9 @@ const LANG_NAME_MAP = {
   русский: "ru", russian: "ru", russisch: "ru",
   українська: "uk", ukrainian: "uk", ukrainisch: "uk",
   "español": "es", espanol: "es", spanish: "es", spanisch: "es",
+  "türkçe": "tr", turkce: "tr", turkish: "tr", türkisch: "tr", turkisch: "tr",
+  "العربية": "ar", arabic: "ar", arabisch: "ar", arabe: "ar",
+  "فارسی": "fa", farsi: "fa", persian: "fa", persisch: "fa",
   "中文": "zh", chinese: "zh", mandarin: "zh", chinesisch: "zh"
 };
 
