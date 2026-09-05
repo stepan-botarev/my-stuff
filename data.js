@@ -754,6 +754,45 @@ const PRODUCTS = [
       "es": "Una mesa blanca, amplia y genial — minimalista, estable y con la altura perfecta. Podía sentarme a trabajar en ella durante mucho tiempo sin cansarme. El largo y el ancho son realmente muy buenos: cabían cómodamente el ordenador, el teclado, altavoces grandes, un soporte para el móvil, libros, cuadernos y muchas otras cosas al mismo tiempo. En resumen, es una mesa estupenda para trabajar. Tiene un par de rayones pequeños y apenas visibles cerca de los bordes, pero en general está en muy buen estado.\nMedidas: 125×74 cm, altura 75 cm.\nEl precio nuevo es de 59,99 €, la dejo en 35 € 🖥️\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
       "zh": "很棒、宽敞的白色桌子——极简、稳固，高度也刚刚好。我可以在这里久坐工作也不会觉得累。桌面的长宽真的非常实用：电脑、键盘、大音箱、手机支架、书、本子以及很多其他东西都能同时轻松放下。总之，这是一张非常适合工作的桌子。边缘有几处很小、几乎不明显的划痕，但整体状态非常好。\n尺寸：125×74 厘米，高 75 厘米。\n全新售价 59.99 欧元，现在 35 欧元出手 🖥️\n仅限自取，地点在 Glinde，Möllner Landstraße 89（距汉堡 10 分钟车程）。\n\nСтол IKEA VIHALS действительно имеет размеры 125×74 см и высоту 75 см; текущая цена новой модели — 59,99 €. У модели меламиновая столешница, которую легко протирать, и стальное основание."
     }
+  },
+  {
+    "id": 21,
+    "price": "25 €",
+    "reserved": false,
+    "hidden": false,
+    "category": "misc",
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt"
+    },
+    "images": [
+      "images/item21-1788604125432-q21x.jpg",
+      "images/item21-1788604125540-ua8a.jpg",
+      "images/item21-1788604125629-a0ip.jpg"
+    ],
+    "title": {
+      "en": "Camping set: Quechua sleeping bag + foam mat + blue mug",
+      "de": "Camping-Set: Quechua Schlafsack + Isomatte + blaue Tasse",
+      "ru": "Походный набор: спальник Quechua + пенка + синяя кружка",
+      "uk": "Похідний набір: спальник Quechua + пінка + синя кружка",
+      "es": "Set de camping: saco Quechua + esterilla de espuma + taza azul",
+      "zh": "露营套装：Quechua 睡袋 + 泡沫垫 + 蓝色杯子"
+    },
+    "desc": {
+      "en": "If you are a Dharma Bum like me and, after watching Into The Wild, wanted to leave everything behind and live in the forest forever, this camping set is for you. It also works perfectly well for festivals, trips, or unexpected overnight stays. Everything is in excellent condition 🎒\n\nThe sleeping bag is a QUECHUA Basic 20 °C model (190×72 cm). It can be fully opened and used as a blanket when it gets warm. The foam mat is thick yet lightweight and rolls up easily; it measures 180×50 cm. The sturdy blue metal camping mug comes in a lovely majorelle-blue shade, perfect for tea or coffee outdoors 🍵\n\nNew prices at Decathlon: sleeping bag €15, foam mat €9, mug around €10 — €34 for everything. I’m letting the full set go for €20 🏕️  \nAlso available separately: sleeping bag €10, foam mat €5, mug €5.  \nHandover at a U-Bahn or S-Bahn station in central Hamburg 🌿",
+      "de": "Wenn du genauso ein Dharma-Bum bist wie ich und nach Into The Wild für immer in die Wälder ziehen wolltest, ist dieses Camping-Set genau das Richtige für dich. Natürlich eignet es sich auch einfach für Festivals, Ausflüge oder spontane Übernachtungen. Alles ist in ausgezeichnetem Zustand 🎒\n\nDer Schlafsack ist ein QUECHUA Basic 20 °C (190×72 cm). Er lässt sich komplett öffnen und bei Wärme auch als Decke benutzen. Die Schaumstoff-Isomatte ist dick, dabei leicht und lässt sich genauso einfach zusammenrollen; sie ist 180×50 cm groß. Die robuste blaue Metall-Campingtasse hat ein schönes Majorelle-Blau und passt perfekt für Tee oder Kaffee draußen 🍵\n\nNeupreise bei Decathlon: Schlafsack 15 €, Isomatte 9 €, Tasse etwa 10 € — zusammen also 34 €. Das ganze Set gebe ich für 20 € ab 🏕️  \nAuch einzeln erhältlich: Schlafsack 10 €, Isomatte 5 €, Tasse 5 €.  \nÜbergabe an einer U- oder S-Bahn-Station in der Hamburger Innenstadt 🌿",
+      "ru": "Если вы такой же бродяга Дхармы, как я, и после просмотра «В диких условиях» хотели навсегда уйти в леса, этот походный набор для вас. Впрочем, подойдёт и просто для фестивалей, поездок или внезапных ночёвок. Всё в отличном состоянии 🎒\n\nСпальник — QUECHUA Basic 20 °C (190×72 см), его можно полностью расстегнуть и использовать как одеяло, если жарко. Пенка толстая, при этом лёгкая и так же легко сворачивается, размер — 180×50 см. Синяя металлическая походная кружка прочная, приятного мажорелевого цвета для чая или кофе на природе 🍵\n\nЦены на новое в Decathlon: спальник — 15 €, пенка — 9 €, кружка — около 10 € (то есть за всё 34 €). Я отдам весь набор за 20 € 🏕️  \nМожно и по отдельности: спальник — 10 €, пенка — 5 €, кружка — 5 €.  \nПередача на станции U-/S-Bahn в центральной части Гамбурга 🌿",
+      "uk": "Якщо ви такий самий бродяга Дхарми, як і я, і після перегляду «У диких умовах» хотіли назавжди піти в ліси, цей похідний набір для вас. Утім, він також добре підійде для фестивалів, поїздок або несподіваних ночівель. Усе у відмінному стані 🎒\n\nСпальник — QUECHUA Basic 20 °C (190×72 см), його можна повністю розстебнути й використовувати як ковдру, якщо спекотно. Пінка товста, водночас легка й так само легко згортається, розмір — 180×50 см. Синя металева похідна кружка міцна, приємного мажорелевого кольору, для чаю або кави на природі ☕\n\nЦіни на нове в Decathlon: спальник — 15 €, пінка — 9 €, кружка — близько 10 € (тобто за все 34 €). Віддам увесь набір за 20 € 🏕️  \nМожна й окремо: спальник — 10 €, пінка — 5 €, кружка — 5 €.  \nПередача на станції U-/S-Bahn у центральній частині Гамбурга 🌿",
+      "es": "Si eres un vagabundo del Dharma como yo y, después de ver Hacia rutas salvajes, quisiste irte a vivir para siempre en los bosques, este set de camping es para ti. También viene muy bien para festivales, viajes o noches improvisadas fuera de casa. Todo está en excelente estado 🎒\n\nEl saco de dormir es un QUECHUA Basic 20 °C (190×72 cm); se puede abrir completamente y utilizar como manta cuando hace calor. La esterilla de espuma es gruesa, pero ligera y fácil de enrollar; mide 180×50 cm. La resistente taza de camping azul de metal tiene un agradable color azul Majorelle, perfecta para té o café al aire libre 🍵\n\nPrecios nuevos en Decathlon: saco 15 €, esterilla 9 € y taza alrededor de 10 € — en total 34 €. Dejo todo el set por 20 € 🏕️  \nTambién se puede comprar por separado: saco 10 €, esterilla 5 € y taza 5 €.  \nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo 🌿",
+      "zh": "如果你和我一样是个“达摩流浪者”，看完《荒野生存》后曾想永远走进森林，那么这套露营装备就是为你准备的。当然，它也很适合音乐节、旅行或临时过夜。所有物品都处于极佳状态 🎒\n\n睡袋是 QUECHUA Basic 20 °C 款（190×72 厘米），天气暖和时可以完全打开，当作毯子使用。泡沫防潮垫较厚，同时轻便且容易卷起，尺寸为 180×50 厘米。蓝色金属露营杯结实耐用，是很舒服的马若雷勒蓝色，适合在户外喝茶或咖啡 🍵\n\nDecathlon 的全新价格：睡袋 15 欧元、泡沫垫 9 欧元、杯子约 10 欧元——总计 34 欧元。整套一起 20 欧元出手 🏕️  \n也可以单独购买：睡袋 10 欧元、泡沫垫 5 欧元、杯子 5 欧元。  \n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接 🌿"
+    }
   }
 ];
 
