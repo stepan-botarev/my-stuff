@@ -676,6 +676,44 @@ const PRODUCTS = [
       "es": "Cama IKEA blanca, sencilla y minimalista — se ve ligera en la habitación y queda bien incluso en un dormitorio pequeño. En mi pequeño estudio, servía tanto como lugar de descanso como espacio de almacenamiento: debajo de la cama cabían muchas cosas de invierno. La vendo junto con dos somieres de láminas. El colchón (por ahora) no está a la venta 💤\nMedidas: tamaño de colchón 140×200 cm. Altura del cabecero: 77 cm; altura del pie de cama: 43 cm.\nLa estructura nueva cuesta 99 € y los dos somieres de láminas casi 100 € — lo dejo todo junto por 100 € 🛏️\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
       "zh": "简约、极简风格的白色 IKEA 床，在房间里看起来很轻盈，即使是较小的卧室也很适合。在我的小型单间公寓里，它既是休息的地方，也是额外的储物空间：床下可以放下很多冬季衣物。床架与两套排骨架一起出售。床垫**（暂时）不出售** 💤\n尺寸：适用床垫尺寸为 140×200 厘米。床头板高 77 厘米，床尾板高 43 厘米。\n全新床架售价 99 欧元，两套排骨架接近 100 欧元；现在全部一起 100 欧元出手 🛏️\n仅限自取，地点在 Glinde，Möllner Landstraße 89（距汉堡 10 分钟车程）。"
     }
+  },
+  {
+    "id": 19,
+    "price": "49 €",
+    "reserved": false,
+    "hidden": false,
+    "category": "tech",
+    "condition": "new",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Glinde, Möllner Landstraße 89",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item19-1788602683882-f6wb.jpg",
+      "images/item19-1788602684050-5yk9.jpg"
+    ],
+    "title": {
+      "en": "IKEA TILLREDA microwave, white",
+      "de": "IKEA TILLREDA Mikrowelle, weiß",
+      "ru": "Микроволновка IKEA TILLREDA, белая",
+      "uk": "Мікрохвильовка IKEA TILLREDA, біла",
+      "es": "Microondas IKEA TILLREDA, blanco",
+      "zh": "IKEA TILLREDA 白色微波炉"
+    },
+    "desc": {
+      "en": "Minimalist white IKEA microwave with very simple controls — just two knobs, so nothing extra to figure out. It is around a year old and looks almost new. Great for reheating food, making a quick meal, or warming up tea or coffee.\nDimensions: 43.9×34×25.8 cm. Capacity: 20 L. Power: 700 W.\nNew price is €69, letting it go for €49 🍽️\nPickup is preferred, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg). I can try to bring it to central Hamburg if needed.",
+      "de": "Minimalistische weiße IKEA-Mikrowelle mit sehr einfacher Bedienung — nur zwei Drehknöpfe, also kein unnötiger Schnickschnack. Sie ist etwa ein Jahr alt und sieht fast wie neu aus. Super zum Aufwärmen von Essen, für eine schnelle Mahlzeit oder um Tee und Kaffee warm zu machen.\nMaße: 43,9×34×25,8 cm. Fassungsvermögen: 20 l. Leistung: 700 W.\nNeupreis liegt bei 69 €, gebe sie für 49 € ab 🍽️\nAbholung in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt), ist am besten. Falls nötig, kann ich versuchen, sie bis in die Hamburger Innenstadt zu bringen.",
+      "ru": "Белая минималистичная микроволновка IKEA с очень простым управлением — всего две крутилки, ничего лишнего. Ей около года, выглядит почти как новая. Хорошо подойдёт, чтобы разогревать еду, быстро что-то приготовить или согреть чай и кофе.\nГабариты: 43,9×34×25,8 см. Объём: 20 л. Мощность: 700 Вт.\nНовая стоит 69 €, отдам за 49 € 🍽️\nЛучше самовывоз из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга). Но при необходимости могу постараться довезти до центра Гамбурга.",
+      "uk": "Біла мінімалістична мікрохвильовка IKEA з дуже простим керуванням — лише дві ручки, нічого зайвого. Їй близько року, виглядає майже як нова. Добре підійде, щоб розігрівати їжу, швидко щось приготувати або підігріти чай чи каву.\nГабарити: 43,9×34×25,8 см. Об’єм: 20 л. Потужність: 700 Вт.\nНова коштує 69 €, віддам за 49 € 🍽️\nКраще самовивіз із Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга). Але за потреби можу спробувати привезти до центру Гамбурга.",
+      "es": "Microondas IKEA blanco y minimalista, con controles muy sencillos: solo dos mandos, sin nada innecesario. Tiene alrededor de un año y parece casi nuevo. Va muy bien para calentar comida, preparar algo rápido o recalentar té y café.\nMedidas: 43,9×34×25,8 cm. Capacidad: 20 L. Potencia: 700 W.\nEl precio nuevo es de 69 €, lo dejo en 49 € 🍽️\nEs preferible recogerlo en Glinde, Möllner Landstraße 89 (a 10 minutos de Hamburgo). Pero, si hace falta, puedo intentar llevarlo al centro de Hamburgo.",
+      "zh": "白色极简风格的 IKEA 微波炉，操作非常简单——只有两个旋钮，没有多余的功能需要研究。使用约一年，看起来几乎像新的一样。很适合加热饭菜、快速准备食物，或加热茶和咖啡。\n尺寸：43.9×34×25.8 厘米。容量：20 升。功率：700 瓦。\n全新售价 69 欧元，现在 49 欧元出手 🍽️\n最好在 Glinde 的 Möllner Landstraße 89 自取（距汉堡约 10 分钟）。如有需要，我也可以尽量送到汉堡市中心。"
+    }
   }
 ];
 
