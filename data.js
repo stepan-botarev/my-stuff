@@ -775,5 +775,5 @@ const ABOUT_ME = {
     "es": "Hola! Me llamo Esteban. Llevo dos años viviendo en Alemania y este agosto he conseguido plaza en una universidad de Berlín! 🤓 Por eso me mudo de Hamburgo y vendo las cosas que no puedo llevarme o que simplemente siento que ya estoy listo para dejar ir, porque todo cambia y ya no soy exactamente la misma persona que las compró 🐥\n\nAun así, elegí todas estas cosas con cuidado y he procurado cuidarlas bien. Me gustan las ideas del minimalismo y la sostenibilidad: que cada objeto encuentre su utilidad. Por eso agradecería mucho vuestra ayuda para que estas cosas encuentren nuevos dueños.\n\nEscribidme y compartid esta página con amig@s! 🌿",
     "zh": "大家好！我叫 Stepan。我已经在德国生活两年了，今年八月被柏林的一所大学录取！🤓 所以我准备从汉堡附近搬走，出售一些我无法带走、或只是觉得已经可以放手的物品——因为一切都在变化，我也不再完全是当初买下它们的那个人了 🐥\n\n不过，这些东西都是我认真挑选的，也一直尽力好好爱护它们。我喜欢极简主义和可持续生活的理念——让每一件物品都能继续发挥它的价值。因此，如果你能帮助这些物品找到新的主人，我会非常感谢！\n\n欢迎给我发消息，也请把这个页面分享给朋友们 🌿"
   },
-  "photo": "images/about-1788603181643.jpg"
+  "photo": "images/about-1788603697623.jpg"
 };
