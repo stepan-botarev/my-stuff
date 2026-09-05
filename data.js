@@ -12,11 +12,11 @@ const WHATSAPP_NUMBER = "4917623657623";
 const PRODUCTS = [
   {
     "id": 14,
-    "price": "175 €",
+    "price": "180 €",
     "reserved": false,
     "condition": "good",
     "material": "",
-    "size": "",
+    "size": "84.5 x 59.5 x 46.5 cm",
     "location": "Glinde, Möllner Landstraße 89  ",
     "images": [
       "images/item14-1788543649832-xdkh.jpg",
@@ -25,19 +25,25 @@ const PRODUCTS = [
     ],
     "title": {
       "en": "Bomann WA 7175 washing machine, 7 kg, 1400 rpm",
-      "de": "Bomann WA 7175 Waschmaschine, 7 kg, 1400 U/min",
+      "de": "Waschmaschine Bomann WA 7175, 7 kg, 1400 U/min",
       "ru": "Стиральная машина Bomann WA 7175, 7 кг, 1400 об/мин",
       "uk": "Пральна машина Bomann WA 7175, 7 кг, 1400 об/хв",
       "es": "Lavadora Bomann WA 7175, 7 kg, 1400 rpm",
-      "zh": "Bomann WA 7175 洗衣机，7公斤，1400转/分钟"
+      "zh": "Bomann WA 7175 洗衣机，7 公斤，1400 转/分钟",
+      "tr": "Bomann WA 7175 çamaşır makinesi, 7 kg, 1400 dev/dk",
+      "fa": "ماشین لباسشویی Bomann WA 7175، ظرفیت ۷ کیلوگرم، ۱۴۰۰ دور در دقیقه",
+      "ar": "غسالة Bomann WA 7175، سعة 7 كغ، 1400 دورة/دقيقة"
     },
     "desc": {
       "en": "Bought a year ago. In excellent condition, though there are a couple of scratches on the housing — otherwise a great machine.\n\nComes with an anti-vibration mat that keeps it from shaking and shifting during the spin cycle.\n\nBought for €300, letting it go for €175 🧺\n\nPickup only, from Glinde (10 minutes from Hamburg).",
-      "de": "Vor einem Jahr gekauft. In sehr gutem Zustand, ein paar Kratzer am Gehäuse, sonst eine tolle Maschine.\n\nInklusive Antivibrationsmatte, die dafür sorgt, dass sie beim Schleudern nicht wandert und wackelt.\n\nGekauft für 300 €, gebe sie für 175 € ab 🧺\n\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
-      "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю вместе с антивибрационным ковриком (Antivibrationsmatte) — он защищает от дрожания и \"сползания\" машинки при отжиме.\n\nКупил за 300 €, отдам за 175 € 🧺\n\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
-      "uk": "Купив рік тому. У відмінному стані, є пара подряпин на корпусі, в іншому чудова машинка.\n\nВіддаю разом з антивібраційним килимком (Antivibrationsmatte) — він захищає від тремтіння і \"сповзання\" машинки під час віджиму.\n\nКупив за 300 €, віддам за 175 € 🧺\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
-      "es": "La compré hace un año. En excelente estado, tiene un par de rayones en la carcasa, por lo demás es una máquina estupenda.\n\nSe entrega con una alfombra antivibración que evita que se mueva o vibre durante el centrifugado.\n\nLa compré por 300 €, la dejo en 175 € 🧺\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
-      "zh": "一年前买的。状态非常好，外壳上有几处划痕，其他方面都很棒。\n\n附赠一块防震垫（Antivibrationsmatte），可以防止甩干时机器晃动和\"走位\"。\n\n购买价300欧元，现在175欧元出手 🧺\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
+      "de": "Vor einem Jahr gekauft. In sehr gutem Zustand, mit ein paar Kratzern am Gehäuse, ansonsten eine ausgezeichnete Waschmaschine.\n\nIch gebe die Waschmaschine zusammen mit einer Antivibrationsmatte (Antivibrationsmatte) ab. Die Matte reduziert Vibrationen und Geräusche der Maschine beim Schleudern. Zusätzlich gibt es einen Wäscheständer zum Aufhängen von Kleidung gratis dazu.\n\nGekauft für 300 € (+ 10 € für die Matte), ich gebe alles für 180 € ab 🧺\n\nNur Selbstabholung in Glinde, Möllner Landstraße 89, etwa 10 Minuten von Hamburg entfernt.",
+      "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю стиральную машинку вместе с антивибрационным ковриком (Antivibrationsmatte). Коврик защищает от дрожания и шума машинки при отжиме. Также в подарок — сушилка для развешивания белья.\n\nКупил за 300 € (+ 10 € за коврик), отдам за 180 € 🧺\n\nТолько самовывоз из Глинде, Möllner Landstraße 89, примерно 10 минут от Гамбурга.",
+      "uk": "Купив рік тому. У чудовому стані, є кілька подряпин на корпусі, в іншому — відмінна пральна машина.\n\nВіддаю пральну машину разом з антивібраційним килимком (Antivibrationsmatte). Килимок зменшує вібрацію та шум пральної машини під час віджимання. Також у подарунок — сушарка для розвішування білизни.\n\nКупив за 300 € (+ 10 € за килимок), віддам за 180 € 🧺\n\nЛише самовивіз із Глінде, Möllner Landstraße 89, приблизно 10 хвилин від Гамбурга.",
+      "es": "La compré hace un año. Está en muy buen estado; tiene un par de arañazos en la carcasa, pero por lo demás funciona muy bien.\n\nLa entrego junto con una alfombrilla antivibración (Antivibrationsmatte). La alfombrilla reduce las vibraciones y el ruido de la lavadora durante el centrifugado. También incluyo de regalo un tendedero para colgar la ropa.\n\nLa compré por 300 € (+ 10 € por la alfombrilla) y la dejo por 180 € 🧺\n\nSolo recogida en persona en Glinde, Möllner Landstraße 89, a unos 10 minutos de Hamburgo.",
+      "zh": "一年前购买。状态很好，机身上有几处划痕，除此之外是一台非常不错的洗衣机。\n\n洗衣机附赠防震垫（Antivibrationsmatte）。防震垫可减少洗衣机在脱水时的震动和噪音。此外，还免费附送一个用于晾晒衣物的晾衣架。\n\n购入价为 300 €（防震垫另花了 10 €），现以 180 € 出售 🧺\n\n仅限自取：格林德 Möllner Landstraße 89，距离汉堡约 10 分钟。",
+      "tr": "Bir yıl önce satın alındı. Çok iyi durumda; gövdesinde birkaç çizik var, bunun dışında harika bir çamaşır makinesi.\n\nÇamaşır makinesini antivibrasyon matıyla (Antivibrationsmatte) birlikte veriyorum. Mat, sıkma sırasında makinenin titreşimini ve gürültüsünü azaltır. Ayrıca çamaşır asmak için kullanılan bir kurutmalık da hediye.\n\n300 €’ya aldım (+ mat için 10 €), 180 €’ya veriyorum 🧺\n\nSadece Glinde’den elden teslim, Möllner Landstraße 89, Hamburg’a yaklaşık 10 dakika uzaklıkta.",
+      "fa": "یک سال پیش خریده‌ام. در وضعیت بسیار خوب است؛ چند خط‌وخش روی بدنه دارد، اما در بقیه موارد ماشین لباسشویی عالی‌ای است.\n\nماشین لباسشویی را همراه با پد ضدلرزش (Antivibrationsmatte) واگذار می‌کنم. این پد لرزش و صدای ماشین لباسشویی هنگام خشک‌کن را کاهش می‌دهد. همچنین یک بند رخت برای آویزان‌کردن لباس‌ها هم به‌عنوان هدیه همراه آن است.\n\nبا قیمت ۳۰۰ یورو خریده‌ام (+ ۱۰ یورو برای پد)، با قیمت ۱۸۰ یورو می‌فروشم 🧺\n\nفقط تحویل حضوری از گلینده، Möllner Landstraße 89، حدود ۱۰ دقیقه از هامبورگ.",
+      "ar": "اشتريتها قبل سنة. حالتها ممتازة، مع وجود بعض الخدوش على الهيكل، لكنها فيما عدا ذلك غسالة رائعة.\n\nأبيع الغسالة مع حصيرة مضادة للاهتزاز (Antivibrationsmatte). تقلل الحصيرة اهتزاز الغسالة وضجيجها أثناء العصر. كما أضيف مجانًا منشرًا لتعليق الملابس.\n\nاشتريتها مقابل 300 € (+ 10 € للحصيرة)، وأبيعها مقابل 180 € 🧺\n\nالاستلام الشخصي فقط من غلينده، Möllner Landstraße 89، على بُعد نحو 10 دقائق من هامبورغ."
     },
     "category": "tech"
   },
