@@ -117,48 +117,100 @@ function renderCategoryBar() {
   bar.appendChild(favBtn);
 }
 
-let aboutBubbleEl = null;
+const ABOUT_MINIMIZED_KEY = "myStuffAboutMinimized";
+const ABOUT_PLACEHOLDER = {
+  en: "Write a message…", de: "Nachricht schreiben…", ru: "Написать сообщение…",
+  uk: "Написати повідомлення…", es: "Escribe un mensaje…", zh: "写点什么…"
+};
+
+let aboutWidgetEl = null;
 function renderAboutMe() {
   const data = ABOUT_ME_DATA;
   if (!data) return;
   const title = data.title && data.title[currentLang];
   const text = data.text && data.text[currentLang];
   if (!title && !text) return;
-  if (localStorage.getItem("myStuffAboutDismissed") === "1") return;
 
-  if (!aboutBubbleEl) {
-    aboutBubbleEl = document.createElement("div");
-    aboutBubbleEl.className = "about-bubble";
+  if (!aboutWidgetEl) {
+    aboutWidgetEl = document.createElement("div");
+    aboutWidgetEl.className = "about-widget";
 
-    const closeBtn = document.createElement("button");
-    closeBtn.className = "about-close";
-    closeBtn.textContent = "×";
-    closeBtn.setAttribute("aria-label", "Close");
-    closeBtn.addEventListener("click", () => {
-      aboutBubbleEl.remove();
-      localStorage.setItem("myStuffAboutDismissed", "1");
-    });
-    aboutBubbleEl.appendChild(closeBtn);
+    const bubble = document.createElement("div");
+    bubble.className = "about-bubble";
+
+    const minimizeBtn = document.createElement("button");
+    minimizeBtn.className = "about-minimize";
+    minimizeBtn.innerHTML =
+      '<svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
+    minimizeBtn.setAttribute("aria-label", "Minimize");
+    minimizeBtn.addEventListener("click", () => setAboutMinimized(true));
+    bubble.appendChild(minimizeBtn);
 
     if (data.photo) {
       const img = document.createElement("img");
       img.className = "about-photo";
       img.src = data.photo;
-      aboutBubbleEl.appendChild(img);
+      bubble.appendChild(img);
     }
 
     const h = document.createElement("div");
     h.className = "about-title";
-    aboutBubbleEl.appendChild(h);
+    bubble.appendChild(h);
 
     const p = document.createElement("div");
     p.className = "about-text";
-    aboutBubbleEl.appendChild(p);
+    bubble.appendChild(p);
 
-    document.body.appendChild(aboutBubbleEl);
+    const replyRow = document.createElement("div");
+    replyRow.className = "about-reply-row";
+    const replyInput = document.createElement("input");
+    replyInput.type = "text";
+    replyInput.className = "about-reply-input";
+    const sendBtn = document.createElement("button");
+    sendBtn.type = "button";
+    sendBtn.className = "about-send-btn";
+    sendBtn.setAttribute("aria-label", "Send");
+    sendBtn.innerHTML =
+      '<svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 11.5L20.5 3l-6 17.5-4-7-7.5-4z" fill="currentColor"/></svg>';
+    const sendToWhatsApp = () => {
+      const msg = replyInput.value.trim();
+      if (!msg) return;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+      replyInput.value = "";
+    };
+    sendBtn.addEventListener("click", sendToWhatsApp);
+    replyInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") sendToWhatsApp();
+    });
+    replyRow.appendChild(replyInput);
+    replyRow.appendChild(sendBtn);
+    bubble.appendChild(replyRow);
+
+    const fab = document.createElement("button");
+    fab.className = "about-fab";
+    fab.setAttribute("aria-label", "Open");
+    fab.innerHTML = data.photo
+      ? `<img src="${data.photo}" alt="">`
+      : '<svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 4h16v12H7l-3 3V4z" fill="currentColor"/></svg>';
+    fab.addEventListener("click", () => setAboutMinimized(false));
+
+    aboutWidgetEl.appendChild(bubble);
+    aboutWidgetEl.appendChild(fab);
+    document.body.appendChild(aboutWidgetEl);
+
+    const minimized = localStorage.getItem(ABOUT_MINIMIZED_KEY) === "1";
+    aboutWidgetEl.classList.toggle("is-minimized", minimized);
   }
-  aboutBubbleEl.querySelector(".about-title").textContent = title || "";
-  aboutBubbleEl.querySelector(".about-text").textContent = text || "";
+  aboutWidgetEl.querySelector(".about-title").textContent = title || "";
+  aboutWidgetEl.querySelector(".about-text").textContent = text || "";
+  aboutWidgetEl.querySelector(".about-reply-input").placeholder =
+    ABOUT_PLACEHOLDER[currentLang] || ABOUT_PLACEHOLDER.en;
+}
+
+function setAboutMinimized(minimized) {
+  if (!aboutWidgetEl) return;
+  aboutWidgetEl.classList.toggle("is-minimized", minimized);
+  localStorage.setItem(ABOUT_MINIMIZED_KEY, minimized ? "1" : "0");
 }
 
 function render() {

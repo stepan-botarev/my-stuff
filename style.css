@@ -123,15 +123,18 @@ html, body {
 
 .category-bar {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
   gap: 8px;
   max-width: 720px;
   margin: 0 auto;
   padding: 4px 24px 18px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .cat-pill {
+  flex-shrink: 0;
+  white-space: nowrap;
   font-family: "Baloo 2", sans-serif;
   font-weight: 800;
   font-size: 13px;
@@ -149,7 +152,8 @@ html, body {
 .heart-suit {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  transform: scale(1.25, 0.85);
   vertical-align: -0.05em;
 }
 
@@ -167,48 +171,79 @@ html, body {
 
 /* ---------- About me bubble ---------- */
 
-.about-bubble {
+.about-widget {
   position: fixed;
-  top: 18px;
+  bottom: 18px;
   right: 18px;
   z-index: 60;
-  width: min(440px, calc(100vw - 32px));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.about-bubble {
+  position: relative;
+  width: min(360px, calc(100vw - 32px));
+  max-height: min(70vh, 520px);
+  overflow-y: auto;
   background: var(--paper);
   border: 2px solid var(--ink);
   border-radius: 16px;
-  padding: 20px 20px 18px;
+  padding: 20px 20px 14px;
   box-shadow: 5px 5px 0 var(--coral);
   font-family: "Inter", sans-serif;
 }
 
-.about-bubble::before {
-  content: "";
-  position: absolute;
-  top: -9px;
-  right: 30px;
-  width: 16px;
-  height: 16px;
-  background: var(--paper);
-  border-left: 2px solid var(--ink);
-  border-top: 2px solid var(--ink);
-  transform: rotate(45deg);
+.about-widget.is-minimized .about-bubble {
+  display: none;
 }
 
-.about-close {
+.about-widget:not(.is-minimized) .about-fab {
+  display: none;
+}
+
+.about-fab {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 4px 4px 0 var(--coral);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+}
+
+.about-fab img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-minimize {
   position: absolute;
-  top: 6px;
+  top: 8px;
   right: 10px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  line-height: 1;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1.5px solid var(--ink);
   cursor: pointer;
   color: var(--ink);
-  opacity: 0.55;
-  padding: 4px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
-.about-close:hover {
+.about-minimize:hover {
   opacity: 1;
 }
 
@@ -229,6 +264,7 @@ html, body {
   text-transform: uppercase;
   color: var(--coral);
   margin-bottom: 10px;
+  padding-right: 24px;
 }
 
 .about-text {
@@ -238,11 +274,52 @@ html, body {
   padding-right: 6px;
 }
 
+.about-reply-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1.5px solid var(--bg);
+}
+
+.about-reply-input {
+  flex: 1;
+  min-width: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  padding: 8px 12px;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.about-send-btn {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
+  background: var(--green);
+  color: var(--paper);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
 @media (max-width: 480px) {
-  .about-bubble {
-    top: 12px;
+  .about-widget {
+    bottom: 12px;
     right: 12px;
     left: 12px;
+    align-items: stretch;
+  }
+  .about-widget .about-fab {
+    align-self: flex-end;
+  }
+  .about-bubble {
     width: auto;
   }
 }
@@ -298,10 +375,11 @@ html, body {
   width: 180px;
   height: 180px;
   border: 1px solid var(--ink);
+  border-radius: 14px;
   cursor: pointer;
   overflow: hidden;
   background: var(--lead);
-  padding: 26px;
+  padding: 8px;
 }
 
 .product-photo img {
@@ -309,7 +387,6 @@ html, body {
   height: 100%;
   object-fit: contain;
   display: block;
-  border-radius: 16px;
   transition: transform 0.25s ease;
 }
 
@@ -374,8 +451,12 @@ html, body {
 }
 
 .like-btn .heart {
-  font-size: 13px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
   line-height: 1;
+  transform: scale(1.25, 0.85);
 }
 
 .like-btn:hover {
@@ -573,7 +654,7 @@ html, body {
   .product-photo {
     width: 128px;
     height: 128px;
-    padding: 18px;
+    padding: 6px;
   }
   .product-title {
     font-size: 18px;
