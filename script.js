@@ -24,7 +24,7 @@ const CONDITION_LABELS = {
   old: { en: "Old", de: "Alt", ru: "Старое", uk: "Старе", es: "Viejo", zh: "旧" }
 };
 
-const META_ICONS = { condition: "👍", material: "🧶", size: "👖", location: "📍" };
+const META_ICONS = { condition: "👍", material: "🧶", size: "📐", location: "📍" };
 
 const META_LABELS = {
   condition: { en: "Condition: ", de: "Zustand: ", ru: "Состояние: ", uk: "Стан: ", es: "Estado: ", zh: "状况：" },
@@ -35,7 +35,7 @@ const META_LABELS = {
 
 // Категории товаров — фиксированный список, переводится автоматически.
 const CATEGORY_ORDER = ["tech", "furniture", "clothing", "misc"];
-const CATEGORY_ICONS = { tech: "💻", furniture: "🪑", clothing: "👕", misc: "🧦" };
+const CATEGORY_ICONS = { tech: "💻", furniture: "🪑", clothing: "👘", misc: "🧦" };
 const CATEGORY_LABELS = {
   tech: { ru: "Техника", en: "Electronics", de: "Elektronik", uk: "Техніка", es: "Electrónica", zh: "电子产品" },
   furniture: { ru: "Мебель", en: "Furniture", de: "Möbel", uk: "Меблі", es: "Muebles", zh: "家具" },
@@ -149,7 +149,7 @@ function renderAboutMe() {
     const minimizeBtn = document.createElement("button");
     minimizeBtn.className = "about-minimize";
     minimizeBtn.innerHTML =
-      '<svg viewBox="0 0 24 24" width="14" height="14"><path d="M7 7l8 8M15 7l-8 8" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
+      '<svg viewBox="0 0 24 24" width="15" height="15"><path d="M7 7l8 8M15 7l-8 8" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/></svg>';
     minimizeBtn.setAttribute("aria-label", "Close");
     minimizeBtn.addEventListener("click", () => setAboutMinimized(true));
     bubble.appendChild(minimizeBtn);
@@ -252,11 +252,13 @@ function render() {
     const img = document.createElement("img");
     img.src = product.images[0];
     img.alt = product.title[currentLang];
+    img.loading = "lazy";
+    img.decoding = "async";
     photoWrap.appendChild(img);
     if (product.images.length > 1) {
       const count = document.createElement("span");
       count.className = "count";
-      count.textContent = `+${product.images.length - 1}`;
+      count.textContent = `📷 +${product.images.length - 1}`;
       photoWrap.appendChild(count);
     }
     if (product.reserved) {

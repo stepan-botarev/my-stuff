@@ -135,7 +135,7 @@ html, body {
 .cat-pill {
   flex-shrink: 0;
   white-space: nowrap;
-  font-family: "Baloo 2", sans-serif;
+  font-family: "Baloo 2", "Nunito", sans-serif;
   font-weight: 800;
   font-size: 13px;
   letter-spacing: 0.2px;
@@ -181,7 +181,7 @@ html, body {
 
 .about-widget {
   position: fixed;
-  bottom: 18px;
+  top: 18px;
   right: 18px;
   z-index: 60;
   display: flex;
@@ -272,11 +272,9 @@ html, body {
 }
 
 .about-title {
-  font-family: "Baloo 2", sans-serif;
+  font-family: "Baloo 2", "Nunito", sans-serif;
   font-weight: 800;
-  font-size: 14px;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
+  font-size: 17px;
   color: var(--blue);
   margin: 4px 0 6px;
   padding-right: 24px;
@@ -327,7 +325,7 @@ html, body {
 
 @media (max-width: 480px) {
   .about-widget {
-    bottom: 12px;
+    top: 12px;
     right: 12px;
     left: 12px;
     align-items: stretch;
@@ -394,7 +392,7 @@ html, body {
   border-radius: 14px;
   cursor: pointer;
   overflow: hidden;
-  background: var(--lead);
+  background: var(--ink);
   padding: 8px;
 }
 
@@ -656,23 +654,13 @@ html, body {
   }
   .photo-col {
     float: right;
-    width: 96px;
+    width: 120px;
     margin: 0 0 12px 14px;
   }
   .product-photo {
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
     padding: 6px;
-    border-radius: 50%;
-  }
-  .product-photo .count,
-  .product-photo .reserved-badge {
-    display: none;
-  }
-  .product-photo .like-btn {
-    left: 50%;
-    bottom: -4px;
-    transform: translateX(-50%);
   }
   .price-tag {
     justify-content: center;
@@ -686,5 +674,20 @@ html, body {
   }
   .product-meta {
     clear: both;
+  }
+}
+
+/* На экранах iPhone 13 и крупнее хватает места для двух рядов
+   плашек категорий — прокрутка нужна только на совсем узких экранах. */
+@media (min-width: 390px) and (max-width: 480px) {
+  .category-bar {
+    flex-wrap: wrap;
+    overflow-x: visible;
+    justify-content: center;
+    padding: 4px 16px 14px;
+  }
+  .cat-pill {
+    font-size: 11px;
+    padding: 6px 12px;
   }
 }
