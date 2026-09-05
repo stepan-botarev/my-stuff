@@ -872,7 +872,7 @@ const PRODUCTS = [
   },
   {
     "id": 24,
-    "price": "470 €",
+    "price": "450 €",
     "reserved": false,
     "hidden": false,
     "category": "tech",
