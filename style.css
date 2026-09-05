@@ -291,7 +291,7 @@ html, body {
   cursor: pointer;
   overflow: hidden;
   background: var(--lead);
-  padding: 0 26px;
+  padding: 26px;
 }
 
 .product-photo img {
@@ -299,6 +299,7 @@ html, body {
   height: 100%;
   object-fit: contain;
   display: block;
+  border-radius: 8px;
   transition: transform 0.25s ease;
 }
 
@@ -568,7 +569,7 @@ html, body {
   .product-photo {
     width: 128px;
     height: 128px;
-    padding: 0 18px;
+    padding: 18px;
   }
   .product-title {
     font-size: 18px;
