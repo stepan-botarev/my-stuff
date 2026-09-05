@@ -191,41 +191,6 @@ const PRODUCTS = [
     "category": "clothing"
   },
   {
-    "id": 6,
-    "price": "5 €",
-    "reserved": false,
-    "condition": "fair",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "es": "",
-      "zh": ""
-    },
-    "images": [
-      "images/item6-1788517567444-vmsa.jpg",
-      "images/item6-1788517567566-ir3w.jpg"
-    ],
-    "title": {
-      "en": "Retro jeans — slightly wider on top, slightly narrower at the bottom",
-      "de": "Retro-Jeans — oben etwas weiter, unten etwas schmaler",
-      "ru": "Ретро-джинсы — чуть шире сверху, чуть уже снизу",
-      "uk": "Ретро-джинси — трохи ширші зверху, трохи вужчі знизу",
-      "es": "Jeans retro — un poco más anchos arriba, un poco más estrechos abajo",
-      "zh": "复古牛仔裤 —— 上宽下窄"
-    },
-    "desc": {
-      "en": "Jeans I swiped from my dad 🤫\n\nSlightly worn at the very bottom of the legs, otherwise in good shape.\n\nProbably unisex, 100% cotton 👖",
-      "de": "Jeans, die ich meinem Vater geklaut habe 🤫\n\nGanz unten an den Beinen leicht abgetragen, sonst in gutem Zustand \n\nWahrscheinlich Unisex, 100 % Baumwolle 👖",
-      "ru": "Джинсы, которые я стащил у отца 🤫\n\nНемножко потёрты в самом низу, но в целом в порядке.\n\nНаверное, унисекс, 100% хлопок 👖",
-      "uk": "Джинси, які я стягнув у батька 🤫\n\nТрохи потерті у самому низу, але загалом в порядку.\n\nМабуть, унісекс, 100% бавовна 👖",
-      "es": "Jeans que le robé a mi padre 🤫\n\nUn poco desgastados en la parte más baja de las piernas, pero en buen estado en general.\n\nProbablemente unisex, 100% algodón 👖",
-      "zh": "从爸爸那里顺来的牛仔裤 🤫\n\n裤脚最下方略有磨损，整体状态不错。 \n\n应该是男女同款，100% 纯棉 👖"
-    },
-    "category": "clothing"
-  },
-  {
     "id": 7,
     "price": "10 €",
     "reserved": false,
@@ -259,6 +224,41 @@ const PRODUCTS = [
       "uk": "Нова, не носив. Класна, але не вгадав з розміром.\n\nШтучна шкіра з ефектом потертості, оверсайз-крій, накладна кишеня, укорочений рукав 🤎\n\nУнісекс, розмір XL",
       "es": "Nueva, sin usar. Es una pieza genial, solo que no acerté con la talla.\n\nPiel sintética con efecto vintage/desgastado, corte oversize, bolsillo en el pecho, manga media 🤎\n\nUnisex, talla XL",
       "zh": "全新未穿。款式很酷，就是尺码没选对。\n\n做旧仿皮质感，oversize版型，胸前口袋，中袖 🤎\n\n男女同款，XL码"
+    },
+    "category": "clothing"
+  },
+  {
+    "id": 6,
+    "price": "5 €",
+    "reserved": false,
+    "condition": "fair",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "de": "",
+      "ru": "",
+      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item6-1788517567444-vmsa.jpg",
+      "images/item6-1788517567566-ir3w.jpg"
+    ],
+    "title": {
+      "en": "Retro jeans — slightly wider on top, slightly narrower at the bottom",
+      "de": "Retro-Jeans — oben etwas weiter, unten etwas schmaler",
+      "ru": "Ретро-джинсы — чуть шире сверху, чуть уже снизу",
+      "uk": "Ретро-джинси — трохи ширші зверху, трохи вужчі знизу",
+      "es": "Jeans retro — un poco más anchos arriba, un poco más estrechos abajo",
+      "zh": "复古牛仔裤 —— 上宽下窄"
+    },
+    "desc": {
+      "en": "Jeans I swiped from my dad 🤫\n\nSlightly worn at the very bottom of the legs, otherwise in good shape.\n\nProbably unisex, 100% cotton 👖",
+      "de": "Jeans, die ich meinem Vater geklaut habe 🤫\n\nGanz unten an den Beinen leicht abgetragen, sonst in gutem Zustand \n\nWahrscheinlich Unisex, 100 % Baumwolle 👖",
+      "ru": "Джинсы, которые я стащил у отца 🤫\n\nНемножко потёрты в самом низу, но в целом в порядке.\n\nНаверное, унисекс, 100% хлопок 👖",
+      "uk": "Джинси, які я стягнув у батька 🤫\n\nТрохи потерті у самому низу, але загалом в порядку.\n\nМабуть, унісекс, 100% бавовна 👖",
+      "es": "Jeans que le robé a mi padre 🤫\n\nUn poco desgastados en la parte más baja de las piernas, pero en buen estado en general.\n\nProbablemente unisex, 100% algodón 👖",
+      "zh": "从爸爸那里顺来的牛仔裤 🤫\n\n裤脚最下方略有磨损，整体状态不错。 \n\n应该是男女同款，100% 纯棉 👖"
     },
     "category": "clothing"
   },
@@ -299,6 +299,42 @@ const PRODUCTS = [
       "zh": "复古设计，孔雀蓝、黑色与红色搭配，十分抢眼 —— 适合收藏稀奇周边的人，也适合只是需要一个实用袋子装鞋子、T恤和运动裤的人。\n\n束口设计，轻便实用，适合日常、运动或音乐节使用。\n\n二手良好状态 🎴"
     },
     "category": "clothing"
+  },
+  {
+    "id": 11,
+    "price": "7 €",
+    "reserved": false,
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item11-1788528434514-o2nb.jpg"
+    ],
+    "title": {
+      "en": "Rosmarino thermal bottle, black",
+      "de": "Rosmarino Thermosflasche, schwarz",
+      "ru": "Термобутылка Rosmarino, чёрная",
+      "uk": "Термобутилка Rosmarino, чорна",
+      "es": "Botella térmica Rosmarino, negra",
+      "zh": "Rosmarino保温瓶，黑色"
+    },
+    "desc": {
+      "en": "In good condition. A couple of barely noticeable scratches, touched up with a special marker. Giving it up because I want fewer black things in my life — but for anyone who loves black 🖤, this is a great find.\n\nStainless steel, keeps drinks hot/cold, practically like new",
+      "de": "In gutem Zustand. Ein paar kaum sichtbare Kratzer, mit einem speziellen Stift ausgebessert. Ich gebe sie ab, weil ich weniger schwarze Sachen will — aber für alle, die Schwarz lieben 🖤, ist das ein echter Fund.\n\nEdelstahl, hält Getränke warm/kalt, praktisch wie neu",
+      "ru": "В нормальном состоянии. Есть пара незаметных царапин, замазанных специальным фломастером. Отказываюсь от неё, потому что хочу меньше чёрных вещей, но для тех, у кого цвет настроения чёрный 🖤 — хорошая находка.\n\nНержавеющая сталь, держит горячее/холодное, практически как новая",
+      "uk": "У нормальному стані. Є пара непомітних подряпин, замазаних спеціальним фломастером. Відмовляюсь від неї, бо хочу менше чорних речей, але для тих, у кого колір настрою чорний 🖤 — це гарна знахідка.\n\nНержавіюча сталь, тримає гаряче/холодне, практично як нова",
+      "es": "En buen estado. Tiene un par de rayones casi imperceptibles, retocados con un marcador especial. Me deshago de ella porque quiero menos cosas negras en mi vida, pero para quienes aman el negro 🖤, es un buen hallazgo.\n\nAcero inoxidable, mantiene bebidas frías/calientes, prácticamente como nueva",
+      "zh": "状态良好。有几处几乎看不出的划痕，用专用记号笔修补过了。我想少一些黑色的东西所以出手 —— 但对于喜欢黑色的人 🖤，这绝对是个好东西。\n\n不锈钢材质，保温保冷，几乎和新的一样"
+    },
+    "category": "misc"
   },
   {
     "id": 9,
@@ -373,75 +409,40 @@ const PRODUCTS = [
     "category": "misc"
   },
   {
-    "id": 11,
-    "price": "7 €",
+    "id": 14,
+    "price": "175 €",
     "reserved": false,
     "condition": "good",
     "material": "",
     "size": "",
     "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "en": "Glinde, Möllner Landstraße 89  ",
       "de": "",
       "ru": "",
-      "uk": "",
+      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "es": "",
       "zh": ""
     },
     "images": [
-      "images/item11-1788528434514-o2nb.jpg"
+      "images/item14-1788543649832-xdkh.jpg",
+      "images/item14-1788543649955-zqf8.jpg",
+      "images/item14-1788543650035-u8nm.jpg"
     ],
     "title": {
-      "en": "Rosmarino thermal bottle, black",
-      "de": "Rosmarino Thermosflasche, schwarz",
-      "ru": "Термобутылка Rosmarino, чёрная",
-      "uk": "Термобутилка Rosmarino, чорна",
-      "es": "Botella térmica Rosmarino, negra",
-      "zh": "Rosmarino保温瓶，黑色"
+      "en": "Bomann WA 7175 washing machine, 7 kg, 1400 rpm",
+      "de": "Bomann WA 7175 Waschmaschine, 7 kg, 1400 U/min",
+      "ru": "Стиральная машина Bomann WA 7175, 7 кг, 1400 об/мин",
+      "uk": "Пральна машина Bomann WA 7175, 7 кг, 1400 об/хв",
+      "es": "Lavadora Bomann WA 7175, 7 kg, 1400 rpm",
+      "zh": "Bomann WA 7175 洗衣机，7公斤，1400转/分钟"
     },
     "desc": {
-      "en": "In good condition. A couple of barely noticeable scratches, touched up with a special marker. Giving it up because I want fewer black things in my life — but for anyone who loves black 🖤, this is a great find.\n\nStainless steel, keeps drinks hot/cold, practically like new",
-      "de": "In gutem Zustand. Ein paar kaum sichtbare Kratzer, mit einem speziellen Stift ausgebessert. Ich gebe sie ab, weil ich weniger schwarze Sachen will — aber für alle, die Schwarz lieben 🖤, ist das ein echter Fund.\n\nEdelstahl, hält Getränke warm/kalt, praktisch wie neu",
-      "ru": "В нормальном состоянии. Есть пара незаметных царапин, замазанных специальным фломастером. Отказываюсь от неё, потому что хочу меньше чёрных вещей, но для тех, у кого цвет настроения чёрный 🖤 — хорошая находка.\n\nНержавеющая сталь, держит горячее/холодное, практически как новая",
-      "uk": "У нормальному стані. Є пара непомітних подряпин, замазаних спеціальним фломастером. Відмовляюсь від неї, бо хочу менше чорних речей, але для тих, у кого колір настрою чорний 🖤 — це гарна знахідка.\n\nНержавіюча сталь, тримає гаряче/холодне, практично як нова",
-      "es": "En buen estado. Tiene un par de rayones casi imperceptibles, retocados con un marcador especial. Me deshago de ella porque quiero menos cosas negras en mi vida, pero para quienes aman el negro 🖤, es un buen hallazgo.\n\nAcero inoxidable, mantiene bebidas frías/calientes, prácticamente como nueva",
-      "zh": "状态良好。有几处几乎看不出的划痕，用专用记号笔修补过了。我想少一些黑色的东西所以出手 —— 但对于喜欢黑色的人 🖤，这绝对是个好东西。\n\n不锈钢材质，保温保冷，几乎和新的一样"
-    },
-    "category": "misc"
-  },
-  {
-    "id": 12,
-    "price": "6 €",
-    "reserved": false,
-    "condition": "good",
-    "material": "",
-    "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
-    "images": [
-      "images/item12-1788531104777-phxc.jpg",
-      "images/item12-1788531104896-4s5m.jpg"
-    ],
-    "title": {
-      "en": "USB-C hub — Deppa",
-      "de": "USB-C-Hub — Deppa",
-      "ru": "USB-C-хаб — Deppa",
-      "uk": "USB-C-хаб — Deppa",
-      "es": "Hub USB-C — Deppa",
-      "zh": "USB-C 扩展器 —— Deppa"
-    },
-    "desc": {
-      "en": "Compact USB-C hub with plenty of extra ports for a laptop that's a bit too minimalist.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× memory card slot (SD/microSD)\n\nWorks perfectly, good condition ",
-      "de": "Kompakter USB-C-Hub mit genug zusätzlichen Anschlüssen für einen Laptop, der es mit dem Minimalismus etwas übertrieben hat.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× Speicherkartenslot (SD/microSD)\n\nFunktioniert einwandfrei, guter Zustand",
-      "ru": "Компактный USB-C хаб с набором портов для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карты памяти (SD/microSD)\n\nРаботает исправно, хорошее состояние",
-      "uk": "Компактний USB-C хаб з набором портів для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для картки пам'яті (SD/microSD)\n\nПрацює справно, хороший стан",
-      "es": "Hub USB-C compacto con varios puertos extra, para ese portátil que se pasó de minimalista.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente, buen estado",
-      "zh": "小巧的USB-C扩展器，为那些接口太\"极简\"的笔记本电脑补上急需的端口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好"
+      "en": "Bought a year ago. In excellent condition, though there are a couple of scratches on the housing — otherwise a great machine.\n\nComes with an anti-vibration mat that keeps it from shaking and shifting during the spin cycle.\n\nBought for €300, letting it go for €175 🧺\n\nPickup only, from Glinde (10 minutes from Hamburg).",
+      "de": "Vor einem Jahr gekauft. In sehr gutem Zustand, ein paar Kratzer am Gehäuse, sonst eine tolle Maschine.\n\nInklusive Antivibrationsmatte, die dafür sorgt, dass sie beim Schleudern nicht wandert und wackelt.\n\nGekauft für 300 €, gebe sie für 175 € ab 🧺\n\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
+      "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю вместе с антивибрационным ковриком (Antivibrationsmatte) — он защищает от дрожания и \"сползания\" машинки при отжиме.\n\nКупил за 300 €, отдам за 175 € 🧺\n\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
+      "uk": "Купив рік тому. У відмінному стані, є пара подряпин на корпусі, в іншому чудова машинка.\n\nВіддаю разом з антивібраційним килимком (Antivibrationsmatte) — він захищає від тремтіння і \"сповзання\" машинки під час віджиму.\n\nКупив за 300 €, віддам за 175 € 🧺\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
+      "es": "La compré hace un año. En excelente estado, tiene un par de rayones en la carcasa, por lo demás es una máquina estupenda.\n\nSe entrega con una alfombra antivibración que evita que se mueva o vibre durante el centrifugado.\n\nLa compré por 300 €, la dejo en 175 € 🧺\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
+      "zh": "一年前买的。状态非常好，外壳上有几处划痕，其他方面都很棒。\n\n附赠一块防震垫（Antivibrationsmatte），可以防止甩干时机器晃动和\"走位\"。\n\n购买价300欧元，现在175欧元出手 🧺\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
     },
     "category": "tech"
   },
@@ -486,40 +487,39 @@ const PRODUCTS = [
     "category": "tech"
   },
   {
-    "id": 14,
-    "price": "175 €",
+    "id": 12,
+    "price": "6 €",
     "reserved": false,
     "condition": "good",
     "material": "",
     "size": "",
     "location": {
-      "en": "Glinde, Möllner Landstraße 89  ",
+      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
       "ru": "",
-      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "uk": "",
       "es": "",
       "zh": ""
     },
     "images": [
-      "images/item14-1788543649832-xdkh.jpg",
-      "images/item14-1788543649955-zqf8.jpg",
-      "images/item14-1788543650035-u8nm.jpg"
+      "images/item12-1788531104777-phxc.jpg",
+      "images/item12-1788531104896-4s5m.jpg"
     ],
     "title": {
-      "en": "Bomann WA 7175 washing machine, 7 kg, 1400 rpm",
-      "de": "Bomann WA 7175 Waschmaschine, 7 kg, 1400 U/min",
-      "ru": "Стиральная машина Bomann WA 7175, 7 кг, 1400 об/мин",
-      "uk": "Пральна машина Bomann WA 7175, 7 кг, 1400 об/хв",
-      "es": "Lavadora Bomann WA 7175, 7 kg, 1400 rpm",
-      "zh": "Bomann WA 7175 洗衣机，7公斤，1400转/分钟"
+      "en": "USB-C hub — Deppa",
+      "de": "USB-C-Hub — Deppa",
+      "ru": "USB-C-хаб — Deppa",
+      "uk": "USB-C-хаб — Deppa",
+      "es": "Hub USB-C — Deppa",
+      "zh": "USB-C 扩展器 —— Deppa"
     },
     "desc": {
-      "en": "Bought a year ago. In excellent condition, though there are a couple of scratches on the housing — otherwise a great machine.\n\nComes with an anti-vibration mat that keeps it from shaking and shifting during the spin cycle.\n\nBought for €300, letting it go for €175 🧺\n\nPickup only, from Glinde (10 minutes from Hamburg).",
-      "de": "Vor einem Jahr gekauft. In sehr gutem Zustand, ein paar Kratzer am Gehäuse, sonst eine tolle Maschine.\n\nInklusive Antivibrationsmatte, die dafür sorgt, dass sie beim Schleudern nicht wandert und wackelt.\n\nGekauft für 300 €, gebe sie für 175 € ab 🧺\n\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
-      "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю вместе с антивибрационным ковриком (Antivibrationsmatte) — он защищает от дрожания и \"сползания\" машинки при отжиме.\n\nКупил за 300 €, отдам за 175 € 🧺\n\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
-      "uk": "Купив рік тому. У відмінному стані, є пара подряпин на корпусі, в іншому чудова машинка.\n\nВіддаю разом з антивібраційним килимком (Antivibrationsmatte) — він захищає від тремтіння і \"сповзання\" машинки під час віджиму.\n\nКупив за 300 €, віддам за 175 € 🧺\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
-      "es": "La compré hace un año. En excelente estado, tiene un par de rayones en la carcasa, por lo demás es una máquina estupenda.\n\nSe entrega con una alfombra antivibración que evita que se mueva o vibre durante el centrifugado.\n\nLa compré por 300 €, la dejo en 175 € 🧺\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
-      "zh": "一年前买的。状态非常好，外壳上有几处划痕，其他方面都很棒。\n\n附赠一块防震垫（Antivibrationsmatte），可以防止甩干时机器晃动和\"走位\"。\n\n购买价300欧元，现在175欧元出手 🧺\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
+      "en": "Compact USB-C hub with plenty of extra ports for a laptop that's a bit too minimalist.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× memory card slot (SD/microSD)\n\nWorks perfectly, good condition ",
+      "de": "Kompakter USB-C-Hub mit genug zusätzlichen Anschlüssen für einen Laptop, der es mit dem Minimalismus etwas übertrieben hat.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× Speicherkartenslot (SD/microSD)\n\nFunktioniert einwandfrei, guter Zustand",
+      "ru": "Компактный USB-C хаб с набором портов для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карты памяти (SD/microSD)\n\nРаботает исправно, хорошее состояние",
+      "uk": "Компактний USB-C хаб з набором портів для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для картки пам'яті (SD/microSD)\n\nПрацює справно, хороший стан",
+      "es": "Hub USB-C compacto con varios puertos extra, para ese portátil que se pasó de minimalista.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente, buen estado",
+      "zh": "小巧的USB-C扩展器，为那些接口太\"极简\"的笔记本电脑补上急需的端口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好"
     },
     "category": "tech"
   },
