@@ -15,7 +15,7 @@ const PRODUCTS = [
     "price": "180 €",
     "reserved": false,
     "condition": "good",
-    "material": "Пластик, Металл",
+    "material": "plastic,metal",
     "size": "84.5 x 59.5 x 46.5 cm",
     "location": "Glinde, Möllner Landstraße 89  ",
     "images": [
@@ -571,7 +571,7 @@ const PRODUCTS = [
     "hidden": false,
     "category": "tech",
     "condition": "new",
-    "material": "Пластик, Дерево, Металл",
+    "material": "plastic,wood,metal",
     "size": "28 × 17 × 22 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
@@ -608,7 +608,7 @@ const PRODUCTS = [
     "price": "25 €",
     "reserved": false,
     "condition": "good",
-    "material": "Пластик",
+    "material": "plastic",
     "size": "",
     "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
@@ -647,7 +647,7 @@ const PRODUCTS = [
     "price": "7 €",
     "reserved": false,
     "condition": "good",
-    "material": "металл, пластик",
+    "material": "plastic,metal",
     "size": "",
     "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
