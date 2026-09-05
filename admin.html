@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Baloo+2:wght@800&family=Nunito:wght@800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20260905s">
+<link rel="stylesheet" href="style.css?v=20260905v">
 <style>
   body { padding-bottom: 60px; }
 
@@ -396,7 +396,10 @@
       Вставь текст блоками по языкам — заголовком языка может быть <code>English</code>,
       <code>**English**</code> или <code>## English</code> (так же для Deutsch, Русский, Українська, Español, Türkçe, العربية, فارسی, 中文) —
       всё, что до следующего названия языка, относится к этому блоку.
-      Внутри — строки <code>Название: …</code> и <code>Описание: …</code>. Разберём и разложим сами.
+      Внутри — строки <code>Название: …</code> и <code>Описание: …</code>.
+      Отдельно, в любом месте текста (не по языкам), можно указать
+      <code>Цена: …</code>, <code>Состояние: …</code>, <code>Категория: …</code>,
+      <code>Материал: …</code>, <code>Размер: …</code> — разберём и разложим сами.
     </p>
     <textarea id="magicText" style="min-height:280px;" placeholder="**English**&#10;Название: ...&#10;Описание: ...&#10;&#10;**Deutsch**&#10;Название: ...&#10;Описание: ..."></textarea>
     <div id="magicPreview" style="font-size:12px; margin-top:10px;"></div>
@@ -540,13 +543,15 @@ async function fetchDataJs() {
   const result = sandbox();
   state.waNumber = result.WHATSAPP_NUMBER;
   state.products = result.PRODUCTS;
-  // На случай старых данных: приводим location к объекту {ru,en,...}
+  // Где забрать — единое значение для всех языков (как состояние).
+  // На случай старых данных: если location ещё сохранён как объект
+  // по языкам, схлопываем его в одну строку (берём English, иначе
+  // первое непустое значение).
   state.products.forEach((p) => {
-    if (!p.location || typeof p.location === "string") {
-      const legacy = p.location || "";
-      p.location = emptyLangObj();
-      LANGS.forEach((l) => (p.location[l] = legacy));
+    if (p.location && typeof p.location === "object") {
+      p.location = p.location.en || Object.values(p.location).find(Boolean) || "";
     }
+    if (typeof p.location !== "string") p.location = p.location || "";
   });
 
   state.aboutMe = result.ABOUT_ME || JSON.parse(JSON.stringify(DEFAULT_ABOUT_ME));
@@ -574,7 +579,7 @@ function addProduct() {
     condition: "",
     material: "",
     size: "",
-    location: emptyLangObj(),
+    location: "",
     images: [],
     title: emptyLangObj(),
     desc: emptyLangObj()
@@ -911,74 +916,10 @@ function renderProducts() {
         markDirty();
       });
 
-      const locLabel = document.createElement("label");
-      locLabel.textContent = "Где забрать (" + LANG_LABELS[lang] + ")";
-      const locRow = document.createElement("div");
-      locRow.style.display = "flex";
-      locRow.style.gap = "6px";
-      const locInput = document.createElement("input");
-      locInput.type = "text";
-      locInput.placeholder = "Например: Berlin, Kreuzberg";
-      locInput.value = product.location[lang] || "";
-      locInput.addEventListener("input", () => {
-        product.location[lang] = locInput.value;
-        markDirty();
-      });
-      const locSaveBtn = document.createElement("button");
-      locSaveBtn.type = "button";
-      locSaveBtn.className = "btn btn-small";
-      locSaveBtn.textContent = "+ Запомнить";
-      locSaveBtn.addEventListener("click", () => {
-        const val = locInput.value.trim();
-        if (!val) return;
-        addSavedLocation(val);
-        renderProducts();
-      });
-      locRow.appendChild(locInput);
-      locRow.appendChild(locSaveBtn);
-
-      const locChips = document.createElement("div");
-      locChips.style.display = "flex";
-      locChips.style.flexWrap = "wrap";
-      locChips.style.gap = "6px";
-      locChips.style.marginTop = "8px";
-      getSavedLocations().forEach((loc) => {
-        const chipWrap = document.createElement("span");
-        chipWrap.className = "loc-chip";
-
-        const chip = document.createElement("button");
-        chip.type = "button";
-        chip.className = "btn btn-small";
-        chip.style.opacity = "0.75";
-        chip.textContent = loc;
-        chip.addEventListener("click", () => {
-          product.location[lang] = loc;
-          locInput.value = loc;
-          markDirty();
-        });
-
-        const chipRm = document.createElement("button");
-        chipRm.type = "button";
-        chipRm.className = "loc-chip-rm";
-        chipRm.textContent = "×";
-        chipRm.title = "Удалить сохранённую локацию";
-        chipRm.addEventListener("click", () => {
-          removeSavedLocation(loc);
-          renderProducts();
-        });
-
-        chipWrap.appendChild(chip);
-        chipWrap.appendChild(chipRm);
-        locChips.appendChild(chipWrap);
-      });
-
       pane.appendChild(titleLabel);
       pane.appendChild(titleInput);
       pane.appendChild(descLabel);
       pane.appendChild(descInput);
-      pane.appendChild(locLabel);
-      pane.appendChild(locRow);
-      if (getSavedLocations().length) pane.appendChild(locChips);
       panes.appendChild(pane);
     });
 
@@ -1104,6 +1045,71 @@ function renderProducts() {
     materialRow.appendChild(materialWrap);
     materialRow.appendChild(sizeWrap);
     card.appendChild(materialRow);
+
+    // Где забрать — единое значение для всех языков сайта (как состояние).
+    const locLabel = document.createElement("label");
+    locLabel.textContent = "Где забрать";
+    const locRow = document.createElement("div");
+    locRow.style.display = "flex";
+    locRow.style.gap = "6px";
+    const locInput = document.createElement("input");
+    locInput.type = "text";
+    locInput.placeholder = "Например: Berlin, Kreuzberg";
+    locInput.value = product.location || "";
+    locInput.addEventListener("input", () => {
+      product.location = locInput.value;
+      markDirty();
+    });
+    const locSaveBtn = document.createElement("button");
+    locSaveBtn.type = "button";
+    locSaveBtn.className = "btn btn-small";
+    locSaveBtn.textContent = "+ Запомнить";
+    locSaveBtn.addEventListener("click", () => {
+      const val = locInput.value.trim();
+      if (!val) return;
+      addSavedLocation(val);
+      renderProducts();
+    });
+    locRow.appendChild(locInput);
+    locRow.appendChild(locSaveBtn);
+    card.appendChild(locLabel);
+    card.appendChild(locRow);
+
+    const locChips = document.createElement("div");
+    locChips.style.display = "flex";
+    locChips.style.flexWrap = "wrap";
+    locChips.style.gap = "6px";
+    locChips.style.marginTop = "8px";
+    getSavedLocations().forEach((loc) => {
+      const chipWrap = document.createElement("span");
+      chipWrap.className = "loc-chip";
+
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "btn btn-small";
+      chip.style.opacity = "0.75";
+      chip.textContent = loc;
+      chip.addEventListener("click", () => {
+        product.location = loc;
+        locInput.value = loc;
+        markDirty();
+      });
+
+      const chipRm = document.createElement("button");
+      chipRm.type = "button";
+      chipRm.className = "loc-chip-rm";
+      chipRm.textContent = "×";
+      chipRm.title = "Удалить сохранённую локацию";
+      chipRm.addEventListener("click", () => {
+        removeSavedLocation(loc);
+        renderProducts();
+      });
+
+      chipWrap.appendChild(chip);
+      chipWrap.appendChild(chipRm);
+      locChips.appendChild(chipWrap);
+    });
+    if (getSavedLocations().length) card.appendChild(locChips);
 
     productsListEl.appendChild(card);
   });
@@ -1380,6 +1386,22 @@ function parseMagicMeta(text) {
   const sizeMatch = normalized.match(/(?:Размер|Розмір|Size|Größe|Talla)\s*:\s*(.+)/i);
   if (sizeMatch) meta.size = sizeMatch[1].trim();
 
+  const priceMatch = normalized.match(/(?:Цена|Ціна|Price|Preis|Precio|Fiyat|السعر|قیمت|价格)\s*:\s*(.+)/i);
+  if (priceMatch) {
+    let v = priceMatch[1].trim();
+    if (v && /^\d[\d\s.,]*$/.test(v)) v = v + " €";
+    meta.price = v;
+  }
+
+  const catMatch = normalized.match(/(?:Категория|Категорія|Category|Kategorie|Categoría|Kategori|الفئة|دسته|分类|类别)\s*:\s*(.+)/i);
+  if (catMatch) {
+    const v = catMatch[1].trim().toLowerCase();
+    if (/техник|электрон|tech|elektronik|electrón|إلكترون|الكترون|الکترون|电子/.test(v)) meta.category = "tech";
+    else if (/мебел|меблі|furnitur|möbel|mueble|mobily|أثاث|مبلمان|家具/.test(v)) meta.category = "furniture";
+    else if (/одежд|одяг|cloth|klamott|ropa|giyim|ملابس|پوشاک|服装/.test(v)) meta.category = "clothing";
+    else if (/мелоч|всячин|miscellan|kleinkram|cosita|ufak tefek|أغراض|متفرقه|杂物/.test(v)) meta.category = "misc";
+  }
+
   return meta;
 }
 
@@ -1504,6 +1526,8 @@ function applyMagicText() {
   if (meta.condition) magicTargetProduct.condition = meta.condition;
   if (meta.material) magicTargetProduct.material = meta.material;
   if (meta.size) magicTargetProduct.size = meta.size;
+  if (meta.price) magicTargetProduct.price = meta.price;
+  if (meta.category) magicTargetProduct.category = meta.category;
   markDirty();
   renderProducts();
   closeMagicModal();

@@ -1,3 +1,20 @@
+// Логотип нарисован шрифтом Baloo 2 внутри SVG — пока шрифт не загрузился,
+// браузер подставляет системный (уродливый) и буквы съезжают. Прячем лого
+// до готовности шрифта (с запасным таймаутом, чтобы не остаться невидимым).
+(function revealLogo() {
+  const logo = document.querySelector(".logo-svg");
+  if (!logo) return;
+  const show = () => logo.classList.add("is-ready");
+  if (document.fonts && document.fonts.load) {
+    Promise.race([
+      document.fonts.load('800 100px "Baloo 2"').then(() => document.fonts.ready),
+      new Promise((resolve) => setTimeout(resolve, 800))
+    ]).then(show);
+  } else {
+    show();
+  }
+})();
+
 // Единый SVG-контур сердца для лайков и Favorites — одна и та же форма
 // что для контура, что для заливки (раньше ♥/♡ рисовались разными
 // Unicode-глифами и выглядели по-разному, особенно в залитом виде).
@@ -351,9 +368,12 @@ function render() {
     addMetaLine("condition", conditionText);
     addMetaLine("material", product.material);
     addMetaLine("size", product.size);
+    // "Где забрать" — единое значение для всех языков (как состояние).
+    // Пока в data.js могут ещё встречаться старые товары, где location
+    // сохранён по языкам — на этот случай подтягиваем English.
     const locationText =
       product.location && typeof product.location === "object"
-        ? product.location[currentLang] || product.location.en
+        ? product.location.en || Object.values(product.location).find(Boolean) || ""
         : product.location;
     addMetaLine("location", locationText);
 
