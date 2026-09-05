@@ -637,6 +637,45 @@ const PRODUCTS = [
       "es": "Silla IKEA cómoda y minimalista — funciona muy bien tanto con una mesa de comedor como con un escritorio. La usé para ambas cosas y, en mi nuevo piso, ni siquiera compré una silla de oficina: en esta silla la espalda se mantiene recta de manera natural y sigue siendo cómoda para sentarse 🦦\nMedidas: 45×45×79 cm; altura del asiento 45 cm, ancho del asiento 39 cm y fondo del asiento 40 cm.\nEl precio nuevo es de 19,99 €, la dejo en 10 € 🪑\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
       "zh": "舒适又简约的 IKEA 椅子，放在餐桌或书桌旁都很合适。我两种场景都坐过；搬进新公寓后，我甚至没有买办公椅，因为坐在这把椅子上背部会自然保持挺直，同时一直坐得很舒服 🦦\n尺寸：45×45×79 厘米；座高 45 厘米，座宽 39 厘米，座深 40 厘米。\n全新售价 19.99 欧元，现在 10 欧元出手 🪑\n仅限自取，地点在 Glinde，Möllner Landstraße 89（距汉堡 10 分钟车程）。"
     }
+  },
+  {
+    "id": 18,
+    "price": "100 €",
+    "reserved": false,
+    "hidden": false,
+    "category": "furniture",
+    "condition": "good",
+    "material": "",
+    "size": "140×200 cm",
+    "location": {
+      "en": "Glinde, Möllner Landstraße 89",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item18-1788600758779-o7d1.jpg",
+      "images/item18-1788600758886-9l8g.jpg",
+      "images/item18-1788600758962-wchq.jpg"
+    ],
+    "title": {
+      "en": "IKEA ASKVOLL bed frame, white, 140×200 cm",
+      "de": "IKEA ASKVOLL Bettgestell, weiß, 140×200 cm",
+      "ru": "Кровать IKEA ASKVOLL, белая, 140×200 см",
+      "uk": "Ліжко IKEA ASKVOLL, біле, 140×200 см",
+      "es": "Estructura de cama IKEA ASKVOLL, blanca, 140×200 cm",
+      "zh": "IKEA ASKVOLL 白色床架，140×200 厘米"
+    },
+    "desc": {
+      "en": "Simple and minimalist white IKEA bed — it looks light in the room and fits well even in a smaller bedroom. In my small studio, it served both as a place to rest and as extra storage: there was plenty of room underneath for winter clothes. Selling it together with two slatted bed bases. Mattress is not for sale (for now) 💤\nDimensions: mattress size 140×200 cm. Headboard height 77 cm, footboard height 43 cm.\nThe bed frame costs €99 new, and the two slatted bed bases cost almost €100 — selling everything together for €100 🛏️\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
+      "de": "Schlichtes und minimalistisches IKEA-Bett in Weiß — es wirkt leicht im Raum und passt auch gut in ein kleineres Schlafzimmer. In meinem kleinen Studio war es sowohl ein Ort zum Ausruhen als auch zusätzlicher Stauraum: Unter dem Bett war viel Platz für Wintersachen. Verkauft wird es zusammen mit zwei Lattenrosten. Die Matratze verkaufe ich (vorerst) nicht 💤\nMaße: Matratzengröße 140×200 cm. Kopfteilhöhe 77 cm, Fußteilhöhe 43 cm.\nDas Bettgestell kostet neu 99 €, die beiden Lattenroste fast 100 € — alles zusammen für 100 € 🛏️\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
+      "ru": "Простая и минималистичная белая кровать IKEA — выглядит легко в комнате и хорошо подойдёт даже для небольшой спальни. В моей маленькой студии она служила мне и местом отдыха, и кладовкой — под кроватью поместилось много зимних вещей. Продаю вместе с двумя ламельными основаниями. Матрас — (пока) не продаю 💤\nГабариты: спальное место 140×200 см. Высота изголовья — 77 см, изножья — 43 см.\nНовая кровать стоит 99 €, а две пары ламелей — почти 100 €; отдам всё вместе за 100 € 🛏️\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
+      "uk": "Просте й мінімалістичне біле ліжко IKEA — виглядає легко в кімнаті та добре підійде навіть для невеликої спальні. У моїй маленькій студії воно було і місцем для відпочинку, і додатковим місцем для зберігання: під ліжком помістилося багато зимових речей. Продаю разом із двома ламельними основами. Матрац — (поки що) не продаю 💤\nГабарити: спальне місце 140×200 см. Висота узголів’я — 77 см, узніжжя — 43 см.\nНове ліжко коштує 99 €, а дві ламельні основи — майже 100 €; віддам усе разом за 100 € 🛏️\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
+      "es": "Cama IKEA blanca, sencilla y minimalista — se ve ligera en la habitación y queda bien incluso en un dormitorio pequeño. En mi pequeño estudio, servía tanto como lugar de descanso como espacio de almacenamiento: debajo de la cama cabían muchas cosas de invierno. La vendo junto con dos somieres de láminas. El colchón (por ahora) no está a la venta 💤\nMedidas: tamaño de colchón 140×200 cm. Altura del cabecero: 77 cm; altura del pie de cama: 43 cm.\nLa estructura nueva cuesta 99 € y los dos somieres de láminas casi 100 € — lo dejo todo junto por 100 € 🛏️\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
+      "zh": "简约、极简风格的白色 IKEA 床，在房间里看起来很轻盈，即使是较小的卧室也很适合。在我的小型单间公寓里，它既是休息的地方，也是额外的储物空间：床下可以放下很多冬季衣物。床架与两套排骨架一起出售。床垫**（暂时）不出售** 💤\n尺寸：适用床垫尺寸为 140×200 厘米。床头板高 77 厘米，床尾板高 43 厘米。\n全新床架售价 99 欧元，两套排骨架接近 100 欧元；现在全部一起 100 欧元出手 🛏️\n仅限自取，地点在 Glinde，Möllner Landstraße 89（距汉堡 10 分钟车程）。"
+    }
   }
 ];
 
