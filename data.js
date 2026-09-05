@@ -644,10 +644,10 @@ const PRODUCTS = [
   },
   {
     "id": 12,
-    "price": "6 €",
+    "price": "7 €",
     "reserved": false,
     "condition": "good",
-    "material": "",
+    "material": "металл, пластик",
     "size": "",
     "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
@@ -660,21 +660,21 @@ const PRODUCTS = [
       "ru": "USB-C-хаб — Deppa",
       "uk": "USB-C-хаб — Deppa",
       "es": "Hub USB-C — Deppa",
-      "zh": "USB-C 扩展器 —— Deppa",
-      "fa": "هاب USB-C دیپا — آداپتور چندمنظورهٔ جمع‌وجور برای مک‌بوک",
-      "tr": "Deppa USB-C hub — MacBook için kompakt çoklu bağlantı adaptörü",
-      "ar": "موزّع USB-C من Deppa — محوّل متعدد المنافذ صغير لجهاز MacBook"
+      "zh": "Deppa USB-C 扩展坞",
+      "fa": "هاب USB-C دیپا",
+      "tr": "USB-C hub — Deppa",
+      "ar": "موزّع USB-C من Deppa"
     },
     "desc": {
-      "en": "Compact USB-C hub with plenty of extra ports for a laptop that's a bit too minimalist.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× memory card slot (SD/microSD)\n\nWorks perfectly, good condition ",
-      "de": "Kompakter USB-C-Hub mit genug zusätzlichen Anschlüssen für einen Laptop, der es mit dem Minimalismus etwas übertrieben hat.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× Speicherkartenslot (SD/microSD)\n\nFunktioniert einwandfrei, guter Zustand",
-      "ru": "Компактный USB-C хаб с набором портов для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карты памяти (SD/microSD)\n\nРаботает исправно, хорошее состояние",
-      "uk": "Компактний USB-C хаб з набором портів для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для картки пам'яті (SD/microSD)\n\nПрацює справно, хороший стан",
-      "es": "Hub USB-C compacto con varios puertos extra, para ese portátil que se pasó de minimalista.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente, buen estado",
-      "zh": "小巧的USB-C扩展器，为那些接口太\"极简\"的笔记本电脑补上急需的端口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好",
-      "fa": "یک هاب USB-C جمع‌وجور برای مک‌بوک با مجموعه‌ای از درگاه‌های کاربردی 💻\n\n۲× USB-A\n۱× USB-C\n۱× HDMI\n۱× شیار کارت حافظهٔ SD/microSD\n\nکاملاً درست کار می‌کند و در وضعیت خوبی است 🔌\n\nتحویل در یکی از ایستگاه‌های U-Bahn یا S-Bahn در مرکز هامبورگ 🇩🇪\n",
-      "tr": "MacBook için kullanışlı bağlantı noktalarına sahip kompakt bir USB-C hub 💻\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× SD/microSD kart yuvası\n\nSorunsuz çalışıyor ve iyi durumda 🔌\n\nHamburg’un merkezindeki bir U-Bahn veya S-Bahn istasyonunda teslim edebilirim 🇩🇪",
-      "ar": "موزّع USB-C صغير لجهاز MacBook مزوّد بمجموعة من المنافذ العملية 💻\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× فتحة لبطاقات الذاكرة SD/microSD\n\nيعمل بشكل سليم وحالته جيدة 🔌\n\nالتسليم في إحدى محطات U-Bahn أو S-Bahn في وسط هامبورغ 🇩🇪"
+      "en": "Compact USB-C hub with a range of ports for a MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× memory card slot (SD/microSD)\n\nWorks perfectly, good condition.",
+      "de": "Kompakter USB-C-Hub mit einer Auswahl an Anschlüssen für ein MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× Speicherkartensteckplatz (SD/microSD)\n\nFunktioniert einwandfrei, guter Zustand.",
+      "ru": "Компактный USB-C хаб с набором портов для макбука.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карты памяти (SD/microSD)\n\nРаботает исправно, хорошее состояние.",
+      "uk": "Компактний USB-C-хаб із набором портів для MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карти пам’яті (SD/microSD)\n\nПрацює справно, хороший стан.",
+      "es": "Hub USB-C compacto con varios puertos para un MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente y está en buen estado.",
+      "zh": "小巧的 USB-C 扩展坞，配有适用于 MacBook 的多种接口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好。",
+      "fa": "هاب USB-C جمع‌وجور با مجموعه‌ای از درگاه‌ها برای مک‌بوک.\n\n۲× USB-A\n۱× USB-C\n۱× HDMI\n۱× شیار کارت حافظه (SD/microSD)\n\nکاملاً درست کار می‌کند و در وضعیت خوبی است.",
+      "tr": "MacBook için çeşitli bağlantı noktalarına sahip kompakt USB-C hub.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× hafıza kartı yuvası (SD/microSD)\n\nSorunsuz çalışıyor, iyi durumda.",
+      "ar": "موزّع USB-C صغير مزوّد بمجموعة من المنافذ لجهاز MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× فتحة لبطاقات الذاكرة (SD/microSD)\n\nيعمل بشكل سليم وحالته جيدة."
     },
     "category": "tech"
   },
