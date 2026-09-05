@@ -9,7 +9,7 @@
   --blue: #6E4FFF;
   --soft-pink: #FBE0E6;
   --bubblegum: #FF4FA3;
-  --lead: #35334F;
+  --lead: #24223A;
   /* совместимость со старыми названиями акцентов */
   --coral: var(--red);
   --gold: var(--yellow);
@@ -57,16 +57,17 @@ html, body {
   align-items: flex-end;
   flex-wrap: nowrap;
   white-space: nowrap;
+  font-size: clamp(24px, 7.5vw, 42px);
 }
 
 .logo .lg {
   display: inline-block;
   font-family: "Baloo 2", sans-serif;
   font-weight: 800;
-  font-size: 42px;
+  font-size: inherit;
   line-height: 1;
   color: var(--paper);
-  -webkit-text-stroke: 2.6px var(--ink);
+  -webkit-text-stroke: 0.062em var(--ink);
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   paint-order: stroke fill;
@@ -75,16 +76,16 @@ html, body {
 
 .logo .lg-space {
   display: inline-block;
-  width: 11px;
+  width: 0.26em;
 }
 
-.logo .lg:nth-child(1) { --tilt: -7deg; text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--green); }
-.logo .lg:nth-child(2) { --tilt: 5deg;  text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--yellow); }
-.logo .lg:nth-child(4) { --tilt: -4deg; text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--orange); }
-.logo .lg:nth-child(5) { --tilt: 6deg;  text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--red); }
-.logo .lg:nth-child(6) { --tilt: -5deg; text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--blue); }
-.logo .lg:nth-child(7) { --tilt: 4deg;  text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--green); }
-.logo .lg:nth-child(8) { --tilt: -6deg; text-shadow: 3px 3px 0 var(--ink), 6px 6px 0 var(--yellow); }
+.logo .lg:nth-child(1) { --tilt: -7deg; text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--green); }
+.logo .lg:nth-child(2) { --tilt: 5deg;  text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--yellow); }
+.logo .lg:nth-child(4) { --tilt: -4deg; text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--orange); }
+.logo .lg:nth-child(5) { --tilt: 6deg;  text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--red); }
+.logo .lg:nth-child(6) { --tilt: -5deg; text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--blue); }
+.logo .lg:nth-child(7) { --tilt: 4deg;  text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--green); }
+.logo .lg:nth-child(8) { --tilt: -6deg; text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--yellow); }
 
 .lang-switch {
   display: flex;
@@ -115,6 +116,125 @@ html, body {
   opacity: 1;
   color: var(--coral);
   font-weight: 700;
+}
+
+/* ---------- Categories ---------- */
+
+.category-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4px 24px 18px;
+}
+
+.cat-pill {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: 3px 3px 0 var(--yellow);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.cat-pill:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--yellow);
+}
+
+.cat-pill.is-active {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 3px 3px 0 var(--blue);
+}
+
+/* ---------- About me bubble ---------- */
+
+.about-bubble {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 60;
+  width: min(320px, calc(100vw - 32px));
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  padding: 20px 20px 18px;
+  box-shadow: 5px 5px 0 var(--coral);
+  font-family: "Inter", sans-serif;
+}
+
+.about-bubble::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: 30px;
+  width: 16px;
+  height: 16px;
+  background: var(--paper);
+  border-left: 2px solid var(--ink);
+  border-top: 2px solid var(--ink);
+  transform: rotate(45deg);
+}
+
+.about-close {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--ink);
+  opacity: 0.55;
+  padding: 4px;
+}
+
+.about-close:hover {
+  opacity: 1;
+}
+
+.about-photo {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: block;
+  object-fit: cover;
+  max-height: 160px;
+}
+
+.about-title {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 8px;
+}
+
+.about-text {
+  font-size: 13px;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  padding-right: 6px;
+}
+
+@media (max-width: 480px) {
+  .about-bubble {
+    top: 12px;
+    right: 12px;
+    left: 12px;
+    width: auto;
+  }
 }
 
 /* ---------- Product list ---------- */
@@ -171,6 +291,7 @@ html, body {
   cursor: pointer;
   overflow: hidden;
   background: var(--lead);
+  padding: 0 26px;
 }
 
 .product-photo img {
@@ -447,6 +568,7 @@ html, body {
   .product-photo {
     width: 128px;
     height: 128px;
+    padding: 0 18px;
   }
   .product-title {
     font-size: 18px;

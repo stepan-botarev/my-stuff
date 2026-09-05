@@ -147,6 +147,22 @@
     font-size: 14px;
   }
 
+  .is-hidden-product {
+    opacity: 0.55;
+  }
+
+  .hidden-tag {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+    color: var(--paper);
+    background: var(--ink);
+    padding: 2px 6px;
+    border-radius: 999px;
+    vertical-align: middle;
+  }
+
   .img-list {
     display: flex;
     flex-wrap: wrap;
@@ -304,6 +320,17 @@
       <input type="text" id="waNumber" placeholder="4917623657623">
     </div>
 
+    <div class="panel">
+      <h2>Обо мне</h2>
+      <p style="font-size:11px; opacity:0.65; margin-top:-4px;">
+        Показывается посетителям как всплывающее окошко-сообщение в углу сайта. Можно закрыть крестиком.
+      </p>
+      <label>Фото (необязательно)</label>
+      <div id="aboutPhotoPreview" style="margin-bottom:8px;"></div>
+      <input type="file" id="aboutPhotoInput" accept="image/*">
+      <div id="aboutMeLangs"></div>
+    </div>
+
     <button class="btn" id="addProductBtn" style="margin-bottom:16px;">+ Добавить товар</button>
 
     <div id="productsList"></div>
@@ -348,6 +375,12 @@ const CONDITION_OPTIONS = [
   { value: "fair", label: "★★ Нормальное" },
   { value: "old", label: "★ Старое" }
 ];
+const CATEGORY_OPTIONS = [
+  { value: "tech", label: "💻 Техника" },
+  { value: "furniture", label: "🪑 Мебель" },
+  { value: "clothing", label: "👕 Одежда" },
+  { value: "misc", label: "🧦 Всякие мелочи" }
+];
 const LS_LOCATIONS = "myStuffAdminLocations";
 
 function getSavedLocations() {
@@ -369,12 +402,29 @@ function removeSavedLocation(loc) {
   localStorage.setItem(LS_LOCATIONS, JSON.stringify(list));
 }
 
+const DEFAULT_ABOUT_ME = {
+  title: {
+    en: "About me", de: "Über mich", ru: "Обо мне", uk: "Про мене", es: "Sobre mí", zh: "关于我"
+  },
+  text: {
+    en: "Hi! I'm Stephen. I've been living in Germany for two years now, and this August I got into university in Berlin. So I'm moving out from near Hamburg and selling off things I either can't take with me or just feel ready to let go of — because everything changes, and I'm not quite the same person who bought them.\n\nStill, these are all things I chose with care and tried to look after well. I like the idea of minimalism and sustainability — where every item finds its use. So I'd really appreciate your help finding these things new owners!\n\nMessage me and share with friends 🌿",
+    de: "Hallo! Ich heiße Stefan. Ich lebe seit zwei Jahren in Deutschland und habe im August einen Studienplatz an einer Uni in Berlin bekommen. Deshalb ziehe ich aus der Nähe von Hamburg weg und verkaufe Dinge, die ich entweder nicht mitnehmen kann oder mit denen ich einfach bereit bin, mich zu verabschieden — denn alles verändert sich, und ich bin nicht mehr ganz derselbe Mensch, der sie einst gekauft hat.\n\nTrotzdem sind das alles Dinge, die ich mit Bedacht ausgesucht und sorgsam behandelt habe. Ich mag den Gedanken von Minimalismus und Nachhaltigkeit — dass jedes Ding seinen Nutzen findet. Deshalb würde ich mich sehr freuen, wenn ihr mir helft, all diesen Sachen neue Besitzer:innen zu finden!\n\nSchreibt mir und leitet es gerne an Freunde weiter 🌿",
+    ru: "Привет! Меня зовут Стёпа. Я уже два года живу в Германии и в августе поступил в университет в Берлине. Поэтому теперь переезжаю из-под Гамбурга и распродаю вещи, которые не получится перевезти и те, с которыми просто хочется попрощаться, потому что всё меняется, и я уже не тот человек, что когда-то купил их.\n\nТем не менее это всё вещи, которые я выбирал с душой и с которыми старался бережно обходиться. Мне нравится идея минимализма и устойчивости — когда каждой вещи всегда находится применение. Поэтому я буду рад, если вы поможете найти всем этим вещицам новых хозяев и хозяек!\n\nПишите и пересылайте друзьям 🌿",
+    uk: "Привіт! Мене звати Степан. Я вже два роки живу в Німеччині і в серпні вступив до університету в Берліні. Тому тепер переїжджаю з-під Гамбурга і розпродаю речі, які не вийде перевезти, та ті, з якими просто хочеться попрощатися, бо все змінюється, і я вже не та людина, яка колись їх купила.\n\nПроте це все речі, які я обирав з душею і намагався дбайливо з ними поводитися. Мені подобається ідея мінімалізму та сталості — коли кожній речі завжди знаходиться застосування. Тож я буду радий, якщо ви допоможете знайти всім цим речам нових господарів і господинь!\n\nПишіть і пересилайте друзям 🌿",
+    es: "¡Hola! Me llamo Esteban. Llevo dos años viviendo en Alemania y en agosto entré a la universidad en Berlín. Por eso ahora me mudo desde cerca de Hamburgo y estoy vendiendo cosas que no podré llevarme, y otras de las que simplemente siento que es hora de despedirme — porque todo cambia, y ya no soy exactamente la misma persona que las compró en su momento.\n\nAun así, son todas cosas que elegí con cariño y traté de cuidar bien. Me gusta la idea del minimalismo y la sostenibilidad — que cada cosa siempre encuentre su uso. Así que agradecería mucho vuestra ayuda para encontrarles nuevos dueños y dueñas a todas estas cositas.\n\nEscribidme y compartid con amigos 🌿",
+    zh: "你好！我叫Stepan。我在德国已经生活两年了，今年8月考上了柏林的大学。所以现在我要从汉堡附近搬走，把一些带不走的东西，还有一些单纯想告别的东西卖掉——因为一切都在变化，我也不再是当初买这些东西时的那个自己了。\n\n不过这些都是我用心挑选、尽力好好爱护过的东西。我喜欢极简和可持续的理念——希望每件物品都能找到自己的用处。所以如果大家能帮忙给这些小物件找到新主人，我会非常感激！\n\n欢迎留言，也欢迎转发给朋友们 🌿"
+  },
+  photo: ""
+};
+
 let state = {
   token: "",
   repo: "",
   branch: "main",
   waNumber: "",
   products: [],
+  aboutMe: null,
+  pendingAboutPhoto: null, // {path, dataUrl}
   dataSha: null,
   dirty: false,
   pendingImages: [] // {file, path, dataUrl}
@@ -418,7 +468,9 @@ async function fetchDataJs() {
   const json = await res.json();
   state.dataSha = json.sha;
   const text = base64ToUtf8(json.content);
-  const sandbox = new Function(text + "\nreturn { WHATSAPP_NUMBER, PRODUCTS };");
+  const sandbox = new Function(
+    text + "\nreturn { WHATSAPP_NUMBER, PRODUCTS, ABOUT_ME: typeof ABOUT_ME !== 'undefined' ? ABOUT_ME : null };"
+  );
   const result = sandbox();
   state.waNumber = result.WHATSAPP_NUMBER;
   state.products = result.PRODUCTS;
@@ -430,6 +482,11 @@ async function fetchDataJs() {
       LANGS.forEach((l) => (p.location[l] = legacy));
     }
   });
+
+  state.aboutMe = result.ABOUT_ME || JSON.parse(JSON.stringify(DEFAULT_ABOUT_ME));
+  if (!state.aboutMe.title) state.aboutMe.title = emptyLangObj();
+  if (!state.aboutMe.text) state.aboutMe.text = emptyLangObj();
+  if (typeof state.aboutMe.photo !== "string") state.aboutMe.photo = "";
 }
 
 function emptyLangObj() {
@@ -446,6 +503,8 @@ function addProduct() {
     id: nextId,
     price: "",
     reserved: false,
+    hidden: false,
+    category: "",
     condition: "",
     material: "",
     size: "",
@@ -465,6 +524,101 @@ function removeProduct(idx) {
   renderProducts();
 }
 
+function renderAboutMePanel() {
+  const container = document.getElementById("aboutMeLangs");
+  container.innerHTML = "";
+
+  const tabs = document.createElement("div");
+  tabs.className = "lang-tabs";
+  const panes = document.createElement("div");
+
+  LANGS.forEach((lang, i) => {
+    const tabBtn = document.createElement("button");
+    tabBtn.type = "button";
+    tabBtn.className = "lang-tab-btn" + (i === 0 ? " is-active" : "");
+    tabBtn.textContent = LANG_LABELS[lang];
+    tabBtn.addEventListener("click", () => {
+      tabs.querySelectorAll(".lang-tab-btn").forEach((b) => b.classList.remove("is-active"));
+      tabBtn.classList.add("is-active");
+      panes.querySelectorAll(".lang-pane").forEach((p) => p.classList.remove("is-active"));
+      pane.classList.add("is-active");
+    });
+    tabs.appendChild(tabBtn);
+
+    const pane = document.createElement("div");
+    pane.className = "lang-pane" + (i === 0 ? " is-active" : "");
+
+    const titleLabel = document.createElement("label");
+    titleLabel.textContent = "Заголовок (" + LANG_LABELS[lang] + ")";
+    const titleInput = document.createElement("input");
+    titleInput.type = "text";
+    titleInput.value = state.aboutMe.title[lang] || "";
+    titleInput.addEventListener("input", () => {
+      state.aboutMe.title[lang] = titleInput.value;
+      markDirty();
+    });
+
+    const textLabel = document.createElement("label");
+    textLabel.textContent = "Текст (" + LANG_LABELS[lang] + ")";
+    const textInput = document.createElement("textarea");
+    textInput.style.minHeight = "140px";
+    textInput.value = state.aboutMe.text[lang] || "";
+    textInput.addEventListener("input", () => {
+      state.aboutMe.text[lang] = textInput.value;
+      markDirty();
+    });
+
+    pane.appendChild(titleLabel);
+    pane.appendChild(titleInput);
+    pane.appendChild(textLabel);
+    pane.appendChild(textInput);
+    panes.appendChild(pane);
+  });
+
+  container.appendChild(tabs);
+  container.appendChild(panes);
+
+  // Фото
+  const photoPreview = document.getElementById("aboutPhotoPreview");
+  photoPreview.innerHTML = "";
+  const currentPhotoSrc = state.pendingAboutPhoto
+    ? state.pendingAboutPhoto.dataUrl
+    : state.aboutMe.photo;
+  if (currentPhotoSrc) {
+    const wrap = document.createElement("div");
+    wrap.className = "img-thumb";
+    wrap.style.width = "100px";
+    wrap.style.height = "100px";
+    const img = document.createElement("img");
+    img.src = currentPhotoSrc;
+    wrap.appendChild(img);
+    const rm = document.createElement("button");
+    rm.textContent = "×";
+    rm.addEventListener("click", () => {
+      state.aboutMe.photo = "";
+      state.pendingAboutPhoto = null;
+      markDirty();
+      renderAboutMePanel();
+    });
+    wrap.appendChild(rm);
+    photoPreview.appendChild(wrap);
+  }
+}
+
+document.getElementById("aboutPhotoInput").addEventListener("change", async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const ext = file.name.split(".").pop().toLowerCase();
+  const path = `images/about-${Date.now()}.${ext}`;
+  const dataUrl = await fileToDataUrl(file);
+  state.pendingAboutPhoto = { path, dataUrl };
+  state.pendingImages.push({ file, path, dataUrl });
+  state.aboutMe.photo = path;
+  markDirty();
+  renderAboutMePanel();
+  e.target.value = "";
+});
+
 function renderProducts() {
   productsListEl.innerHTML = "";
   // Показываем последние добавленные товары сверху (на самом сайте порядок не меняется)
@@ -472,13 +626,20 @@ function renderProducts() {
   order.forEach((idx) => {
     const product = state.products[idx];
     const card = document.createElement("div");
-    card.className = "panel product-card";
+    card.className = "panel product-card" + (product.hidden ? " is-hidden-product" : "");
 
     const head = document.createElement("div");
     head.className = "product-card-head";
     const numBadge = document.createElement("span");
     numBadge.className = "product-num-badge";
     numBadge.textContent = String(product.id).padStart(2, "0");
+    if (product.hidden) {
+      const hiddenTag = document.createElement("span");
+      hiddenTag.className = "hidden-tag";
+      hiddenTag.textContent = "Скрыто";
+      numBadge.appendChild(document.createTextNode(" "));
+      numBadge.appendChild(hiddenTag);
+    }
     const headBtns = document.createElement("div");
     headBtns.style.display = "flex";
     headBtns.style.gap = "8px";
@@ -487,11 +648,22 @@ function renderProducts() {
     magicBtn.className = "btn btn-small";
     magicBtn.textContent = "✨ Волшебная кнопка";
     magicBtn.addEventListener("click", () => openMagicModal(product));
+    const hideBtn = document.createElement("button");
+    hideBtn.type = "button";
+    hideBtn.className = "btn btn-small";
+    hideBtn.textContent = product.hidden ? "Показать" : "Скрыть";
+    hideBtn.title = "Скрытое объявление не показывается на сайте, но остаётся в списке";
+    hideBtn.addEventListener("click", () => {
+      product.hidden = !product.hidden;
+      markDirty();
+      renderProducts();
+    });
     const delBtn = document.createElement("button");
     delBtn.className = "btn btn-danger btn-small";
     delBtn.textContent = "Удалить";
     delBtn.addEventListener("click", () => removeProduct(idx));
     headBtns.appendChild(magicBtn);
+    headBtns.appendChild(hideBtn);
     headBtns.appendChild(delBtn);
     head.appendChild(numBadge);
     head.appendChild(headBtns);
@@ -765,6 +937,27 @@ function renderProducts() {
     card.appendChild(condLabel);
     card.appendChild(condSelect);
 
+    const catLabel = document.createElement("label");
+    catLabel.textContent = "Категория";
+    const catSelect = document.createElement("select");
+    const catPlaceholderOpt = document.createElement("option");
+    catPlaceholderOpt.value = "";
+    catPlaceholderOpt.textContent = "— не указано —";
+    catSelect.appendChild(catPlaceholderOpt);
+    CATEGORY_OPTIONS.forEach((opt) => {
+      const o = document.createElement("option");
+      o.value = opt.value;
+      o.textContent = opt.label;
+      if (product.category === opt.value) o.selected = true;
+      catSelect.appendChild(o);
+    });
+    catSelect.addEventListener("change", () => {
+      product.category = catSelect.value;
+      markDirty();
+    });
+    card.appendChild(catLabel);
+    card.appendChild(catSelect);
+
     const materialRow = document.createElement("div");
     materialRow.className = "row";
     const materialWrap = document.createElement("div");
@@ -846,6 +1039,7 @@ function compressImageFile(file, maxDim = 1600, quality = 0.82) {
 
 function buildDataJsSource() {
   const productsJson = JSON.stringify(state.products, null, 2);
+  const aboutMeJson = JSON.stringify(state.aboutMe, null, 2);
   return `// ЗАПОЛНЕНИЕ САЙТА — редактируй здесь (или через admin.html)
 // -----------------------------------------------------------------
 // Твой WhatsApp номер в международном формате, без + и без пробелов
@@ -855,7 +1049,12 @@ const WHATSAPP_NUMBER = "${state.waNumber}";
 // Список товаров. Порядок в массиве = порядок на сайте.
 // images: первая картинка — превью в списке, все — доступны в галерее.
 // reserved: true — товар помечается как "забронирован".
+// hidden: true — товар скрыт с сайта, но остаётся в списке для повторной публикации.
+// category: одна из tech / furniture / clothing / misc (или пусто).
 const PRODUCTS = ${productsJson};
+
+// Всплывающее окошко "Обо мне" в углу сайта.
+const ABOUT_ME = ${aboutMeJson};
 `;
 }
 
@@ -955,6 +1154,7 @@ async function publish() {
     const json = await res.json();
     state.dataSha = json.content.sha;
     state.dirty = false;
+    state.pendingAboutPhoto = null;
     publishBtn.textContent = "Сохранено ✓";
     setStatus("Сайт обновится примерно через минуту.", "ok");
   } catch (e) {
@@ -993,6 +1193,7 @@ async function boot() {
     await fetchDataJs();
     document.getElementById("waNumber").value = state.waNumber;
     document.getElementById("repoLabel").textContent = `${state.repo} @ ${state.branch}`;
+    renderAboutMePanel();
     renderProducts();
     gateEl.classList.add("hidden");
     appEl.classList.remove("hidden");

@@ -25,7 +25,23 @@ const META_LABELS = {
   location: { en: "Handover: ", de: "Übergabe: ", ru: "Где забрать: ", uk: "Де забрати: ", es: "Entrega: ", zh: "交接地点：" }
 };
 
+// Категории товаров — фиксированный список, переводится автоматически.
+const CATEGORY_ORDER = ["tech", "furniture", "clothing", "misc"];
+const CATEGORY_ICONS = { tech: "💻", furniture: "🪑", clothing: "👕", misc: "🧦" };
+const CATEGORY_LABELS = {
+  tech: { ru: "Техника", en: "Electronics", de: "Elektronik", uk: "Техніка", es: "Electrónica", zh: "电子产品" },
+  furniture: { ru: "Мебель", en: "Furniture", de: "Möbel", uk: "Меблі", es: "Muebles", zh: "家具" },
+  clothing: { ru: "Одежда", en: "Clothing", de: "Klamotten", uk: "Одяг", es: "Ropa", zh: "服装" },
+  misc: { ru: "Всякие мелочи", en: "Miscellaneous", de: "Kleinkram", uk: "Всяка всячина", es: "Cositas", zh: "杂物" }
+};
+const ALL_CATEGORY_LABEL = { ru: "Все", en: "All", de: "Alle", uk: "Усі", es: "Todo", zh: "全部" };
+
+// "Обо мне" — опциональный блок, работает только если ABOUT_ME определён в data.js
+// (редактор admin.html добавит его туда автоматически при первом сохранении).
+const ABOUT_ME_DATA = typeof ABOUT_ME !== "undefined" ? ABOUT_ME : null;
+
 let currentLang = "en";
+let currentCategory = "all";
 let lightboxImages = [];
 let lightboxIndex = 0;
 
@@ -81,9 +97,90 @@ function waLink(product) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
 }
 
+function renderCategoryBar() {
+  const bar = document.getElementById("category-bar");
+  if (!bar) return;
+  bar.innerHTML = "";
+
+  const usedCategories = CATEGORY_ORDER.filter((cat) =>
+    PRODUCTS.some((p) => !p.hidden && p.category === cat)
+  );
+  if (!usedCategories.length) return;
+
+  const allBtn = document.createElement("button");
+  allBtn.type = "button";
+  allBtn.className = "cat-pill" + (currentCategory === "all" ? " is-active" : "");
+  allBtn.textContent = ALL_CATEGORY_LABEL[currentLang];
+  allBtn.addEventListener("click", () => {
+    currentCategory = "all";
+    render();
+  });
+  bar.appendChild(allBtn);
+
+  usedCategories.forEach((cat) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "cat-pill" + (currentCategory === cat ? " is-active" : "");
+    btn.textContent = `${CATEGORY_ICONS[cat]} ${CATEGORY_LABELS[cat][currentLang]}`;
+    btn.addEventListener("click", () => {
+      currentCategory = cat;
+      render();
+    });
+    bar.appendChild(btn);
+  });
+}
+
+let aboutBubbleEl = null;
+function renderAboutMe() {
+  const data = ABOUT_ME_DATA;
+  if (!data) return;
+  const title = data.title && data.title[currentLang];
+  const text = data.text && data.text[currentLang];
+  if (!title && !text) return;
+  if (localStorage.getItem("myStuffAboutDismissed") === "1") return;
+
+  if (!aboutBubbleEl) {
+    aboutBubbleEl = document.createElement("div");
+    aboutBubbleEl.className = "about-bubble";
+
+    const closeBtn = document.createElement("button");
+    closeBtn.className = "about-close";
+    closeBtn.textContent = "×";
+    closeBtn.setAttribute("aria-label", "Close");
+    closeBtn.addEventListener("click", () => {
+      aboutBubbleEl.remove();
+      localStorage.setItem("myStuffAboutDismissed", "1");
+    });
+    aboutBubbleEl.appendChild(closeBtn);
+
+    if (data.photo) {
+      const img = document.createElement("img");
+      img.className = "about-photo";
+      img.src = data.photo;
+      aboutBubbleEl.appendChild(img);
+    }
+
+    const h = document.createElement("div");
+    h.className = "about-title";
+    aboutBubbleEl.appendChild(h);
+
+    const p = document.createElement("div");
+    p.className = "about-text";
+    aboutBubbleEl.appendChild(p);
+
+    document.body.appendChild(aboutBubbleEl);
+  }
+  aboutBubbleEl.querySelector(".about-title").textContent = title || "";
+  aboutBubbleEl.querySelector(".about-text").textContent = text || "";
+}
+
 function render() {
   listEl.innerHTML = "";
-  PRODUCTS.forEach((product, index) => {
+  renderCategoryBar();
+  const visibleProducts = PRODUCTS.filter(
+    (p) => !p.hidden && (currentCategory === "all" || p.category === currentCategory)
+  );
+  visibleProducts.forEach((product, index) => {
     if (index > 0) {
       const sep = document.createElement("div");
       sep.className = "separator";
@@ -223,6 +320,8 @@ function render() {
     card.appendChild(info);
     listEl.appendChild(card);
   });
+
+  renderAboutMe();
 }
 
 function openLightbox(images, startIndex) {
