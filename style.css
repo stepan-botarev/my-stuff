@@ -53,40 +53,11 @@ html, body {
 
 /* ---------- Bubble logo ---------- */
 
-.logo {
-  display: inline-flex;
-  align-items: flex-end;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  font-size: clamp(24px, 7.5vw, 42px);
+.logo-svg {
+  display: block;
+  width: clamp(160px, 42vw, 280px);
+  height: auto;
 }
-
-.logo .lg {
-  display: inline-block;
-  font-family: "Baloo 2", sans-serif;
-  font-weight: 800;
-  font-size: inherit;
-  line-height: 1;
-  color: var(--paper);
-  -webkit-text-stroke: 0.062em var(--ink);
-  -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-  paint-order: stroke fill;
-  transform: rotate(var(--tilt, 0deg));
-}
-
-.logo .lg-space {
-  display: inline-block;
-  width: 0.26em;
-}
-
-.logo .lg:nth-child(1) { --tilt: -7deg; text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--green); }
-.logo .lg:nth-child(2) { --tilt: 5deg;  text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--yellow); }
-.logo .lg:nth-child(4) { --tilt: -4deg; text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--orange); }
-.logo .lg:nth-child(5) { --tilt: 6deg;  text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--red); }
-.logo .lg:nth-child(6) { --tilt: -5deg; text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--blue); }
-.logo .lg:nth-child(7) { --tilt: 4deg;  text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--green); }
-.logo .lg:nth-child(8) { --tilt: -6deg; text-shadow: 0.07em 0.07em 0 var(--ink), 0.14em 0.14em 0 var(--yellow); }
 
 .lang-switch {
   display: flex;
@@ -124,6 +95,7 @@ html, body {
 .category-bar {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: center;
   gap: 8px;
   max-width: 720px;
   margin: 0 auto;
@@ -181,7 +153,7 @@ html, body {
 
 .about-widget {
   position: fixed;
-  top: 18px;
+  bottom: 18px;
   right: 18px;
   z-index: 60;
   display: flex;
@@ -325,16 +297,27 @@ html, body {
 
 @media (max-width: 480px) {
   .about-widget {
+    position: static;
+    display: contents;
+  }
+  .about-fab {
+    position: fixed;
     top: 12px;
     right: 12px;
-    left: 12px;
-    align-items: stretch;
-  }
-  .about-widget .about-fab {
-    align-self: flex-end;
+    bottom: auto;
+    left: auto;
+    z-index: 60;
   }
   .about-bubble {
-    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    width: min(340px, calc(100vw - 32px));
+    max-height: min(80vh, 560px);
+    z-index: 61;
   }
 }
 

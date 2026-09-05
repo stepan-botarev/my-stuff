@@ -1,0 +1,47 @@
+<svg viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="My Stuff">
+  <style>
+    .ms-logo-letter { font-family: "Baloo 2", "Nunito", cursive, sans-serif; font-weight: 800; font-size: 100px; }
+  </style>
+
+  <g class="ms-logo-letter" transform="rotate(-7 49.85 84)">
+    <text x="24" y="119" fill="#F5B921">M</text>
+    <text x="17" y="112" fill="#241F1A">M</text>
+    <text x="10" y="105" fill="#FFFDF8" stroke="#241F1A" stroke-width="6" paint-order="stroke fill">M</text>
+  </g>
+
+  <g class="ms-logo-letter" transform="rotate(5 119.25 84)">
+    <text x="105.7" y="119" fill="#F2811D">y</text>
+    <text x="98.7" y="112" fill="#241F1A">y</text>
+    <text x="91.7" y="105" fill="#FFFDF8" stroke="#241F1A" stroke-width="6" paint-order="stroke fill">y</text>
+  </g>
+
+  <g class="ms-logo-letter" transform="rotate(-4 208.35 84)">
+    <text x="194.8" y="119" fill="#E8412C">S</text>
+    <text x="187.8" y="112" fill="#241F1A">S</text>
+    <text x="180.8" y="105" fill="#FFFDF8" stroke="#241F1A" stroke-width="6" paint-order="stroke fill">S</text>
+  </g>
+
+  <g class="ms-logo-letter" transform="rotate(6 257.75 84)">
+    <text x="251.9" y="119" fill="#6E4FFF">t</text>
+    <text x="244.9" y="112" fill="#241F1A">t</text>
+    <text x="237.9" y="105" fill="#FFFDF8" stroke="#241F1A" stroke-width="6" paint-order="stroke fill">t</text>
+  </g>
+
+  <g class="ms-logo-letter" transform="rotate(-5 308.7 84)">
+    <text x="293.6" y="119" fill="#4CAF50">u</text>
+    <text x="286.6" y="112" fill="#241F1A">u</text>
+    <text x="279.6" y="105" fill="#FFFDF8" stroke="#241F1A" stroke-width="6" paint-order="stroke fill">u</text>
+  </g>
+
+  <g class="ms-logo-letter" transform="rotate(4 361.3 84)">
+    <text x="353.8" y="119" fill="#F5B921">f</text>
+    <text x="346.8" y="112" fill="#241F1A">f</text>
+    <text x="339.8" y="105" fill="#FFFDF8" stroke="#241F1A" stroke-width="6" paint-order="stroke fill">f</text>
+  </g>
+
+  <g class="ms-logo-letter" transform="rotate(-6 406.3 84)">
+    <text x="398.8" y="119" fill="#F2811D">f</text>
+    <text x="391.8" y="112" fill="#241F1A">f</text>
+    <text x="384.8" y="105" fill="#FFFDF8" stroke="#241F1A" stroke-width="6" paint-order="stroke fill">f</text>
+  </g>
+</svg>
