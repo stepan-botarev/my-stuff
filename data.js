@@ -17,14 +17,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Glinde, Möllner Landstraße 89  ",
-      "de": "",
-      "ru": "",
-      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Glinde, Möllner Landstraße 89  ",
     "images": [
       "images/item14-1788543649832-xdkh.jpg",
       "images/item14-1788543649955-zqf8.jpg",
@@ -57,14 +50,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "140×200 cm",
-    "location": {
-      "en": "Glinde, Möllner Landstraße 89",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item18-1788600758779-o7d1.jpg",
       "images/item18-1788600758886-9l8g.jpg",
@@ -96,14 +82,7 @@ const PRODUCTS = [
     "condition": "new",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Glinde, Möllner Landstraße 89",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item19-1788602683882-f6wb.jpg",
       "images/item19-1788602684050-5yk9.jpg"
@@ -132,14 +111,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Glinde, Möllner Landstraße 89",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item15-1788546428704-2t1f.jpg",
       "images/item15-1788546428804-lvwr.jpg",
@@ -173,14 +145,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Glinde, Möllner Landstraße 89",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item20-1788602888826-hx6z.jpg",
       "images/item20-1788602888958-ht2p.jpg",
@@ -213,14 +178,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "45×45×79 cm",
-    "location": {
-      "en": "Glinde, Möllner Landstraße 89",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item17-1788599078203-gvk6.jpg"
     ],
@@ -250,14 +208,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "140×60 cm",
-    "location": {
-      "en": "Glinde, Möllner Landstraße 89",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item16-1788597103301-1icf.jpg",
       "images/item16-1788597103403-u80m.jpg",
@@ -287,14 +238,7 @@ const PRODUCTS = [
     "condition": "new",
     "material": "",
     "size": "80x80 cm",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item10-1788523462109-chna.jpg"
     ],
@@ -340,14 +284,7 @@ const PRODUCTS = [
       "uk": "Трохи вайбу 90-х, трохи барахолки, трохи інді 🌙\n\nЧорний регульований ремінь, одне відділення на змійці. Вміщаються телефон, паспорт або гаманець, ключі та різні дрібнички. Носилася обережно.\n\nПередача на станціях U-/S-Bahn у центральній частині Гамбурга 🌻",
       "es": "Un poco de vibra noventera, un poco de mercadillo, un poco de indie 🌙\n\nCorrea negra ajustable, un compartimento con cremallera. Caben el móvil, el DNI o la cartera, las llaves y pequeñas cosas. Usado con cuidado.\n\nEntrega en estaciones de U-/S-Bahn en el centro de Hamburgo 🌻"
     },
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "ru": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "es": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus"
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "condition": "good",
     "category": "misc"
   },
@@ -356,14 +293,7 @@ const PRODUCTS = [
     "price": "10 €",
     "reserved": false,
     "condition": "new",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "ru": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "es": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus"
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item2-1788459617597-lrtp.jpg",
       "images/item2-1788459617726-1ora.jpg"
@@ -393,14 +323,7 @@ const PRODUCTS = [
     "price": "5 €",
     "reserved": false,
     "condition": "good",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item3-1788459661665-wy2p.jpg",
       "images/item3-1788459661751-hahs.jpg"
@@ -429,14 +352,7 @@ const PRODUCTS = [
     "price": "5 €",
     "reserved": false,
     "condition": "good",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item4-1788516681636-oam5.jpg",
       "images/item4-1788516681752-vk9b.jpg"
@@ -465,14 +381,7 @@ const PRODUCTS = [
     "price": "13 €",
     "reserved": false,
     "condition": "good",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus"
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item5-1788517053870-yj7m.jpg",
       "images/item5-1788517053998-4wmk.jpg"
@@ -501,14 +410,7 @@ const PRODUCTS = [
     "price": "5 €",
     "reserved": false,
     "condition": "fair",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item6-1788517567444-vmsa.jpg",
       "images/item6-1788517567566-ir3w.jpg"
@@ -538,14 +440,7 @@ const PRODUCTS = [
     "condition": "new",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item7-1788518334841-c8nd.jpg",
       "images/item7-1788518334936-drk9.jpg"
@@ -575,14 +470,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item8-1788520644119-6jey.jpg",
       "images/item8-1788520644221-n43l.jpg",
@@ -613,14 +501,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item11-1788528434514-o2nb.jpg"
     ],
@@ -649,14 +530,7 @@ const PRODUCTS = [
     "condition": "new",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item9-1788521005707-n6x9.jpg"
     ],
@@ -685,16 +559,9 @@ const PRODUCTS = [
     "hidden": false,
     "category": "tech",
     "condition": "new",
-    "material": "",
-    "size": "",
-    "location": {
-      "en": "Glinde, Möllner Landstraße 89",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "material": "Пластик",
+    "size": "28 × 17 × 22 cm",
+    "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item24-1788606795359-2tcb.jpg",
       "images/item24-1788606795540-zqmn.jpg",
@@ -707,15 +574,21 @@ const PRODUCTS = [
       "ru": "Активные студийные мониторы ADAM Audio A5X — пара",
       "uk": "Активні студійні монітори ADAM Audio A5X — пара",
       "es": "Monitores de estudio activos ADAM Audio A5X — pareja",
-      "zh": "ADAM Audio A5X 有源近场录音室监听音箱 — 一对"
+      "zh": "ADAM Audio A5X 有源录音室监听音箱——一对",
+      "tr": "ADAM Audio A5X aktif stüdyo monitörleri — çift",
+      "fa": "مانیتورهای استودیویی اکتیو ADAM Audio A5X — یک جفت",
+      "ar": "شاشات استوديو نشطة ADAM Audio A5X — زوج"
     },
     "desc": {
       "en": "The final boss of my moving sale — the thing that is hardest for me to part with. I would not be selling them, but unfortunately I need the money more right now. ❤️‍🩹 This is a pair of ADAM Audio A5X active studio monitors — a real gift for anyone who truly loves music. They are suitable both for everyday listening and serious sound-engineering work: mixing, production, and working with audio 🎶\n\nI bought them new for around €1,000 a few years ago, when this model was still being sold. The monitors are in excellent condition. There is only one small chip, covered with a black marker, so you will most likely not even notice where it is. I also have the original foam inserts, which make it possible to transport the monitors safely in boxes 📦\n\nSpecifications: active 2-way nearfield monitors; X-ART tweeters; 5.5-inch woofers; 50 Hz–50 kHz frequency response; 50 W + 50 W amplification per monitor; XLR and RCA inputs. Each monitor measures 28×17×22 cm and weighs around 6.6 kg 🔊\n\nPrice: €450 for both monitors.\nPickup from Glinde is strongly preferred because the monitors are valuable and heavy; a personal handover in central Hamburg may be possible by arrangement 🌿",
-      "de": "Der Endboss meines Umzugsverkaufs — die Sache, von der ich mich am schwersten trennen kann. Ich würde sie nicht verkaufen, aber leider brauche ich das Geld im Moment mehr. ❤️‍🩹 Das ist ein Paar aktiver Studiomonitore ADAM Audio A5X — ein echtes Geschenk für alle, die Musik wirklich lieben. Sie eignen sich sowohl zum normalen Musikhören als auch für ernsthafte Arbeiten in der Tontechnik: Mixing, Produktion und Audiobearbeitung 🎶\n\nIch habe sie vor einigen Jahren neu für etwa 1.000 € gekauft, als dieses Modell noch verkauft wurde. Die Monitore sind in ausgezeichnetem Zustand. Es gibt nur eine kleine Macke, die mit schwarzem Marker überdeckt wurde — wahrscheinlich bemerkt man nicht einmal, wo sie ist. Außerdem habe ich die originalen Schaumstoffhalterungen, mit denen sich die Monitore sicher in Kartons transportieren lassen 📦\n\nTechnische Daten: aktive 2-Wege-Nahfeldmonitore; X-ART-Hochtöner; 5,5-Zoll-Tieftöner; Frequenzbereich 50 Hz–50 kHz; 50 W + 50 W Verstärkerleistung pro Monitor; XLR- und RCA-Eingänge. Jeder Monitor misst 28×17×22 cm und wiegt etwa 6,6 kg 🔊\n\nPreis: 450 € für beide Monitore.\nAbholung in Glinde ist wegen des Werts und Gewichts der Monitore sehr erwünscht; eine persönliche Übergabe in der Hamburger Innenstadt ist nach Absprache eventuell möglich 🌿",
-      "ru": "Финальный босс моей распродажи — вещь, с которой мне тяжелее всего расставаться. Я не стал бы их продавать, но сейчас, увы, деньги нужнее. ❤️‍🩹 Это пара активных студийных мониторов ADAM Audio A5X — просто подарок для тех, кто по-настоящему любит музыку. Они подходят и для обычного прослушивания, и для серьёзной звукорежиссёрской работы: сведения, продакшна и работы со звуком 🎶\n\nНесколько лет назад я покупал их новыми примерно за 1000 €, когда эта модель ещё продавалась. Мониторы в прекрасном состоянии. Есть только один небольшой скол, замазанный чёрным маркером, так что вы, скорее всего, даже не поймёте, где он. Также есть оригинальные пенопластовые держатели, с которыми мониторы можно безопасно перевозить в коробках 📦\n\nХарактеристики: активные двухполосные мониторы ближнего поля; твитеры X-ART; 5,5-дюймовые низкочастотные динамики; частотный диапазон 50 Гц–50 кГц; усиление 50 Вт + 50 Вт на каждый монитор; входы XLR и RCA. Размер каждого монитора — 28×17×22 см, вес — около 6,6 кг 🔊\n\nЦена: 450 € за оба монитора.\nИз-за ценности и веса мониторов очень желателен самовывоз из Глинде; личную передачу в центре Гамбурга, возможно, получится организовать по договорённости 🌿",
-      "uk": "Фінальний бос мого розпродажу — річ, із якою мені найважче розлучатися. Я б не став їх продавати, але зараз, на жаль, гроші потрібніші. ❤️‍🩹 Це пара активних студійних моніторів ADAM Audio A5X — справжній подарунок для тих, хто по-справжньому любить музику. Вони підходять і для звичайного прослуховування, і для серйозної звукорежисерської роботи: зведення, продакшну та роботи зі звуком 🎶\n\nКілька років тому я купив їх новими приблизно за 1000 €, коли ця модель ще продавалася. Монітори у чудовому стані. Є лише один невеликий скол, замальований чорним маркером, тож ви, найімовірніше, навіть не зрозумієте, де він. Також є оригінальні пінопластові тримачі, з якими монітори можна безпечно перевозити в коробках 📦\n\nХарактеристики: активні двосмугові монітори ближнього поля; твітери X-ART; 5,5-дюймові низькочастотні динаміки; частотний діапазон 50 Гц–50 кГц; підсилення 50 Вт + 50 Вт на кожен монітор; входи XLR та RCA. Розмір кожного монітора — 28×17×22 см, вага — близько 6,6 кг 🔊\n\nЦіна: 450 € за обидва монітори.\nЧерез цінність і вагу моніторів дуже бажаний самовивіз із Глінде; особисту передачу в центрі Гамбурга, можливо, вдасться організувати за домовленістю 🌿",
-      "es": "El jefe final de mi venta por mudanza — la cosa de la que más me cuesta desprenderme. No los vendería, pero por desgracia ahora necesito más el dinero. ❤️‍🩹 Es una pareja de monitores de estudio activos ADAM Audio A5X: un verdadero regalo para quien ama la música de verdad. Van bien tanto para escuchar música normalmente como para trabajos serios de ingeniería de sonido: mezcla, producción y trabajo con audio 🎶\n\nLos compré nuevos por unos 1.000 € hace algunos años, cuando este modelo todavía se vendía. Los monitores están en excelente estado. Solo tienen un pequeño desconchón, cubierto con rotulador negro, así que probablemente ni siquiera notarás dónde está. También conservo los soportes de espuma originales, con los que se pueden transportar de forma segura dentro de cajas 📦\n\nEspecificaciones: monitores activos de campo cercano de 2 vías; tweeters X-ART; woofers de 5,5 pulgadas; respuesta de frecuencia de 50 Hz a 50 kHz; amplificación de 50 W + 50 W por monitor; entradas XLR y RCA. Cada monitor mide 28×17×22 cm y pesa aproximadamente 6,6 kg 🔊\n\nPrecio: 450 € por los dos monitores.\nPor su valor y peso, se prefiere mucho la recogida en Glinde; quizá se pueda organizar una entrega en persona en el centro de Hamburgo previo acuerdo 🌿",
-      "zh": "这是我搬家出售清单里的最终 Boss——也是我最难割舍的一样东西。我本来不会卖掉它们，但很遗憾，现在钱对我更重要。❤️‍🩹 这是一对 ADAM Audio A5X 有源录音室监听音箱，对真正热爱音乐的人来说简直是一份礼物。它们既适合日常听音乐，也适合严肃的声音工程工作：混音、制作和音频处理 🎶\n\n几年前、这款型号仍在销售时，我以约 1,000 欧元的价格买了全新的这对音箱。音箱状态极佳。只有一处很小的磕碰，已经用黑色记号笔补过，你大概率甚至找不到它在哪里。我也保留了原装泡沫固定件，可以把音箱放在箱子里安全运输 📦\n\n参数：有源两分频近场监听音箱；X-ART 高音单元；5.5 英寸低音单元；频率响应 50 Hz–50 kHz；每只音箱配备 50 W + 50 W 功放；支持 XLR 和 RCA 输入。每只尺寸为 28×17×22 厘米，重量约 6.6 千克 🔊\n\n价格：两只音箱一共 450 欧元。\n由于音箱贵重且较重，强烈建议在 Glinde 自取；如事先协商，也许可以安排在汉堡市中心当面交接 🌿"
+      "de": "Der Endgegner meines Umzugsverkaufs — und das Teil, von dem ich mich am schwersten trenne. Ich würde sie nicht verkaufen, aber gerade brauche ich das Geld leider mehr. ❤️‍🩹 Ein Paar aktive ADAM Audio A5X Studiomonitore — ein echtes Geschenk für Menschen, die Musik wirklich lieben. Sie eignen sich sowohl zum normalen Musikhören als auch für ernsthafte Audioarbeit: Mixing, Produktion und Sounddesign 🎶\n\nVor einigen Jahren habe ich sie neu für etwa 1.000 € gekauft, als dieses Modell noch erhältlich war. Die Monitore sind in einem hervorragenden Zustand. Es gibt nur eine winzige, mit schwarzem Marker übermalte Macke — vermutlich würdest du sie nicht einmal finden. Außerdem sind die originalen Styroporhalterungen dabei, mit denen sich die Monitore sicher in ihren Kartons transportieren lassen 📦\n\nTechnische Daten: aktive 2-Wege-Nahfeldmonitore; X-ART-Hochtöner; 5,5-Zoll-Tieftöner; Frequenzbereich 50 Hz–50 kHz; 50 W + 50 W Verstärkung pro Monitor; XLR- und RCA-Eingänge. Selbstabholung in Glinde sehr erwünscht — wegen Wert und Gewicht der Monitore, etwa 10 Minuten von Hamburg entfernt 🔊",
+      "ru": "Финальный босс моей распродажи — вещь, с которой мне тяжелее всего расставаться. Я не стал бы их продавать, но сейчас, увы, деньги нужнее. ❤️‍🩹 Это пара активных студийных мониторов ADAM Audio A5X — просто подарок для тех, кто по-настоящему любит музыку. Они подходят и для обычного прослушивания, и для серьёзной звукорежиссёрской работы: сведения, продакшна и работы со звуком 🎶\n\nНесколько лет назад я покупал их новыми примерно за 1000 €, когда эта модель ещё продавалась. Мониторы в прекрасном состоянии. Есть только один крохотный скол, замазанный чёрным маркером, так что вы, скорее всего, даже не поймёте, где он. Также есть оригинальные пенопластовые держатели, с которыми мониторы можно безопасно перевозить в коробках 📦\n\nХарактеристики: активные двухполосные мониторы ближнего поля; твитеры X-ART; 5,5-дюймовые низкочастотные динамики; частотный диапазон 50 Гц–50 кГц; усиление 50 Вт + 50 Вт на каждый монитор; входы XLR и RCA. Из-за ценности и веса мониторов очень желателен самовывоз из Глинде — это примерно 10 минут от Гамбурга 🔊",
+      "uk": "Фінальний бос мого розпродажу — річ, з якою мені найважче розлучатися. Я б не продавав їх, але зараз, на жаль, гроші потрібніші. ❤️‍🩹 Це пара активних студійних моніторів ADAM Audio A5X — справжній подарунок для тих, хто по-справжньому любить музику. Вони підходять і для звичайного прослуховування, і для серйозної роботи зі звуком: зведення, продакшну та звукорежисури 🎶\n\nКілька років тому я купив їх новими приблизно за 1000 €, коли ця модель ще продавалася. Монітори у чудовому стані. Є лише один крихітний скол, замальований чорним маркером, тож ви, найімовірніше, навіть не знайдете його. Також є оригінальні пінопластові тримачі, з якими монітори можна безпечно перевозити в коробках 📦\n\nХарактеристики: активні двосмугові монітори ближнього поля; твітери X-ART; 5,5-дюймові низькочастотні динаміки; частотний діапазон 50 Гц–50 кГц; підсилення 50 Вт + 50 Вт на кожен монітор; входи XLR і RCA. Через цінність і вагу моніторів дуже бажаний самовивіз із Глінде — приблизно за 10 хвилин від Гамбурга 🔊",
+      "es": "El jefe final de mi venta por mudanza: es lo que más me cuesta dejar ir. No los vendería, pero ahora mismo, por desgracia, necesito más el dinero. ❤️‍🩹 Es una pareja de monitores de estudio activos ADAM Audio A5X, un auténtico regalo para quien de verdad ama la música. Sirven tanto para escuchar música normalmente como para trabajo de audio serio: mezcla, producción y diseño de sonido 🎶\n\nLos compré nuevos hace unos años por unos 1.000 €, cuando este modelo todavía se vendía. Los monitores están en un estado excelente. Solo tienen un desconchón diminuto, cubierto con rotulador negro, así que probablemente ni siquiera sabrás dónde está. También incluyo los soportes originales de espuma, con los que se pueden transportar de forma segura en sus cajas 📦\n\nCaracterísticas: monitores activos de campo cercano de dos vías; tweeters X-ART; woofers de 5,5 pulgadas; respuesta de frecuencia de 50 Hz a 50 kHz; amplificación de 50 W + 50 W por monitor; entradas XLR y RCA. Por el valor y el peso de los monitores, se prefiere mucho la recogida en persona en Glinde, a unos 10 minutos de Hamburgo 🔊",
+      "zh": "这是我搬家出售物品里的“最终 Boss”，也是我最难割舍的一件。要不是现在确实更需要钱，我不会卖掉它们。❤️‍🩹 这是一对 ADAM Audio A5X 有源录音室监听音箱，是送给真正热爱音乐的人一份绝佳的礼物。它们既适合日常听音乐，也适合严肃的音频工作，例如混音、音乐制作和声音设计 🎶\n\n几年前，这个型号仍在销售时，我以约 1000 € 的价格购入了全新的音箱。它们状态极佳，只有一处非常小的磕碰，已用黑色记号笔遮盖，所以你很可能根本找不到它。还附带原装泡沫固定件，可以让音箱安全地装在原包装盒内运输 📦\n\n参数：有源两分频近场监听音箱；X-ART 高音单元；5.5 英寸低音单元；频率响应 50 Hz–50 kHz；每只音箱配备 50 W + 50 W 功放；XLR 和 RCA 输入接口。由于音箱价值较高且比较重，强烈建议在格林德自取，距离汉堡约 10 分钟车程 🔊",
+      "tr": "Taşınma satışımın son boss’u — ve vedalaşması benim için en zor olan şey. Satmak istemezdim ama şu anda ne yazık ki paraya daha çok ihtiyacım var. ❤️‍🩹 Bunlar bir çift aktif ADAM Audio A5X stüdyo monitörü; müziği gerçekten seven biri için adeta bir hediye. Hem normal müzik dinlemek hem de ciddi ses çalışmaları, miksaj, prodüksiyon ve ses tasarımı için uygunlar 🎶\n\nBirkaç yıl önce, bu model hâlâ satılırken onları yeni olarak yaklaşık 1.000 €’ya aldım. Monitörler mükemmel durumda. Sadece siyah kalemle kapatılmış küçücük bir çizik var; büyük ihtimalle nerede olduğunu bile fark etmezsiniz. Kutularında güvenle taşınabilmeleri için orijinal köpük tutucuları da mevcut 📦\n\nÖzellikler: aktif iki yollu yakın alan monitörleri; X-ART tweeter’lar; 5,5 inç woofer’lar; 50 Hz–50 kHz frekans aralığı; her monitörde 50 W + 50 W amplifikasyon; XLR ve RCA girişleri. Monitörlerin değeri ve ağırlığı nedeniyle Glinde’den elden teslim çok tercih edilir — Hamburg’a yaklaşık 10 dakika uzaklıkta 🔊",
+      "fa": "باس نهاییِ حراج وسایل من — چیزی که جداشدن از آن برایم از همه سخت‌تر است. اگر الان به پول نیاز نداشتم، آن‌ها را نمی‌فروختم. ❤️‍🩹 این یک جفت مانیتور استودیویی اکتیو ADAM Audio A5X است؛ هدیه‌ای واقعی برای کسانی که موسیقی را واقعاً دوست دارند. هم برای شنیدن معمولی موسیقی مناسب‌اند و هم برای کار حرفه‌ای صدا: میکس، پروداکشن و طراحی صدا 🎶\n\nچند سال پیش، وقتی این مدل هنوز فروخته می‌شد، آن‌ها را نو با قیمت حدود ۱۰۰۰ یورو خریدم. مانیتورها در وضعیت بسیار عالی هستند. فقط یک پریدگی بسیار کوچک دارند که با ماژیک مشکی پوشانده شده؛ احتمالاً حتی متوجه نمی‌شوید کجاست. نگهدارنده‌های فومی اصلی هم همراهشان هستند تا بتوان مانیتورها را با خیال راحت در جعبه‌هایشان جابه‌جا کرد 📦\n\nمشخصات: مانیتورهای اکتیو دوطرفهٔ میدان نزدیک؛ توییترهای X-ART؛ ووفرهای ۵٫۵ اینچی؛ بازهٔ فرکانسی ۵۰ هرتز تا ۵۰ کیلوهرتز؛ توان ۵۰ وات + ۵۰ وات برای هر مانیتور؛ ورودی‌های XLR و RCA. به‌دلیل ارزش و وزن مانیتورها، تحویل حضوری در گلینده بسیار ترجیح دارد — حدود ۱۰ دقیقه با هامبورگ فاصله دارد 🔊",
+      "ar": "هذه هي «الزعيم الأخير» في بيع أغراضي — والشيء الأصعب بالنسبة لي أن أودّعه. لم أكن لأبيعها، لكنني للأسف بحاجة إلى المال أكثر في الوقت الحالي. ❤️‍🩹 إنها زوج من شاشات الاستوديو النشطة ADAM Audio A5X، هدية حقيقية لمن يحب الموسيقى فعلًا. تناسب الاستماع العادي للموسيقى وكذلك العمل الجاد في الصوت: الميكساج، والإنتاج، وتصميم الصوت 🎶\n\nاشتريتها جديدة قبل عدة سنوات بحوالي 1000 €، عندما كان هذا الموديل لا يزال يُباع. الشاشات بحالة ممتازة. يوجد خدش صغير جدًا فقط، غطيته بقلم أسود، لذلك على الأرجح لن تلاحظوا حتى مكانه. كما تتوفر حوامل الفوم الأصلية، ويمكن بواسطتها نقل الشاشات بأمان داخل صناديقها 📦\n\nالمواصفات: شاشات مجال قريب نشطة ثنائية المسار؛ مكبرات صوت عالية X-ART؛ مكبرات ترددات منخفضة بقياس 5.5 بوصة؛ نطاق ترددي من 50 هرتز إلى 50 كيلوهرتز؛ تضخيم 50 واط + 50 واط لكل شاشة؛ مداخل XLR وRCA. بسبب قيمة الشاشات ووزنها، يُفضّل بشدة الاستلام الشخصي من غلينده، على بُعد نحو 10 دقائق من هامبورغ 🔊"
     }
   },
   {
@@ -723,16 +596,9 @@ const PRODUCTS = [
     "price": "25 €",
     "reserved": false,
     "condition": "good",
-    "material": "",
+    "material": "Пластик",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item13-1788541995741-trtu.jpg",
       "images/item13-1788541995838-30d6.jpg",
@@ -742,19 +608,25 @@ const PRODUCTS = [
     ],
     "title": {
       "en": "Phone lock box for focused work — against getting sucked into Instagram and doomscrolling",
-      "de": "Handy-Schließbox für fokussiertes Arbeiten — gegen Instagram-Sog und Doomscrolling",
+      "de": "Handy-Schließbox für konzentriertes Arbeiten — gegen Instagram-Sog und Doomscrolling",
       "ru": "Локер для телефона для сфокусированной работы — против залипания в инстаграме и думскроллинга",
-      "uk": "Локер для телефону для сфокусованої роботи — проти залипання в інстаграмі та думскролінгу",
-      "es": "Caja bloqueadora para el móvil, para trabajo enfocado — contra el enganche a Instagram y el doomscrolling",
-      "zh": "专注工作手机锁盒 —— 对抗刷Instagram停不下来和无尽刷屏（doomscrolling）"
+      "uk": "Локер для телефона для зосередженої роботи — проти залипання в Instagram і думскролінгу",
+      "es": "Caja con temporizador para bloquear el móvil — para trabajar con concentración y evitar el scroll infinito",
+      "zh": "手机锁盒——帮助专注工作，远离 Instagram 和无休止刷屏",
+      "tr": "Odaklanarak çalışmak için telefon kilit kutusu — Instagram’a kapılıp gitmeye ve doomscrolling’e karşı",
+      "fa": "جعبهٔ قفل‌دار برای گوشی و کار متمرکز — برای جلوگیری از غرق‌شدن در اینستاگرام و اسکرول بی‌پایان",
+      "ar": "صندوق قفل للهاتف للعمل بتركيز — ضد التعلّق بـ Instagram والتمرير اللانهائي"
     },
     "desc": {
       "en": "A locker for your phone from the British brand Virtus Project. Genius, really: you put your phone in, set a time from 5 minutes to several hours, and it locks. If an urgent call comes in, there's a little pad you can push out to answer it — but against distractions like messengers, TikTok and reels, it's iron-clad. No expensive apps or extensions you end up bypassing anyway — this actually works!\n\nIf you're ADHD like me, this thing will finally help you find some zen. And if you have a TikTok-addicted kid, it's a solid nudge toward homework.\n\nIf I didn't need the cash right now, I wouldn't be selling it. Cost me €70 shipped from the UK, worth every cent. Letting it go for €25! 🐈‍⬛",
-      "de": "Eine Sperrbox für dein Handy von der britischen Marke Virtus Project. Wirklich genial: Handy rein, Zeit einstellen (5 Minuten bis mehrere Stunden), und es ist gesperrt. Kommt ein dringender Anruf rein, gibt es ein kleines Pad, das man raushebeln kann, um ranzugehen — aber gegen Ablenkungen wie Messenger, TikTok und Reels ist es eisenhart. Keine teuren Apps oder Erweiterungen, die man am Ende doch umgeht — das funktioniert wirklich!\n\nWenn du auch ADHS hast wie ich, wird dir das Ding endlich zu etwas Zen im Kopf verhelfen. Und falls du ein TikTok-süchtiges Kind hast, ist es ein guter Anstoß Richtung Lernen.\n\nWenn ich das Geld jetzt nicht bräuchte, würde ich es nicht verkaufen. Mit Versand aus Großbritannien hat es 70 € gekostet, war's aber wert. Für 25 € gebe ich es ab! 🐈‍⬛",
-      "ru": "Локер для телефона от британской фирмы Virtus Project. Классная штука: кладёшь телефон, ставишь время от 5 минут до нескольких часов — и локер блокирует его. Если будет срочный звонок, там есть подушечка, которую можно вытолкнуть и ответить. А вот от отвлечений типа мессенджеров, тиктока и рилсов защищает железно. Никаких дорогих приложений и расширений, которые всё равно можно обойти — тут реально работает!\n\nЕсли вы такой же СДВГшник, как я, эта штука наконец поможет обрести дзен. А если у вас тикток-зависимый ребёнок — хороший способ подтолкнуть его к учёбе.\n\nЕсли бы не нужны были деньги прямо сейчас, не продавал бы. С доставкой из Британии обошлось в 70 евро, но того стоило. Отдам за 25! 🐈‍⬛",
-      "uk": "Локер для телефону від британської фірми Virtus Project. Класна річ: кладеш телефон, ставиш час від 5 хвилин до кількох годин — і локер блокує його. Якщо буде терміновий дзвінок, там є подушечка, яку можна виштовхнути і відповісти. А от від відволікань типу месенджерів, тіктоку та рілсів захищає залізно. Ніяких дорогих застосунків і розширень, які все одно можна обійти — тут реально працює!\n\nЯкщо ви такий же СДУГшник, як я, ця штука нарешті допоможе знайти дзен. А якщо у вас тікток-залежна дитина — хороший спосіб підштовхнути її до навчання.\n\nЯкби не потрібні були гроші прямо зараз, не продавав би. З доставкою з Британії вийшло 70 євро, але воно того вартувало. Віддам за 25! 🐈‍⬛",
-      "es": "Una caja bloqueadora para el móvil de la marca británica Virtus Project. Genial de verdad: metes el móvil, pones un tiempo de entre 5 minutos y varias horas, y se bloquea. Si entra una llamada urgente, hay una pequeña almohadilla que puedes empujar hacia fuera para contestar — pero contra distracciones como mensajería, TikTok y reels, es de hierro. Nada de apps o extensiones caras que al final siempre acabas evitando — esto sí funciona!\n\nSi eres TDAH como yo, esto por fin te va a ayudar a encontrar algo de paz mental. Y si tienes un hijo adicto a TikTok, es un buen empujón hacia los estudios.\n\nSi no necesitara el dinero ahora mismo, no lo vendería. Con el envío desde Reino Unido me costó 70 €, pero mereció la pena. ¡Lo dejo en 25 €! 🐈‍⬛",
-      "zh": "一个来自英国品牌 Virtus Project 的手机锁盒。真的很好用：把手机放进去，设定5分钟到几个小时的时间，它就会锁住。如果有紧急电话，上面有个小垫可以顶出来接听 —— 但对于消息软件、抖音、reels这类干扰，它是铁面无私的。不用买昂贵的App或插件、最后还是会被绕过去 —— 这个真的管用！\n\n如果你也像我一样有多动症/注意力不集中的问题，这东西终于能帮你找回一点平静。如果你家孩子沉迷抖音/TikTok，这也是推他去学习的好办法。\n\n如果不是现在急需用钱，我是不会卖的。从英国寄过来花了70欧元，但真的值。现在25欧元出手！🐈‍⬛"
+      "de": "Abschließbare Handybox der britischen Firma The Virtus Project. Eine tolle Sache: Du legst dein Handy hinein, stellst eine Zeit von 5 Minuten bis zu mehreren Stunden ein — und die Box schließt es ein. Bei einem dringenden Anruf gibt es eine kleine Öffnung, durch die du zum Antworten an den Bildschirm kommst. Gegen Ablenkungen wie Messenger, TikTok und Reels schützt sie aber zuverlässig. Keine teuren Apps, die man am Ende doch umgehen kann — das hier funktioniert wirklich!\n\nWenn du wie ich ADHS hast, hilft dir dieses Teil vielleicht endlich dabei, etwas Zen und Fokus zu finden 🧘 Und wenn du ein TikTok-süchtiges Kind hast, ist es ein guter Weg, es sanft zum Lernen zu bewegen 🙇🏽\n\nWenn ich das Geld nicht gerade jetzt brauchen würde, würde ich sie nicht verkaufen. Mit Versand aus Großbritannien hat sie 70 € gekostet, aber es war das wert. Ich gebe sie für 25 € ab! 🐈‍⬛",
+      "ru": "Блокирующийся кейс для телефона от британской фирмы The Virtus Project. Классная штука: кладёшь телефон, ставишь время от 5 минут до нескольких часов — и локер блокирует его. Если будет срочный звонок, есть подушечка, которую можно вытолкнуть и ответить. А вот от отвлечений типа мессенджеров, тиктока и рилсов защищает железно. Никаких дорогих приложений, которые всё равно можно обойти, — тут реально работает!\n\nЕсли вы такой же СДВГ-шник, как я, эта штука наконец поможет обрести дзен 🧘 А если у вас тикток-зависимый ребёнок — хороший способ подтолкнуть его к учёбе 🙇🏽\n\nЕсли бы не нужны были деньги прямо сейчас, не продавал бы. С доставкой из Британии обошлось в 70 €, но того стоило. Отдам за 25 €! 🐈‍⬛",
+      "uk": "Блокувальний кейс для телефона від британської компанії The Virtus Project. Класна річ: кладете телефон усередину, встановлюєте час від 5 хвилин до кількох годин — і локер блокується. Якщо буде терміновий дзвінок, є невелика заслінка, яку можна відкрити й відповісти. А от від відволікань на месенджери, TikTok і Reels він захищає надійно. Жодних дорогих застосунків, які все одно можна обійти, — це справді працює!\n\nЯкщо у вас, як і в мене, СДУГ, ця річ нарешті може допомогти знайти трохи дзену та зосередженості 🧘 А якщо у вас є дитина, залежна від TikTok, це хороший спосіб м’яко підштовхнути її до навчання 🙇🏽\n\nЯкби мені зараз не були потрібні гроші, я б його не продавав. Разом із доставкою з Великої Британії він обійшовся у 70 €, але був того вартий. Віддам за 25 €! 🐈‍⬛",
+      "es": "Caja bloqueable para el móvil de la marca británica The Virtus Project. Es una idea genial: metes el teléfono dentro, eliges un tiempo de 5 minutos a varias horas y la caja se bloquea. Si recibes una llamada urgente, hay una pequeña abertura que puedes sacar para contestar. Pero contra distracciones como los mensajeros, TikTok y los reels, funciona de maravilla. Sin apps caras que al final siempre acabas saltándote: ¡esto sí funciona de verdad!\n\nSi tienes TDAH como yo, esta cosa por fin puede ayudarte a encontrar un poco de zen y concentración 🧘 Y si tienes un hijo enganchado a TikTok, es una buena forma de animarlo a ponerse con los estudios 🙇🏽\n\nSi no necesitara el dinero ahora mismo, no la vendería. Me costó 70 € con envío desde Reino Unido, pero valió la pena. La dejo por 25 €! 🐈‍⬛",
+      "zh": "英国公司 The Virtus Project 的可锁手机盒。这个设计很棒：把手机放进去，设定从 5 分钟到数小时的时间，锁盒就会把手机锁起来。如果有紧急来电，可以打开一个小挡板接听；但对于聊天软件、TikTok 和 Reels 等干扰，它能有效阻止你分心。不需要昂贵、最后还是总能被绕过的 App——这个东西真的有效！\n\n如果你和我一样有 ADHD，它或许终于能帮你找到一点平静和专注 🧘 如果家里有沉迷 TikTok 的孩子，这也是鼓励他去学习的好办法 🙇🏽\n\n如果我现在不需要用钱，我不会卖掉它。加上从英国寄来的运费，一共花了我 70 €，但完全值得。现在 25 € 出！🐈‍⬛",
+      "tr": "İngiliz The Virtus Project firmasının kilitlenebilir telefon kutusu. Çok iyi bir şey: Telefonunuzu içine koyuyorsunuz, 5 dakikadan birkaç saate kadar bir süre ayarlıyorsunuz ve kutu telefonu kilitliyor. Acil bir arama gelirse cevaplamak için dışarı itilebilen küçük bir bölmesi var. Ancak mesajlaşma uygulamaları, TikTok ve Reels gibi dikkat dağıtıcı şeylere karşı çok etkili. Sonunda her hâlükârda aşılabilen pahalı uygulamalar yok — bu gerçekten işe yarıyor!\n\nBenim gibi DEHB’niz varsa, bu şey sonunda biraz zen ve odaklanma bulmanıza yardımcı olabilir 🧘 TikTok bağımlısı bir çocuğunuz varsa da onu ders çalışmaya teşvik etmenin iyi bir yolu 🙇🏽\n\nŞu anda paraya ihtiyacım olmasaydı satmazdım. Birleşik Krallık’tan kargoyla birlikte 70 €’ya mal oldu, ama buna değdi. 25 €’ya veriyorum! 🐈‍⬛",
+      "fa": "یک کیس قفل‌دار برای گوشی از شرکت بریتانیایی The Virtus Project. وسیلهٔ خیلی خوبی است: گوشی را داخلش می‌گذارید، زمانی از ۵ دقیقه تا چند ساعت تعیین می‌کنید و جعبه گوشی را قفل می‌کند. اگر تماس ضروری داشته باشید، یک دریچهٔ کوچک دارد که می‌توانید آن را بیرون بکشید و پاسخ دهید. اما در برابر حواس‌پرتی‌هایی مثل پیام‌رسان‌ها، تیک‌تاک و ریلز واقعاً محکم عمل می‌کند. نه اپلیکیشن‌های گران‌قیمت که آخرش هم می‌شود دورشان زد — این یکی واقعاً جواب می‌دهد!\n\nاگر مثل من ADHD دارید، این وسیله بالاخره می‌تواند کمک کند کمی آرامش و تمرکز پیدا کنید 🧘 اگر هم فرزندی دارید که به تیک‌تاک معتاد است، راه خوبی برای تشویقش به درس‌خواندن است 🙇🏽\n\nاگر همین حالا به پول نیاز نداشتم، آن را نمی‌فروختم. با ارسال از بریتانیا ۷۰ یورو برایم هزینه داشت، اما ارزشش را داشت. با قیمت ۲۵ یورو می‌فروشم! 🐈‍⬛",
+      "ar": "صندوق قابل للقفل للهاتف من الشركة البريطانية The Virtus Project. فكرة رائعة: تضع الهاتف بداخله، وتحدد مدة من 5 دقائق إلى عدة ساعات، ثم يقفل الصندوق الهاتف. إذا وردت مكالمة عاجلة، توجد فتحة صغيرة يمكن فتحها للرد. أما أمام مصادر التشتيت مثل تطبيقات المراسلة وTikTok وReels، فهو فعّال جدًا. لا تطبيقات باهظة يمكن التحايل عليها في النهاية — هذا الشيء يعمل فعلًا!\n\nإذا كنت تعاني من اضطراب فرط الحركة ونقص الانتباه مثلي، فقد تساعدك هذه القطعة أخيرًا على إيجاد بعض الهدوء والتركيز 🧘 وإذا كان لديك طفل مدمن على TikTok، فهي طريقة جيدة لتشجيعه على الدراسة 🙇🏽\n\nلو لم أكن بحاجة إلى المال الآن، لما بعته. كلّفني 70 € مع الشحن من المملكة المتحدة، لكنه كان يستحق ذلك. أبيعُه مقابل 25 €! 🐈‍⬛"
     },
     "category": "tech"
   },
@@ -765,16 +637,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": "",
-      "fa": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "ar": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt"
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item12-1788531104777-phxc.jpg",
       "images/item12-1788531104896-4s5m.jpg"
@@ -812,14 +675,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt"
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item21-1788604125432-q21x.jpg",
       "images/item21-1788604125540-ua8a.jpg",
@@ -851,14 +707,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt"
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item22-1788605535389-76ry.jpg",
       "images/item22-1788605535506-jqp1.jpg"
@@ -889,14 +738,7 @@ const PRODUCTS = [
     "condition": "good",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": ""
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item23-1788606261187-ntwk.jpg",
       "images/item23-1788606261297-dah8.jpg"
@@ -927,16 +769,7 @@ const PRODUCTS = [
     "condition": "fair",
     "material": "",
     "size": "",
-    "location": {
-      "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "de": "",
-      "ru": "",
-      "uk": "",
-      "es": "",
-      "zh": "",
-      "ar": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-      "tr": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt"
-    },
+    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item25-1788613323161-hz4m.jpg",
       "images/item25-1788613323246-efyd.jpg"
