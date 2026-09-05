@@ -117,7 +117,7 @@ function renderCategoryBar() {
   const favBtn = document.createElement("button");
   favBtn.type = "button";
   favBtn.className = "cat-pill" + (currentCategory === "favorites" ? " is-active" : "");
-  favBtn.innerHTML = `🤍 ${FAVORITES_LABEL[currentLang]}`;
+  favBtn.innerHTML = `💜 ${FAVORITES_LABEL[currentLang]}`;
   favBtn.addEventListener("click", () => {
     currentCategory = "favorites";
     render();
