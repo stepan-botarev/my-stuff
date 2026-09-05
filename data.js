@@ -771,7 +771,9 @@ const PRODUCTS = [
       "ru": "",
       "uk": "",
       "es": "",
-      "zh": ""
+      "zh": "",
+      "fa": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
+      "ar": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt"
     },
     "images": [
       "images/item12-1788531104777-phxc.jpg",
@@ -783,7 +785,10 @@ const PRODUCTS = [
       "ru": "USB-C-хаб — Deppa",
       "uk": "USB-C-хаб — Deppa",
       "es": "Hub USB-C — Deppa",
-      "zh": "USB-C 扩展器 —— Deppa"
+      "zh": "USB-C 扩展器 —— Deppa",
+      "fa": "هاب USB-C دیپا — آداپتور چندمنظورهٔ جمع‌وجور برای مک‌بوک",
+      "tr": "Deppa USB-C hub — MacBook için kompakt çoklu bağlantı adaptörü",
+      "ar": "موزّع USB-C من Deppa — محوّل متعدد المنافذ صغير لجهاز MacBook"
     },
     "desc": {
       "en": "Compact USB-C hub with plenty of extra ports for a laptop that's a bit too minimalist.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× memory card slot (SD/microSD)\n\nWorks perfectly, good condition ",
@@ -791,7 +796,10 @@ const PRODUCTS = [
       "ru": "Компактный USB-C хаб с набором портов для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карты памяти (SD/microSD)\n\nРаботает исправно, хорошее состояние",
       "uk": "Компактний USB-C хаб з набором портів для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для картки пам'яті (SD/microSD)\n\nПрацює справно, хороший стан",
       "es": "Hub USB-C compacto con varios puertos extra, para ese portátil que se pasó de minimalista.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente, buen estado",
-      "zh": "小巧的USB-C扩展器，为那些接口太\"极简\"的笔记本电脑补上急需的端口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好"
+      "zh": "小巧的USB-C扩展器，为那些接口太\"极简\"的笔记本电脑补上急需的端口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好",
+      "fa": "یک هاب USB-C جمع‌وجور برای مک‌بوک با مجموعه‌ای از درگاه‌های کاربردی 💻\n\n۲× USB-A\n۱× USB-C\n۱× HDMI\n۱× شیار کارت حافظهٔ SD/microSD\n\nکاملاً درست کار می‌کند و در وضعیت خوبی است 🔌\n\nتحویل در یکی از ایستگاه‌های U-Bahn یا S-Bahn در مرکز هامبورگ 🇩🇪\n",
+      "tr": "MacBook için kullanışlı bağlantı noktalarına sahip kompakt bir USB-C hub 💻\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× SD/microSD kart yuvası\n\nSorunsuz çalışıyor ve iyi durumda 🔌\n\nHamburg’un merkezindeki bir U-Bahn veya S-Bahn istasyonunda teslim edebilirim 🇩🇪",
+      "ar": "موزّع USB-C صغير لجهاز MacBook مزوّد بمجموعة من المنافذ العملية 💻\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× فتحة لبطاقات الذاكرة SD/microSD\n\nيعمل بشكل سليم وحالته جيدة 🔌\n\nالتسليم في إحدى محطات U-Bahn أو S-Bahn في وسط هامبورغ 🇩🇪"
     },
     "category": "tech"
   },
@@ -942,7 +950,7 @@ const PRODUCTS = [
       "zh": "Im Berufssprachkurs B2 — Hueber 德语 B2 课程与练习册",
       "fa": "عنوان: Im Berufssprachkurs B2 — کتاب درس و تمرین زبان آلمانی، Hueber",
       "ar": "العنوان: Im Berufssprachkurs B2 — كتاب دورة وتمارين للغة الألمانية من Hueber",
-      "tr": "Başlık: Im Berufssprachkurs B2 — Hueber Almanca kurs ve çalışma kitabı"
+      "tr": "Im Berufssprachkurs B2 — Hueber Almanca kurs ve çalışma kitabı"
     },
     "desc": {
       "en": "A B2 German coursebook that will prepare you for working in Germany and also give you a good foundation for everyday communication. Grab it if you want to score 210 out of 240 points in the B2 exam, like I did 😀\n\n2022 edition, ISBN 978-3-19-441190-6. Inside you will find my notes and some completed exercises. The book is a good fit for someone who does not mind that and wants to save money. New price is €25; I’m letting it go for €5 ✍️\n\nHandover at a U-Bahn or S-Bahn station in central Hamburg 🇩🇪",
