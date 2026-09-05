@@ -714,6 +714,46 @@ const PRODUCTS = [
       "es": "Microondas IKEA blanco y minimalista, con controles muy sencillos: solo dos mandos, sin nada innecesario. Tiene alrededor de un año y parece casi nuevo. Va muy bien para calentar comida, preparar algo rápido o recalentar té y café.\nMedidas: 43,9×34×25,8 cm. Capacidad: 20 L. Potencia: 700 W.\nEl precio nuevo es de 69 €, lo dejo en 49 € 🍽️\nEs preferible recogerlo en Glinde, Möllner Landstraße 89 (a 10 minutos de Hamburgo). Pero, si hace falta, puedo intentar llevarlo al centro de Hamburgo.",
       "zh": "白色极简风格的 IKEA 微波炉，操作非常简单——只有两个旋钮，没有多余的功能需要研究。使用约一年，看起来几乎像新的一样。很适合加热饭菜、快速准备食物，或加热茶和咖啡。\n尺寸：43.9×34×25.8 厘米。容量：20 升。功率：700 瓦。\n全新售价 69 欧元，现在 49 欧元出手 🍽️\n最好在 Glinde 的 Möllner Landstraße 89 自取（距汉堡约 10 分钟）。如有需要，我也可以尽量送到汉堡市中心。"
     }
+  },
+  {
+    "id": 20,
+    "price": "35 €",
+    "reserved": false,
+    "hidden": false,
+    "category": "furniture",
+    "condition": "good",
+    "material": "",
+    "size": "",
+    "location": {
+      "en": "Glinde, Möllner Landstraße 89",
+      "de": "",
+      "ru": "",
+      "uk": "",
+      "es": "",
+      "zh": ""
+    },
+    "images": [
+      "images/item20-1788602888826-hx6z.jpg",
+      "images/item20-1788602888958-ht2p.jpg",
+      "images/item20-1788602889087-phjp.jpg",
+      "images/item20-1788603098967-fqyw.jpg"
+    ],
+    "title": {
+      "en": "IKEA VIHALS table, white/white, 125×74 cm",
+      "de": "IKEA VIHALS Tisch, weiß/weiß, 125×74 cm",
+      "ru": "Стол IKEA VIHALS, белый, 125×74 см",
+      "uk": "Стіл IKEA VIHALS, білий, 125×74 см",
+      "es": "Mesa IKEA VIHALS, blanca, 125×74 cm",
+      "zh": "IKEA VIHALS 白色桌子，125×74 厘米"
+    },
+    "desc": {
+      "en": "A great, spacious desk in clean white — minimalist, sturdy, and just the right height. I could sit at it for a long time without getting tired. The length and width are honestly excellent: it comfortably fit my computer, keyboard, large speakers, phone stand, books, notebooks, and plenty of other things at the same time. In short, a really great table for work. There are a couple of small, barely noticeable scratches near the edges, but overall it is in excellent condition.\nDimensions: 125×74 cm, height 75 cm.\nNew price is €59.99, letting it go for €35 🖥️\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
+      "de": "Ein toller, geräumiger Tisch in schlichtem Weiß — minimalistisch, stabil und genau in der richtigen Höhe. Ich konnte lange daran sitzen, ohne müde zu werden. Die Länge und Breite sind wirklich super: Computer, Tastatur, große Lautsprecher, Handyhalterung, Bücher, Hefte und noch viele andere Sachen hatten gleichzeitig bequem Platz. Kurz gesagt: ein richtig guter Tisch zum Arbeiten. An den Kanten gibt es ein paar kleine, kaum sichtbare Kratzer, aber insgesamt ist er in sehr gutem Zustand.\nMaße: 125×74 cm, Höhe 75 cm.\nNeupreis liegt bei 59,99 €, gebe ihn für 35 € ab 🖥️\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
+      "ru": "Классный просторный белый стол — минималистичный, устойчивый и идеальной высоты. Я мог долго сидеть за ним и не уставать. Длина и ширина вообще отличные: спокойно помещались компьютер, клавиатура, большие колонки, подставка для телефона, книги, тетради и ещё куча всего одновременно. Короче, прекрасный стол для работы. Есть пара небольших, почти незаметных царапин у кромок, но в целом стол в отличном состоянии.\nГабариты: 125×74 см, высота — 75 см.\nНовый стоит 59,99 €, отдам за 35 € 🖥️\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
+      "uk": "Класний просторий білий стіл — мінімалістичний, стійкий і ідеальної висоти. Я міг довго сидіти за ним і не втомлюватися. Довжина та ширина взагалі чудові: спокійно поміщалися комп’ютер, клавіатура, великі колонки, підставка для телефона, книжки, зошити та ще купа всього одночасно. Коротко кажучи, чудовий стіл для роботи. Біля країв є кілька невеликих, майже непомітних подряпин, але загалом стіл у чудовому стані.\nГабарити: 125×74 см, висота — 75 см.\nНовий коштує 59,99 €, віддам за 35 € 🖥️\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
+      "es": "Una mesa blanca, amplia y genial — minimalista, estable y con la altura perfecta. Podía sentarme a trabajar en ella durante mucho tiempo sin cansarme. El largo y el ancho son realmente muy buenos: cabían cómodamente el ordenador, el teclado, altavoces grandes, un soporte para el móvil, libros, cuadernos y muchas otras cosas al mismo tiempo. En resumen, es una mesa estupenda para trabajar. Tiene un par de rayones pequeños y apenas visibles cerca de los bordes, pero en general está en muy buen estado.\nMedidas: 125×74 cm, altura 75 cm.\nEl precio nuevo es de 59,99 €, la dejo en 35 € 🖥️\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
+      "zh": "很棒、宽敞的白色桌子——极简、稳固，高度也刚刚好。我可以在这里久坐工作也不会觉得累。桌面的长宽真的非常实用：电脑、键盘、大音箱、手机支架、书、本子以及很多其他东西都能同时轻松放下。总之，这是一张非常适合工作的桌子。边缘有几处很小、几乎不明显的划痕，但整体状态非常好。\n尺寸：125×74 厘米，高 75 厘米。\n全新售价 59.99 欧元，现在 35 欧元出手 🖥️\n仅限自取，地点在 Glinde，Möllner Landstraße 89（距汉堡 10 分钟车程）。\n\nСтол IKEA VIHALS действительно имеет размеры 125×74 см и высоту 75 см; текущая цена новой модели — 59,99 €. У модели меламиновая столешница, которую легко протирать, и стальное основание."
+    }
   }
 ];
 
