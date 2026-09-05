@@ -80,8 +80,8 @@ const PRODUCTS = [
     "hidden": false,
     "category": "tech",
     "condition": "new",
-    "material": "",
-    "size": "",
+    "material": "Пластик",
+    "size": "43,9 × 34 × 25,8 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item19-1788602683882-f6wb.jpg",
@@ -91,17 +91,23 @@ const PRODUCTS = [
       "en": "IKEA TILLREDA microwave, white",
       "de": "IKEA TILLREDA Mikrowelle, weiß",
       "ru": "Микроволновка IKEA TILLREDA, белая",
-      "uk": "Мікрохвильовка IKEA TILLREDA, біла",
+      "uk": "Мікрохвильова піч IKEA TILLREDA, біла",
       "es": "Microondas IKEA TILLREDA, blanco",
-      "zh": "IKEA TILLREDA 白色微波炉"
+      "zh": "IKEA TILLREDA 白色微波炉",
+      "tr": "IKEA TILLREDA mikrodalga fırın, beyaz",
+      "fa": "مایکروویو IKEA TILLREDA، سفید",
+      "ar": "ميكروويف IKEA TILLREDA، أبيض"
     },
     "desc": {
       "en": "Minimalist white IKEA microwave with very simple controls — just two knobs, so nothing extra to figure out. It is around a year old and looks almost new. Great for reheating food, making a quick meal, or warming up tea or coffee.\nDimensions: 43.9×34×25.8 cm. Capacity: 20 L. Power: 700 W.\nNew price is €69, letting it go for €49 🍽️\nPickup is preferred, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg). I can try to bring it to central Hamburg if needed.",
-      "de": "Minimalistische weiße IKEA-Mikrowelle mit sehr einfacher Bedienung — nur zwei Drehknöpfe, also kein unnötiger Schnickschnack. Sie ist etwa ein Jahr alt und sieht fast wie neu aus. Super zum Aufwärmen von Essen, für eine schnelle Mahlzeit oder um Tee und Kaffee warm zu machen.\nMaße: 43,9×34×25,8 cm. Fassungsvermögen: 20 l. Leistung: 700 W.\nNeupreis liegt bei 69 €, gebe sie für 49 € ab 🍽️\nAbholung in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt), ist am besten. Falls nötig, kann ich versuchen, sie bis in die Hamburger Innenstadt zu bringen.",
-      "ru": "Белая минималистичная микроволновка IKEA с очень простым управлением — всего две крутилки, ничего лишнего. Ей около года, выглядит почти как новая. Хорошо подойдёт, чтобы разогревать еду, быстро что-то приготовить или согреть чай и кофе.\nГабариты: 43,9×34×25,8 см. Объём: 20 л. Мощность: 700 Вт.\nНовая стоит 69 €, отдам за 49 € 🍽️\nЛучше самовывоз из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга). Но при необходимости могу постараться довезти до центра Гамбурга.",
-      "uk": "Біла мінімалістична мікрохвильовка IKEA з дуже простим керуванням — лише дві ручки, нічого зайвого. Їй близько року, виглядає майже як нова. Добре підійде, щоб розігрівати їжу, швидко щось приготувати або підігріти чай чи каву.\nГабарити: 43,9×34×25,8 см. Об’єм: 20 л. Потужність: 700 Вт.\nНова коштує 69 €, віддам за 49 € 🍽️\nКраще самовивіз із Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга). Але за потреби можу спробувати привезти до центру Гамбурга.",
-      "es": "Microondas IKEA blanco y minimalista, con controles muy sencillos: solo dos mandos, sin nada innecesario. Tiene alrededor de un año y parece casi nuevo. Va muy bien para calentar comida, preparar algo rápido o recalentar té y café.\nMedidas: 43,9×34×25,8 cm. Capacidad: 20 L. Potencia: 700 W.\nEl precio nuevo es de 69 €, lo dejo en 49 € 🍽️\nEs preferible recogerlo en Glinde, Möllner Landstraße 89 (a 10 minutos de Hamburgo). Pero, si hace falta, puedo intentar llevarlo al centro de Hamburgo.",
-      "zh": "白色极简风格的 IKEA 微波炉，操作非常简单——只有两个旋钮，没有多余的功能需要研究。使用约一年，看起来几乎像新的一样。很适合加热饭菜、快速准备食物，或加热茶和咖啡。\n尺寸：43.9×34×25.8 厘米。容量：20 升。功率：700 瓦。\n全新售价 69 欧元，现在 49 欧元出手 🍽️\n最好在 Glinde 的 Möllner Landstraße 89 自取（距汉堡约 10 分钟）。如有需要，我也可以尽量送到汉堡市中心。"
+      "de": "Weiße, minimalistische IKEA-Mikrowelle mit sehr einfacher Bedienung — nur zwei Drehregler, nichts Überflüssiges. Sie ist etwa ein Jahr alt und sieht fast wie neu aus. Sie erwärmt Essen und taut Tiefgefrorenes auf — genau das, was sie soll.\n\nVolumen: 20 l. Leistung: 700 W 💪 Neu kostet sie 69 €, ich gebe sie für 49 € ab 🍽️\n\nAm besten Selbstabholung in Glinde, Möllner Landstraße 89, etwa 10 Minuten von Hamburg entfernt. Falls es wirklich gar nicht anders geht, versuche ich, sie bis ins Zentrum von Hamburg zu bringen.",
+      "ru": "Белая минималистичная микроволновка IKEA с очень простым управлением — всего две крутилки, ничего лишнего. Ей около года, выглядит почти как новая. Разогреет еду и разморозит замороженное — всё, как надо.\n\nОбъём: 20 л. Мощность: 700 Вт 💪 Новая стоит 69 €, отдам за 49 € 🍽️\n\nЛучше самовывоз из Глинде, Möllner Landstraße 89, примерно 10 минут от Гамбурга. Но, если совсем никак, постараюсь довезти до центра Гамбурга.",
+      "uk": "Біла мінімалістична мікрохвильова піч IKEA з дуже простим керуванням — лише дві ручки, нічого зайвого. Їй близько року, виглядає майже як нова. Розігріє їжу та розморозить заморожені продукти — усе, як треба.\n\nОб’єм: 20 л. Потужність: 700 Вт 💪 Нова коштує 69 €, віддам за 49 € 🍽️\n\nНайкраще самовивіз із Глінде, Möllner Landstraße 89, приблизно 10 хвилин від Гамбурга. Але якщо зовсім ніяк, постараюся довезти до центру Гамбурга.",
+      "es": "Microondas IKEA blanco y minimalista, con un manejo muy sencillo: solo dos mandos, sin nada innecesario. Tiene aproximadamente un año y parece casi nuevo. Calienta la comida y descongela productos congelados, justo lo que se necesita.\n\nCapacidad: 20 l. Potencia: 700 W 💪 Nuevo cuesta 69 €; lo dejo por 49 € 🍽️\n\nPreferiblemente recogida en Glinde, Möllner Landstraße 89, a unos 10 minutos de Hamburgo. Pero, si de verdad no hay otra opción, intentaré llevarlo al centro de Hamburgo.",
+      "zh": "白色极简风格的 IKEA 微波炉，操作非常简单——只有两个旋钮，没有多余功能。使用约一年，看起来几乎和新的一样。可加热食物，也可解冻冷冻食品，正好满足日常所需。\n\n容量：20 升。功率：700 瓦 💪 全新售价 69 €，现以 49 € 出售 🍽️\n\n最好在格林德自取：Möllner Landstraße 89，距离汉堡约 10 分钟。如果实在不方便，我会尽量送到汉堡市中心。",
+      "tr": "Çok basit kullanımlı, beyaz ve minimalist bir IKEA mikrodalga fırın — sadece iki düğme, gereksiz hiçbir şey yok. Yaklaşık bir yıllık ve neredeyse yeni gibi görünüyor. Yemeği ısıtır ve dondurulmuş gıdaları çözer; tam olarak ihtiyacınız olan şey.\n\nHacim: 20 l. Güç: 700 W 💪 Yenisi 69 €, 49 €’ya veriyorum 🍽️\n\nTercihen Glinde’de, Möllner Landstraße 89 adresinden elden teslim. Hamburg’a yaklaşık 10 dakika uzaklıkta. Ama başka türlü hiç mümkün değilse Hamburg merkezine getirmeye çalışırım.",
+      "fa": "مایکروویوی سفید و مینیمال از IKEA با کاربری بسیار ساده — فقط دو پیچ، بدون هیچ چیز اضافه. حدود یک سال از عمرش می‌گذرد و تقریباً نو به نظر می‌رسد. غذا را گرم می‌کند و مواد غذایی یخ‌زده را یخ‌زدایی می‌کند — دقیقاً همان کاری که باید انجام دهد.\n\nظرفیت: ۲۰ لیتر. توان: ۷۰۰ وات 💪 قیمت نو آن ۶۹ یورو است؛ با قیمت ۴۹ یورو می‌فروشم 🍽️\n\nترجیحاً تحویل حضوری در گلینده، Möllner Landstraße 89، حدود ۱۰ دقیقه از هامبورگ. اما اگر واقعاً امکانش نبود، سعی می‌کنم آن را به مرکز هامبورگ برسانم.",
+      "ar": "ميكروويف أبيض وبسيط من IKEA بتحكم سهل جدًا — مقبضان فقط، ولا شيء زائد. عمره حوالي سنة ويبدو شبه جديد. يسخّن الطعام ويذيب تجميد الأطعمة المجمّدة، أي يقوم بكل ما تحتاجه منه.\n\nالسعة: 20 لترًا. القدرة: 700 واط 💪 سعره الجديد 69 €، وأبيعه مقابل 49 € 🍽️\n\nيُفضّل الاستلام الشخصي من غلينده، Möllner Landstraße 89، على بُعد نحو 10 دقائق من هامبورغ. ولكن إذا لم يكن ذلك ممكنًا تمامًا، سأحاول إيصاله إلى وسط هامبورغ."
     }
   },
   {
