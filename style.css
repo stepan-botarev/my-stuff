@@ -77,6 +77,12 @@ html, body {
   direction: ltr;
 }
 
+.lang-break {
+  flex-basis: 100%;
+  width: 0;
+  height: 0;
+}
+
 .lang-sep {
   color: var(--gold);
   opacity: 0.6;
@@ -312,7 +318,7 @@ html, body {
     display: contents;
   }
   .about-fab {
-    position: fixed;
+    position: absolute;
     top: 12px;
     right: 12px;
     bottom: auto;
