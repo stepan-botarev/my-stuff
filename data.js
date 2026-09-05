@@ -42,7 +42,8 @@ const PRODUCTS = [
       "es": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus",
       "zh": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt ● Rathaus"
     },
-    "condition": "good"
+    "condition": "good",
+    "category": "misc"
   },
   {
     "id": 2,
@@ -78,7 +79,8 @@ const PRODUCTS = [
       "zh": "印的是《在斯万家这边》的封面 —— 普鲁斯特《追忆似水年华》七卷本中的第一卷。送给和我一样、梦想有一天读完这部20世纪最伟大小说全部7卷的人 👨🏻‍🏫\n\nL码，男女同款，100% 纯棉。几乎全新，只穿过两三次。尺码不合适。\n\n可在汉堡市中心的地铁（U-/S-Bahn）站面交 🪻"
     },
     "size": "M",
-    "material": ""
+    "material": "",
+    "category": "clothing"
   },
   {
     "id": 3,
@@ -113,7 +115,8 @@ const PRODUCTS = [
       "es": "Color crema con rayas verticales naranja de hojas de otoño, verde mar y un toque de negro. Por alguna razón siempre me recordó a algo italiano. Toqué más de un concierto con ella con mi grupo indie 🇮🇹\n\nTalla M, unisex, 100% viscosa. Bien cuidada.\n\nEntrega en estaciones de U-/S-Bahn en el centro de Hamburgo 🌸",
       "zh": "米白底色，配秋叶橙、海洋绿和一点黑色竖条纹。不知为何总让我想起某种意大利的感觉。我穿着它和我的独立乐队演过不止一场。🇮🇹\nM码，男女同款，100% 粘胶纤维。保养良好。\n可在汉堡市中心的地铁（U-/S-Bahn）站面交 🌸"
     },
-    "size": "M"
+    "size": "M",
+    "category": "clothing"
   },
   {
     "id": 4,
@@ -148,7 +151,8 @@ const PRODUCTS = [
       "es": "Camisa color crema con un pequeño estampado floral rosa y verde. Combinaba bien tanto con vaqueros como con pantalones de vestir 🌺\nTalla L, unisex, 100% algodón. Bien cuidada",
       "zh": "米白色衬衫，粉绿碎花印花。搭配牛仔裤或西裤都好看 🌺\nL码，男女同款，100% 纯棉。保养良好"
     },
-    "size": "L"
+    "size": "L",
+    "category": "clothing"
   },
   {
     "id": 5,
@@ -183,7 +187,8 @@ const PRODUCTS = [
       "es": "Pana verde oliva, algodón, con dos bolsillos de pecho con solapa. La usé para caminar por un Belgrado primaveral, soleado pero aún fresco 🌿\nTalla M, unisex, algodón/pana. Bien cuidada",
       "zh": "橄榄绿灯芯绒，棉质，胸前两个带盖口袋。穿着它走过阳光明媚但还有些凉的贝尔格莱德春天 🌿\nM码，男女同款，棉/灯芯绒。保养良好"
     },
-    "size": "M"
+    "size": "M",
+    "category": "clothing"
   },
   {
     "id": 6,
@@ -217,7 +222,8 @@ const PRODUCTS = [
       "uk": "Джинси, які я стягнув у батька 🤫\n\nТрохи потерті у самому низу, але загалом в порядку.\n\nМабуть, унісекс, 100% бавовна 👖",
       "es": "Jeans que le robé a mi padre 🤫\n\nUn poco desgastados en la parte más baja de las piernas, pero en buen estado en general.\n\nProbablemente unisex, 100% algodón 👖",
       "zh": "从爸爸那里顺来的牛仔裤 🤫\n\n裤脚最下方略有磨损，整体状态不错。 \n\n应该是男女同款，100% 纯棉 👖"
-    }
+    },
+    "category": "clothing"
   },
   {
     "id": 7,
@@ -253,7 +259,8 @@ const PRODUCTS = [
       "uk": "Нова, не носив. Класна, але не вгадав з розміром.\n\nШтучна шкіра з ефектом потертості, оверсайз-крій, накладна кишеня, укорочений рукав 🤎\n\nУнісекс, розмір XL",
       "es": "Nueva, sin usar. Es una pieza genial, solo que no acerté con la talla.\n\nPiel sintética con efecto vintage/desgastado, corte oversize, bolsillo en el pecho, manga media 🤎\n\nUnisex, talla XL",
       "zh": "全新未穿。款式很酷，就是尺码没选对。\n\n做旧仿皮质感，oversize版型，胸前口袋，中袖 🤎\n\n男女同款，XL码"
-    }
+    },
+    "category": "clothing"
   },
   {
     "id": 8,
@@ -290,7 +297,8 @@ const PRODUCTS = [
       "uk": "Яскравий ретро-дизайн у кольорах петроль, чорний та червоний — для колекціонерів дивнуватого мерчу або просто для тих, кому потрібен практичний мішок для кросівок, футболки та спортивних штанів.\n\nЗатягувальний шнурок, легкий і практичний для повсякдення, спорту чи фестивалів.\n\nХороший стан, б/у 🎴",
       "es": "Diseño retro llamativo en petróleo, negro y rojo — para coleccionistas de merchandising rarito, o para quienes simplemente necesitan una mochila práctica para zapatillas, una camiseta y pantalones de deporte.\n\nCierre con cordón, ligera y práctica para el día a día, deporte o festivales.\n\nBuen estado de uso 🎴",
       "zh": "复古设计，孔雀蓝、黑色与红色搭配，十分抢眼 —— 适合收藏稀奇周边的人，也适合只是需要一个实用袋子装鞋子、T恤和运动裤的人。\n\n束口设计，轻便实用，适合日常、运动或音乐节使用。\n\n二手良好状态 🎴"
-    }
+    },
+    "category": "clothing"
   },
   {
     "id": 9,
@@ -325,15 +333,16 @@ const PRODUCTS = [
       "uk": "Використав буквально один раз. Продаю, бо люблю мінімалізм. Але якщо вам хочеться затишно влаштуватись у ліжку під ковдрою, з чаєм, печивом і нетфліксом, ця грілка — саме те, чого вам не вистачає!\n\nА ще — якщо ви, як і я, любите мажорелевий синій 💙\n\nФліосвий чохол, хороший стан, практично нова",
       "es": "La usé literalmente una vez. La vendo porque me gusta el minimalismo. Pero si quieres acurrucarte en la cama bajo una manta, con té, galletas y Netflix, esta bolsa es justo lo que te falta!\n\nY si, como yo, te encanta el azul Majorelle 💙\n\nFunda de forro polar, buen estado, prácticamente nueva",
       "zh": "真的只用过一次。因为喜欢极简主义所以出售。但如果你想窝在床上，裹着毯子，配一杯茶、几块饼干和Netflix，这个暖水袋正是你缺的那一件！\n\n而且，如果你像我一样喜欢马约雷勒蓝 💙\n\n绒面外套，状态良好，几乎全新"
-    }
+    },
+    "category": "misc"
   },
   {
     "id": 10,
     "price": "2 €",
     "reserved": false,
-    "condition": "",
+    "condition": "new",
     "material": "",
-    "size": "",
+    "size": "80x80 cm",
     "location": {
       "en": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
       "de": "",
@@ -360,7 +369,8 @@ const PRODUCTS = [
       "uk": "Майже нова. Купив перед переїздом з Любека до Гамбурга, придумав у голові, як облаштую кімнату, і ця наволочка в нього не вписалась.\n\nЯскраві смуги: синій, рожевий, чорний, зелений, оранжевий, бежевий 🌈\n\n100% бавовна, практично не використовувалась",
       "es": "Casi nueva. La compré justo antes de mudarme de Lübeck a Hamburgo — ya tenía toda la habitación planeada en mi cabeza, y esta funda simplemente no encajaba.\n\nRayas coloridas: azul, rosa, negro, verde, naranja, beige 🌈\n\n100% algodón, prácticamente sin usar",
       "zh": "几乎全新。是在从吕贝克搬到汉堡之前买的 —— 当时脑子里已经把房间布置好了，结果这个枕套没能融入进去。\n\n彩色条纹：蓝、粉、黑、绿、橙、米色 🌈\n\n100% 纯棉，几乎没用过"
-    }
+    },
+    "category": "misc"
   },
   {
     "id": 11,
@@ -395,7 +405,8 @@ const PRODUCTS = [
       "uk": "У нормальному стані. Є пара непомітних подряпин, замазаних спеціальним фломастером. Відмовляюсь від неї, бо хочу менше чорних речей, але для тих, у кого колір настрою чорний 🖤 — це гарна знахідка.\n\nНержавіюча сталь, тримає гаряче/холодне, практично як нова",
       "es": "En buen estado. Tiene un par de rayones casi imperceptibles, retocados con un marcador especial. Me deshago de ella porque quiero menos cosas negras en mi vida, pero para quienes aman el negro 🖤, es un buen hallazgo.\n\nAcero inoxidable, mantiene bebidas frías/calientes, prácticamente como nueva",
       "zh": "状态良好。有几处几乎看不出的划痕，用专用记号笔修补过了。我想少一些黑色的东西所以出手 —— 但对于喜欢黑色的人 🖤，这绝对是个好东西。\n\n不锈钢材质，保温保冷，几乎和新的一样"
-    }
+    },
+    "category": "misc"
   },
   {
     "id": 12,
@@ -431,7 +442,8 @@ const PRODUCTS = [
       "uk": "Компактний USB-C хаб з набором портів для макбука\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для картки пам'яті (SD/microSD)\n\nПрацює справно, хороший стан",
       "es": "Hub USB-C compacto con varios puertos extra, para ese portátil que se pasó de minimalista.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente, buen estado",
       "zh": "小巧的USB-C扩展器，为那些接口太\"极简\"的笔记本电脑补上急需的端口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好"
-    }
+    },
+    "category": "tech"
   },
   {
     "id": 13,
@@ -470,7 +482,8 @@ const PRODUCTS = [
       "uk": "Локер для телефону від британської фірми Virtus Project. Класна річ: кладеш телефон, ставиш час від 5 хвилин до кількох годин — і локер блокує його. Якщо буде терміновий дзвінок, там є подушечка, яку можна виштовхнути і відповісти. А от від відволікань типу месенджерів, тіктоку та рілсів захищає залізно. Ніяких дорогих застосунків і розширень, які все одно можна обійти — тут реально працює!\n\nЯкщо ви такий же СДУГшник, як я, ця штука нарешті допоможе знайти дзен. А якщо у вас тікток-залежна дитина — хороший спосіб підштовхнути її до навчання.\n\nЯкби не потрібні були гроші прямо зараз, не продавав би. З доставкою з Британії вийшло 70 євро, але воно того вартувало. Віддам за 25! 🐈‍⬛",
       "es": "Una caja bloqueadora para el móvil de la marca británica Virtus Project. Genial de verdad: metes el móvil, pones un tiempo de entre 5 minutos y varias horas, y se bloquea. Si entra una llamada urgente, hay una pequeña almohadilla que puedes empujar hacia fuera para contestar — pero contra distracciones como mensajería, TikTok y reels, es de hierro. Nada de apps o extensiones caras que al final siempre acabas evitando — esto sí funciona!\n\nSi eres TDAH como yo, esto por fin te va a ayudar a encontrar algo de paz mental. Y si tienes un hijo adicto a TikTok, es un buen empujón hacia los estudios.\n\nSi no necesitara el dinero ahora mismo, no lo vendería. Con el envío desde Reino Unido me costó 70 €, pero mereció la pena. ¡Lo dejo en 25 €! 🐈‍⬛",
       "zh": "一个来自英国品牌 Virtus Project 的手机锁盒。真的很好用：把手机放进去，设定5分钟到几个小时的时间，它就会锁住。如果有紧急电话，上面有个小垫可以顶出来接听 —— 但对于消息软件、抖音、reels这类干扰，它是铁面无私的。不用买昂贵的App或插件、最后还是会被绕过去 —— 这个真的管用！\n\n如果你也像我一样有多动症/注意力不集中的问题，这东西终于能帮你找回一点平静。如果你家孩子沉迷抖音/TikTok，这也是推他去学习的好办法。\n\n如果不是现在急需用钱，我是不会卖的。从英国寄过来花了70欧元，但真的值。现在25欧元出手！🐈‍⬛"
-    }
+    },
+    "category": "tech"
   },
   {
     "id": 14,
@@ -507,7 +520,8 @@ const PRODUCTS = [
       "uk": "Купив рік тому. У відмінному стані, є пара подряпин на корпусі, в іншому чудова машинка.\n\nВіддаю разом з антивібраційним килимком (Antivibrationsmatte) — він захищає від тремтіння і \"сповзання\" машинки під час віджиму.\n\nКупив за 300 €, віддам за 175 € 🧺\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
       "es": "La compré hace un año. En excelente estado, tiene un par de rayones en la carcasa, por lo demás es una máquina estupenda.\n\nSe entrega con una alfombra antivibración que evita que se mueva o vibre durante el centrifugado.\n\nLa compré por 300 €, la dejo en 175 € 🧺\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
       "zh": "一年前买的。状态非常好，外壳上有几处划痕，其他方面都很棒。\n\n附赠一块防震垫（Antivibrationsmatte），可以防止甩干时机器晃动和\"走位\"。\n\n购买价300欧元，现在175欧元出手 🧺\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
-    }
+    },
+    "category": "tech"
   },
   {
     "id": 15,
@@ -553,7 +567,7 @@ const PRODUCTS = [
     "price": "25 €",
     "reserved": false,
     "hidden": false,
-    "category": "",
+    "category": "furniture",
     "condition": "good",
     "material": "",
     "size": "140×60 cm",
