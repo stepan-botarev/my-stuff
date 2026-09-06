@@ -311,23 +311,29 @@ const PRODUCTS = [
       "images/item2-1788459617726-1ora.jpg"
     ],
     "title": {
-      "en": "Pink tee with the cover of Marcel Proust's Swann's Way — size L",
-      "de": "Rosa T-Shirt mit dem Cover von Marcel Prousts „In Swanns Welt\" — Größe L",
+      "en": "T-shirt featuring the cover of Marcel Proust’s “Swann’s Way” — size L",
+      "de": "T-Shirt mit dem Cover von Marcel Prousts „Unterwegs zu Swann“ — Größe L",
       "ru": "Футболка с обложкой «В сторону Свана» Марселя Пруста — размер L",
-      "uk": "Футболка з обкладинкою «На Сваннову сторону» Марселя Пруста — розмір L",
-      "es": "Camiseta rosa con la portada de \"Por el camino de Swann\" de Marcel Proust — talla L",
-      "zh": "粉色T恤，普鲁斯特《在斯万家这边》封面印花 —— L码"
+      "uk": "Футболка з обкладинкою «У бік Свана» Марселя Пруста — розмір L",
+      "es": "Camiseta con la portada de «Por el camino de Swann», de Marcel Proust — talla L",
+      "zh": "印有马塞尔·普鲁斯特《在斯万家那边》封面的 T 恤，L 码",
+      "tr": "Marcel Proust’un “Swann Tarafı” kitabının kapaklı tişörtü — L beden",
+      "ar": "تيشيرت يحمل غلاف «في طريق سوان» لمارسيل بروست — مقاس L",
+      "fa": "تی‌شرت با طرح جلد «طرفِ خانهٔ سوان» از مارسل پروست — سایز L"
     },
     "desc": {
-      "en": "A tee with the cover of Swann's Way — the first of the seven volumes of Marcel Proust's In Search of Lost Time. For anyone who, like me, dreams of one day reading all 7 volumes of the greatest novel of the 20th century 👨🏻‍🏫\n\nSize L, unisex, 100% cotton. Practically new, worn a couple of times. Wrong size for me.\n\nHandover at U-/S-Bahn stations in central Hamburg 🪻",
-      "de": "T-Shirt mit dem Cover von „In Swanns Welt\" — dem ersten der sieben Bände von Marcel Prousts „Auf der Suche nach der verlorenen Zeit\". Für alle, die wie ich davon träumen, irgendwann alle 7 Bände dieses größten Romans des 20. Jahrhunderts zu lesen 👨🏻‍🏫\n\nGröße L, Unisex, 100 % Baumwolle. Praktisch neu, nur ein paar Mal getragen. Größe hat nicht gepasst.\n\nÜbergabe an U-/S-Bahn-Stationen in der Hamburger Innenstadt 🪻",
-      "ru": "Розовая футболка с обложкой «В сторону Свана» — первой из семи книг романа «В поисках утраченного времени» Марселя Пруста. Для тех, кто, как я, мечтает однажды прочитать все 7 книг этой величайшей книги XX века 👨🏻‍🏫\n\nРазмер L, унисекс, 100% хлопок. Практически новая, надевал пару раз. Не подошёл размер.\n\nПередача на станциях U-/S-Bahn в центральной части Гамбурга 🪻",
-      "uk": "Рожева футболка з обкладинкою «На Сваннову сторону» — першої з семи книг роману «У пошуках втраченого часу» Марселя Пруста. Для тих, хто, як і я, мріє колись прочитати всі 7 книг цієї найвеличнішої книги XX століття 👨🏻‍🏫\n\nРозмір L, унісекс, 100% бавовна. Практично нова, вдягав пару разів. Не підійшов розмір.\n\nПередача на станціях U-/S-Bahn у центральній частині Гамбурга 🪻",
-      "es": "Camiseta con la portada de \"Por el camino de Swann\", el primero de los siete volúmenes de \"En busca del tiempo perdido\" de Marcel Proust. Para quienes, como yo, sueñan con leer algún día los 7 volúmenes de la novela más grande del siglo XX 👨🏻‍🏫\n\nTalla L, unisex, 100% algodón. Prácticamente nueva, la usé un par de veces. No me quedó bien la talla.\n\nEntrega en estaciones de U-/S-Bahn en el centro de Hamburgo 🪻",
-      "zh": "印的是《在斯万家这边》的封面 —— 普鲁斯特《追忆似水年华》七卷本中的第一卷。送给和我一样、梦想有一天读完这部20世纪最伟大小说全部7卷的人 👨🏻‍🏫\n\nL码，男女同款，100% 纯棉。几乎全新，只穿过两三次。尺码不合适。\n\n可在汉堡市中心的地铁（U-/S-Bahn）站面交 🪻"
+      "en": "Pink T-shirt featuring the cover of “Swann’s Way,” the first of the seven volumes of Marcel Proust’s novel “In Search of Lost Time.” For nerds like me who dream of one day reading all seven books of this greatest novel of the 20th century 👨🏻‍🏫\n\nOr for those who, like the French of the Rococo era, believe that pink is the colour of nobility 🦩\n\nSize L, unisex, 100% cotton. Practically new; worn once. The size didn’t suit me.\n\nHandover at U-Bahn or S-Bahn stations in central Hamburg 🪻",
+      "de": "Rosa T-Shirt mit dem Cover von „Unterwegs zu Swann“, dem ersten von sieben Bänden aus Marcel Prousts Roman „Auf der Suche nach der verlorenen Zeit“. Für Nerds wie mich, die davon träumen, eines Tages alle sieben Bücher dieses großartigen Romans des 20. Jahrhunderts zu lesen 👨🏻‍🏫\n\nOder für alle, die wie die Französinnen und Franzosen des Rokoko glauben, dass Rosa die Farbe des Adels ist 🦩\n\nGröße L, unisex, 100 % Baumwolle. Praktisch neu, einmal getragen. Die Größe hat mir nicht gepasst.\n\nÜbergabe an U-/S-Bahn-Stationen in der Hamburger Innenstadt 🪻",
+      "ru": "Розовая футболка с обложкой «В сторону Свана» — первой из семи книг романа «В поисках утраченного времени» Марселя Пруста. Для нёрдов вроде меня, кто мечтает однажды прочитать все 7 книг этой величайшей книги XX века 👨🏻‍🏫\n\nИли тех, кто, как французы эпохи рококо, считает, что розовый — это цвет благородства 🦩\n\nРазмер L, унисекс, 100% хлопок. Практически новая, надевал один раз. Не подошёл размер.\n\nПередача на станциях U-/S-Bahn в центральной части Гамбурга 🪻",
+      "uk": "Рожева футболка з обкладинкою «У бік Свана» — першої з семи книг роману Марселя Пруста «У пошуках утраченого часу». Для нердів, таких як я, які мріють колись прочитати всі 7 книг цього найвеличнішого роману XX століття 👨🏻‍🏫\n\nАбо для тих, хто, як французи епохи рококо, вважає рожевий кольором шляхетності 🦩\n\nРозмір L, унісекс, 100% бавовна. Практично нова, одягав один раз. Не підійшов розмір.\n\nПередача на станціях U-/S-Bahn у центральній частині Гамбурга 🪻",
+      "es": "Camiseta rosa con la portada de «Por el camino de Swann», el primero de los siete libros de la novela «En busca del tiempo perdido», de Marcel Proust. Para frikis como yo que sueñan con leer algún día los siete libros de esta gran novela del siglo XX 👨🏻‍🏫\n\nO para quienes, como los franceses de la época del rococó, creen que el rosa es el color de la nobleza 🦩\n\nTalla L, unisex, 100% algodón. Prácticamente nueva; usada una vez. La talla no me quedó bien.\n\nEntrega en estaciones de U-Bahn o S-Bahn en el centro de Hamburgo 🪻",
+      "zh": "粉色 T 恤，印有马塞尔·普鲁斯特《在斯万家那边》的封面。这是小说《追忆似水年华》七卷本中的第一卷。适合像我一样梦想有一天读完这部 20 世纪伟大小说全部七卷的书呆子 👨🏻‍🏫\n\n也适合那些像洛可可时代的法国人一样，相信粉色是贵族颜色的人 🦩\n\nL 码，中性款，100% 纯棉。几乎全新，只穿过一次。尺码不适合我。\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接 🪻",
+      "tr": "Marcel Proust’un “Kayıp Zamanın İzinde” romanının yedi kitabından ilki olan “Swann Tarafı”nın kapağını taşıyan pembe tişört. Benim gibi, 20. yüzyılın bu en büyük romanının yedi kitabını da bir gün okumayı hayal eden edebiyat meraklıları için 👨🏻‍🏫\n\nYa da Rokoko döneminin Fransızları gibi pembenin soyluluğun rengi olduğuna inananlar için 🦩\n\nL beden, unisex, %100 pamuk. Neredeyse yeni; yalnızca bir kez giyildi. Bedeni bana uymadı.\n\nHamburg’un merkezindeki U-Bahn veya S-Bahn istasyonlarında teslim 🪻",
+      "ar": "تيشيرت وردي يحمل غلاف «في طريق سوان»، الجزء الأول من الأجزاء السبعة لرواية مارسيل بروست «بحثًا عن الزمن المفقود». لعشاق الكتب المهووسين مثلي ممن يحلمون بقراءة الكتب السبعة كلها يومًا ما، لهذه الرواية العظيمة من القرن العشرين 👨🏻‍🏫\n\nأو لمن يرى، مثل الفرنسيين في عصر الروكوكو، أن الوردي لون النبلاء 🦩\n\nمقاس L، للجنسين، قطن 100%. شبه جديد، ارتديته مرة واحدة فقط. المقاس لم يناسبني.\n\nالتسليم في محطات U-Bahn أو S-Bahn في وسط هامبورغ 🪻",
+      "fa": "تی‌شرتی صورتی با طرح جلد «طرفِ خانهٔ سوان»، نخستین کتاب از هفت جلد رمان «در جست‌وجوی زمان از دست‌رفته» مارسل پروست. برای نِردهایی مثل من که رؤیا دارند روزی هر هفت جلد این رمان بزرگ قرن بیستم را بخوانند 👨🏻‍🏫\n\nیا برای کسانی که مثل فرانسوی‌های دورهٔ روکوکو معتقدند صورتی رنگ اشرافیت است 🦩\n\nسایز L، یونیسکس، ۱۰۰٪ پنبه. تقریباً نو؛ فقط یک بار پوشیده شده است. سایزش برای من مناسب نبود.\n\nتحویل در ایستگاه‌های U-Bahn یا S-Bahn در مرکز هامبورگ 🪻"
     },
-    "size": "M",
-    "material": "",
+    "size": "L",
+    "material": "cotton",
     "category": "clothing"
   },
   {
