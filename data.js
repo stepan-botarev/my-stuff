@@ -155,30 +155,35 @@ const PRODUCTS = [
     "hidden": false,
     "category": "furniture",
     "condition": "good",
-    "material": "",
-    "size": "",
+    "material": "wood,metal",
+    "size": "125 × 74 × 75 см",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
-      "images/item20-1788602888826-hx6z.jpg",
       "images/item20-1788602888958-ht2p.jpg",
-      "images/item20-1788602889087-phjp.jpg",
-      "images/item20-1788603098967-fqyw.jpg"
+      "images/item20-1788603098967-fqyw.jpg",
+      "images/item20-1788690296395-1rse.jpg"
     ],
     "title": {
-      "en": "IKEA VIHALS table, white/white, 125×74 cm",
-      "de": "IKEA VIHALS Tisch, weiß/weiß, 125×74 cm",
-      "ru": "Стол IKEA VIHALS, белый, 125×74 см",
-      "uk": "Стіл IKEA VIHALS, білий, 125×74 см",
-      "es": "Mesa IKEA VIHALS, blanca, 125×74 cm",
-      "zh": "IKEA VIHALS 白色桌子，125×74 厘米"
+      "en": "IKEA VIHALS table, white, 125 × 74 × 75 cm",
+      "de": "IKEA VIHALS Tisch, weiß, 125 × 74 × 75 cm",
+      "ru": "Стол IKEA VIHALS, белый, 125 × 74 × 75 см",
+      "uk": "Стіл IKEA VIHALS, білий, 125 × 74 × 75 см",
+      "es": "Mesa IKEA VIHALS, blanca, 125 × 74 × 75 cm",
+      "zh": "IKEA VIHALS 白色桌子，125 × 74 × 75 厘米",
+      "tr": "IKEA VIHALS masa, beyaz, 125 × 74 × 75 cm",
+      "ar": "طاولة IKEA VIHALS، بيضاء، 125 × 74 × 75 سم",
+      "fa": "میز سفید IKEA VIHALS، ۱۲۵ × ۷۴ × ۷۵ سانتی‌متر"
     },
     "desc": {
-      "en": "A great, spacious desk in clean white — minimalist, sturdy, and just the right height. I could sit at it for a long time without getting tired. The length and width are honestly excellent: it comfortably fit my computer, keyboard, large speakers, phone stand, books, notebooks, and plenty of other things at the same time. In short, a really great table for work. There are a couple of small, barely noticeable scratches near the edges, but overall it is in excellent condition.\nDimensions: 125×74 cm, height 75 cm.\nNew price is €59.99, letting it go for €35 🖥️\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
-      "de": "Ein toller, geräumiger Tisch in schlichtem Weiß — minimalistisch, stabil und genau in der richtigen Höhe. Ich konnte lange daran sitzen, ohne müde zu werden. Die Länge und Breite sind wirklich super: Computer, Tastatur, große Lautsprecher, Handyhalterung, Bücher, Hefte und noch viele andere Sachen hatten gleichzeitig bequem Platz. Kurz gesagt: ein richtig guter Tisch zum Arbeiten. An den Kanten gibt es ein paar kleine, kaum sichtbare Kratzer, aber insgesamt ist er in sehr gutem Zustand.\nMaße: 125×74 cm, Höhe 75 cm.\nNeupreis liegt bei 59,99 €, gebe ihn für 35 € ab 🖥️\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
-      "ru": "Классный просторный белый стол — минималистичный, устойчивый и идеальной высоты. Я мог долго сидеть за ним и не уставать. Длина и ширина вообще отличные: спокойно помещались компьютер, клавиатура, большие колонки, подставка для телефона, книги, тетради и ещё куча всего одновременно. Короче, прекрасный стол для работы. Есть пара небольших, почти незаметных царапин у кромок, но в целом стол в отличном состоянии.\nГабариты: 125×74 см, высота — 75 см.\nНовый стоит 59,99 €, отдам за 35 € 🖥️\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
-      "uk": "Класний просторий білий стіл — мінімалістичний, стійкий і ідеальної висоти. Я міг довго сидіти за ним і не втомлюватися. Довжина та ширина взагалі чудові: спокійно поміщалися комп’ютер, клавіатура, великі колонки, підставка для телефона, книжки, зошити та ще купа всього одночасно. Коротко кажучи, чудовий стіл для роботи. Біля країв є кілька невеликих, майже непомітних подряпин, але загалом стіл у чудовому стані.\nГабарити: 125×74 см, висота — 75 см.\nНовий коштує 59,99 €, віддам за 35 € 🖥️\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
-      "es": "Una mesa blanca, amplia y genial — minimalista, estable y con la altura perfecta. Podía sentarme a trabajar en ella durante mucho tiempo sin cansarme. El largo y el ancho son realmente muy buenos: cabían cómodamente el ordenador, el teclado, altavoces grandes, un soporte para el móvil, libros, cuadernos y muchas otras cosas al mismo tiempo. En resumen, es una mesa estupenda para trabajar. Tiene un par de rayones pequeños y apenas visibles cerca de los bordes, pero en general está en muy buen estado.\nMedidas: 125×74 cm, altura 75 cm.\nEl precio nuevo es de 59,99 €, la dejo en 35 € 🖥️\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
-      "zh": "很棒、宽敞的白色桌子——极简、稳固，高度也刚刚好。我可以在这里久坐工作也不会觉得累。桌面的长宽真的非常实用：电脑、键盘、大音箱、手机支架、书、本子以及很多其他东西都能同时轻松放下。总之，这是一张非常适合工作的桌子。边缘有几处很小、几乎不明显的划痕，但整体状态非常好。\n尺寸：125×74 厘米，高 75 厘米。\n全新售价 59.99 欧元，现在 35 欧元出手 🖥️\n仅限自取，地点在 Glinde，Möllner Landstraße 89（距汉堡 10 分钟车程）。\n\nСтол IKEA VIHALS действительно имеет размеры 125×74 см и высоту 75 см; текущая цена новой модели — 59,99 €. У модели меламиновая столешница, которую легко протирать, и стальное основание."
+      "en": "A great, spacious white table — minimalist, sturdy and at an ideal height. I could sit at it for a long time without getting tired. The length and width are excellent: it easily fit a computer, keyboard, large speakers, a phone stand, books, notebooks and plenty more all at once. In short, a wonderful table for working.\n\nThere are a couple of small, barely noticeable scratches near the edges, but overall the table is in excellent condition.\n\nLength: 125 cm, width: 74 cm, height: 75 cm.\n\nIt costs €59.99 new; selling for €35 🖥️\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
+      "de": "Toller, geräumiger weißer Tisch — minimalistisch, stabil und mit einer idealen Höhe. Ich konnte lange daran sitzen, ohne müde zu werden. Länge und Breite sind wirklich super: Computer, Tastatur, große Lautsprecher, Handyhalterung, Bücher, Hefte und noch vieles mehr hatten gleichzeitig problemlos Platz. Kurz gesagt: ein wunderbarer Tisch zum Arbeiten.\n\nAn den Kanten gibt es ein paar kleine, kaum sichtbare Kratzer, aber insgesamt ist der Tisch in einem ausgezeichneten Zustand.\n\nLänge: 125 cm, Breite: 74 cm, Höhe: 75 cm.\n\nNeu kostet er 59,99 €, ich gebe ihn für 35 € ab 🖥️\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
+      "ru": "Классный просторный белый стол — минималистичный, устойчивый и идеальной высоты. Я мог долго сидеть за ним и не уставать. Длина и ширина вообще отличные: спокойно помещались компьютер, клавиатура, большие колонки, подставка для телефона, книги, тетради и ещё куча всего одновременно. Короче, прекрасный стол для работы.\n\nЕсть пара небольших, почти незаметных царапин у кромок, но в целом стол в отличном состоянии.\n\nДлина: 125 см, ширина: 74 см, высота: 75 см.\n\nНовый стоит 59,99 €, отдам за 35 € 🖥️\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
+      "uk": "Класний просторий білий стіл — мінімалістичний, стійкий і з ідеальною висотою. Я міг довго сидіти за ним і не втомлюватися. Довжина та ширина чудові: легко вміщалися комп’ютер, клавіатура, великі колонки, підставка для телефона, книжки, зошити й ще багато всього одночасно. Коротко кажучи, прекрасний стіл для роботи.\n\nЄ пара невеликих, майже непомітних подряпин біля країв, але загалом стіл у відмінному стані.\n\nДовжина: 125 см, ширина: 74 см, висота: 75 см.\n\nНовий коштує 59,99 €, віддам за 35 € 🖥️\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
+      "es": "Una mesa blanca estupenda y espaciosa: minimalista, estable y con una altura ideal. Podía sentarme a trabajar en ella durante mucho tiempo sin cansarme. El largo y el ancho son realmente excelentes: cabían sin problema un ordenador, teclado, altavoces grandes, soporte para teléfono, libros, cuadernos y muchas más cosas a la vez. En resumen, una mesa maravillosa para trabajar.\n\nTiene un par de arañazos pequeños, apenas visibles, cerca de los bordes, pero en general está en excelente estado.\n\nLargo: 125 cm, ancho: 74 cm, alto: 75 cm.\n\nNueva cuesta 59,99 €; la vendo por 35 € 🖥️\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
+      "zh": "一张很棒、宽敞的白色桌子——极简、稳固，高度也很理想。我可以长时间坐在桌前而不觉得累。它的长宽非常合适：电脑、键盘、大音箱、手机支架、书、本子以及许多其他物品都可以同时轻松放下。总之，这是一张非常适合工作的桌子。\n\n桌子边缘附近有几处很小、几乎看不出来的划痕，但整体状况极佳。\n\n长度：125 厘米，宽度：74 厘米，高度：75 厘米。\n\n新品售价 59.99 欧元，现以 35 欧元出售 🖥️\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
+      "tr": "Harika, geniş beyaz bir masa — minimalist, sağlam ve ideal yükseklikte. Başında uzun süre oturup yorulmadan çalışabiliyordum. Uzunluğu ve genişliği gerçekten çok iyi: bilgisayar, klavye, büyük hoparlörler, telefon standı, kitaplar, defterler ve daha birçok şey aynı anda rahatça sığıyordu. Kısacası, çalışmak için mükemmel bir masa.\n\nKenarlarında birkaç küçük, neredeyse fark edilmeyen çizik var, ancak genel olarak masa mükemmel durumda.\n\nUzunluk: 125 cm, genişlik: 74 cm, yükseklik: 75 cm.\n\nYenisi 59,99 €, 35 €’ya veriyorum 🖥️\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
+      "ar": "طاولة بيضاء رائعة وواسعة، بتصميم بسيط وثابت وبارتفاع مثالي. كنت أستطيع الجلوس والعمل عليها لفترة طويلة من دون تعب. طولها وعرضها ممتازان فعلًا: كان يتسع عليها بسهولة كمبيوتر ولوحة مفاتيح ومكبرات صوت كبيرة وحامل هاتف وكتب ودفاتر وأشياء كثيرة أخرى في الوقت نفسه. باختصار، طاولة ممتازة للعمل.\n\nيوجد خدشان صغيران بالكاد يمكن ملاحظتهما قرب الحواف، لكن الطاولة عمومًا بحالة ممتازة.\n\nالطول: 125 سم، العرض: 74 سم، الارتفاع: 75 سم.\n\nسعرها الجديدة 59.99 يورو، وأبيعها مقابل 35 يورو 🖥️\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
+      "fa": "یک میز سفید، عالی و جادار — مینیمال، محکم و با ارتفاعی ایدئال. می‌توانستم مدت زیادی پشت آن بنشینم و خسته نشوم. طول و عرضش واقعاً عالی است: کامپیوتر، کیبورد، اسپیکرهای بزرگ، پایهٔ گوشی، کتاب‌ها، دفترها و کلی وسیلهٔ دیگر هم‌زمان به‌راحتی روی آن جا می‌شدند. خلاصه، میزی فوق‌العاده برای کار است.\n\nچند خط‌وخش کوچک و تقریباً نامحسوس نزدیک لبه‌ها دارد، اما در مجموع میز در وضعیت بسیار عالی است.\n\nطول: ۱۲۵ سانتی‌متر، عرض: ۷۴ سانتی‌متر، ارتفاع: ۷۵ سانتی‌متر.\n\nقیمت نو آن ۵۹٫۹۹ یورو است؛ من آن را ۳۵ یورو می‌دهم 🖥️\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
     }
   },
   {
@@ -224,35 +229,36 @@ const PRODUCTS = [
     "hidden": false,
     "category": "furniture",
     "condition": "good",
-    "material": "wood",
-    "size": "140×60 cm",
+    "material": "wood,metal",
+    "size": "140×60×73 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item16-1788597103301-1icf.jpg",
       "images/item16-1788597103403-u80m.jpg",
-      "images/item16-1788597103538-b984.jpg"
+      "images/item16-1788597103538-b984.jpg",
+      "images/item16-1788690646146-zx6b.jpg"
     ],
     "title": {
-      "en": "IKEA LAGKAPTEN / ADILS desk, white-stained oak effect / white",
-      "de": "IKEA LAGKAPTEN / ADILS Tisch, Eichenachbildung weiß / weiß",
-      "ru": "Стол IKEA LAGKAPTEN / ADILS, эффект белёного дуба / белый",
-      "uk": "Стіл IKEA LAGKAPTEN / ADILS, ефект вибіленого дуба / білий",
-      "es": "Mesa IKEA LAGKAPTEN / ADILS, efecto roble blanqueado / blanco",
-      "zh": "IKEA LAGKAPTEN / ADILS 书桌，白色橡木效果 / 白色",
-      "tr": "IKEA LAGKAPTEN / ADILS masa, beyaz meşe görünümlü / beyaz",
-      "ar": "طاولة IKEA LAGKAPTEN / ADILS، مظهر خشب بلوط مبيّض / أبيض",
-      "fa": "میز IKEA LAGKAPTEN / ADILS، طرح بلوط سفیدشده / سفید"
+      "en": "IKEA LAGKAPTEN / ADILS desk, white-stained oak effect / white, 140 × 60 × 73 cm",
+      "de": "IKEA LAGKAPTEN / ADILS Tisch, Eichenachbildung weiß / weiß, 140 × 60 × 73 cm",
+      "ru": "Стол IKEA LAGKAPTEN / ADILS, эффект белёного дуба / белый, 140 × 60 × 73 см",
+      "uk": "Стіл IKEA LAGKAPTEN / ADILS, ефект вибіленого дуба / білий, 140 × 60 × 73 см",
+      "es": "Mesa IKEA LAGKAPTEN / ADILS, efecto roble blanqueado / blanco, 140 × 60 × 73 cm",
+      "zh": "IKEA LAGKAPTEN / ADILS 书桌，白色橡木效果 / 白色，140 × 60 × 73 厘米",
+      "tr": "IKEA LAGKAPTEN / ADILS masa, beyaz meşe görünümlü / beyaz, 140 × 60 × 73 cm",
+      "ar": "طاولة IKEA LAGKAPTEN / ADILS، مظهر خشب بلوط مبيّض / أبيض، 140 × 60 × 73 سم",
+      "fa": "میز IKEA LAGKAPTEN / ADILS، طرح بلوط سفیدشده / سفید، ۱۴۰ × ۶۰ × ۷۳ سانتی‌متر"
     },
     "desc": {
-      "en": "A sturdy, spacious desk — ideal for a kitchen, studying or working from home. It is in good condition, with no scratches.\n\nIt costs €40 new; selling for €25 📦\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
-      "de": "Stabiler, geräumiger Tisch — ideal für die Küche, zum Lernen oder fürs Homeoffice. In gutem Zustand und ohne Kratzer.\n\nNeu kostet er 40 €, ich gebe ihn für 25 € ab 📦\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
-      "ru": "Прочный, просторный стол — отлично подойдёт для кухни, учёбы или работы из дома. В хорошем состоянии, без царапин.\n\nНовый стоит 40 €, отдам за 25 € 📦\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
-      "uk": "Міцний і просторий стіл — чудово підійде для кухні, навчання або роботи з дому. У хорошому стані, без подряпин.\n\nНовий коштує 40 €, віддам за 25 € 📦\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
-      "es": "Mesa resistente y espaciosa, ideal para la cocina, estudiar o trabajar desde casa. Está en buen estado y no tiene arañazos.\n\nNueva cuesta 40 €; la vendo por 25 € 📦\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
-      "zh": "结实、宽敞的桌子，非常适合厨房、学习或居家办公。状况良好，没有划痕。\n\n新品售价 40 欧元，现以 25 欧元出售 📦\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
-      "tr": "Sağlam ve geniş bir masa — mutfak, ders çalışma veya evden çalışma için ideal. İyi durumda ve çiziksiz.\n\nYenisi 40 €, 25 €’ya veriyorum 📦\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
-      "ar": "طاولة متينة وواسعة، مناسبة للمطبخ أو الدراسة أو العمل من المنزل. بحالة جيدة ومن دون خدوش.\n\nسعرها الجديدة 40 يورو، وأبيعها مقابل 25 يورو 📦\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
-      "fa": "میزی محکم و جادار، مناسب برای آشپزخانه، درس‌خواندن یا کار از خانه. در وضعیت خوب و بدون خط‌وخش است.\n\nقیمت نو آن ۴۰ یورو است؛ من آن را ۲۵ یورو می‌دهم 📦\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
+      "en": "A sturdy, long desk — ideal for a kitchen, studying or working from home. It is in good condition, with no scratches.\n\nLength: 140 cm, width: 60 cm, height: 73 cm.\n\nIt costs €40 new; selling for €25 📦\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
+      "de": "Stabiler, langer Tisch — ideal für die Küche, zum Lernen oder fürs Homeoffice. In gutem Zustand und ohne Kratzer.\n\nLänge: 140 cm, Breite: 60 cm, Höhe: 73 cm.\n\nNeu kostet er 40 €, ich gebe ihn für 25 € ab 📦\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
+      "ru": "Прочный, длинный стол — отлично подойдёт для кухни, учёбы или работы из дома. В хорошем состоянии, без царапин.\n\nДлина: 140 см, ширина: 60 см, высота: 73 см.\n\nНовый стоит 40 €, отдам за 25 € 📦\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
+      "uk": "Міцний і довгий стіл — чудово підійде для кухні, навчання або роботи з дому. У хорошому стані, без подряпин.\n\nДовжина: 140 см, ширина: 60 см, висота: 73 см.\n\nНовий коштує 40 €, віддам за 25 € 📦\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
+      "es": "Mesa resistente y larga, ideal para la cocina, estudiar o trabajar desde casa. Está en buen estado y no tiene arañazos.\n\nLargo: 140 cm, ancho: 60 cm, alto: 73 cm.\n\nNueva cuesta 40 €; la vendo por 25 € 📦\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
+      "zh": "一张结实、较长的桌子，非常适合厨房、学习或居家办公。状况良好，没有划痕。\n\n长度：140 厘米，宽度：60 厘米，高度：73 厘米。\n\n新品售价 40 欧元，现以 25 欧元出售 📦\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
+      "tr": "Sağlam ve uzun bir masa — mutfak, ders çalışma veya evden çalışma için ideal. İyi durumda ve çiziksiz.\n\nUzunluk: 140 cm, genişlik: 60 cm, yükseklik: 73 cm.\n\nYenisi 40 €, 25 €’ya veriyorum 📦\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
+      "ar": "طاولة متينة وطويلة، مناسبة للمطبخ أو الدراسة أو العمل من المنزل. بحالة جيدة ومن دون خدوش.\n\nالطول: 140 سم، العرض: 60 سم، الارتفاع: 73 سم.\n\nسعرها الجديدة 40 يورو، وأبيعها مقابل 25 يورو 📦\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
+      "fa": "میزی محکم و بلند، مناسب برای آشپزخانه، درس‌خواندن یا کار از خانه. در وضعیت خوب و بدون خط‌وخش است.\n\nطول: ۱۴۰ سانتی‌متر، عرض: ۶۰ سانتی‌متر، ارتفاع: ۷۳ سانتی‌متر.\n\nقیمت نو آن ۴۰ یورو است؛ من آن را ۲۵ یورو می‌دهم 📦\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
     }
   },
   {
