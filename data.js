@@ -248,27 +248,33 @@ const PRODUCTS = [
     "price": "2 €",
     "reserved": false,
     "condition": "new",
-    "material": "",
-    "size": "80x80 cm",
+    "material": "cotton",
+    "size": "80 × 80 cm",
     "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item10-1788523462109-chna.jpg"
     ],
     "title": {
-      "en": "IKEA striped pillowcase, cotton",
-      "de": "IKEA-Kissenbezug mit Streifen, Baumwolle",
-      "ru": "Полосатая наволочка IKEA, хлопок",
-      "uk": "Смугаста наволочка IKEA, бавовна",
-      "es": "Funda de almohada a rayas de IKEA, algodón",
-      "zh": "IKEA条纹枕套，纯棉"
+      "en": "IKEA striped pillowcase, 80 × 80 cm, cotton",
+      "de": "Gestreifter IKEA-Kissenbezug, 80 × 80 cm, Baumwolle",
+      "ru": "Полосатая наволочка IKEA, 80 × 80 см, хлопок",
+      "uk": "Смугаста наволочка IKEA, 80 × 80 см, бавовна",
+      "es": "Funda de almohada IKEA a rayas, 80 × 80 cm, algodón",
+      "zh": "IKEA 彩条纹枕套，80 × 80 厘米，纯棉",
+      "tr": "Çizgili IKEA yastık kılıfı, 80 × 80 cm, pamuk",
+      "ar": "غطاء وسادة مخطط من IKEA، مقاس 80 × 80 سم، قطن",
+      "fa": "روبالشی راه‌راه IKEA، اندازهٔ ۸۰ × ۸۰ سانتی‌متر، پنبه"
     },
     "desc": {
-      "en": "Almost new. Bought it right before moving from Lübeck to Hamburg — had a whole room layout planned in my head, and this pillowcase just didn't fit into it.\n\nColorful stripes: blue, pink, black, green, orange, beige 🌈\n\n100% cotton, practically unused",
-      "de": "Fast neu. Gekauft kurz vor dem Umzug von Lübeck nach Hamburg — hatte mir das ganze Zimmer schon im Kopf ausgemalt, und dieser Kissenbezug hat einfach nicht dazu gepasst.\n\nBunte Streifen: Blau, Rosa, Schwarz, Grün, Orange, Beige 🌈\n\n100 % Baumwolle, praktisch ungenutzt",
-      "ru": "Почти новая. Купил перед переездом из Любека в Гамбург, придумал в голове, как обустрою комнату, и эта наволочка в него не вписалась.\n\nЯркие полосы: синий, розовый, чёрный, зелёный, оранжевый, бежевый 🌈\n\n100% хлопок, практически не использовалась",
-      "uk": "Майже нова. Купив перед переїздом з Любека до Гамбурга, придумав у голові, як облаштую кімнату, і ця наволочка в нього не вписалась.\n\nЯскраві смуги: синій, рожевий, чорний, зелений, оранжевий, бежевий 🌈\n\n100% бавовна, практично не використовувалась",
-      "es": "Casi nueva. La compré justo antes de mudarme de Lübeck a Hamburgo — ya tenía toda la habitación planeada en mi cabeza, y esta funda simplemente no encajaba.\n\nRayas coloridas: azul, rosa, negro, verde, naranja, beige 🌈\n\n100% algodón, prácticamente sin usar",
-      "zh": "几乎全新。是在从吕贝克搬到汉堡之前买的 —— 当时脑子里已经把房间布置好了，结果这个枕套没能融入进去。\n\n彩色条纹：蓝、粉、黑、绿、橙、米色 🌈\n\n100% 纯棉，几乎没用过"
+      "en": "Almost new. I bought it before moving from Lübeck to Hamburg, imagining in my head how I would arrange my room — but this pillowcase did not fit into that vision.\n\nBright stripes in blue, pink, black, green, orange and beige 🌈\n\n100% cotton, hardly used.",
+      "de": "Fast neu. Ich habe ihn vor meinem Umzug von Lübeck nach Hamburg gekauft und mir schon ausgemalt, wie ich mein Zimmer einrichten würde — aber dieser Kissenbezug passte nicht in dieses Bild.\n\nLeuchtende Streifen in Blau, Rosa, Schwarz, Grün, Orange und Beige 🌈\n\n100 % Baumwolle, kaum benutzt.",
+      "ru": "Почти новая. Купил перед переездом из Любека в Гамбург, придумал в голове, как обустрою комнату, и эта наволочка в него не вписалась.\n\nЯркие полосы: синий, розовый, чёрный, зелёный, оранжевый, бежевый 🌈\n\n100% хлопок, практически не использовалась.",
+      "uk": "Майже нова. Купив перед переїздом із Любека до Гамбурга, уявив, як облаштую кімнату, але ця наволочка не вписалася в цю картину.\n\nЯскраві смуги: сині, рожеві, чорні, зелені, помаранчеві та бежеві 🌈\n\n100% бавовна, практично не використовувалася.",
+      "es": "Casi nueva. La compré antes de mudarme de Lübeck a Hamburgo e imaginé cómo decoraría mi habitación, pero esta funda de almohada no encajó en esa idea.\n\nRayas brillantes de color azul, rosa, negro, verde, naranja y beige 🌈\n\n100% algodón, prácticamente sin usar.",
+      "zh": "几乎全新。我在从吕贝克搬到汉堡之前买了它，当时已经在脑海里规划好了房间的布置，但这个枕套没有融入那个设想。\n\n鲜艳条纹：蓝色、粉色、黑色、绿色、橙色和米色 🌈\n\n100% 纯棉，几乎未使用。",
+      "tr": "Neredeyse yeni. Lübeck’ten Hamburg’a taşınmadan önce aldım; odamı nasıl düzenleyeceğimi kafamda tasarlamıştım ama bu yastık kılıfı o tasarıma uymadı.\n\nCanlı çizgiler: mavi, pembe, siyah, yeşil, turuncu ve bej 🌈\n\n%100 pamuk, neredeyse hiç kullanılmadı.",
+      "ar": "شبه جديد. اشتريته قبل انتقالي من لوبيك إلى هامبورغ، وتخيلت كيف سأرتب غرفتي، لكن غطاء الوسادة هذا لم ينسجم مع تلك الفكرة.\n\nخطوط زاهية باللون الأزرق والوردي والأسود والأخضر والبرتقالي والبيج 🌈\n\nقطن 100%، لم يُستخدم تقريبًا.",
+      "fa": "تقریباً نو است. پیش از اسباب‌کشی از لوبک به هامبورگ خریدمش و در ذهنم چیدمان اتاقم را تصور کرده بودم، اما این روبالشی با آن تصور جور درنیامد.\n\nراه‌راه‌های روشن به رنگ آبی، صورتی، مشکی، سبز، نارنجی و بژ 🌈\n\n۱۰۰٪ پنبه، تقریباً استفاده نشده است."
     },
     "category": "misc"
   },
