@@ -197,7 +197,8 @@ const PRODUCTS = [
     "size": "45×45×79 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
-      "images/item17-1788599078203-gvk6.jpg"
+      "images/item17-1788599078203-gvk6.jpg",
+      "images/item17-1788690718165-3tfn.jpg"
     ],
     "title": {
       "en": "IKEA VIHALS chair, white",
