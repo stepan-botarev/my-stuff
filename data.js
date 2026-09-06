@@ -218,7 +218,7 @@ const PRODUCTS = [
     "hidden": false,
     "category": "furniture",
     "condition": "good",
-    "material": "",
+    "material": "wood",
     "size": "140×60 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
@@ -227,20 +227,26 @@ const PRODUCTS = [
       "images/item16-1788597103538-b984.jpg"
     ],
     "title": {
-      "en": "IKEA LAGKAPTEN / ADILS desk, oak effect/white",
-      "de": "IKEA LAGKAPTEN / ADILS Schreibtisch, Eicheneffekt/weiß ",
-      "ru": "Стол IKEA LAGKAPTEN / ADILS, эффект дуба/белый ",
-      "uk": "Стіл IKEA LAGKAPTEN / ADILS, ефект дуба/білий ",
-      "es": "Escritorio IKEA LAGKAPTEN / ADILS, efecto roble/blanco ",
-      "zh": "IKEA LAGKAPTEN / ADILS 书桌，橡木纹/白色，140×60厘米"
+      "en": "IKEA LAGKAPTEN / ADILS desk, white-stained oak effect / white",
+      "de": "IKEA LAGKAPTEN / ADILS Tisch, Eichenachbildung weiß / weiß",
+      "ru": "Стол IKEA LAGKAPTEN / ADILS, эффект белёного дуба / белый",
+      "uk": "Стіл IKEA LAGKAPTEN / ADILS, ефект вибіленого дуба / білий",
+      "es": "Mesa IKEA LAGKAPTEN / ADILS, efecto roble blanqueado / blanco",
+      "zh": "IKEA LAGKAPTEN / ADILS 书桌，白色橡木效果 / 白色",
+      "tr": "IKEA LAGKAPTEN / ADILS masa, beyaz meşe görünümlü / beyaz",
+      "ar": "طاولة IKEA LAGKAPTEN / ADILS، مظهر خشب بلوط مبيّض / أبيض",
+      "fa": "میز IKEA LAGKAPTEN / ADILS، طرح بلوط سفیدشده / سفید"
     },
     "desc": {
-      "en": "Solid, spacious desk — great for a home office or study setup. In perfect condition, no scratches or marks.\n\nNew price is €45, letting it go for €25 📦\n\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
-      "de": "Stabiler, geräumiger Schreibtisch — super fürs Homeoffice oder zum Lernen. In einwandfreiem Zustand, keine Kratzer oder Macken.\n\nNeupreis liegt bei 45 €, gebe ihn für 25 € ab 📦\n\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
-      "ru": "Прочный, просторный стол — отлично подойдёт для домашнего офиса или учёбы. В идеальном состоянии, без царапин и следов использования.\n\nНовый стоит 45 €, отдам за 25 € 📦\n\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
-      "uk": "Міцний, просторий стіл — чудово підійде для домашнього офісу або навчання. У ідеальному стані, без подряпин і слідів використання.\n\nНовий коштує 45 €, віддам за 25 € 📦\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
-      "es": "Escritorio resistente y espacioso — perfecto para teletrabajo o estudio. En perfecto estado, sin rayones ni marcas.\n\nEl precio nuevo es de 45 €, lo dejo en 25 € 📦\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
-      "zh": "结实宽敞的书桌，非常适合居家办公或学习。状态完美，没有划痕或使用痕迹。\n\n全新售价45欧元，现在25欧元出手 📦\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
+      "en": "A sturdy, spacious desk — ideal for a kitchen, studying or working from home. It is in good condition, with no scratches.\n\nIt costs €40 new; selling for €25 📦\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
+      "de": "Stabiler, geräumiger Tisch — ideal für die Küche, zum Lernen oder fürs Homeoffice. In gutem Zustand und ohne Kratzer.\n\nNeu kostet er 40 €, ich gebe ihn für 25 € ab 📦\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
+      "ru": "Прочный, просторный стол — отлично подойдёт для кухни, учёбы или работы из дома. В хорошем состоянии, без царапин.\n\nНовый стоит 40 €, отдам за 25 € 📦\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
+      "uk": "Міцний і просторий стіл — чудово підійде для кухні, навчання або роботи з дому. У хорошому стані, без подряпин.\n\nНовий коштує 40 €, віддам за 25 € 📦\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
+      "es": "Mesa resistente y espaciosa, ideal para la cocina, estudiar o trabajar desde casa. Está en buen estado y no tiene arañazos.\n\nNueva cuesta 40 €; la vendo por 25 € 📦\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
+      "zh": "结实、宽敞的桌子，非常适合厨房、学习或居家办公。状况良好，没有划痕。\n\n新品售价 40 欧元，现以 25 欧元出售 📦\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
+      "tr": "Sağlam ve geniş bir masa — mutfak, ders çalışma veya evden çalışma için ideal. İyi durumda ve çiziksiz.\n\nYenisi 40 €, 25 €’ya veriyorum 📦\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
+      "ar": "طاولة متينة وواسعة، مناسبة للمطبخ أو الدراسة أو العمل من المنزل. بحالة جيدة ومن دون خدوش.\n\nسعرها الجديدة 40 يورو، وأبيعها مقابل 25 يورو 📦\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
+      "fa": "میزی محکم و جادار، مناسب برای آشپزخانه، درس‌خواندن یا کار از خانه. در وضعیت خوب و بدون خط‌وخش است.\n\nقیمت نو آن ۴۰ یورو است؛ من آن را ۲۵ یورو می‌دهم 📦\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
     }
   },
   {
