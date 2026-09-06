@@ -341,23 +341,30 @@ const PRODUCTS = [
       "images/item3-1788459661751-hahs.jpg"
     ],
     "title": {
-      "en": "Striped viscose short-sleeve shirt — size M",
-      "de": "Gestreiftes Kurzarmhemd aus Viskose — Größe M",
+      "en": "Short-sleeved striped viscose shirt — size M",
+      "de": "Kurzarmhemd aus Viskose mit Streifen — Größe M",
       "ru": "Полосатая рубашка из вискозы с коротким рукавом — размер M",
       "uk": "Смугаста сорочка з віскози з коротким рукавом — розмір M",
-      "es": "Camisa de manga corta de viscosa a rayas — talla M",
-      "zh": "条纹短袖衬衫，粘胶纤维 —— M码"
+      "es": "Camisa de viscosa a rayas y de manga corta — talla M",
+      "zh": "短袖条纹粘胶衬衫，M 码",
+      "tr": "Kısa kollu çizgili viskon gömlek — M beden",
+      "ar": "قميص مخطط من الفيسكوز بأكمام قصيرة — مقاس M",
+      "fa": "پیراهن آستین‌کوتاه راه‌راه از ویسکوز — سایز M"
     },
     "desc": {
-      "en": "Cream with autumn-leaf orange, sea green and a touch of black vertical stripes. For some reason it always reminded me of something Italian. Played more than one gig in it with my indie band 🇮🇹\n\nSize M, unisex, 100% viscose. Well looked after.\n\nHandover at U-/S-Bahn stations in central Hamburg 🌸",
-      "de": "Creme mit herbstlaub-orangen, seegrünen Streifen und etwas Schwarz. Irgendwie hat es mich immer an etwas Italienisches erinnert. Habe darin mehr als ein Konzert mit meiner Indie-Band gespielt 🇮🇹\nGröße M, Unisex, 100 % Viskose. Gut gepflegt.\n\nÜbergabe an U-/S-Bahn-Stationen in der Hamburger Innenstadt 🌸",
-      "ru": "Кремовая, с полосками цвета осенних листьев (оранжевый), sea green и немного чёрного. Почему-то всегда напоминала мне что-то итальянское. Сыграл в ней не один концерт с моей инди-группой 🇮🇹\n\nРазмер M, унисекс, 100% вискоза. Ухоженная.\n\nПередача на станциях U-/S-Bahn в центральной части Гамбурга 🌸",
-      "uk": "Кремова, зі смужками кольору осіннього листя (оранжевий), sea green і трохи чорного. Чомусь завжди нагадувала мені щось італійське. Зіграв у ній не один концерт зі своєю інді-групою 🇮🇹\n\nРозмір M, унісекс, 100% віскоза. Доглянута.\n\nПередача на станціях U-/S-Bahn у центральній частині Гамбурга 🌸",
-      "es": "Color crema con rayas verticales naranja de hojas de otoño, verde mar y un toque de negro. Por alguna razón siempre me recordó a algo italiano. Toqué más de un concierto con ella con mi grupo indie 🇮🇹\n\nTalla M, unisex, 100% viscosa. Bien cuidada.\n\nEntrega en estaciones de U-/S-Bahn en el centro de Hamburgo 🌸",
-      "zh": "米白底色，配秋叶橙、海洋绿和一点黑色竖条纹。不知为何总让我想起某种意大利的感觉。我穿着它和我的独立乐队演过不止一场。🇮🇹\nM码，男女同款，100% 粘胶纤维。保养良好。\n可在汉堡市中心的地铁（U-/S-Bahn）站面交 🌸"
+      "en": "Cream-coloured, with stripes in autumn-leaf tones, sea green and a touch of black. It always reminded me of something Italian. I played more than one concert in it with my rock band 🇮🇹\n\nSize M, unisex, 100% viscose. Well cared for.\n\nHandover at U-Bahn or S-Bahn stations in central Hamburg 🌸",
+      "de": "Cremefarben, mit Streifen in Herbstlaubfarben, Meeresgrün und etwas Schwarz. Es hat mich immer an etwas Italienisches erinnert. Ich habe darin mit meiner Rockband mehr als ein Konzert gespielt 🇮🇹\n\nGröße M, unisex, 100 % Viskose. Gut gepflegt.\n\nÜbergabe an U-/S-Bahn-Stationen in der Hamburger Innenstadt 🌸",
+      "ru": "Кремовая, с полосками цвета осенних листьев, морского зелёного и немного чёрного. Всегда напоминала мне что-то итальянское. Сыграл в ней не один концерт с моей рок-группой 🇮🇹\n\nРазмер M, унисекс, 100% вискоза. Ухоженная.\n\nПередача на станциях U-/S-Bahn в центральной части Гамбурга 🌸",
+      "uk": "Кремова, зі смужками кольорів осіннього листя, морської зелені та трохи чорного. Завжди нагадувала мені щось італійське. Я зіграв у ній не один концерт зі своїм рок-гуртом 🇮🇹\n\nРозмір M, унісекс, 100% віскоза. Доглянута.\n\nПередача на станціях U-/S-Bahn у центральній частині Гамбурга 🌸",
+      "es": "Color crema, con rayas en tonos de hojas de otoño, verde mar y un toque de negro. Siempre me recordaba a algo italiano. Toqué más de un concierto con mi banda de rock llevándola puesta 🇮🇹\n\nTalla M, unisex, 100% viscosa. Bien cuidada.\n\nEntrega en estaciones de U-Bahn o S-Bahn en el centro de Hamburgo 🌸",
+      "zh": "奶油色，带有秋叶色、海绿色以及一点黑色的条纹。它总让我想起某种意大利风格。我曾穿着它和我的摇滚乐队演出过不止一场音乐会 🇮🇹\n\nM 码，中性款，100% 粘胶纤维。保养良好。\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接 🌸",
+      "tr": "Krem rengi; sonbahar yaprakları tonlarında, deniz yeşilinde ve biraz siyah çizgili. Bana her zaman İtalyan bir şeyi hatırlatıyordu. Rock grubumla bu gömlekle birden fazla konserde çaldım 🇮🇹\n\nM beden, unisex, %100 viskon. Özenle kullanılmış.\n\nHamburg’un merkezindeki U-Bahn veya S-Bahn istasyonlarında teslim 🌸",
+      "ar": "بلون كريمي، مع خطوط بألوان أوراق الخريف والأخضر البحري وقليل من الأسود. كان يذكرني دائمًا بشيء إيطالي. عزفت به في أكثر من حفلة موسيقية مع فرقتي الروك 🇮🇹\n\nمقاس M، للجنسين، فيسكوز 100%. مُعتنى به جيدًا.\n\nالتسليم في محطات U-Bahn أو S-Bahn في وسط هامبورغ 🌸",
+      "fa": "کرم‌رنگ، با راه‌راه‌هایی به رنگ برگ‌های پاییزی، سبز دریایی و کمی مشکی. همیشه من را یاد چیزی ایتالیایی می‌انداخت. با گروه راکم بیش از یک کنسرت با آن اجرا کرده‌ام 🇮🇹\n\nسایز M، یونیسکس، ۱۰۰٪ ویسکوز. به‌خوبی نگهداری شده است.\n\nتحویل در ایستگاه‌های U-Bahn یا S-Bahn در مرکز هامبورگ 🌸"
     },
     "size": "M",
-    "category": "clothing"
+    "category": "clothing",
+    "material": "viscose"
   },
   {
     "id": 4,
