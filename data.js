@@ -681,8 +681,7 @@ const PRODUCTS = [
     "images": [
       "images/item24-1788606795359-2tcb.jpg",
       "images/item24-1788606795540-zqmn.jpg",
-      "images/item24-1788606795676-suld.jpg",
-      "images/item24-1788606795826-cjrk.jpg"
+      "images/item24-1788606795676-suld.jpg"
     ],
     "title": {
       "en": "ADAM Audio A5X active studio monitors — pair",
