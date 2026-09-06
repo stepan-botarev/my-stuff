@@ -12,7 +12,7 @@ const WHATSAPP_NUMBER = "4917623657623";
 const PRODUCTS = [
   {
     "id": 14,
-    "price": "180 €",
+    "price": "200 €",
     "reserved": false,
     "condition": "good",
     "material": "plastic,metal",
@@ -24,37 +24,37 @@ const PRODUCTS = [
       "images/item14-1788543650035-u8nm.jpg"
     ],
     "title": {
-      "en": "Bomann WA 7175 washing machine, 7 kg, 1400 rpm",
-      "de": "Waschmaschine Bomann WA 7175, 7 kg, 1400 U/min",
-      "ru": "Стиральная машина Bomann WA 7175, 7 кг, 1400 об/мин",
-      "uk": "Пральна машина Bomann WA 7175, 7 кг, 1400 об/хв",
-      "es": "Lavadora Bomann WA 7175, 7 kg, 1400 rpm",
-      "zh": "Bomann WA 7175 洗衣机，7 公斤，1400 转/分钟",
-      "tr": "Bomann WA 7175 çamaşır makinesi, 7 kg, 1400 dev/dk",
-      "fa": "ماشین لباسشویی Bomann WA 7175، ظرفیت ۷ کیلوگرم، ۱۴۰۰ دور در دقیقه",
-      "ar": "غسالة Bomann WA 7175، سعة 7 كغ، 1400 دورة/دقيقة"
+      "en": "Bomann WA 7175 washing machine, 7 kg",
+      "de": "Bomann WA 7175 Waschmaschine, 7 kg",
+      "ru": "Стиральная машина Bomann WA 7175, 7 кг",
+      "uk": "Пральна машина Bomann WA 7175, 7 кг",
+      "es": "Lavadora Bomann WA 7175, 7 kg",
+      "zh": "Bomann WA 7175 洗衣机，7 公斤",
+      "tr": "Bomann WA 7175 çamaşır makinesi, 7 kg",
+      "fa": "ماشین لباس‌شویی Bomann WA 7175، ظرفیت ۷ کیلوگرم",
+      "ar": "غسالة Bomann WA 7175، سعة 7 كغ"
     },
     "desc": {
-      "en": "Bought a year ago. In excellent condition, though there are a couple of scratches on the housing — otherwise a great machine.\n\nComes with an anti-vibration mat that keeps it from shaking and shifting during the spin cycle.\n\nBought for €300, letting it go for €175 🧺\n\nPickup only, from Glinde (10 minutes from Hamburg).",
-      "de": "Vor einem Jahr gekauft. In sehr gutem Zustand, mit ein paar Kratzern am Gehäuse, ansonsten eine ausgezeichnete Waschmaschine.\n\nIch gebe die Waschmaschine zusammen mit einer Antivibrationsmatte (Antivibrationsmatte) ab. Die Matte reduziert Vibrationen und Geräusche der Maschine beim Schleudern. Zusätzlich gibt es einen Wäscheständer zum Aufhängen von Kleidung gratis dazu.\n\nGekauft für 300 € (+ 10 € für die Matte), ich gebe alles für 180 € ab 🧺\n\nNur Selbstabholung in Glinde, Möllner Landstraße 89, etwa 10 Minuten von Hamburg entfernt.",
-      "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю стиральную машинку вместе с антивибрационным ковриком (Antivibrationsmatte). Коврик защищает от дрожания и шума машинки при отжиме. Также в подарок — сушилка для развешивания белья.\n\nКупил за 300 € (+ 10 € за коврик), отдам за 180 € 🧺\n\nТолько самовывоз из Глинде, Möllner Landstraße 89, примерно 10 минут от Гамбурга.",
-      "uk": "Купив рік тому. У чудовому стані, є кілька подряпин на корпусі, в іншому — відмінна пральна машина.\n\nВіддаю пральну машину разом з антивібраційним килимком (Antivibrationsmatte). Килимок зменшує вібрацію та шум пральної машини під час віджимання. Також у подарунок — сушарка для розвішування білизни.\n\nКупив за 300 € (+ 10 € за килимок), віддам за 180 € 🧺\n\nЛише самовивіз із Глінде, Möllner Landstraße 89, приблизно 10 хвилин від Гамбурга.",
-      "es": "La compré hace un año. Está en muy buen estado; tiene un par de arañazos en la carcasa, pero por lo demás funciona muy bien.\n\nLa entrego junto con una alfombrilla antivibración (Antivibrationsmatte). La alfombrilla reduce las vibraciones y el ruido de la lavadora durante el centrifugado. También incluyo de regalo un tendedero para colgar la ropa.\n\nLa compré por 300 € (+ 10 € por la alfombrilla) y la dejo por 180 € 🧺\n\nSolo recogida en persona en Glinde, Möllner Landstraße 89, a unos 10 minutos de Hamburgo.",
-      "zh": "一年前购买。状态很好，机身上有几处划痕，除此之外是一台非常不错的洗衣机。\n\n洗衣机附赠防震垫（Antivibrationsmatte）。防震垫可减少洗衣机在脱水时的震动和噪音。此外，还免费附送一个用于晾晒衣物的晾衣架。\n\n购入价为 300 €（防震垫另花了 10 €），现以 180 € 出售 🧺\n\n仅限自取：格林德 Möllner Landstraße 89，距离汉堡约 10 分钟。",
-      "tr": "Bir yıl önce satın alındı. Çok iyi durumda; gövdesinde birkaç çizik var, bunun dışında harika bir çamaşır makinesi.\n\nÇamaşır makinesini antivibrasyon matıyla (Antivibrationsmatte) birlikte veriyorum. Mat, sıkma sırasında makinenin titreşimini ve gürültüsünü azaltır. Ayrıca çamaşır asmak için kullanılan bir kurutmalık da hediye.\n\n300 €’ya aldım (+ mat için 10 €), 180 €’ya veriyorum 🧺\n\nSadece Glinde’den elden teslim, Möllner Landstraße 89, Hamburg’a yaklaşık 10 dakika uzaklıkta.",
-      "fa": "یک سال پیش خریده‌ام. در وضعیت بسیار خوب است؛ چند خط‌وخش روی بدنه دارد، اما در بقیه موارد ماشین لباسشویی عالی‌ای است.\n\nماشین لباسشویی را همراه با پد ضدلرزش (Antivibrationsmatte) واگذار می‌کنم. این پد لرزش و صدای ماشین لباسشویی هنگام خشک‌کن را کاهش می‌دهد. همچنین یک بند رخت برای آویزان‌کردن لباس‌ها هم به‌عنوان هدیه همراه آن است.\n\nبا قیمت ۳۰۰ یورو خریده‌ام (+ ۱۰ یورو برای پد)، با قیمت ۱۸۰ یورو می‌فروشم 🧺\n\nفقط تحویل حضوری از گلینده، Möllner Landstraße 89، حدود ۱۰ دقیقه از هامبورگ.",
-      "ar": "اشتريتها قبل سنة. حالتها ممتازة، مع وجود بعض الخدوش على الهيكل، لكنها فيما عدا ذلك غسالة رائعة.\n\nأبيع الغسالة مع حصيرة مضادة للاهتزاز (Antivibrationsmatte). تقلل الحصيرة اهتزاز الغسالة وضجيجها أثناء العصر. كما أضيف مجانًا منشرًا لتعليق الملابس.\n\nاشتريتها مقابل 300 € (+ 10 € للحصيرة)، وأبيعها مقابل 180 € 🧺\n\nالاستلام الشخصي فقط من غلينده، Möllner Landstraße 89، على بُعد نحو 10 دقائق من هامبورغ."
+      "en": "Bought about a year ago. It is in excellent condition, with a couple of scratches on the корпус, but otherwise it is a great machine.\n\nIncluded is an anti-vibration mat. It helps reduce vibration and noise from the machine during the spin cycle. A clothes drying rack is also included for free.\n\nThe washing machine, drying rack and mat cost about €320 in total; selling everything for €200 🧺\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
+      "de": "Vor etwa einem Jahr gekauft. In ausgezeichnetem Zustand, mit ein paar Kratzern am Gehäuse, ansonsten eine tolle Maschine.\n\nEine Antivibrationsmatte ist dabei. Sie hilft, Vibrationen und Geräusche der Maschine beim Schleudern zu reduzieren. Einen Wäscheständer gibt es ebenfalls kostenlos dazu.\n\nWaschmaschine, Wäscheständer und Matte haben zusammen etwa 320 € gekostet; ich gebe alles für 200 € ab 🧺\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
+      "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю вместе с антивибрационным ковриком. Коврик помогает уменьшить дрожание и шум машинки при отжиме. Также в подарок — сушилка для развешивания белья.\n\nВсё вместе — машинка, сушилка и коврик — обошлось в 320 €; отдам за 200 € 🧺\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
+      "uk": "Купив близько року тому. У відмінному стані, є пара подряпин на корпусі, але в іншому це чудова машинка.\n\nВіддаю разом з антивібраційним килимком. Він допомагає зменшити вібрації та шум пральної машини під час віджиму. Також у подарунок — сушарка для білизни.\n\nУсе разом — машинка, сушарка й килимок — обійшлося в 320 €; віддам за 200 € 🧺\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
+      "es": "La compré hace alrededor de un año. Está en excelente estado, con un par de arañazos en la carcasa, pero por lo demás es una máquina estupenda.\n\nIncluyo una alfombrilla antivibración. Ayuda a reducir las vibraciones y el ruido de la lavadora durante el centrifugado. También incluyo gratis un tendedero para la ropa.\n\nLa lavadora, el tendedero y la alfombrilla costaron unos 320 € en total; vendo todo por 200 € 🧺\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
+      "zh": "大约一年前购买。整体状况极佳，机身上有几处小划痕，但除此以外是一台很好的洗衣机。\n\n附送防震垫，可帮助减少洗衣机在脱水时的震动和噪音。还免费附送一个晾衣架。\n\n洗衣机、晾衣架和防震垫总共花了约 320 欧元；现将全部以 200 欧元出售 🧺\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
+      "tr": "Yaklaşık bir yıl önce satın alındı. Gövdesinde birkaç çizik var, ancak bunun dışında mükemmel durumda ve harika bir makine.\n\nTitreşim önleyici matla birlikte veriyorum. Mat, sıkma sırasında makinenin titreşimini ve gürültüsünü azaltmaya yardımcı olur. Çamaşır kurutmalığı da ücretsiz olarak dahildir.\n\nMakine, kurutmalık ve matın toplam maliyeti yaklaşık 320 € idi; hepsini 200 €’ya veriyorum 🧺\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
+      "fa": "حدود یک سال پیش خریده شده است. در وضعیت عالی است؛ چند خط‌وخش روی بدنه دارد، اما در غیر این صورت دستگاه بسیار خوبی است.\n\nهمراه آن یک پد ضدلرزش هم می‌دهم. این پد به کاهش لرزش و صدای ماشین هنگام خشک‌کن کمک می‌کند. یک بندرخت هم به‌عنوان هدیه همراه آن است.\n\nهزینهٔ ماشین لباس‌شویی، بندرخت و پد در مجموع حدود ۳۲۰ یورو بوده است؛ همه را با هم ۲۰۰ یورو می‌دهم 🧺\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ.",
+      "ar": "اشتريتها قبل نحو سنة. بحالة ممتازة، مع وجود خدشين بسيطين على الهيكل، لكنها فيما عدا ذلك آلة رائعة.\n\nأبيعها مع حصيرة مضادة للاهتزاز. تساعد الحصيرة على تقليل اهتزاز الغسالة وضجيجها أثناء العصر. كما أضيف مجانًا منشرًا لتجفيف الغسيل.\n\nبلغت تكلفة الغسالة والمنشر والحصيرة معًا نحو 320 يورو؛ أبيع كل شيء مقابل 200 يورو 🧺\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ."
     },
     "category": "tech"
   },
   {
     "id": 18,
-    "price": "100 €",
+    "price": "140 €",
     "reserved": false,
     "hidden": false,
     "category": "furniture",
-    "condition": "good",
-    "material": "",
+    "condition": "new",
+    "material": "wood",
     "size": "140×200 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
@@ -63,20 +63,26 @@ const PRODUCTS = [
       "images/item18-1788600758962-wchq.jpg"
     ],
     "title": {
-      "en": "IKEA ASKVOLL bed frame, white, 140×200 cm",
-      "de": "IKEA ASKVOLL Bettgestell, weiß, 140×200 cm",
-      "ru": "Кровать IKEA ASKVOLL, белая, 140×200 см",
-      "uk": "Ліжко IKEA ASKVOLL, біле, 140×200 см",
-      "es": "Estructura de cama IKEA ASKVOLL, blanca, 140×200 cm",
-      "zh": "IKEA ASKVOLL 白色床架，140×200 厘米"
+      "en": "IKEA ASKVOLL bed frame, white, 140 × 200 cm",
+      "de": "IKEA ASKVOLL Bettgestell, weiß, 140 × 200 cm",
+      "ru": "Кровать IKEA ASKVOLL, белая, 140 × 200 см",
+      "uk": "Ліжко IKEA ASKVOLL, біле, 140 × 200 см",
+      "es": "Estructura de cama IKEA ASKVOLL, blanca, 140 × 200 cm",
+      "zh": "IKEA ASKVOLL 白色床架，140 × 200 厘米",
+      "tr": "IKEA ASKVOLL yatak iskeleti, beyaz, 140 × 200 cm",
+      "ar": "هيكل سرير IKEA ASKVOLL، أبيض، 140 × 200 سم",
+      "fa": "تخت IKEA ASKVOLL، سفید، ۱۴۰ × ۲۰۰ سانتی‌متر"
     },
     "desc": {
-      "en": "Simple and minimalist white IKEA bed — it looks light in the room and fits well even in a smaller bedroom. In my small studio, it served both as a place to rest and as extra storage: there was plenty of room underneath for winter clothes. Selling it together with two slatted bed bases. Mattress is not for sale (for now) 💤\nDimensions: mattress size 140×200 cm. Headboard height 77 cm, footboard height 43 cm.\nThe bed frame costs €99 new, and the two slatted bed bases cost almost €100 — selling everything together for €100 🛏️\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
-      "de": "Schlichtes und minimalistisches IKEA-Bett in Weiß — es wirkt leicht im Raum und passt auch gut in ein kleineres Schlafzimmer. In meinem kleinen Studio war es sowohl ein Ort zum Ausruhen als auch zusätzlicher Stauraum: Unter dem Bett war viel Platz für Wintersachen. Verkauft wird es zusammen mit zwei Lattenrosten. Die Matratze verkaufe ich (vorerst) nicht 💤\nMaße: Matratzengröße 140×200 cm. Kopfteilhöhe 77 cm, Fußteilhöhe 43 cm.\nDas Bettgestell kostet neu 99 €, die beiden Lattenroste fast 100 € — alles zusammen für 100 € 🛏️\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
-      "ru": "Простая и минималистичная белая кровать IKEA — выглядит легко в комнате и хорошо подойдёт даже для небольшой спальни. В моей маленькой студии она служила мне и местом отдыха, и кладовкой — под кроватью поместилось много зимних вещей. Продаю вместе с двумя ламельными основаниями. Матрас — (пока) не продаю 💤\nГабариты: спальное место 140×200 см. Высота изголовья — 77 см, изножья — 43 см.\nНовая кровать стоит 99 €, а две пары ламелей — почти 100 €; отдам всё вместе за 100 € 🛏️\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
-      "uk": "Просте й мінімалістичне біле ліжко IKEA — виглядає легко в кімнаті та добре підійде навіть для невеликої спальні. У моїй маленькій студії воно було і місцем для відпочинку, і додатковим місцем для зберігання: під ліжком помістилося багато зимових речей. Продаю разом із двома ламельними основами. Матрац — (поки що) не продаю 💤\nГабарити: спальне місце 140×200 см. Висота узголів’я — 77 см, узніжжя — 43 см.\nНове ліжко коштує 99 €, а дві ламельні основи — майже 100 €; віддам усе разом за 100 € 🛏️\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
-      "es": "Cama IKEA blanca, sencilla y minimalista — se ve ligera en la habitación y queda bien incluso en un dormitorio pequeño. En mi pequeño estudio, servía tanto como lugar de descanso como espacio de almacenamiento: debajo de la cama cabían muchas cosas de invierno. La vendo junto con dos somieres de láminas. El colchón (por ahora) no está a la venta 💤\nMedidas: tamaño de colchón 140×200 cm. Altura del cabecero: 77 cm; altura del pie de cama: 43 cm.\nLa estructura nueva cuesta 99 € y los dos somieres de láminas casi 100 € — lo dejo todo junto por 100 € 🛏️\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
-      "zh": "简约、极简风格的白色 IKEA 床，在房间里看起来很轻盈，即使是较小的卧室也很适合。在我的小型单间公寓里，它既是休息的地方，也是额外的储物空间：床下可以放下很多冬季衣物。床架与两套排骨架一起出售。床垫**（暂时）不出售** 💤\n尺寸：适用床垫尺寸为 140×200 厘米。床头板高 77 厘米，床尾板高 43 厘米。\n全新床架售价 99 欧元，两套排骨架接近 100 欧元；现在全部一起 100 欧元出手 🛏️\n仅限自取，地点在 Glinde，Möllner Landstraße 89（距汉堡 10 分钟车程）。"
+      "en": "A simple, minimalist white IKEA bed — it looks light in a room and works well even in a small bedroom. In my small studio, it served both as a place to rest and as storage: there was enough room underneath for plenty of winter things.\n\nI am selling it with two slatted bed bases. The mattress is not for sale — at least not yet 💤\n\nSleeping area: 140 × 200 cm. Headboard height: 77 cm; footboard height: 43 cm.\n\nThe bed is only about a year old. The frame costs €99 new, and the two slatted bed bases cost almost another €100; selling everything together for €140 🛏️\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
+      "de": "Einfaches, minimalistisches weißes IKEA-Bett — es wirkt leicht im Raum und passt auch gut in ein kleines Schlafzimmer. In meinem kleinen Studio war es zugleich Ruheplatz und Stauraum: Unter dem Bett fanden viele Wintersachen Platz.\n\nIch verkaufe es zusammen mit zwei Federholzrahmen. Die Matratze verkaufe ich — zumindest vorerst — nicht 💤\n\nLiegefläche: 140 × 200 cm. Höhe des Kopfteils: 77 cm; Höhe des Fußteils: 43 cm.\n\nDas Bett ist erst etwa ein Jahr alt. Das Bettgestell kostet neu 99 €, die beiden Federholzrahmen noch einmal fast 100 €; ich gebe alles zusammen für 140 € ab 🛏️\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
+      "ru": "Простая и минималистичная белая кровать IKEA — выглядит легко в комнате и хорошо подойдёт даже для небольшой спальни. В моей маленькой студии она служила мне и местом отдыха, и кладовкой: под кроватью поместилось много зимних вещей.\n\nПродаю вместе с двумя ламельными основаниями. Матрас — пока не продаю 💤\n\nСпальное место: 140 × 200 см. Высота изголовья — 77 см, изножья — 43 см.\n\nКровати всего год. Новый каркас стоит 99 €, а два ламельных основания — ещё почти 100 €; отдам всё вместе за 140 € 🛏️\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
+      "uk": "Просте й мінімалістичне біле ліжко IKEA — має легкий вигляд у кімнаті та добре підійде навіть для невеликої спальні. У моїй маленькій студії воно було і місцем для відпочинку, і коморою: під ліжком умістилося багато зимових речей.\n\nПродаю разом із двома ламельними основами. Матрац — поки що не продаю 💤\n\nСпальне місце: 140 × 200 см. Висота узголів’я — 77 см, узніжжя — 43 см.\n\nЛіжку лише близько року. Новий каркас коштує 99 €, а дві ламельні основи — ще майже 100 €; віддам усе разом за 140 € 🛏️\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
+      "es": "Una cama IKEA blanca, sencilla y minimalista: se ve ligera en la habitación y encaja bien incluso en un dormitorio pequeño. En mi estudio pequeño me servía tanto para descansar como para almacenar cosas: debajo cabían muchas prendas de invierno.\n\nLa vendo con dos bases de láminas. El colchón no está a la venta, al menos por ahora 💤\n\nSuperficie para dormir: 140 × 200 cm. Altura del cabecero: 77 cm; altura del pie de cama: 43 cm.\n\nLa cama tiene solo alrededor de un año. La estructura nueva cuesta 99 €, y las dos bases de láminas cuestan casi 100 € más; vendo todo junto por 140 € 🛏️\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
+      "zh": "一张简洁、极简的白色 IKEA 床，在房间里显得轻盈，即使是小卧室也很合适。在我的小型单间公寓里，它既是休息的地方，也是储物空间：床下能放下很多冬季用品。\n\n随床附送两套排骨架。床垫暂时不出售 💤\n\n睡眠区域：140 × 200 厘米。床头板高度：77 厘米；床尾板高度：43 厘米。\n\n这张床只使用了约一年。新床架售价 99 欧元，两套排骨架还要将近 100 欧元；现将全部以 140 欧元出售 🛏️\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
+      "tr": "Sade ve minimalist beyaz bir IKEA yatağı — odada hafif bir görünümü var ve küçük bir yatak odasına bile çok iyi uyar. Küçük stüdyo dairemde hem dinlenme alanı hem de depolama yeri olarak kullandım: yatağın altına birçok kışlık eşya sığdı.\n\nİki adet çıtalı yatak tabanıyla birlikte satıyorum. Yatak henüz satılık değil 💤\n\nYatak alanı: 140 × 200 cm. Başlık yüksekliği: 77 cm; ayak ucu yüksekliği: 43 cm.\n\nYatak yaklaşık bir yıllık. Yeni iskelet 99 €, iki çıtalı yatak tabanı ise neredeyse 100 € daha; hepsini birlikte 140 €’ya veriyorum 🛏️\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
+      "ar": "سرير IKEA أبيض بسيط وبسيط التصميم، يبدو خفيفًا في الغرفة ويناسب حتى غرفة نوم صغيرة. في الاستوديو الصغير الذي كنت أعيش فيه، كان مكانًا للراحة ومساحة للتخزين في آن واحد: فقد اتسعت تحته الكثير من الأغراض الشتوية.\n\nأبيعه مع قاعدتي سرير من الشرائح الخشبية. المرتبة ليست للبيع، على الأقل في الوقت الحالي 💤\n\nمساحة النوم: 140 × 200 سم. ارتفاع اللوح الأمامي: 77 سم؛ وارتفاع لوح القدم: 43 سم.\n\nعمر السرير نحو سنة فقط. سعر الهيكل الجديد 99 يورو، وقاعدتا الشرائح تكلفان ما يقارب 100 يورو إضافية؛ أبيع كل شيء معًا مقابل 140 يورو 🛏️\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
+      "fa": "تخت IKEA سفید، ساده و مینیمال که در اتاق ظاهری سبک دارد و حتی برای اتاق‌خواب کوچک هم مناسب است. در استودیوی کوچک من هم جای استراحت بود و هم فضایی برای نگهداری وسایل: زیر تخت، مقدار زیادی از لباس‌های زمستانی جا می‌شد.\n\nآن را همراه با دو کفی تختِ چوبیِ مشبک می‌فروشم. تشک، دست‌کم فعلاً، برای فروش نیست 💤\n\nاندازهٔ محل خواب: ۱۴۰ × ۲۰۰ سانتی‌متر. ارتفاع تاج تخت: ۷۷ سانتی‌متر؛ ارتفاع بخش پایینی: ۴۳ سانتی‌متر.\n\nتخت فقط حدود یک سال استفاده شده است. قیمت نوِ اسکلت ۹۹ یورو است و دو کفی مشبک هم نزدیک به ۱۰۰ یورو قیمت دارند؛ همه را با هم ۱۴۰ یورو می‌دهم 🛏️\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
     }
   },
   {
