@@ -121,30 +121,37 @@ const PRODUCTS = [
     "price": "45 €",
     "reserved": false,
     "condition": "good",
-    "material": "",
-    "size": "",
+    "material": "wood",
+    "size": "190×80 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
       "images/item15-1788546428704-2t1f.jpg",
       "images/item15-1788546428804-lvwr.jpg",
       "images/item15-1788546428872-egpr.jpg",
-      "images/item15-1788546428937-9t8c.jpg"
+      "images/item15-1788546428937-9t8c.jpg",
+      "images/item15-1788691035393-ovbc.jpg"
     ],
     "title": {
-      "en": "IKEA BRUKSVARA wardrobe with sliding doors, 80×191 cm",
-      "de": "IKEA BRUKSVARA Kleiderschrank mit Schiebetüren, 80×191 cm",
-      "ru": "Шкаф IKEA BRUKSVARA с раздвижными дверями, 80×191 см",
-      "uk": "Шафа IKEA BRUKSVARA з розсувними дверима, 80×191 см",
-      "es": "Armario IKEA BRUKSVARA con puertas correderas, 80×191 cm",
-      "zh": "IKEA BRUKSVARA 推拉门衣柜，80×191厘米"
+      "en": "IKEA BRUKSVARA wardrobe with sliding doors, white, 190 × 80 cm",
+      "de": "IKEA BRUKSVARA Kleiderschrank mit Schiebetüren, weiß, 190 × 80 cm",
+      "ru": "Шкаф IKEA BRUKSVARA с раздвижными дверями, белый, 190 × 80 см",
+      "uk": "Шафа IKEA BRUKSVARA з розсувними дверима, біла, 190 × 80 см",
+      "es": "Armario IKEA BRUKSVARA con puertas correderas, blanco, 190 × 80 cm",
+      "zh": "IKEA BRUKSVARA 白色推拉门衣柜，190 × 80 cm 厘米",
+      "tr": "Sürgülü kapaklı beyaz IKEA BRUKSVARA gardırop, 190 × 80 cm",
+      "ar": "خزانة IKEA BRUKSVARA بأبواب منزلقة، بيضاء، 80 × 190 سم",
+      "fa": "کمد سفید IKEA BRUKSVARA با درهای کشویی، ۸۰ × ۱۹۱ سانتی‌متر"
     },
     "desc": {
-      "en": "Great wardrobe, plenty of storage space. Comes with a bonus: a fabric insert with compartments for storing things, for free.\n\nOnly downside: I chipped the back panel slightly during assembly, but I painted over it with white paint and you really can't see it.\n\nNew price is €99, letting it go for €45 📦\n\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
-      "de": "Toller Schrank mit viel Stauraum. Dazu gibt's als Bonus einen Stoffeinsatz mit Fächern zur Aufbewahrung von Sachen, gratis dazu.\n\nEinziges Manko: Beim Aufbau habe ich die Rückwand leicht beschädigt, aber mit weißer Farbe übermalt — man sieht wirklich nichts mehr davon.\n\nNeupreis liegt bei 99 €, gebe ihn für 45 € ab 📦\n\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
-      "ru": "Отличный шкаф, много места для хранения. В подарок идёт тканая вставка с отсеками для вещей.\n\nЕдинственный минус: при сборке чуть повредил заднюю стенку, но замазал белой краской — вообще ничего не заметно.\n\nНовый стоит 99 €, отдам за 45 € 📦\n\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
-      "uk": "Чудова шафа, багато місця для зберігання. У подарунок йде тканинна вставка з відсіками для речей.\n\nЄдиний мінус: під час збирання трохи пошкодив задню стінку, але замазав білою фарбою — взагалі непомітно.\n\nНова коштує 99 €, віддам за 45 € 📦\n\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
-      "es": "Armario estupendo, con mucho espacio de almacenamiento. Incluye de regalo un organizador de tela con compartimentos para guardar cosas.\n\nÚnico inconveniente: durante el montaje dañé un poco el panel trasero, pero lo tapé con pintura blanca — de verdad no se nota nada.\n\nEl precio nuevo es de 99 €, lo dejo en 45 € 📦\n\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
-      "zh": "很棒的衣柜，收纳空间很大。附赠一个带收纳格的布艺插件，可以分类放东西。\n\n唯一的小瑕疵：组装时不小心碰坏了一点背板，但用白色油漆涂了一下，基本看不出来。\n\n全新售价99欧元，现在45欧元出手 📦\n\n仅限自取，地点在Glinde，Möllner Landstraße 89（距汉堡10分钟车程）。"
+      "en": "A great wardrobe with plenty of storage space. A fabric IKEA SKUBB hanging organiser with six compartments is included for free.\n\nThe only drawback: I slightly damaged the back panel during assembly, but covered it neatly with white paint — it is not noticeable.\n\nIt costs €99 new; selling for €59 📦\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
+      "de": "Toller Kleiderschrank mit viel Stauraum. Einen Stoff-Hängeorganizer von IKEA SKUBB mit sechs Fächern gebe ich kostenlos dazu.\n\nDer einzige kleine Makel: Beim Aufbau habe ich die Rückwand leicht beschädigt, sie aber sorgfältig mit weißer Farbe ausgebessert — davon sieht man nichts.\n\nNeu kostet er 99 €, ich gebe ihn für 59 € ab 📦\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
+      "ru": "Отличный шкаф, много места для хранения. В подарок отдаю тканую вставку IKEA SKUBB с 6 отсеками для вещей.\n\nЕдинственный минус: при сборке чуть повредил заднюю стенку, но аккуратно замазал белой краской — ничего не заметно.\n\nНовый стоит 99 €, отдам за 59 € 📦\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
+      "uk": "Чудова шафа з великою кількістю місця для зберігання. У подарунок додаю тканинний органайзер IKEA SKUBB із 6 відділеннями для речей.\n\nЄдиний невеликий недолік: під час складання я трохи пошкодив задню стінку, але акуратно зафарбував її білою фарбою — нічого не помітно.\n\nНова коштує 99 €, віддам за 59 € 📦\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
+      "es": "Un armario estupendo, con mucho espacio de almacenamiento. Incluyo gratis un organizador colgante de tela IKEA SKUBB con seis compartimentos.\n\nEl único detalle: dañé ligeramente el panel trasero durante el montaje, pero lo cubrí cuidadosamente con pintura blanca; no se nota.\n\nNuevo cuesta 99 €; lo vendo por 59 € 📦\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
+      "zh": "一款很棒的衣柜，拥有充足的收纳空间。免费附送一个带 6 个隔层的 IKEA SKUBB 布艺悬挂收纳袋。\n\n唯一的小瑕疵是：组装时背板有轻微损坏，但我已用白色油漆仔细修补，几乎看不出来。\n\n新品售价 99 欧元，现以 59 欧元出售 📦\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
+      "tr": "Depolama alanı bol, harika bir gardırop. Altı bölmeli kumaş IKEA SKUBB asılı düzenleyici ücretsiz olarak dahildir.\n\nTek küçük kusuru şu: kurulum sırasında arka paneli biraz zedeledim, ancak beyaz boyayla dikkatlice kapattım; fark edilmiyor.\n\nYenisi 99 €, 59 €’ya veriyorum 📦\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
+      "ar": "خزانة رائعة مع مساحة تخزين كبيرة. أضيف مجانًا منظمًا قماشيًا معلّقًا من IKEA SKUBB بستة أقسام للأغراض.\n\nالعيب الوحيد البسيط: تضرر اللوح الخلفي قليلًا أثناء التجميع، لكنني غطيته بعناية بطلاء أبيض، لذلك لا يظهر شيء.\n\nسعرها الجديدة 99 يورو، وأبيعها مقابل 59 يورو 📦\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
+      "fa": "کمدی عالی با فضای نگهداری زیاد. یک نظم‌دهندهٔ پارچه‌ای آویز IKEA SKUBB با شش بخش را هم رایگان همراه آن می‌دهم.\n\nتنها ایراد کوچک: هنگام مونتاژ، پنل پشتی را کمی آسیب زدم، اما با رنگ سفید با دقت ترمیمش کردم؛ چیزی مشخص نیست.\n\nقیمت نو آن ۹۹ یورو است؛ من آن را ۵۹ یورو می‌دهم 📦\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
     },
     "category": "furniture"
   },
