@@ -282,23 +282,30 @@ const PRODUCTS = [
     ],
     "title": {
       "ru": "Поясная ретро-сумка с принтом в стиле Ван Гога",
-      "en": "Retro belt bag with a Van Gogh print",
-      "de": "Retro-Bauchtasche mit Van-Gogh-Print",
-      "zh": "复古腰包，梵高风格印花",
-      "uk": "Ретро поясна сумка з принтом у стилі Ван Гога",
-      "es": "Bolso de cintura retro con estampado estilo Van Gogh"
+      "en": "Retro waist bag with a Van Gogh-style print",
+      "de": "Retro-Bauchtasche mit einem Print im Van-Gogh-Stil",
+      "zh": "梵高风格印花复古腰包",
+      "uk": "Ретро-сумка на пояс із принтом у стилі Ван Гога",
+      "es": "Riñonera retro con estampado al estilo Van Gogh",
+      "tr": "Van Gogh tarzı baskılı retro bel çantası",
+      "ar": "حقيبة خصر كلاسيكية بطبعة على طراز فان غوخ",
+      "fa": "کیف کمری رترو با طرحی به سبک ون‌گوگ"
     },
     "desc": {
-      "ru": "Немного вайба 90-х, немного барахолки, немного инди 🌙\n\nЧёрный регулируемый ремень, одно отделение на молнии. Помещаются телефон, паспорт или кошелёк, ключи и всякая мелочь. Носилась аккуратно.\n\nПередача на станции U-/S-Bahn в центральной части Гамбурга 🌻",
-      "en": "A bit of 90s vibe, a bit of flea market, a bit of indie 🌙\n\nBlack adjustable strap, one zip compartment. Fits a phone, ID or wallet, keys and small bits. Gently worn.\n\nHandover at U-/S-Bahn stations in central Hamburg 🌻",
-      "de": "Ein bisschen 90er-Vibe, ein bisschen Flohmarkt, ein bisschen Indie 🌙\n\nSchwarzer verstellbarer Gurt, ein Reißverschlussfach. Handy, Ausweis oder Portemonnaie, Schlüssel und Kleinkram passen rein. Wurde sorgsam getragen.\n\nÜbergabe an U-/S-Bahn-Stationen in der Hamburger Innenstadt 🌻",
-      "zh": "一点90年代的味道，一点旧货市场的感觉，一点独立风 🌙\n\n黑色可调节腰带，一个拉链隔层。可放手机、证件或钱包、钥匙和零碎小物。使用爱惜，成色良好。\n\n可在汉堡市中心的地铁（U-/S-Bahn）站面交 🌻",
-      "uk": "Трохи вайбу 90-х, трохи барахолки, трохи інді 🌙\n\nЧорний регульований ремінь, одне відділення на змійці. Вміщаються телефон, паспорт або гаманець, ключі та різні дрібнички. Носилася обережно.\n\nПередача на станціях U-/S-Bahn у центральній частині Гамбурга 🌻",
-      "es": "Un poco de vibra noventera, un poco de mercadillo, un poco de indie 🌙\n\nCorrea negra ajustable, un compartimento con cremallera. Caben el móvil, el DNI o la cartera, las llaves y pequeñas cosas. Usado con cuidado.\n\nEntrega en estaciones de U-/S-Bahn en el centro de Hamburgo 🌻"
+      "ru": "Немного вайба 90-х, немного инди 🌙 Для тех, для кого одежда — способ рассказать о своих эстетических вкусах 🎨\n\nЧёрный регулируемый ремень, одно отделение на молнии. Помещаются, например, телефон и паспорт — или кошелёк, ключи и всякая мелочь. Носилась аккуратно.\n\nПередача на станции U-/S-Bahn в центральной части Гамбурга 🌻",
+      "en": "A little 90s vibe, a little indie 🌙 For people who see clothing as a way to show their aesthetic taste 🎨\n\nBlack adjustable strap and one zip compartment. It fits, for example, a phone and a passport — or a wallet, keys and other small essentials. Carefully used.\n\nHandover at a U-Bahn or S-Bahn station in central Hamburg 🌻",
+      "de": "Ein bisschen 90er-Vibe, ein bisschen Indie 🌙 Für Menschen, für die Kleidung eine Möglichkeit ist, ihren ästhetischen Geschmack auszudrücken 🎨\n\nSchwarzer, verstellbarer Gurt und ein Fach mit Reißverschluss. Es passen zum Beispiel ein Handy und ein Reisepass hinein — oder ein Portemonnaie, Schlüssel und andere Kleinigkeiten. Sorgfältig getragen.\n\nÜbergabe an einer U-/S-Bahn-Station in der Hamburger Innenstadt 🌻",
+      "zh": "一点 90 年代的氛围，一点独立风格 🌙 适合把服装当作表达自己审美品味方式的人 🎨\n\n黑色可调节肩带，带一个拉链隔层。例如可以放下手机和护照，或钱包、钥匙和各种小物件。使用仔细。\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接 🌻",
+      "uk": "Трохи вайбу 90-х, трохи інді 🌙 Для тих, для кого одяг — це спосіб розповісти про свої естетичні смаки 🎨\n\nЧорний регульований ремінь, одне відділення на блискавці. Вміщує, наприклад, телефон і паспорт — або гаманець, ключі та різні дрібниці. Носилася дбайливо.\n\nПередача на станції U-/S-Bahn у центральній частині Гамбурга 🌻",
+      "es": "Un poco de vibra noventera, un poco de indie 🌙 Para quienes ven la ropa como una forma de mostrar sus gustos estéticos 🎨\n\nCorrea negra ajustable y un compartimento con cremallera. Caben, por ejemplo, un teléfono y un pasaporte, o una cartera, llaves y otras cosas pequeñas. Usada con cuidado.\n\nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo 🌻",
+      "tr": "Biraz 90’lar havası, biraz indie 🌙 Kıyafetleri estetik zevklerini anlatmanın bir yolu olarak görenler için 🎨\n\nSiyah ayarlanabilir kayış ve fermuarlı bir bölme. Örneğin telefon ve pasaport ya da cüzdan, anahtarlar ve diğer küçük eşyalar sığar. Özenle kullanıldı.\n\nHamburg’un merkezindeki bir U-Bahn veya S-Bahn istasyonunda teslim 🌻",
+      "ar": "قليل من أجواء التسعينيات، وقليل من طابع الإندي 🌙 لمن يرى في الملابس وسيلة للتعبير عن ذوقه الجمالي 🎨\n\nحزام أسود قابل للتعديل وجيب واحد بسحّاب. تتسع مثلًا لهاتف وجواز سفر، أو لمحفظة ومفاتيح وأغراض صغيرة أخرى. استُخدمت بعناية.\n\nالتسليم في إحدى محطات U-Bahn أو S-Bahn في وسط هامبورغ 🌻",
+      "fa": "کمی حال‌وهوای دههٔ نود، کمی ایندی 🌙 برای کسانی که لباس را راهی برای نشان‌دادن سلیقهٔ زیبایی‌شناختی خود می‌دانند 🎨\n\nبند مشکیِ قابل تنظیم و یک محفظهٔ زیپ‌دار دارد. مثلاً گوشی و گذرنامه، یا کیف پول، کلیدها و خرده‌ریزها در آن جا می‌شوند. با دقت استفاده شده است.\n\nتحویل در یکی از ایستگاه‌های U-Bahn یا S-Bahn در مرکز هامبورگ 🌻"
     },
     "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "condition": "good",
-    "category": "misc"
+    "category": "misc",
+    "material": ""
   },
   {
     "id": 2,
