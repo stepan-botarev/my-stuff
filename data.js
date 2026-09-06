@@ -124,7 +124,7 @@ const PRODUCTS = [
   },
   {
     "id": 15,
-    "price": "45 €",
+    "price": "59 €",
     "reserved": false,
     "condition": "good",
     "material": "wood",
@@ -347,7 +347,7 @@ const PRODUCTS = [
   },
   {
     "id": 2,
-    "price": "10 €",
+    "price": "12 €",
     "reserved": false,
     "condition": "new",
     "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
@@ -527,7 +527,7 @@ const PRODUCTS = [
   },
   {
     "id": 7,
-    "price": "10 €",
+    "price": "12 €",
     "reserved": false,
     "condition": "new",
     "material": "искусственная кожа",
@@ -600,7 +600,7 @@ const PRODUCTS = [
   },
   {
     "id": 11,
-    "price": "7 €",
+    "price": "8 €",
     "reserved": false,
     "condition": "good",
     "material": "metal",
@@ -784,7 +784,7 @@ const PRODUCTS = [
   },
   {
     "id": 21,
-    "price": "20 € за весь набор; по отдельности: спальник — 10 €, пенка — 5 €, кружка — 5 €",
+    "price": "20 €",
     "reserved": false,
     "hidden": false,
     "category": "misc",
