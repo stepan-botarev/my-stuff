@@ -370,23 +370,30 @@ const PRODUCTS = [
       "images/item4-1788516681752-vk9b.jpg"
     ],
     "title": {
-      "en": "Floral short-sleeve shirt — United Colors of Benetton, size L",
-      "de": "Blumenhemd mit Kurzarm — United Colors of Benetton, Größe L",
+      "en": "Short-sleeved floral-print shirt — United Colors of Benetton, size L",
+      "de": "Kurzarmhemd mit Blumenmuster — United Colors of Benetton, Größe L",
       "ru": "Рубашка с цветочным принтом с коротким рукавом — United Colors of Benetton, размер L",
-      "uk": "Сорочка з квітковим принтом з коротким рукавом — United Colors of Benetton, розмір L",
-      "es": "Camisa floral de manga corta — United Colors of Benetton, talla L",
-      "zh": "碎花短袖衬衫 —— United Colors of Benetton，L码"
+      "uk": "Сорочка з квітковим принтом і коротким рукавом — United Colors of Benetton, розмір L",
+      "es": "Camisa de manga corta con estampado floral — United Colors of Benetton, talla L",
+      "zh": "United Colors of Benetton 短袖碎花衬衫，L 码",
+      "tr": "Kısa kollu çiçek desenli gömlek — United Colors of Benetton, L beden",
+      "ar": "قميص قصير الأكمام بطبعة زهور — United Colors of Benetton، مقاس L",
+      "fa": "پیراهن آستین‌کوتاه با طرح گل — United Colors of Benetton، سایز L"
     },
     "desc": {
-      "en": "Cream shirt with a small pink and green floral print. Worn well with both jeans and trousers 🌺\nSize L, unisex, 100% cotton. Well looked after",
-      "de": "Cremefarbenes Hemd mit kleinem rosa-grünem Blumenmuster. Sah gut aus zu Jeans genauso wie zu Stoffhosen 🌺\nGröße L, Unisex, 100 % Baumwolle. Gut gepflegt",
-      "ru": "Кремовая рубашка с мелким розово-зелёным цветочным принтом. Хорошо носилась и с джинсами, и с брюками 🌺\nРазмер L, унисекс, 100% хлопок. Ухоженная",
-      "uk": "Кремова сорочка з дрібним рожево-зеленим квітковим принтом. Добре носилась і з джинсами, і з брюками 🌺\nРозмір L, унісекс, 100% бавовна. Доглянута",
-      "es": "Camisa color crema con un pequeño estampado floral rosa y verde. Combinaba bien tanto con vaqueros como con pantalones de vestir 🌺\nTalla L, unisex, 100% algodón. Bien cuidada",
-      "zh": "米白色衬衫，粉绿碎花印花。搭配牛仔裤或西裤都好看 🌺\nL码，男女同款，100% 纯棉。保养良好"
+      "en": "Cream-coloured shirt with a small pink-and-green floral print. It goes well with both jeans and trousers 🌺\n\nSize L, cotton, unisex. Well cared for.",
+      "de": "Cremefarbenes Hemd mit kleinem rosa-grünem Blumenmuster. Lässt sich gut sowohl zu Jeans als auch zu Stoffhosen tragen 🌺\n\nGröße L, Baumwolle, unisex. Gut gepflegt.",
+      "ru": "Кремовая рубашка с мелким розово-зелёным цветочным принтом. Хорошо носилась и с джинсами, и с брюками 🌺\n\nРазмер L, хлопок, унисекс. Ухоженная.",
+      "uk": "Кремова сорочка з дрібним рожево-зеленим квітковим принтом. Добре пасує і до джинсів, і до штанів 🌺\n\nРозмір L, бавовна, унісекс. Доглянута.",
+      "es": "Camisa color crema con un pequeño estampado floral rosa y verde. Queda bien tanto con vaqueros como con pantalones 🌺\n\nTalla L, algodón, unisex. Bien cuidada.",
+      "zh": "奶油色衬衫，带有细小的粉色和绿色花卉图案。搭配牛仔裤或长裤都很好看 🌺\n\nL 码，棉质，中性款。保养良好。",
+      "tr": "Küçük pembe-yeşil çiçek desenli krem rengi gömlek. Hem kot pantolonla hem de kumaş pantolonla güzel gider 🌺\n\nL beden, pamuklu, unisex. Özenle kullanılmış.",
+      "ar": "قميص بلون كريمي مع طبعة زهور صغيرة بالوردي والأخضر. يناسب الجينز والبنطال على حد سواء 🌺\n\nمقاس L، قطن، للجنسين. مُعتنى به جيدًا.",
+      "fa": "پیراهنی کرم‌رنگ با طرح گل ریز صورتی و سبز. هم با شلوار جین و هم با شلوار پارچه‌ای خوب ست می‌شود 🌺\n\nسایز L، نخی، یونیسکس. به‌خوبی نگهداری شده است."
     },
     "size": "L",
-    "category": "clothing"
+    "category": "clothing",
+    "material": "cotton"
   },
   {
     "id": 5,
