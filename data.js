@@ -450,28 +450,34 @@ const PRODUCTS = [
     "price": "10 €",
     "reserved": false,
     "condition": "new",
-    "material": "",
-    "size": "",
+    "material": "искусственная кожа",
+    "size": "L",
     "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item7-1788518334841-c8nd.jpg",
       "images/item7-1788518334936-drk9.jpg"
     ],
     "title": {
-      "en": "Faux leather oversized overshirt jacket — Zara, size XL",
-      "de": "Oversize-Overshirt aus Kunstleder — Zara, Größe XL",
-      "ru": "Оверсайз-рубашка-куртка из искусственной кожи — Zara, размер XL",
-      "uk": "Оверсайз-сорочка-куртка зі штучної шкіри — Zara, розмір XL",
-      "es": "Camisa-chaqueta oversize de piel sintética — Zara, talla XL",
-      "zh": "仿皮oversize衬衫外套 —— Zara，XL码"
+      "en": "Oversized faux-leather shirt jacket — Zara, size L",
+      "de": "Oversize-Hemdjacke aus Kunstleder — Zara, Größe L",
+      "ru": "Оверсайз-рубашка-куртка из искусственной кожи — Zara, размер L",
+      "uk": "Оверсайз-сорочка-куртка зі штучної шкіри — Zara, розмір L",
+      "es": "Sobrecamisa oversize de piel sintética — Zara, talla L",
+      "zh": "Zara 仿皮革宽松衬衫夹克，L 码",
+      "tr": "Oversize suni deri gömlek ceket — Zara, L beden",
+      "ar": "قميص-جاكيت واسع من الجلد الصناعي — Zara، مقاس L",
+      "fa": "پیراهن-ژاکت اورسایز از چرم مصنوعی — Zara، سایز L"
     },
     "desc": {
-      "en": "Brand new, never worn. Really cool piece, just didn't get the size right.\n\nFaded/distressed vintage-look faux leather, oversized fit, chest pocket, half-sleeve 🤎\n\nUnisex, size XL",
-      "de": "Ganz neu, nie getragen. Richtig schönes Teil, nur die Größe hat nicht gepasst.\n\nKunstleder im Used-Look, Oversize-Schnitt, Brusttasche, Halbarm 🤎\n\nUnisex, Größe XL",
-      "ru": "Новая, не носил. Классная, но не угадал с размером.\n\nИскусственная кожа с эффектом потёртости, оверсайз-крой, накладной карман, укороченный рукав 🤎\n\nУнисекс, размер XL\n\n",
-      "uk": "Нова, не носив. Класна, але не вгадав з розміром.\n\nШтучна шкіра з ефектом потертості, оверсайз-крій, накладна кишеня, укорочений рукав 🤎\n\nУнісекс, розмір XL",
-      "es": "Nueva, sin usar. Es una pieza genial, solo que no acerté con la talla.\n\nPiel sintética con efecto vintage/desgastado, corte oversize, bolsillo en el pecho, manga media 🤎\n\nUnisex, talla XL",
-      "zh": "全新未穿。款式很酷，就是尺码没选对。\n\n做旧仿皮质感，oversize版型，胸前口袋，中袖 🤎\n\n男女同款，XL码"
+      "en": "New, never worn. It’s great, but I got the size wrong.\n\nDistressed-effect faux leather, oversized fit, patch pocket and cropped sleeves 🤎\n\nUnisex, size L.",
+      "de": "Neu, nie getragen. Sie ist toll, aber ich habe die Größe falsch eingeschätzt.\n\nKunstleder im Used-Look, Oversize-Schnitt, aufgesetzte Tasche und verkürzte Ärmel 🤎\n\nUnisex, Größe L.",
+      "ru": "Новая, не носил. Классная, но не угадал с размером.\n\nИскусственная кожа с эффектом потёртости, оверсайз-крой, накладной карман, укороченный рукав 🤎\n\nУнисекс, размер L.",
+      "uk": "Нова, не носив. Класна, але не вгадав із розміром.\n\nШтучна шкіра з ефектом потертості, оверсайз-крій, накладна кишеня, укорочений рукав 🤎\n\nУнісекс, розмір L.",
+      "es": "Nueva, sin usar. Está genial, pero me equivoqué de talla.\n\nPiel sintética con efecto desgastado, corte oversize, bolsillo de parche y manga corta 🤎\n\nUnisex, talla L.",
+      "zh": "全新，未穿过。款式很好，但尺码不合适。\n\n做旧效果仿皮革、宽松版型、贴袋设计和短袖 🤎\n\n男女皆宜，L 码。",
+      "tr": "Yeni, hiç giyilmedi. Çok güzel ama bedenini yanlış aldım.\n\nEskitilmiş görünümlü suni deri, oversize kesim, aplike cep ve kısa kol 🤎\n\nUnisex, L beden.",
+      "ar": "جديد ولم أرتده. جميل جدًا، لكنني لم أُحسن اختيار المقاس.\n\nجلد صناعي بتأثير معتّق، بقصّة واسعة، وجيب رقعة، وأكمام قصيرة 🤎\n\nللجنسين، مقاس L.",
+      "fa": "نو است و هرگز پوشیده نشده. خیلی خوب است، اما سایزش برایم مناسب نبود.\n\nچرم مصنوعی با ظاهر کهنه، برش اورسایز، جیب روکار و آستین کوتاه 🤎\n\nیونیسکس، سایز L."
     },
     "category": "clothing"
   },
