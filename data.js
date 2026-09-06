@@ -399,23 +399,30 @@ const PRODUCTS = [
       "images/item5-1788517053998-4wmk.jpg"
     ],
     "title": {
-      "en": "Corduroy overshirt jacket — H&M Relaxed Fit, size M",
-      "de": "Cord-Overshirt-Jacke — H&M Relaxed Fit, Größe M",
+      "en": "Corduroy shirt jacket — H&M Relaxed Fit, size M",
+      "de": "Cord-Hemdjacke — H&M Relaxed Fit, Größe M",
       "ru": "Вельветовая куртка-рубашка — H&M Relaxed Fit, размер M",
-      "uk": "Вельветова куртка-сорочка — H&M Relaxed Fit, розмір M",
-      "es": "Chaqueta camisera de pana — H&M Relaxed Fit, talla M",
-      "zh": "灯芯绒衬衫夹克 —— H&M Relaxed Fit，M码"
+      "uk": "Вельветова сорочка-куртка — H&M Relaxed Fit, розмір M",
+      "es": "Sobrecamisa de pana — H&M Relaxed Fit, talla M",
+      "zh": "H&M Relaxed Fit 灯芯绒衬衫夹克，M 码",
+      "tr": "Kadife gömlek ceket — H&M Relaxed Fit, M beden",
+      "ar": "قميص-جاكيت من الكوردروي — H&M Relaxed Fit، مقاس M",
+      "fa": "پیراهن-ژاکت مخمل کبریتی — H&M Relaxed Fit، سایز M"
     },
     "desc": {
-      "en": "Olive green corduroy, cotton, with two flap chest pockets. Walked through a sunny but still cool spring Belgrade in it 🌿\nSize M, unisex, cotton/corduroy. Well looked after",
-      "de": "Olivgrüner Cord, Baumwolle, mit zwei Brusttaschen mit Klappe. Bin damit durch ein sonniges, aber noch kühles Frühlings-Belgrad spaziert 🌿\nGröße M, Unisex, Baumwolle/Cord. Gut gepflegt",
-      "ru": "Оливковый вельвет, хлопок, два накладных кармана с клапанами. Гулял в ней по солнечному, но ещё прохладному весеннему Белграду 🌿\nРазмер M, унисекс, хлопок/вельвет. Ухоженная",
-      "uk": "Оливковий вельвет, бавовна, два накладні кармани з клапанами. Гуляв у ній по сонячному, але ще прохолодному весняному Белграду 🌿\nРозмір M, унісекс, бавовна/вельвет. Доглянута",
-      "es": "Pana verde oliva, algodón, con dos bolsillos de pecho con solapa. La usé para caminar por un Belgrado primaveral, soleado pero aún fresco 🌿\nTalla M, unisex, algodón/pana. Bien cuidada",
-      "zh": "橄榄绿灯芯绒，棉质，胸前两个带盖口袋。穿着它走过阳光明媚但还有些凉的贝尔格莱德春天 🌿\nM码，男女同款，棉/灯芯绒。保养良好"
+      "en": "Olive-green corduroy 🫒\n\nCotton, with two patch pockets with flaps. I wore it while walking around sunny but still cool springtime Belgrade 🌿\n\nProbably unisex.",
+      "de": "Olivgrüner Cord 🫒\n\nBaumwolle, mit zwei aufgesetzten Taschen mit Klappen. Ich habe sie bei Spaziergängen durch das sonnige, aber noch kühle Belgrad im Frühling getragen 🌿\n\nWahrscheinlich unisex.",
+      "ru": "Оливковый вельвет 🫒\n\nХлопок, два накладных кармана с клапанами. Гулял в ней по солнечному, но ещё прохладному весеннему Белграду 🌿\n\nНаверное, унисекс.",
+      "uk": "Оливковий вельвет 🫒\n\nБавовна, дві накладні кишені з клапанами. Гуляв у ній сонячним, але ще прохолодним весняним Белградом 🌿\n\nМабуть, унісекс.",
+      "es": "Pana verde oliva 🫒\n\nAlgodón, con dos bolsillos de parche con solapa. La llevé paseando por el Belgrado primaveral, soleado pero todavía fresco 🌿\n\nProbablemente unisex.",
+      "zh": "橄榄绿色灯芯绒 🫒\n\n棉质，配有两个带翻盖的贴袋。我曾穿着它漫步在阳光明媚、但仍有些凉意的贝尔格莱德春天 🌿\n\n大概是中性款。",
+      "tr": "Zeytin yeşili kadife 🫒\n\nPamuklu, kapaklı iki aplike cepli. Onu güneşli ama hâlâ serin olan bahar Belgrad’ında yürürken giydim 🌿\n\nMuhtemelen unisex.",
+      "ar": "كوردروي بلون أخضر زيتوني 🫒\n\nقطن، مع جيبين رقعيين بغطاء. ارتديتها أثناء التجول في بلغراد الربيعية المشمسة، لكنها كانت لا تزال باردة قليلًا 🌿\n\nعلى الأرجح للجنسين.",
+      "fa": "مخمل کبریتی زیتونی 🫒\n\nنخی، با دو جیب روکارِ دردار. آن را در قدم‌زدن‌های بلگرادِ بهاریِ آفتابی اما هنوز خنک پوشیده‌ام 🌿\n\nاحتمالاً یونیسکس است."
     },
     "size": "M",
-    "category": "clothing"
+    "category": "clothing",
+    "material": "хлопок,вельвет"
   },
   {
     "id": 6,
