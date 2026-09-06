@@ -392,13 +392,13 @@ const PRODUCTS = [
       "images/item3-1788459661751-hahs.jpg"
     ],
     "title": {
-      "en": "Short-sleeved striped viscose shirt — size M",
-      "de": "Kurzarmhemd aus Viskose mit Streifen — Größe M",
-      "ru": "Полосатая рубашка из вискозы с коротким рукавом — размер M",
-      "uk": "Смугаста сорочка з віскози з коротким рукавом — розмір M",
-      "es": "Camisa de viscosa a rayas y de manga corta — talla M",
-      "zh": "短袖条纹粘胶衬衫，M 码",
-      "tr": "Kısa kollu çizgili viskon gömlek — M beden",
+      "en": "Short-sleeved striped viscose shirt — Bershka, size M",
+      "de": "Kurzarmhemd aus Viskose mit Streifen — Bershka, Größe M",
+      "ru": "Полосатая рубашка из вискозы с коротким рукавом — Bershka, размер M",
+      "uk": "Смугаста сорочка з віскози з коротким рукавом — Bershka, розмір M",
+      "es": "Camisa de viscosa a rayas y de manga corta — Bershka, talla M",
+      "zh": "短袖条纹粘胶衬衫，Bershka, M 码",
+      "tr": "Kısa kollu çizgili viskon gömlek — Bershka, M beden",
       "ar": "قميص مخطط من الفيسكوز بأكمام قصيرة — مقاس M",
       "fa": "پیراهن آستین‌کوتاه راه‌راه از ویسکوز — سایز M"
     },
