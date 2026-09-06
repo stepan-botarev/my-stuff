@@ -511,8 +511,8 @@ const PRODUCTS = [
     "price": "7 €",
     "reserved": false,
     "condition": "good",
-    "material": "",
-    "size": "",
+    "material": "metal",
+    "size": "1 L",
     "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
     "images": [
       "images/item11-1788528434514-o2nb.jpg"
@@ -523,7 +523,10 @@ const PRODUCTS = [
       "ru": "Термобутылка Rosmarino, чёрная",
       "uk": "Термобутилка Rosmarino, чорна",
       "es": "Botella térmica Rosmarino, negra",
-      "zh": "Rosmarino保温瓶，黑色"
+      "zh": "Rosmarino保温瓶，黑色",
+      "tr": "Siyah Rosmarino termos şişe",
+      "fa": "بطری حرارتی مشکی Rosmarino",
+      "ar": "زجاجة حرارية سوداء من Rosmarino"
     },
     "desc": {
       "en": "In good condition. A couple of barely noticeable scratches, touched up with a special marker. Giving it up because I want fewer black things in my life — but for anyone who loves black 🖤, this is a great find.\n\nStainless steel, keeps drinks hot/cold, practically like new",
@@ -531,7 +534,10 @@ const PRODUCTS = [
       "ru": "В нормальном состоянии. Есть пара незаметных царапин, замазанных специальным фломастером. Отказываюсь от неё, потому что хочу меньше чёрных вещей, но для тех, у кого цвет настроения чёрный 🖤 — хорошая находка.\n\nНержавеющая сталь, держит горячее/холодное, практически как новая",
       "uk": "У нормальному стані. Є пара непомітних подряпин, замазаних спеціальним фломастером. Відмовляюсь від неї, бо хочу менше чорних речей, але для тих, у кого колір настрою чорний 🖤 — це гарна знахідка.\n\nНержавіюча сталь, тримає гаряче/холодне, практично як нова",
       "es": "En buen estado. Tiene un par de rayones casi imperceptibles, retocados con un marcador especial. Me deshago de ella porque quiero menos cosas negras en mi vida, pero para quienes aman el negro 🖤, es un buen hallazgo.\n\nAcero inoxidable, mantiene bebidas frías/calientes, prácticamente como nueva",
-      "zh": "状态良好。有几处几乎看不出的划痕，用专用记号笔修补过了。我想少一些黑色的东西所以出手 —— 但对于喜欢黑色的人 🖤，这绝对是个好东西。\n\n不锈钢材质，保温保冷，几乎和新的一样"
+      "zh": "状态良好。有几处几乎看不出的划痕，用专用记号笔修补过了。我想少一些黑色的东西所以出手 —— 但对于喜欢黑色的人 🖤，这绝对是个好东西。\n\n不锈钢材质，保温保冷，几乎和新的一样",
+      "tr": "İyi durumda. Özel bir kalemle kapatılmış, neredeyse fark edilmeyen birkaç çizik var. Daha az siyah eşya istediğim için satıyorum; ama ruh hâlinin rengi siyah olanlar 🖤 için güzel bir keşif.\n\nPaslanmaz çelikten yapılmıştır, içecekleri sıcak veya soğuk tutar ve neredeyse yeni gibidir.",
+      "fa": " در وضعیت خوبی است. چند خط‌وخش تقریباً نامحسوس دارد که با ماژیک مخصوص پوشانده شده‌اند. چون می‌خواهم وسایل مشکی کمتری داشته باشم، آن را می‌فروشم؛ اما اگر شما از طرفداران مشکیِ شیک و همیشگی هستید 🖤، این بطری انتخاب خوبی برایتان خواهد بود.\n\nاز فولاد ضدزنگ ساخته شده، نوشیدنی‌ها را گرم یا سرد نگه می‌دارد و تقریباً نو است.",
+      "ar": "بحالة جيدة. توجد بعض الخدوش غير الملحوظة تقريبًا، وقد تم إخفاؤها بقلم خاص. أبيعها لأنني أريد امتلاك أشياء سوداء أقل، لكن إذا كنت من محبي الأسود الأنيق الذي لا يخرج من الموضة 🖤، فهذه الزجاجة اختيار جميل لك.\n\nمصنوعة من الفولاذ المقاوم للصدأ، وتحافظ على المشروبات ساخنة أو باردة، وهي شبه جديدة."
     },
     "category": "misc"
   },
