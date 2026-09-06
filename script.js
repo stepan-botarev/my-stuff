@@ -38,10 +38,10 @@ const STRINGS = {
 // Уровни состояния товара — единое значение (new/good/fair/old),
 // текст на сайте подставляется автоматически по текущему языку.
 const CONDITION_LABELS = {
-  new: { en: "Like new", de: "Wie neu", ru: "Как новое", uk: "Як нове", es: "Como nuevo", tr: "Yeni gibi", ar: "شبه جديد", fa: "مثل نو", zh: "全新" },
-  good: { en: "Good", de: "Gut", ru: "Хорошее", uk: "Добре", es: "Bueno", tr: "İyi", ar: "جيد", fa: "خوب", zh: "良好" },
-  fair: { en: "Fair", de: "Normal", ru: "Нормальное", uk: "Нормальне", es: "Normal", tr: "Normal", ar: "عادي", fa: "معمولی", zh: "一般" },
-  old: { en: "Old", de: "Alt", ru: "Старое", uk: "Старе", es: "Viejo", tr: "Eski", ar: "قديم", fa: "قدیمی", zh: "旧" }
+  new: { en: "like new", de: "wie neu", ru: "как новое", uk: "як нове", es: "como nuevo", tr: "yeni gibi", ar: "شبه جديد", fa: "مثل نو", zh: "全新" },
+  good: { en: "good", de: "gut", ru: "хорошее", uk: "добре", es: "bueno", tr: "iyi", ar: "جيد", fa: "خوب", zh: "良好" },
+  fair: { en: "fair", de: "normal", ru: "нормальное", uk: "нормальне", es: "normal", tr: "normal", ar: "عادي", fa: "معمولی", zh: "一般" },
+  old: { en: "old", de: "alt", ru: "старое", uk: "старе", es: "viejo", tr: "eski", ar: "قديم", fa: "قدیمی", zh: "旧" }
 };
 
 // Материал — фиксированный набор значений (как состояние), переводится
@@ -49,16 +49,16 @@ const CONDITION_LABELS = {
 // переведётся по отдельности. Неизвестное (свободный текст) слово
 // показываем как есть, без перевода — для старых объявлений.
 const MATERIAL_LABELS = {
-  cotton: { en: "Cotton 100%", de: "Baumwolle 100%", ru: "Хлопок 100%", uk: "Бавовна 100%", es: "Algodón 100%", tr: "Pamuk %100", ar: "قطن 100%", fa: "پنبه ۱۰۰٪", zh: "纯棉" },
-  polyester: { en: "Polyester", de: "Polyester", ru: "Полиэстер", uk: "Поліестер", es: "Poliéster", tr: "Polyester", ar: "بوليستر", fa: "پلی‌استر", zh: "聚酯纤维" },
-  viscose: { en: "Viscose", de: "Viskose", ru: "Вискоза", uk: "Віскоза", es: "Viscosa", tr: "Viskon", ar: "فسكوز", fa: "ویسکوز", zh: "粘胶纤维" },
-  wool: { en: "Wool", de: "Wolle", ru: "Шерсть", uk: "Вовна", es: "Lana", tr: "Yün", ar: "صوف", fa: "پشم", zh: "羊毛" },
-  leather: { en: "Leather", de: "Leder", ru: "Кожа", uk: "Шкіра", es: "Cuero", tr: "Deri", ar: "جلد", fa: "چرم", zh: "皮革" },
-  plastic: { en: "Plastic", de: "Kunststoff", ru: "Пластик", uk: "Пластик", es: "Plástico", tr: "Plastik", ar: "بلاستيك", fa: "پلاستیک", zh: "塑料" },
-  metal: { en: "Metal", de: "Metall", ru: "Металл", uk: "Метал", es: "Metal", tr: "Metal", ar: "معدن", fa: "فلز", zh: "金属" },
-  wood: { en: "Wood", de: "Holz", ru: "Дерево", uk: "Дерево", es: "Madera", tr: "Ahşap", ar: "خشب", fa: "چوب", zh: "木材" },
-  glass: { en: "Glass", de: "Glas", ru: "Стекло", uk: "Скло", es: "Vidrio", tr: "Cam", ar: "زجاج", fa: "شیشه", zh: "玻璃" },
-  mixed: { en: "Mixed materials", de: "Materialmix", ru: "Смешанный состав", uk: "Змішаний склад", es: "Materiales mixtos", tr: "Karışık malzeme", ar: "خليط من الخامات", fa: "ترکیبی", zh: "混合材质" }
+  cotton: { en: "cotton 100%", de: "baumwolle 100%", ru: "хлопок 100%", uk: "бавовна 100%", es: "algodón 100%", tr: "pamuk %100", ar: "قطن 100%", fa: "پنبه ۱۰۰٪", zh: "纯棉" },
+  polyester: { en: "polyester", de: "polyester", ru: "полиэстер", uk: "поліестер", es: "poliéster", tr: "polyester", ar: "بوليستر", fa: "پلی‌استر", zh: "聚酯纤维" },
+  viscose: { en: "viscose", de: "viskose", ru: "вискоза", uk: "віскоза", es: "viscosa", tr: "viskon", ar: "فسكوز", fa: "ویسکوز", zh: "粘胶纤维" },
+  wool: { en: "wool", de: "wolle", ru: "шерсть", uk: "вовна", es: "lana", tr: "yün", ar: "صوف", fa: "پشم", zh: "羊毛" },
+  leather: { en: "leather", de: "leder", ru: "кожа", uk: "шкіра", es: "cuero", tr: "deri", ar: "جلد", fa: "چرم", zh: "皮革" },
+  plastic: { en: "plastic", de: "kunststoff", ru: "пластик", uk: "пластик", es: "plástico", tr: "plastik", ar: "بلاستيك", fa: "پلاستیک", zh: "塑料" },
+  metal: { en: "metal", de: "metall", ru: "металл", uk: "метал", es: "metal", tr: "metal", ar: "معدن", fa: "فلز", zh: "金属" },
+  wood: { en: "wood", de: "holz", ru: "дерево", uk: "дерево", es: "madera", tr: "ahşap", ar: "خشب", fa: "چوب", zh: "木材" },
+  glass: { en: "glass", de: "glas", ru: "стекло", uk: "скло", es: "vidrio", tr: "cam", ar: "زجاج", fa: "شیشه", zh: "玻璃" },
+  mixed: { en: "mixed materials", de: "materialmix", ru: "смешанный состав", uk: "змішаний склад", es: "materiales mixtos", tr: "karışık malzeme", ar: "خليط من الخامات", fa: "ترکیبی", zh: "混合材质" }
 };
 function translateMaterial(raw) {
   if (!raw) return "";

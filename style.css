@@ -83,6 +83,27 @@ html, body {
   height: 0;
 }
 
+.lang-break-mobile {
+  display: none;
+}
+
+.lang-sep-mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .lang-break-mobile {
+    display: block;
+  }
+  .lang-sep-mobile {
+    display: inline;
+  }
+  .lang-break-desktop,
+  .lang-sep-desktop {
+    display: none;
+  }
+}
+
 .lang-sep {
   color: var(--gold);
   opacity: 0.6;

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Baloo+2:wght@800&family=Nunito:wght@800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=20260905w">
+<link rel="stylesheet" href="style.css?v=20260905x">
 <style>
   body { padding-bottom: 60px; }
 
@@ -1095,43 +1095,25 @@ function renderProducts() {
     materialRow.className = "row";
     const materialWrap = document.createElement("div");
     const materialLabel = document.createElement("label");
-    materialLabel.textContent = "Материал";
-    const materialInput = document.createElement("input");
-    materialInput.type = "text";
-    materialInput.placeholder = "Например: хлопок, металл — не указано, если пусто";
-    materialInput.value = materialKeysToDisplay(product.material || "");
-    materialInput.addEventListener("input", () => {
-      product.material = materialDisplayToKeys(materialInput.value);
-      markDirty();
-    });
-    const materialPickRow = document.createElement("div");
-    materialPickRow.style.marginTop = "6px";
-    const materialPick = document.createElement("select");
-    const materialPickPlaceholder = document.createElement("option");
-    materialPickPlaceholder.value = "";
-    materialPickPlaceholder.textContent = "+ добавить материал";
-    materialPick.appendChild(materialPickPlaceholder);
+    materialLabel.textContent = "Материал (можно выбрать несколько)";
+    const materialSelect = document.createElement("select");
+    materialSelect.multiple = true;
+    materialSelect.size = 5;
+    const currentMaterialKeys = (product.material || "").split(",").map((s) => s.trim()).filter(Boolean);
     MATERIAL_OPTIONS.forEach((opt) => {
       const o = document.createElement("option");
-      o.value = opt.label;
+      o.value = opt.value;
       o.textContent = opt.label;
-      materialPick.appendChild(o);
+      if (currentMaterialKeys.includes(opt.value)) o.selected = true;
+      materialSelect.appendChild(o);
     });
-    materialPick.addEventListener("change", () => {
-      const mat = materialPick.value;
-      if (!mat) return;
-      const current = materialInput.value.trim();
-      const parts = current ? current.split(",").map((s) => s.trim()).filter(Boolean) : [];
-      if (!parts.includes(mat)) parts.push(mat);
-      materialInput.value = parts.join(", ");
-      product.material = materialDisplayToKeys(materialInput.value);
+    materialSelect.addEventListener("change", () => {
+      const selected = Array.from(materialSelect.selectedOptions).map((o) => o.value);
+      product.material = selected.join(",");
       markDirty();
-      materialPick.value = "";
     });
-    materialPickRow.appendChild(materialPick);
     materialWrap.appendChild(materialLabel);
-    materialWrap.appendChild(materialInput);
-    materialWrap.appendChild(materialPickRow);
+    materialWrap.appendChild(materialSelect);
 
     const sizeWrap = document.createElement("div");
     const sizeLabel = document.createElement("label");
