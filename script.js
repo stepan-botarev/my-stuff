@@ -384,7 +384,17 @@ function render() {
       const labelEl = document.createElement("strong");
       labelEl.textContent = `${META_ICONS[kind]} ${META_LABELS[kind][currentLang]}`;
       line.appendChild(labelEl);
-      line.appendChild(document.createTextNode(value));
+      if (kind === "location") {
+        const link = document.createElement("a");
+        link.className = "meta-location-link";
+        link.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(value)}`;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = value;
+        line.appendChild(link);
+      } else {
+        line.appendChild(document.createTextNode(value));
+      }
       meta.appendChild(line);
     }
 
