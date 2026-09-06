@@ -428,22 +428,30 @@ const PRODUCTS = [
       "images/item6-1788517567566-ir3w.jpg"
     ],
     "title": {
-      "en": "Retro jeans — slightly wider on top, slightly narrower at the bottom",
+      "en": "Retro jeans — slightly wider at the top, slightly narrower at the bottom",
       "de": "Retro-Jeans — oben etwas weiter, unten etwas schmaler",
       "ru": "Ретро-джинсы — чуть шире сверху, чуть уже снизу",
       "uk": "Ретро-джинси — трохи ширші зверху, трохи вужчі знизу",
-      "es": "Jeans retro — un poco más anchos arriba, un poco más estrechos abajo",
-      "zh": "复古牛仔裤 —— 上宽下窄"
+      "es": "Vaqueros retro — un poco más anchos arriba y más estrechos abajo",
+      "zh": "复古牛仔裤——上宽下窄",
+      "tr": "Retro kot pantolon — üst kısmı biraz daha geniş, alt kısmı biraz daha dar",
+      "ar": "جينز كلاسيكي — أوسع قليلًا من الأعلى وأضيق قليلًا من الأسفل",
+      "fa": "شلوار جین رترو — کمی گشادتر در بالا و کمی تنگ‌تر در پایین"
     },
     "desc": {
-      "en": "Jeans I swiped from my dad 🤫\n\nSlightly worn at the very bottom of the legs, otherwise in good shape.\n\nProbably unisex, 100% cotton 👖",
-      "de": "Jeans, die ich meinem Vater geklaut habe 🤫\n\nGanz unten an den Beinen leicht abgetragen, sonst in gutem Zustand \n\nWahrscheinlich Unisex, 100 % Baumwolle 👖",
+      "en": "Jeans that I stole from my dad 🤫\n\nSlightly worn at the very bottom, but otherwise in good condition.\n\nProbably unisex, 100% cotton 👖",
+      "de": "Jeans, die ich meinem Vater geklaut habe 🤫\n\nUnten ganz leicht abgenutzt, aber insgesamt in gutem Zustand.\n\nWahrscheinlich unisex, 100 % Baumwolle 👖",
       "ru": "Джинсы, которые я стащил у отца 🤫\n\nНемножко потёрты в самом низу, но в целом в порядке.\n\nНаверное, унисекс, 100% хлопок 👖",
-      "uk": "Джинси, які я стягнув у батька 🤫\n\nТрохи потерті у самому низу, але загалом в порядку.\n\nМабуть, унісекс, 100% бавовна 👖",
-      "es": "Jeans que le robé a mi padre 🤫\n\nUn poco desgastados en la parte más baja de las piernas, pero en buen estado en general.\n\nProbablemente unisex, 100% algodón 👖",
-      "zh": "从爸爸那里顺来的牛仔裤 🤫\n\n裤脚最下方略有磨损，整体状态不错。 \n\n应该是男女同款，100% 纯棉 👖"
+      "uk": "Джинси, які я поцупив у свого тата 🤫\n\nТрохи потерті в самому низу, але загалом у хорошому стані.\n\nМабуть, унісекс, 100% бавовна 👖",
+      "es": "Unos vaqueros que le robé a mi padre 🤫\n\nEstán un poco desgastados en el bajo, pero por lo demás están bien.\n\nProbablemente unisex, 100% algodón 👖",
+      "zh": "从我爸那里“顺来”的一条牛仔裤 🤫\n\n最下面有一点磨损，但整体状态不错。\n\n大概是中性款，100% 纯棉 👖",
+      "tr": "Babamdan arakladığım kot pantolon 🤫\n\nEn alt kısmı biraz yıpranmış, ama genel olarak iyi durumda.\n\nMuhtemelen unisex, %100 pamuk 👖",
+      "ar": "جينز سرقته من والدي 🤫\n\nمهترئ قليلًا عند الحافة السفلية، لكنه بحالة جيدة عمومًا.\n\nعلى الأرجح مناسب للجنسين، قطن 100% 👖",
+      "fa": "شلوار جینی که از پدرم کش رفته‌ام 🤫\n\nدر قسمت پایین کمی ساییدگی دارد، اما در کل وضعیت خوبی دارد.\n\nاحتمالاً یونیسکس، ۱۰۰٪ پنبه 👖"
     },
-    "category": "clothing"
+    "category": "clothing",
+    "size": "M / 48",
+    "material": "cotton"
   },
   {
     "id": 7,
