@@ -188,7 +188,7 @@ const PRODUCTS = [
     "hidden": false,
     "category": "furniture",
     "condition": "good",
-    "material": "",
+    "material": "plastic,metal",
     "size": "45×45×79 cm",
     "location": "Glinde, Möllner Landstraße 89",
     "images": [
@@ -200,15 +200,21 @@ const PRODUCTS = [
       "ru": "Стул IKEA VIHALS, белый",
       "uk": "Стілець IKEA VIHALS, білий",
       "es": "Silla IKEA VIHALS, blanca",
-      "zh": "IKEA VIHALS 白色椅子"
+      "zh": "IKEA VIHALS 白色椅子",
+      "tr": "IKEA VIHALS sandalye, beyaz",
+      "ar": "كرسي IKEA VIHALS، أبيض",
+      "fa": "صندلی سفید IKEA VIHALS"
     },
     "desc": {
-      "en": "Comfortable and minimalist IKEA chair — works well both at a dining table and at a desk. I used it for both, and in my new apartment I didn’t even buy an office chair: this chair naturally keeps your back straight, while still being comfortable to sit on 🦦\nDimensions: 45×45×79 cm; seat height 45 cm, seat width 39 cm, seat depth 40 cm.\nNew price is €19.99, letting it go for €10 🪑\nPickup only, from Glinde, Möllner Landstraße 89 (10 minutes from Hamburg).",
-      "de": "Bequemer und minimalistischer IKEA-Stuhl — passt sowohl an den Esstisch als auch an den Schreibtisch. Ich habe ihn für beides benutzt und mir in der neuen Wohnung nicht einmal einen Bürostuhl gekauft: Auf diesem Stuhl bleibt der Rücken ganz natürlich gerade, und trotzdem sitzt man immer bequem 🦦\nMaße: 45×45×79 cm; Sitzhöhe 45 cm, Sitzbreite 39 cm, Sitztiefe 40 cm.\nNeupreis liegt bei 19,99 €, gebe ihn für 10 € ab 🪑\nNur Abholung, in Glinde, Möllner Landstraße 89 (10 Minuten von Hamburg entfernt).",
-      "ru": "Удобный и минималистичный стул IKEA — хорошо подойдёт и к обеденному, и к рабочему столу. Я сидел на нём и там, и там, и в новой квартире даже не стал покупать рабочее кресло: спина на этом стуле сама держится прямо, а сидеть всегда как-то удобно 🦦\nГабариты: 45×45×79 см; высота сиденья — 45 см, ширина сиденья — 39 см, глубина сиденья — 40 см.\nНовый стоит 19,99 €, отдам за 10 € 🪑\nТолько самовывоз, из Глинде, Möllner Landstraße 89 (10 минут от Гамбурга).",
-      "uk": "Зручний і мінімалістичний стілець IKEA — добре підійде і до обіднього, і до робочого столу. Я сидів на ньому і там, і там, і в новій квартирі навіть не став купувати офісне крісло: спина на цьому стільці сама тримається рівно, а сидіти завжди якось зручно 🦦\nГабарити: 45×45×79 см; висота сидіння — 45 см, ширина сидіння — 39 см, глибина сидіння — 40 см.\nНовий коштує 19,99 €, віддам за 10 € 🪑\nЛише самовивіз, з Глінде, Möllner Landstraße 89 (10 хвилин від Гамбурга).",
-      "es": "Silla IKEA cómoda y minimalista — funciona muy bien tanto con una mesa de comedor como con un escritorio. La usé para ambas cosas y, en mi nuevo piso, ni siquiera compré una silla de oficina: en esta silla la espalda se mantiene recta de manera natural y sigue siendo cómoda para sentarse 🦦\nMedidas: 45×45×79 cm; altura del asiento 45 cm, ancho del asiento 39 cm y fondo del asiento 40 cm.\nEl precio nuevo es de 19,99 €, la dejo en 10 € 🪑\nSolo recogida en persona, en Glinde, Möllner Landstraße 89 (10 minutos de Hamburgo).",
-      "zh": "舒适又简约的 IKEA 椅子，放在餐桌或书桌旁都很合适。我两种场景都坐过；搬进新公寓后，我甚至没有买办公椅，因为坐在这把椅子上背部会自然保持挺直，同时一直坐得很舒服 🦦\n尺寸：45×45×79 厘米；座高 45 厘米，座宽 39 厘米，座深 40 厘米。\n全新售价 19.99 欧元，现在 10 欧元出手 🪑\n仅限自取，地点在 Glinde，Möllner Landstraße 89（距汉堡 10 分钟车程）。"
+      "en": "A comfortable, minimalist IKEA chair — well suited both for a dining table and for a desk. I used it for both, and in my new flat I did not even buy an office chair: on this one my back naturally stays straight, and it somehow always feels comfortable to sit on 🦦\n\nIt costs €19.99 new; selling for €10 🪑\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
+      "de": "Bequemer, minimalistischer IKEA-Stuhl — passt sowohl an den Esstisch als auch an einen Schreibtisch. Ich habe ihn für beides benutzt und mir in meiner neuen Wohnung nicht einmal einen Bürostuhl gekauft: Auf diesem Stuhl bleibt mein Rücken ganz von selbst gerade, und das Sitzen ist irgendwie immer bequem 🦦\n\nNeu kostet er 19,99 €, ich gebe ihn für 10 € ab 🪑\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
+      "ru": "Удобный и минималистичный стул IKEA — хорошо подойдёт и к обеденному, и к рабочему столу. Я сидел на нём и там, и там, и в новой квартире даже не стал покупать рабочее кресло: спина на этом стуле сама держится прямо, а сидеть всегда как-то удобно 🦦\n\nНовый стоит 19,99 €, отдам за 10 € 🪑\n\nСамовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
+      "uk": "Зручний і мінімалістичний стілець IKEA — добре підійде і до обіднього, і до робочого столу. Я сидів на ньому і там, і там, а в новій квартирі навіть не став купувати офісне крісло: на цьому стільці спина сама тримається рівно, а сидіти завжди якось зручно 🦦\n\nНовий коштує 19,99 €, віддам за 10 € 🪑\n\nСамовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
+      "es": "Una silla IKEA cómoda y minimalista, ideal tanto para una mesa de comedor como para un escritorio. La he usado para ambas cosas y, en mi nuevo piso, ni siquiera compré una silla de oficina: en esta silla la espalda se mantiene recta de forma natural y, de algún modo, siempre resulta cómoda 🦦\n\nNueva cuesta 19,99 €; la vendo por 10 € 🪑\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
+      "zh": "一把舒适、极简的 IKEA 椅子，很适合搭配餐桌或书桌。我两种用途都用过；在新公寓里，我甚至没有买办公椅：坐在这把椅子上，背部会自然保持挺直，而且总是感觉很舒适 🦦\n\n新品售价 19.99 欧元，现以 10 欧元出售 🪑\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
+      "tr": "Rahat ve minimalist bir IKEA sandalyesi — hem yemek masası hem de çalışma masası için çok uygun. İkisinde de kullandım; yeni evimde çalışma koltuğu bile almadım: bu sandalyede sırtım kendiliğinden dik duruyor ve oturmak her zaman nedense rahat geliyor 🦦\n\nYenisi 19,99 €, 10 €’ya veriyorum 🪑\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
+      "ar": "كرسي IKEA مريح وبسيط التصميم، مناسب لطاولة الطعام وكذلك لمكتب العمل. استخدمته لكليهما، وفي شقتي الجديدة لم أشترِ حتى كرسي مكتب: ظهري يبقى مستقيمًا تلقائيًا عند الجلوس عليه، والجلوس عليه مريح دائمًا بطريقة ما 🦦\n\nسعره الجديد 19.99 يورو، وأبيعه مقابل 10 يورو 🪑\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
+      "fa": "صندلی IKEA راحت و مینیمال که هم برای میز غذاخوری و هم میز کار بسیار مناسب است. من هم کنار میز غذاخوری و هم برای کار از آن استفاده کرده‌ام، و در آپارتمان جدیدم حتی صندلی اداری نخریدم: روی این صندلی کمرم خودبه‌خود صاف می‌ماند و نشستن روی آن همیشه به‌نوعی راحت است 🦦\n\nقیمت نو آن ۱۹٫۹۹ یورو است؛ من آن را ۱۰ یورو می‌دهم 🪑\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
     }
   },
   {
