@@ -237,45 +237,6 @@ const PRODUCTS = [
     }
   },
   {
-    "id": 16,
-    "price": "25 €",
-    "reserved": false,
-    "hidden": false,
-    "category": "furniture",
-    "condition": "good",
-    "material": "wood,metal",
-    "size": "140×60×73 cm",
-    "location": "Glinde, Möllner Landstraße 89",
-    "images": [
-      "images/item16-1788597103301-1icf.jpg",
-      "images/item16-1788597103403-u80m.jpg",
-      "images/item16-1788597103538-b984.jpg",
-      "images/item16-1788690646146-zx6b.jpg"
-    ],
-    "title": {
-      "en": "IKEA LAGKAPTEN / ADILS desk, white-stained oak effect / white, 140 × 60 × 73 cm",
-      "de": "IKEA LAGKAPTEN / ADILS Tisch, Eichenachbildung weiß / weiß, 140 × 60 × 73 cm",
-      "ru": "Стол IKEA LAGKAPTEN / ADILS, эффект белёного дуба / белый, 140 × 60 × 73 см",
-      "uk": "Стіл IKEA LAGKAPTEN / ADILS, ефект вибіленого дуба / білий, 140 × 60 × 73 см",
-      "es": "Mesa IKEA LAGKAPTEN / ADILS, efecto roble blanqueado / blanco, 140 × 60 × 73 cm",
-      "zh": "IKEA LAGKAPTEN / ADILS 书桌，白色橡木效果 / 白色，140 × 60 × 73 厘米",
-      "tr": "IKEA LAGKAPTEN / ADILS masa, beyaz meşe görünümlü / beyaz, 140 × 60 × 73 cm",
-      "ar": "طاولة IKEA LAGKAPTEN / ADILS، مظهر خشب بلوط مبيّض / أبيض، 140 × 60 × 73 سم",
-      "fa": "میز IKEA LAGKAPTEN / ADILS، طرح بلوط سفیدشده / سفید، ۱۴۰ × ۶۰ × ۷۳ سانتی‌متر"
-    },
-    "desc": {
-      "en": "A sturdy, long desk — ideal for a kitchen, studying or working from home. It is in good condition, with no scratches.\n\nLength: 140 cm, width: 60 cm, height: 73 cm.\n\nIt costs €40 new; selling for €25 📦\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
-      "de": "Stabiler, langer Tisch — ideal für die Küche, zum Lernen oder fürs Homeoffice. In gutem Zustand und ohne Kratzer.\n\nLänge: 140 cm, Breite: 60 cm, Höhe: 73 cm.\n\nNeu kostet er 40 €, ich gebe ihn für 25 € ab 📦\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
-      "ru": "Прочный, длинный стол — отлично подойдёт для кухни, учёбы или работы из дома. В хорошем состоянии, без царапин.\n\nДлина: 140 см, ширина: 60 см, высота: 73 см.\n\nНовый стоит 40 €, отдам за 25 € 📦\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
-      "uk": "Міцний і довгий стіл — чудово підійде для кухні, навчання або роботи з дому. У хорошому стані, без подряпин.\n\nДовжина: 140 см, ширина: 60 см, висота: 73 см.\n\nНовий коштує 40 €, віддам за 25 € 📦\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
-      "es": "Mesa resistente y larga, ideal para la cocina, estudiar o trabajar desde casa. Está en buen estado y no tiene arañazos.\n\nLargo: 140 cm, ancho: 60 cm, alto: 73 cm.\n\nNueva cuesta 40 €; la vendo por 25 € 📦\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
-      "zh": "一张结实、较长的桌子，非常适合厨房、学习或居家办公。状况良好，没有划痕。\n\n长度：140 厘米，宽度：60 厘米，高度：73 厘米。\n\n新品售价 40 欧元，现以 25 欧元出售 📦\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
-      "tr": "Sağlam ve uzun bir masa — mutfak, ders çalışma veya evden çalışma için ideal. İyi durumda ve çiziksiz.\n\nUzunluk: 140 cm, genişlik: 60 cm, yükseklik: 73 cm.\n\nYenisi 40 €, 25 €’ya veriyorum 📦\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
-      "ar": "طاولة متينة وطويلة، مناسبة للمطبخ أو الدراسة أو العمل من المنزل. بحالة جيدة ومن دون خدوش.\n\nالطول: 140 سم، العرض: 60 سم، الارتفاع: 73 سم.\n\nسعرها الجديدة 40 يورو، وأبيعها مقابل 25 يورو 📦\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
-      "fa": "میزی محکم و بلند، مناسب برای آشپزخانه، درس‌خواندن یا کار از خانه. در وضعیت خوب و بدون خط‌وخش است.\n\nطول: ۱۴۰ سانتی‌متر، عرض: ۶۰ سانتی‌متر، ارتفاع: ۷۳ سانتی‌متر.\n\nقیمت نو آن ۴۰ یورو است؛ من آن را ۲۵ یورو می‌دهم 📦\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
-    }
-  },
-  {
     "id": 10,
     "price": "2 €",
     "reserved": false,
