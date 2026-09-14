@@ -548,7 +548,7 @@ const PRODUCTS = [
     "desc": {
       "en": "In good condition. A couple of barely noticeable scratches, touched up with a special marker. Giving it up because I want fewer black things in my life — but for anyone who loves black 🖤, this is a great find.\n\nStainless steel, keeps drinks hot/cold.",
       "de": "In gutem Zustand. Ein paar kaum sichtbare Kratzer, mit einem speziellen Stift ausgebessert. Ich gebe sie ab, weil ich weniger schwarze Sachen will — aber für alle, die Schwarz lieben 🖤, ist das ein echter Fund.\n\nEdelstahl, hält Getränke warm/kalt.",
-      "ru": "В нормальном состоянии. Есть пара незаметных царапин, замазанных специальным фломастером. Отказываюсь от неё, потому что хочу меньше чёрных вещей, но для тех, у кого цвет настроения чёрный 🖤 — хорошая находка.\n\nНержавеющая сталь, держит горячее/холодное.",
+      "ru": "В хорошем состоянии. Есть пара незаметных царапин, замазанных специальным фломастером. Отказываюсь от неё, потому что хочу меньше чёрных вещей, но для тех, у кого цвет настроения чёрный 🖤 — хорошая находка.\n\nНержавеющая сталь, держит горячее/холодное.",
       "uk": "У нормальному стані. Є пара непомітних подряпин, замазаних спеціальним фломастером. Відмовляюсь від неї, бо хочу менше чорних речей, але для тих, у кого колір настрою чорний 🖤 — це гарна знахідка.\n\nНержавіюча сталь, тримає гаряче/холодне.",
       "es": "En buen estado. Tiene un par de rayones casi imperceptibles, retocados con un marcador especial. Me deshago de ella porque quiero menos cosas negras en mi vida, pero para quienes aman el negro 🖤, es un buen hallazgo.\n\nAcero inoxidable, mantiene bebidas frías/calientes.",
       "zh": "状态良好。有几处几乎看不出的划痕，用专用记号笔修补过了。我想少一些黑色的东西所以出手 —— 但对于喜欢黑色的人 🖤，这绝对是个好东西。\n\n不锈钢材质，保温保冷，几乎和新的一样",
@@ -629,119 +629,6 @@ const PRODUCTS = [
       "tr": "Taşınma satışımın son boss’u — ve vedalaşması benim için en zor olan şey. Satmak istemezdim ama şu anda ne yazık ki paraya daha çok ihtiyacım var. ❤️‍🩹 Bunlar bir çift aktif ADAM Audio A5X stüdyo monitörü; müziği gerçekten seven biri için adeta bir hediye. Hem normal müzik dinlemek hem de ciddi ses çalışmaları, miksaj, prodüksiyon ve ses tasarımı için uygunlar 🎶\n\nBirkaç yıl önce, bu model hâlâ satılırken onları yeni olarak yaklaşık 1.000 €’ya aldım. Monitörler mükemmel durumda. Sadece siyah kalemle kapatılmış küçücük bir çizik var; büyük ihtimalle nerede olduğunu bile fark etmezsiniz. Kutularında güvenle taşınabilmeleri için orijinal köpük tutucuları da mevcut 📦\n\nÖzellikler: aktif iki yollu yakın alan monitörleri; X-ART tweeter’lar; 5,5 inç woofer’lar; 50 Hz–50 kHz frekans aralığı; her monitörde 50 W + 50 W amplifikasyon; XLR ve RCA girişleri. Monitörlerin değeri ve ağırlığı nedeniyle Glinde’den elden teslim çok tercih edilir — Hamburg’a yaklaşık 10 dakika uzaklıkta 🔊",
       "fa": "باس نهاییِ حراج وسایل من — چیزی که جداشدن از آن برایم از همه سخت‌تر است. اگر الان به پول نیاز نداشتم، آن‌ها را نمی‌فروختم. ❤️‍🩹 این یک جفت مانیتور استودیویی اکتیو ADAM Audio A5X است؛ هدیه‌ای واقعی برای کسانی که موسیقی را واقعاً دوست دارند. هم برای شنیدن معمولی موسیقی مناسب‌اند و هم برای کار حرفه‌ای صدا: میکس، پروداکشن و طراحی صدا 🎶\n\nچند سال پیش، وقتی این مدل هنوز فروخته می‌شد، آن‌ها را نو با قیمت حدود ۱۰۰۰ یورو خریدم. مانیتورها در وضعیت بسیار عالی هستند. فقط یک پریدگی بسیار کوچک دارند که با ماژیک مشکی پوشانده شده؛ احتمالاً حتی متوجه نمی‌شوید کجاست. نگهدارنده‌های فومی اصلی هم همراهشان هستند تا بتوان مانیتورها را با خیال راحت در جعبه‌هایشان جابه‌جا کرد 📦\n\nمشخصات: مانیتورهای اکتیو دوطرفهٔ میدان نزدیک؛ توییترهای X-ART؛ ووفرهای ۵٫۵ اینچی؛ بازهٔ فرکانسی ۵۰ هرتز تا ۵۰ کیلوهرتز؛ توان ۵۰ وات + ۵۰ وات برای هر مانیتور؛ ورودی‌های XLR و RCA. به‌دلیل ارزش و وزن مانیتورها، تحویل حضوری در گلینده بسیار ترجیح دارد — حدود ۱۰ دقیقه با هامبورگ فاصله دارد 🔊",
       "ar": "هذه هي «الزعيم الأخير» في بيع أغراضي — والشيء الأصعب بالنسبة لي أن أودّعه. لم أكن لأبيعها، لكنني للأسف بحاجة إلى المال أكثر في الوقت الحالي. ❤️‍🩹 إنها زوج من شاشات الاستوديو النشطة ADAM Audio A5X، هدية حقيقية لمن يحب الموسيقى فعلًا. تناسب الاستماع العادي للموسيقى وكذلك العمل الجاد في الصوت: الميكساج، والإنتاج، وتصميم الصوت 🎶\n\nاشتريتها جديدة قبل عدة سنوات بحوالي 1000 €، عندما كان هذا الموديل لا يزال يُباع. الشاشات بحالة ممتازة. يوجد خدش صغير جدًا فقط، غطيته بقلم أسود، لذلك على الأرجح لن تلاحظوا حتى مكانه. كما تتوفر حوامل الفوم الأصلية، ويمكن بواسطتها نقل الشاشات بأمان داخل صناديقها 📦\n\nالمواصفات: شاشات مجال قريب نشطة ثنائية المسار؛ مكبرات صوت عالية X-ART؛ مكبرات ترددات منخفضة بقياس 5.5 بوصة؛ نطاق ترددي من 50 هرتز إلى 50 كيلوهرتز؛ تضخيم 50 واط + 50 واط لكل شاشة؛ مداخل XLR وRCA. بسبب قيمة الشاشات ووزنها، يُفضّل بشدة الاستلام الشخصي من غلينده، على بُعد نحو 10 دقائق من هامبورغ 🔊"
-    }
-  },
-  {
-    "id": 13,
-    "price": "25 €",
-    "reserved": false,
-    "condition": "good",
-    "material": "plastic",
-    "size": "",
-    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-    "images": [
-      "images/item13-1788541995741-trtu.jpg",
-      "images/item13-1788541995838-30d6.jpg",
-      "images/item13-1788541995905-ncn9.jpg",
-      "images/item13-1788541995967-623t.jpg",
-      "images/item13-1788542004842-vv94.jpg"
-    ],
-    "title": {
-      "en": "Phone lock box for focused work — against getting sucked into Instagram and doomscrolling",
-      "de": "Handy-Schließbox für konzentriertes Arbeiten — gegen Instagram-Sog und Doomscrolling",
-      "ru": "Локер для телефона для сфокусированной работы — против залипания в инстаграме и думскроллинга",
-      "uk": "Локер для телефона для зосередженої роботи — проти залипання в Instagram і думскролінгу",
-      "es": "Caja con temporizador para bloquear el móvil — para trabajar con concentración y evitar el scroll infinito",
-      "zh": "手机锁盒——帮助专注工作，远离 Instagram 和无休止刷屏",
-      "tr": "Odaklanarak çalışmak için telefon kilit kutusu — Instagram’a kapılıp gitmeye ve doomscrolling’e karşı",
-      "fa": "جعبهٔ قفل‌دار برای گوشی و کار متمرکز — برای جلوگیری از غرق‌شدن در اینستاگرام و اسکرول بی‌پایان",
-      "ar": "صندوق قفل للهاتف للعمل بتركيز — ضد التعلّق بـ Instagram والتمرير اللانهائي"
-    },
-    "desc": {
-      "en": "A locker for your phone from the British brand Virtus Project. Genius, really: you put your phone in, set a time from 5 minutes to several hours, and it locks. If an urgent call comes in, there's a little pad you can push out to answer it — but against distractions like messengers, TikTok and reels, it's iron-clad. No expensive apps or extensions you end up bypassing anyway — this actually works!\n\nIf you're ADHD like me, this thing will finally help you find some zen. And if you have a TikTok-addicted kid, it's a solid nudge toward homework.\n\nIf I didn't need the cash right now, I wouldn't be selling it. Cost me €70 shipped from the UK, worth every cent. Letting it go for €25! 🐈‍⬛",
-      "de": "Abschließbare Handybox der britischen Firma The Virtus Project. Eine tolle Sache: Du legst dein Handy hinein, stellst eine Zeit von 5 Minuten bis zu mehreren Stunden ein — und die Box schließt es ein. Bei einem dringenden Anruf gibt es eine kleine Öffnung, durch die du zum Antworten an den Bildschirm kommst. Gegen Ablenkungen wie Messenger, TikTok und Reels schützt sie aber zuverlässig. Keine teuren Apps, die man am Ende doch umgehen kann — das hier funktioniert wirklich!\n\nWenn du wie ich ADHS hast, hilft dir dieses Teil vielleicht endlich dabei, etwas Zen und Fokus zu finden 🧘 Und wenn du ein TikTok-süchtiges Kind hast, ist es ein guter Weg, es sanft zum Lernen zu bewegen 🙇🏽\n\nWenn ich das Geld nicht gerade jetzt brauchen würde, würde ich sie nicht verkaufen. Mit Versand aus Großbritannien hat sie 70 € gekostet, aber es war das wert. Ich gebe sie für 25 € ab! 🐈‍⬛",
-      "ru": "Блокирующийся кейс для телефона от британской фирмы The Virtus Project. Классная штука: кладёшь телефон, ставишь время от 5 минут до нескольких часов — и локер блокирует его. Если будет срочный звонок, есть подушечка, которую можно вытолкнуть и ответить. А вот от отвлечений типа мессенджеров, тиктока и рилсов защищает железно. Никаких дорогих приложений, которые всё равно можно обойти, — тут реально работает!\n\nЕсли вы такой же СДВГ-шник, как я, эта штука наконец поможет обрести дзен 🧘 А если у вас тикток-зависимый ребёнок — хороший способ подтолкнуть его к учёбе 🙇🏽\n\nЕсли бы не нужны были деньги прямо сейчас, не продавал бы. С доставкой из Британии обошлось в 70 €, но того стоило. Отдам за 25 €! 🐈‍⬛",
-      "uk": "Блокувальний кейс для телефона від британської компанії The Virtus Project. Класна річ: кладете телефон усередину, встановлюєте час від 5 хвилин до кількох годин — і локер блокується. Якщо буде терміновий дзвінок, є невелика заслінка, яку можна відкрити й відповісти. А от від відволікань на месенджери, TikTok і Reels він захищає надійно. Жодних дорогих застосунків, які все одно можна обійти, — це справді працює!\n\nЯкщо у вас, як і в мене, СДУГ, ця річ нарешті може допомогти знайти трохи дзену та зосередженості 🧘 А якщо у вас є дитина, залежна від TikTok, це хороший спосіб м’яко підштовхнути її до навчання 🙇🏽\n\nЯкби мені зараз не були потрібні гроші, я б його не продавав. Разом із доставкою з Великої Британії він обійшовся у 70 €, але був того вартий. Віддам за 25 €! 🐈‍⬛",
-      "es": "Caja bloqueable para el móvil de la marca británica The Virtus Project. Es una idea genial: metes el teléfono dentro, eliges un tiempo de 5 minutos a varias horas y la caja se bloquea. Si recibes una llamada urgente, hay una pequeña abertura que puedes sacar para contestar. Pero contra distracciones como los mensajeros, TikTok y los reels, funciona de maravilla. Sin apps caras que al final siempre acabas saltándote: ¡esto sí funciona de verdad!\n\nSi tienes TDAH como yo, esta cosa por fin puede ayudarte a encontrar un poco de zen y concentración 🧘 Y si tienes un hijo enganchado a TikTok, es una buena forma de animarlo a ponerse con los estudios 🙇🏽\n\nSi no necesitara el dinero ahora mismo, no la vendería. Me costó 70 € con envío desde Reino Unido, pero valió la pena. La dejo por 25 €! 🐈‍⬛",
-      "zh": "英国公司 The Virtus Project 的可锁手机盒。这个设计很棒：把手机放进去，设定从 5 分钟到数小时的时间，锁盒就会把手机锁起来。如果有紧急来电，可以打开一个小挡板接听；但对于聊天软件、TikTok 和 Reels 等干扰，它能有效阻止你分心。不需要昂贵、最后还是总能被绕过的 App——这个东西真的有效！\n\n如果你和我一样有 ADHD，它或许终于能帮你找到一点平静和专注 🧘 如果家里有沉迷 TikTok 的孩子，这也是鼓励他去学习的好办法 🙇🏽\n\n如果我现在不需要用钱，我不会卖掉它。加上从英国寄来的运费，一共花了我 70 €，但完全值得。现在 25 € 出！🐈‍⬛",
-      "tr": "İngiliz The Virtus Project firmasının kilitlenebilir telefon kutusu. Çok iyi bir şey: Telefonunuzu içine koyuyorsunuz, 5 dakikadan birkaç saate kadar bir süre ayarlıyorsunuz ve kutu telefonu kilitliyor. Acil bir arama gelirse cevaplamak için dışarı itilebilen küçük bir bölmesi var. Ancak mesajlaşma uygulamaları, TikTok ve Reels gibi dikkat dağıtıcı şeylere karşı çok etkili. Sonunda her hâlükârda aşılabilen pahalı uygulamalar yok — bu gerçekten işe yarıyor!\n\nBenim gibi DEHB’niz varsa, bu şey sonunda biraz zen ve odaklanma bulmanıza yardımcı olabilir 🧘 TikTok bağımlısı bir çocuğunuz varsa da onu ders çalışmaya teşvik etmenin iyi bir yolu 🙇🏽\n\nŞu anda paraya ihtiyacım olmasaydı satmazdım. Birleşik Krallık’tan kargoyla birlikte 70 €’ya mal oldu, ama buna değdi. 25 €’ya veriyorum! 🐈‍⬛",
-      "fa": "یک کیس قفل‌دار برای گوشی از شرکت بریتانیایی The Virtus Project. وسیلهٔ خیلی خوبی است: گوشی را داخلش می‌گذارید، زمانی از ۵ دقیقه تا چند ساعت تعیین می‌کنید و جعبه گوشی را قفل می‌کند. اگر تماس ضروری داشته باشید، یک دریچهٔ کوچک دارد که می‌توانید آن را بیرون بکشید و پاسخ دهید. اما در برابر حواس‌پرتی‌هایی مثل پیام‌رسان‌ها، تیک‌تاک و ریلز واقعاً محکم عمل می‌کند. نه اپلیکیشن‌های گران‌قیمت که آخرش هم می‌شود دورشان زد — این یکی واقعاً جواب می‌دهد!\n\nاگر مثل من ADHD دارید، این وسیله بالاخره می‌تواند کمک کند کمی آرامش و تمرکز پیدا کنید 🧘 اگر هم فرزندی دارید که به تیک‌تاک معتاد است، راه خوبی برای تشویقش به درس‌خواندن است 🙇🏽\n\nاگر همین حالا به پول نیاز نداشتم، آن را نمی‌فروختم. با ارسال از بریتانیا ۷۰ یورو برایم هزینه داشت، اما ارزشش را داشت. با قیمت ۲۵ یورو می‌فروشم! 🐈‍⬛",
-      "ar": "صندوق قابل للقفل للهاتف من الشركة البريطانية The Virtus Project. فكرة رائعة: تضع الهاتف بداخله، وتحدد مدة من 5 دقائق إلى عدة ساعات، ثم يقفل الصندوق الهاتف. إذا وردت مكالمة عاجلة، توجد فتحة صغيرة يمكن فتحها للرد. أما أمام مصادر التشتيت مثل تطبيقات المراسلة وTikTok وReels، فهو فعّال جدًا. لا تطبيقات باهظة يمكن التحايل عليها في النهاية — هذا الشيء يعمل فعلًا!\n\nإذا كنت تعاني من اضطراب فرط الحركة ونقص الانتباه مثلي، فقد تساعدك هذه القطعة أخيرًا على إيجاد بعض الهدوء والتركيز 🧘 وإذا كان لديك طفل مدمن على TikTok، فهي طريقة جيدة لتشجيعه على الدراسة 🙇🏽\n\nلو لم أكن بحاجة إلى المال الآن، لما بعته. كلّفني 70 € مع الشحن من المملكة المتحدة، لكنه كان يستحق ذلك. أبيعُه مقابل 25 €! 🐈‍⬛"
-    },
-    "category": "tech"
-  },
-  {
-    "id": 12,
-    "price": "7 €",
-    "reserved": false,
-    "condition": "good",
-    "material": "plastic,metal",
-    "size": "",
-    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-    "images": [
-      "images/item12-1788531104777-phxc.jpg",
-      "images/item12-1788531104896-4s5m.jpg"
-    ],
-    "title": {
-      "en": "USB-C hub — Deppa",
-      "de": "USB-C-Hub — Deppa",
-      "ru": "USB-C-хаб — Deppa",
-      "uk": "USB-C-хаб — Deppa",
-      "es": "Hub USB-C — Deppa",
-      "zh": "Deppa USB-C 扩展坞",
-      "fa": "هاب USB-C دیپا",
-      "tr": "USB-C hub — Deppa",
-      "ar": "موزّع USB-C من Deppa"
-    },
-    "desc": {
-      "en": "Compact USB-C hub with a range of ports for a MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× memory card slot (SD/microSD)\n\nWorks perfectly, good condition.",
-      "de": "Kompakter USB-C-Hub mit einer Auswahl an Anschlüssen für ein MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× Speicherkartensteckplatz (SD/microSD)\n\nFunktioniert einwandfrei, guter Zustand.",
-      "ru": "Компактный USB-C хаб с набором портов для макбука.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карты памяти (SD/microSD)\n\nРаботает исправно, хорошее состояние.",
-      "uk": "Компактний USB-C-хаб із набором портів для MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× слот для карти пам’яті (SD/microSD)\n\nПрацює справно, хороший стан.",
-      "es": "Hub USB-C compacto con varios puertos para un MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× ranura para tarjeta de memoria (SD/microSD)\n\nFunciona perfectamente y está en buen estado.",
-      "zh": "小巧的 USB-C 扩展坞，配有适用于 MacBook 的多种接口。\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× 存储卡插槽（SD/microSD）\n\n功能正常，状态良好。",
-      "fa": "هاب USB-C جمع‌وجور با مجموعه‌ای از درگاه‌ها برای مک‌بوک.\n\n۲× USB-A\n۱× USB-C\n۱× HDMI\n۱× شیار کارت حافظه (SD/microSD)\n\nکاملاً درست کار می‌کند و در وضعیت خوبی است.",
-      "tr": "MacBook için çeşitli bağlantı noktalarına sahip kompakt USB-C hub.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× hafıza kartı yuvası (SD/microSD)\n\nSorunsuz çalışıyor, iyi durumda.",
-      "ar": "موزّع USB-C صغير مزوّد بمجموعة من المنافذ لجهاز MacBook.\n\n2× USB-A\n1× USB-C\n1× HDMI\n1× فتحة لبطاقات الذاكرة (SD/microSD)\n\nيعمل بشكل سليم وحالته جيدة."
-    },
-    "category": "tech"
-  },
-  {
-    "id": 21,
-    "price": "20 €",
-    "reserved": false,
-    "hidden": false,
-    "category": "misc",
-    "condition": "good",
-    "material": "",
-    "size": "",
-    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-    "images": [
-      "images/item21-1788604125432-q21x.jpg",
-      "images/item21-1788604125540-ua8a.jpg",
-      "images/item21-1788604125629-a0ip.jpg"
-    ],
-    "title": {
-      "en": "Camping set: Quechua sleeping bag + foam mat + blue mug",
-      "de": "Camping-Set: Quechua-Schlafsack + Isomatte + blaue Tasse",
-      "ru": "Походный набор: спальник Quechua + пенка + синяя кружка",
-      "uk": "Туристичний набір: спальник Quechua + пінка + синя кружка",
-      "es": "Set de camping: saco de dormir Quechua + esterilla + taza azul",
-      "zh": "户外套装：Quechua 睡袋＋泡沫防潮垫＋蓝色杯子",
-      "tr": "Kamp seti: Quechua uyku tulumu + mat + mavi kupa",
-      "fa": "ست کمپینگ: کیسه‌خواب Quechua + زیرانداز فومی + لیوان آبی",
-      "ar": "مجموعة للتخييم: كيس نوم Quechua + حصيرة إسفنجية + كوب أزرق"
-    },
-    "desc": {
-      "en": "If you are a Dharma Bum like me and, after watching Into The Wild, wanted to leave everything behind and live in the forest forever, this camping set is for you. It also works perfectly well for festivals, trips, or unexpected overnight stays. Everything is in excellent condition 🎒\n\nThe sleeping bag is a QUECHUA Basic 20 °C model (190×72 cm). It can be fully opened and used as a blanket when it gets warm. The foam mat is thick yet lightweight and rolls up easily; it measures 180×50 cm. The sturdy blue metal camping mug comes in a lovely majorelle-blue shade, perfect for tea or coffee outdoors 🍵\n\nNew prices at Decathlon: sleeping bag €15, foam mat €9, mug around €10 — €34 for everything. I’m letting the full set go for €20 🏕️  \nAlso available separately: sleeping bag €10, foam mat €5, mug €5.  \n\nHandover at a U-Bahn or S-Bahn station in central Hamburg 🌿",
-      "de": "Wenn du genau wie ich ein Dharma-Bum bist und nach dem Film „Into the Wild“ für immer in die Wälder ziehen wolltest, ist dieses Camping-Set genau das Richtige für dich. Es eignet sich aber auch einfach für Festivals, Reisen oder spontane Übernachtungen. Alles ist in einem ausgezeichneten Zustand 🎒\n\nDer Schlafsack ist ein QUECHUA Basic 20 °C, 190 × 72 cm. Er lässt sich vollständig öffnen und bei Wärme als Decke benutzen. Die Isomatte ist dick, dabei leicht und lässt sich genauso einfach zusammenrollen; Größe: 180 × 50 cm. Die blaue Camping-Tasse aus Metall ist robust und hat eine schöne Majorelle-Farbe — perfekt für Tee oder Kaffee draußen in der Natur 🍵\n\nNeupreise bei Decathlon: Schlafsack — 15 €, Isomatte — 9 €, Tasse — etwa 10 €, also insgesamt 34 €. Ich gebe das ganze Set für 20 € ab 🏕️ Auch einzeln möglich: Schlafsack — 10 €, Isomatte — 5 €, Tasse — 5 €.\n\nÜbergabe an einer U-/S-Bahn-Station in der Hamburger Innenstadt 🌿",
-      "ru": "Если вы такой же бродяга Дхармы, как я, и после просмотра «В диких условиях» хотели навсегда уйти в леса, этот походный набор для вас. Впрочем, подойдёт и просто для фестивалей, поездок или внезапных ночёвок. Всё в отличном состоянии 🎒\n\nСпальник — QUECHUA Basic 20 °C, 190 × 72 см, его можно полностью расстегнуть и использовать как одеяло, если жарко. Пенка толстая, при этом лёгкая и так же легко сворачивается, размер — 180 × 50 см. Синяя металлическая походная кружка прочная, приятного мажорелевого цвета — для чая или кофе на природе 🍵\n\nЦены на новое в Decathlon: спальник — 15 €, пенка — 9 €, кружка — около 10 €, то есть за всё 34 €. Я отдам весь набор за 20 € 🏕️ Можно и по отдельности: спальник — 10 €, пенка — 5 €, кружка — 5 €.\n\nПередача на станции U-/S-Bahn в центральной части Гамбурга 🌿",
-      "uk": "Якщо ви такий самий бродяга Дхарми, як я, і після перегляду «У дикій глушині» хотіли назавжди піти в ліси, цей туристичний набір для вас. Втім, він підійде і просто для фестивалів, поїздок або несподіваних ночівель. Усе у відмінному стані 🎒\n\nСпальник — QUECHUA Basic 20 °C, 190 × 72 см; його можна повністю розстебнути й використовувати як ковдру, якщо спекотно. Пінка товста, водночас легка й легко згортається; розмір — 180 × 50 см. Синя металева туристична кружка міцна, гарного кольору мажорель — для чаю або кави на природі 🍵\n\nЦіни на нове в Decathlon: спальник — 15 €, пінка — 9 €, кружка — близько 10 €, тобто разом 34 €. Віддам увесь набір за 20 € 🏕️ Можна й окремо: спальник — 10 €, пінка — 5 €, кружка — 5 €.\n\nПередача на станції U-/S-Bahn у центральній частині Гамбурга 🌿",
-      "es": "Si eres un vagabundo del Dharma como yo y, después de ver «Hacia rutas salvajes», quisiste irte para siempre a vivir entre los bosques, este set de camping es para ti. También sirve simplemente para festivales, viajes o noches improvisadas fuera de casa. Todo está en excelente estado 🎒\n\nEl saco de dormir es un QUECHUA Basic 20 °C, de 190 × 72 cm; se puede abrir completamente y usar como manta cuando hace calor. La esterilla es gruesa, pero ligera y fácil de enrollar; mide 180 × 50 cm. La taza de camping azul de metal es resistente y tiene un bonito color azul Majorelle, ideal para tomar té o café al aire libre 🍵\n\nPrecios nuevos en Decathlon: saco de dormir — 15 €, esterilla — 9 €, taza — unos 10 €, es decir, 34 € en total. Dejo el conjunto completo por 20 € 🏕️ También se puede comprar por separado: saco — 10 €, esterilla — 5 €, taza — 5 €.\n\nEntrega en una estación de U-Bahn o S-Bahn en el centro de Hamburgo 🌿",
-      "zh": "如果你和我一样是个“达摩流浪者”，看完《荒野生存》后也曾想永远走进森林，那么这套户外装备很适合你。当然，它同样适合音乐节、旅行或临时过夜。所有物品状态都非常好 🎒\n\n睡袋是 QUECHUA Basic 20 °C，尺寸为 190 × 72 厘米；可以完全拉开，天气热时可当作毯子使用。泡沫防潮垫较厚，但很轻，也很容易卷起来，尺寸为 180 × 50 厘米。蓝色金属户外杯结实耐用，是很漂亮的马约尔蓝色，适合在户外喝茶或咖啡 🍵\n\nDecathlon 全新价格：睡袋 15 €、防潮垫 9 €、杯子约 10 €，合计 34 €。整套 20 € 出售 🏕️ 也可以单独购买：睡袋 10 €、防潮垫 5 €、杯子 5 €。\n\n可在汉堡市中心的 U-Bahn 或 S-Bahn 车站交接 🌿",
-      "tr": "Eğer benim gibi bir Dharma serserisiyseniz ve „Into the Wild“ filmini izledikten sonra sonsuza dek ormanlara gitmek istediyseniz, bu kamp seti tam size göre. Tabii ki festivaller, seyahatler veya beklenmedik gece konaklamaları için de çok uygun. Her şey mükemmel durumda 🎒\n\nUyku tulumu QUECHUA Basic 20 °C, 190 × 72 cm. Tamamen açılabilir ve hava sıcaksa battaniye olarak kullanılabilir. Mat kalın ama hafif; kolayca sarılır ve ölçüsü 180 × 50 cm’dir. Mavi metal kamp kupası dayanıklı, hoş bir Majorelle mavisi renginde; doğada çay veya kahve için ideal 🍵\n\nDecathlon’daki yeni fiyatlar: uyku tulumu — 15 €, mat — 9 €, kupa — yaklaşık 10 €, yani toplam 34 €. Tüm seti 20 €’ya veriyorum 🏕️ Ayrı ayrı da alınabilir: uyku tulumu — 10 €, mat — 5 €, kupa — 5 €.\n\nHamburg’un merkezindeki bir U-Bahn veya S-Bahn istasyonunda teslim 🌿",
-      "fa": "اگر شما هم مثل من یک «ولگرد دارما» هستید و بعد از دیدن فیلم «به‌سوی طبیعت وحشی» دلتان خواسته برای همیشه به جنگل بروید، این ست کمپینگ برای شماست. البته برای فستیوال‌ها، سفرها یا شب‌مانی‌های ناگهانی هم کاملاً مناسب است. همه‌چیز در وضعیت عالی است 🎒\n\nکیسه‌خواب QUECHUA Basic 20 °C با اندازهٔ ۱۹۰ × ۷۲ سانتی‌متر است؛ می‌توان آن را کاملاً باز کرد و اگر هوا گرم بود، به‌عنوان پتو استفاده کرد. زیرانداز فومی ضخیم، در عین حال سبک و به‌راحتی قابل رول‌کردن است؛ اندازهٔ آن ۱۸۰ × ۵۰ سانتی‌متر است. لیوان فلزی آبیِ مخصوص سفر محکم است و رنگ آبی مژرلی زیبایی دارد؛ مناسب برای چای یا قهوه در طبیعت 🍵\n\nقیمت نو در Decathlon: کیسه‌خواب ۱۵ یورو، زیرانداز ۹ یورو و لیوان حدود ۱۰ یورو؛ در مجموع ۳۴ یورو. کل ست را ۲۰ یورو می‌فروشم 🏕️ خرید جداگانه هم ممکن است: کیسه‌خواب ۱۰ یورو، زیرانداز ۵ یورو، لیوان ۵ یورو.\n\nتحویل در یکی از ایستگاه‌های U-Bahn یا S-Bahn در مرکز هامبورگ 🌿",
-      "ar": "إذا كنت مثلي رحّالة من «متشردي الدارما»، وراودتك رغبة في الذهاب إلى الغابات إلى الأبد بعد مشاهدة فيلم «Into the Wild»، فهذه المجموعة مناسبة لك. وهي مناسبة أيضًا للمهرجانات والرحلات أو للمبيت المفاجئ خارج المنزل. كل شيء بحالة ممتازة 🎒\n\nكيس النوم هو QUECHUA Basic 20 °C، بمقاس 190 × 72 سم. يمكن فتحه بالكامل واستخدامه كبطانية عندما يكون الجو حارًا. الحصيرة الإسفنجية سميكة لكنها خفيفة وسهلة اللف؛ مقاسها 180 × 50 سم. كوب التخييم المعدني الأزرق متين ولونه أزرق ماجوريل جميل، ومناسب للشاي أو القهوة في الطبيعة 🍵\n\nأسعارها الجديدة في Decathlon: كيس النوم 15 €، الحصيرة 9 €، والكوب حوالي 10 €، أي 34 € للمجموعة كاملة. أبيع المجموعة كلها مقابل 20 € 🏕️ ويمكن شراؤها منفصلة أيضًا: كيس النوم 10 €، الحصيرة 5 €، والكوب 5 €.\n\nالتسليم في إحدى محطات U-Bahn أو S-Bahn في وسط هامبورغ 🌿"
     }
   },
   {
