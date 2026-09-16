@@ -12,7 +12,7 @@ const WHATSAPP_NUMBER = "4917623657623";
 const PRODUCTS = [
   {
     "id": 14,
-    "price": "149 €",
+    "price": "129 €",
     "reserved": false,
     "condition": "good",
     "material": "plastic,metal",
@@ -35,7 +35,7 @@ const PRODUCTS = [
       "ar": "غسالة Bomann WA 7175، سعة 7 كغ"
     },
     "desc": {
-      "en": "Bought about a year ago. It is in excellent condition, with a couple of scratches on the корпус, but otherwise it is a great machine.\n\nIncluded is an anti-vibration mat. It helps reduce vibration and noise from the machine during the spin cycle. A clothes drying rack is also included for free.\n\nThe washing machine, drying rack and mat cost about €320 in total; selling everything for €149 🧺\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
+      "en": "Bought about a year ago. It is in excellent condition, with a couple of scratches on the корпус, but otherwise it is a great machine.\n\nIncluded is an anti-vibration mat. It helps reduce vibration and noise from the machine during the spin cycle. A clothes drying rack is also included for free.\n\nThe washing machine, drying rack and mat cost about €320 in total; selling everything for €129 🧺\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
       "de": "Vor etwa einem Jahr gekauft. In ausgezeichnetem Zustand, mit ein paar Kratzern am Gehäuse, ansonsten eine tolle Maschine.\n\nEine Antivibrationsmatte ist dabei. Sie hilft, Vibrationen und Geräusche der Maschine beim Schleudern zu reduzieren. Einen Wäscheständer gibt es ebenfalls kostenlos dazu.\n\nWaschmaschine, Wäscheständer und Matte haben zusammen etwa 320 € gekostet; ich gebe alles für 149 € ab 🧺\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
       "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю вместе с антивибрационным ковриком. Коврик помогает уменьшить дрожание и шум машинки при отжиме. Также в подарок — сушилка для развешивания белья.\n\nВсё вместе — машинка, сушилка и коврик — обошлось в 320 €; отдам за 149 € 🧺\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
       "uk": "Купив близько року тому. У відмінному стані, є пара подряпин на корпусі, але в іншому це чудова машинка.\n\nВіддаю разом з антивібраційним килимком. Він допомагає зменшити вібрації та шум пральної машини під час віджиму. Також у подарунок — сушарка для білизни.\n\nУсе разом — машинка, сушарка й килимок — обійшлося в 320 €; віддам за 149 € 🧺\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
