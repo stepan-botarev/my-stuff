@@ -11,43 +11,6 @@ const WHATSAPP_NUMBER = "4917623657623";
 // category: одна из tech / furniture / clothing / misc (или пусто).
 const PRODUCTS = [
   {
-    "id": 14,
-    "price": "129 €",
-    "reserved": false,
-    "condition": "good",
-    "material": "plastic,metal",
-    "size": "84.5 x 59.5 x 46.5 cm",
-    "location": "Glinde, Möllner Landstraße 89  ",
-    "images": [
-      "images/item14-1788543649832-xdkh.jpg",
-      "images/item14-1788543649955-zqf8.jpg",
-      "images/item14-1788543650035-u8nm.jpg"
-    ],
-    "title": {
-      "en": "Bomann WA 7175 washing machine, 7 kg",
-      "de": "Bomann WA 7175 Waschmaschine, 7 kg",
-      "ru": "Стиральная машина Bomann WA 7175, 7 кг",
-      "uk": "Пральна машина Bomann WA 7175, 7 кг",
-      "es": "Lavadora Bomann WA 7175, 7 kg",
-      "zh": "Bomann WA 7175 洗衣机，7 公斤",
-      "tr": "Bomann WA 7175 çamaşır makinesi, 7 kg",
-      "fa": "ماشین لباس‌شویی Bomann WA 7175، ظرفیت ۷ کیلوگرم",
-      "ar": "غسالة Bomann WA 7175، سعة 7 كغ"
-    },
-    "desc": {
-      "en": "Bought about a year ago. It is in excellent condition, with a couple of scratches on the корпус, but otherwise it is a great machine.\n\nIncluded is an anti-vibration mat. It helps reduce vibration and noise from the machine during the spin cycle. A clothes drying rack is also included for free.\n\nThe washing machine, drying rack and mat cost about €320 in total; selling everything for €129 🧺\n\nCollection only from Möllner Landstraße 89, Glinde — around 10 minutes from Hamburg.",
-      "de": "Vor etwa einem Jahr gekauft. In ausgezeichnetem Zustand, mit ein paar Kratzern am Gehäuse, ansonsten eine tolle Maschine.\n\nEine Antivibrationsmatte ist dabei. Sie hilft, Vibrationen und Geräusche der Maschine beim Schleudern zu reduzieren. Einen Wäscheständer gibt es ebenfalls kostenlos dazu.\n\nWaschmaschine, Wäscheständer und Matte haben zusammen etwa 320 € gekostet; ich gebe alles für 129 € ab 🧺\n\nNur Selbstabholung in der Möllner Landstraße 89 in Glinde — etwa 10 Minuten von Hamburg entfernt.",
-      "ru": "Купил год назад. В отличном состоянии, есть пара царапин на корпусе, в остальном отличная машинка.\n\nОтдаю вместе с антивибрационным ковриком. Коврик помогает уменьшить дрожание и шум машинки при отжиме. Также в подарок — сушилка для развешивания белья.\n\nВсё вместе — машинка, сушилка и коврик — обошлось в 320 €; отдам за 129 € 🧺\n\nТолько самовывоз: Möllner Landstraße 89, Глинде — примерно 10 минут от Гамбурга.",
-      "uk": "Купив близько року тому. У відмінному стані, є пара подряпин на корпусі, але в іншому це чудова машинка.\n\nВіддаю разом з антивібраційним килимком. Він допомагає зменшити вібрації та шум пральної машини під час віджиму. Також у подарунок — сушарка для білизни.\n\nУсе разом — машинка, сушарка й килимок — обійшлося в 320 €; віддам за 129 € 🧺\n\nЛише самовивіз: Möllner Landstraße 89, Глінде — приблизно 10 хвилин від Гамбурга.",
-      "es": "La compré hace alrededor de un año. Está en excelente estado, con un par de arañazos en la carcasa, pero por lo demás es una máquina estupenda.\n\nIncluyo una alfombrilla antivibración. Ayuda a reducir las vibraciones y el ruido de la lavadora durante el centrifugado. También incluyo gratis un tendedero para la ropa.\n\nLa lavadora, el tendedero y la alfombrilla costaron unos 320 € en total; vendo todo por 129 € 🧺\n\nSolo recogida en Möllner Landstraße 89, Glinde, a unos 10 minutos de Hamburgo.",
-      "zh": "大约一年前购买。整体状况极佳，机身上有几处小划痕，但除此以外是一台很好的洗衣机。\n\n附送防震垫，可帮助减少洗衣机在脱水时的震动和噪音。还免费附送一个晾衣架。\n\n洗衣机、晾衣架和防震垫总共花了约 320 欧元；现将全部以 129 欧元出售 🧺\n\n仅限自取：Glinde，Möllner Landstraße 89，距离汉堡约 10 分钟。",
-      "tr": "Yaklaşık bir yıl önce satın alındı. Gövdesinde birkaç çizik var, ancak bunun dışında mükemmel durumda ve harika bir makine.\n\nTitreşim önleyici matla birlikte veriyorum. Mat, sıkma sırasında makinenin titreşimini ve gürültüsünü azaltmaya yardımcı olur. Çamaşır kurutmalığı da ücretsiz olarak dahildir.\n\nMakine, kurutmalık ve matın toplam maliyeti yaklaşık 320 € idi; hepsini 129 €’ya veriyorum 🧺\n\nSadece Glinde, Möllner Landstraße 89’dan elden teslim — Hamburg’a yaklaşık 10 dakika uzaklıkta.",
-      "fa": "حدود یک سال پیش خریده شده است. در وضعیت عالی است؛ چند خط‌وخش روی بدنه دارد، اما در غیر این صورت دستگاه بسیار خوبی است.\n\nهمراه آن یک پد ضدلرزش هم می‌دهم. این پد به کاهش لرزش و صدای ماشین هنگام خشک‌کن کمک می‌کند. یک بندرخت هم به‌عنوان هدیه همراه آن است.\n\nهزینهٔ ماشین لباس‌شویی، بندرخت و پد در مجموع حدود ۳۲۰ یورو بوده است؛ همه را با هم ۲۰۰ یورو می‌دهم 🧺\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ.",
-      "ar": "اشتريتها قبل نحو سنة. بحالة ممتازة، مع وجود خدشين بسيطين على الهيكل، لكنها فيما عدا ذلك آلة رائعة.\n\nأبيعها مع حصيرة مضادة للاهتزاز. تساعد الحصيرة على تقليل اهتزاز الغسالة وضجيجها أثناء العصر. كما أضيف مجانًا منشرًا لتجفيف الغسيل.\n\nبلغت تكلفة الغسالة والمنشر والحصيرة معًا نحو 320 يورو؛ أبيع كل شيء مقابل 129 يورو 🧺\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ."
-    },
-    "category": "tech"
-  },
-  {
     "id": 18,
     "price": "150 €",
     "reserved": false,
@@ -196,41 +159,6 @@ const PRODUCTS = [
       "ar": "كرسي IKEA مريح وبسيط التصميم، مناسب لطاولة الطعام وكذلك لمكتب العمل. استخدمته لكليهما، وفي شقتي الجديدة لم أشترِ حتى كرسي مكتب: ظهري يبقى مستقيمًا تلقائيًا عند الجلوس عليه، والجلوس عليه مريح دائمًا بطريقة ما 🦦\n\nسعره الجديد 19.99 يورو، وأبيعه مقابل 10 يورو 🪑\n\nالاستلام الذاتي فقط من Möllner Landstraße 89 في غلينده، على بُعد نحو 10 دقائق من هامبورغ.",
       "fa": "صندلی IKEA راحت و مینیمال که هم برای میز غذاخوری و هم میز کار بسیار مناسب است. من هم کنار میز غذاخوری و هم برای کار از آن استفاده کرده‌ام، و در آپارتمان جدیدم حتی صندلی اداری نخریدم: روی این صندلی کمرم خودبه‌خود صاف می‌ماند و نشستن روی آن همیشه به‌نوعی راحت است 🦦\n\nقیمت نو آن ۱۹٫۹۹ یورو است؛ من آن را ۱۰ یورو می‌دهم 🪑\n\nفقط تحویل حضوری از Möllner Landstraße 89 در گلین‌ده، حدود ۱۰ دقیقه از هامبورگ."
     }
-  },
-  {
-    "id": 10,
-    "price": "2 €",
-    "reserved": false,
-    "condition": "new",
-    "material": "cotton",
-    "size": "80 × 80 cm",
-    "location": "Hauptbahnhof ● Berliner Tor ● Jungfernstieg ● Gänsemarkt",
-    "images": [
-      "images/item10-1788523462109-chna.jpg"
-    ],
-    "title": {
-      "en": "IKEA striped pillowcase, 80 × 80 cm, cotton",
-      "de": "Gestreifter IKEA-Kissenbezug, 80 × 80 cm, Baumwolle",
-      "ru": "Полосатая наволочка IKEA, 80 × 80 см, хлопок",
-      "uk": "Смугаста наволочка IKEA, 80 × 80 см, бавовна",
-      "es": "Funda de almohada IKEA a rayas, 80 × 80 cm, algodón",
-      "zh": "IKEA 彩条纹枕套，80 × 80 厘米，纯棉",
-      "tr": "Çizgili IKEA yastık kılıfı, 80 × 80 cm, pamuk",
-      "ar": "غطاء وسادة مخطط من IKEA، مقاس 80 × 80 سم، قطن",
-      "fa": "روبالشی راه‌راه IKEA، اندازهٔ ۸۰ × ۸۰ سانتی‌متر، پنبه"
-    },
-    "desc": {
-      "en": "Almost new. I bought it before moving from Lübeck to Hamburg, imagining in my head how I would arrange my room — but this pillowcase did not fit into that vision.\n\nBright stripes in blue, pink, black, green, orange and beige 🌈\n\n100% cotton, hardly used.",
-      "de": "Fast neu. Ich habe ihn vor meinem Umzug von Lübeck nach Hamburg gekauft und mir schon ausgemalt, wie ich mein Zimmer einrichten würde — aber dieser Kissenbezug passte nicht in dieses Bild.\n\nLeuchtende Streifen in Blau, Rosa, Schwarz, Grün, Orange und Beige 🌈\n\n100 % Baumwolle, kaum benutzt.",
-      "ru": "Почти новая. Купил перед переездом из Любека в Гамбург, придумал в голове, как обустрою комнату, и эта наволочка в него не вписалась.\n\nЯркие полосы: синий, розовый, чёрный, зелёный, оранжевый, бежевый 🌈\n\n100% хлопок, практически не использовалась.",
-      "uk": "Майже нова. Купив перед переїздом із Любека до Гамбурга, уявив, як облаштую кімнату, але ця наволочка не вписалася в цю картину.\n\nЯскраві смуги: сині, рожеві, чорні, зелені, помаранчеві та бежеві 🌈\n\n100% бавовна, практично не використовувалася.",
-      "es": "Casi nueva. La compré antes de mudarme de Lübeck a Hamburgo e imaginé cómo decoraría mi habitación, pero esta funda de almohada no encajó en esa idea.\n\nRayas brillantes de color azul, rosa, negro, verde, naranja y beige 🌈\n\n100% algodón, prácticamente sin usar.",
-      "zh": "几乎全新。我在从吕贝克搬到汉堡之前买了它，当时已经在脑海里规划好了房间的布置，但这个枕套没有融入那个设想。\n\n鲜艳条纹：蓝色、粉色、黑色、绿色、橙色和米色 🌈\n\n100% 纯棉，几乎未使用。",
-      "tr": "Neredeyse yeni. Lübeck’ten Hamburg’a taşınmadan önce aldım; odamı nasıl düzenleyeceğimi kafamda tasarlamıştım ama bu yastık kılıfı o tasarıma uymadı.\n\nCanlı çizgiler: mavi, pembe, siyah, yeşil, turuncu ve bej 🌈\n\n%100 pamuk, neredeyse hiç kullanılmadı.",
-      "ar": "شبه جديد. اشتريته قبل انتقالي من لوبيك إلى هامبورغ، وتخيلت كيف سأرتب غرفتي، لكن غطاء الوسادة هذا لم ينسجم مع تلك الفكرة.\n\nخطوط زاهية باللون الأزرق والوردي والأسود والأخضر والبرتقالي والبيج 🌈\n\nقطن 100%، لم يُستخدم تقريبًا.",
-      "fa": "تقریباً نو است. پیش از اسباب‌کشی از لوبک به هامبورگ خریدمش و در ذهنم چیدمان اتاقم را تصور کرده بودم، اما این روبالشی با آن تصور جور درنیامد.\n\nراه‌راه‌های روشن به رنگ آبی، صورتی، مشکی، سبز، نارنجی و بژ 🌈\n\n۱۰۰٪ پنبه، تقریباً استفاده نشده است."
-    },
-    "category": "misc"
   },
   {
     "id": 1,
@@ -482,44 +410,6 @@ const PRODUCTS = [
       "ar": "بحالة جيدة. توجد بعض الخدوش غير الملحوظة تقريبًا، وقد تم إخفاؤها بقلم خاص. أبيعها لأنني أريد امتلاك أشياء سوداء أقل، لكن إذا كنت من محبي الأسود الأنيق الذي لا يخرج من الموضة 🖤، فهذه الزجاجة اختيار جميل لك.\n\nمصنوعة من الفولاذ المقاوم للصدأ، وتحافظ على المشروبات ساخنة أو باردة، وهي شبه جديدة."
     },
     "category": "misc"
-  },
-  {
-    "id": 24,
-    "price": "450 €",
-    "reserved": false,
-    "hidden": true,
-    "category": "tech",
-    "condition": "new",
-    "material": "plastic,wood,metal",
-    "size": "28 × 17 × 22 cm",
-    "location": "Glinde, Möllner Landstraße 89",
-    "images": [
-      "images/item24-1788606795359-2tcb.jpg",
-      "images/item24-1788606795540-zqmn.jpg",
-      "images/item24-1788606795676-suld.jpg"
-    ],
-    "title": {
-      "en": "ADAM Audio A5X active studio monitors — pair",
-      "de": "ADAM Audio A5X aktive Studiomonitore — Paar",
-      "ru": "Активные студийные мониторы ADAM Audio A5X — пара",
-      "uk": "Активні студійні монітори ADAM Audio A5X — пара",
-      "es": "Monitores de estudio activos ADAM Audio A5X — pareja",
-      "zh": "ADAM Audio A5X 有源录音室监听音箱——一对",
-      "tr": "ADAM Audio A5X aktif stüdyo monitörleri — çift",
-      "fa": "مانیتورهای استودیویی اکتیو ADAM Audio A5X — یک جفت",
-      "ar": "شاشات استوديو نشطة ADAM Audio A5X — زوج"
-    },
-    "desc": {
-      "en": "The final boss of my moving sale — the thing that is hardest for me to part with. I would not be selling them, but unfortunately I need the money more right now. ❤️‍🩹 This is a pair of ADAM Audio A5X active studio monitors — a real gift for anyone who truly loves music. They are suitable both for everyday listening and serious sound-engineering work: mixing, production, and working with audio 🎶\n\nI bought them new for around €1,000 a few years ago, when this model was still being sold. The monitors are in excellent condition. There is only one small chip, covered with a black marker, so you will most likely not even notice where it is. I also have the original foam inserts, which make it possible to transport the monitors safely in boxes 📦\n\nSpecifications: active 2-way nearfield monitors; X-ART tweeters; 5.5-inch woofers; 50 Hz–50 kHz frequency response; 50 W + 50 W amplification per monitor; XLR and RCA inputs. Each monitor measures 28×17×22 cm and weighs around 6.6 kg 🔊\n\nPrice: €450 for both monitors.\nPickup from Glinde is strongly preferred because the monitors are valuable and heavy; a personal handover in central Hamburg may be possible by arrangement 🌿",
-      "de": "Der Endgegner meines Umzugsverkaufs — und das Teil, von dem ich mich am schwersten trenne. Ich würde sie nicht verkaufen, aber gerade brauche ich das Geld leider mehr. ❤️‍🩹 Ein Paar aktive ADAM Audio A5X Studiomonitore — ein echtes Geschenk für Menschen, die Musik wirklich lieben. Sie eignen sich sowohl zum normalen Musikhören als auch für ernsthafte Audioarbeit: Mixing, Produktion und Sounddesign 🎶\n\nVor einigen Jahren habe ich sie neu für etwa 1.000 € gekauft, als dieses Modell noch erhältlich war. Die Monitore sind in einem hervorragenden Zustand. Es gibt nur eine winzige, mit schwarzem Marker übermalte Macke — vermutlich würdest du sie nicht einmal finden. Außerdem sind die originalen Styroporhalterungen dabei, mit denen sich die Monitore sicher in ihren Kartons transportieren lassen 📦\n\nTechnische Daten: aktive 2-Wege-Nahfeldmonitore; X-ART-Hochtöner; 5,5-Zoll-Tieftöner; Frequenzbereich 50 Hz–50 kHz; 50 W + 50 W Verstärkung pro Monitor; XLR- und RCA-Eingänge. Selbstabholung in Glinde sehr erwünscht — wegen Wert und Gewicht der Monitore, etwa 10 Minuten von Hamburg entfernt 🔊",
-      "ru": "Финальный босс моей распродажи — вещь, с которой мне тяжелее всего расставаться. Я не стал бы их продавать, но сейчас, увы, деньги нужнее. ❤️‍🩹 Это пара активных студийных мониторов ADAM Audio A5X — просто подарок для тех, кто по-настоящему любит музыку. Они подходят и для обычного прослушивания, и для серьёзной звукорежиссёрской работы: сведения, продакшна и работы со звуком 🎶\n\nНесколько лет назад я покупал их новыми примерно за 1000 €, когда эта модель ещё продавалась. Мониторы в прекрасном состоянии. Есть только один крохотный скол, замазанный чёрным маркером, так что вы, скорее всего, даже не поймёте, где он. Также есть оригинальные пенопластовые держатели, с которыми мониторы можно безопасно перевозить в коробках 📦\n\nХарактеристики: активные двухполосные мониторы ближнего поля; твитеры X-ART; 5,5-дюймовые низкочастотные динамики; частотный диапазон 50 Гц–50 кГц; усиление 50 Вт + 50 Вт на каждый монитор; входы XLR и RCA. Из-за ценности и веса мониторов очень желателен самовывоз из Глинде — это примерно 10 минут от Гамбурга 🔊",
-      "uk": "Фінальний бос мого розпродажу — річ, з якою мені найважче розлучатися. Я б не продавав їх, але зараз, на жаль, гроші потрібніші. ❤️‍🩹 Це пара активних студійних моніторів ADAM Audio A5X — справжній подарунок для тих, хто по-справжньому любить музику. Вони підходять і для звичайного прослуховування, і для серйозної роботи зі звуком: зведення, продакшну та звукорежисури 🎶\n\nКілька років тому я купив їх новими приблизно за 1000 €, коли ця модель ще продавалася. Монітори у чудовому стані. Є лише один крихітний скол, замальований чорним маркером, тож ви, найімовірніше, навіть не знайдете його. Також є оригінальні пінопластові тримачі, з якими монітори можна безпечно перевозити в коробках 📦\n\nХарактеристики: активні двосмугові монітори ближнього поля; твітери X-ART; 5,5-дюймові низькочастотні динаміки; частотний діапазон 50 Гц–50 кГц; підсилення 50 Вт + 50 Вт на кожен монітор; входи XLR і RCA. Через цінність і вагу моніторів дуже бажаний самовивіз із Глінде — приблизно за 10 хвилин від Гамбурга 🔊",
-      "es": "El jefe final de mi venta por mudanza: es lo que más me cuesta dejar ir. No los vendería, pero ahora mismo, por desgracia, necesito más el dinero. ❤️‍🩹 Es una pareja de monitores de estudio activos ADAM Audio A5X, un auténtico regalo para quien de verdad ama la música. Sirven tanto para escuchar música normalmente como para trabajo de audio serio: mezcla, producción y diseño de sonido 🎶\n\nLos compré nuevos hace unos años por unos 1.000 €, cuando este modelo todavía se vendía. Los monitores están en un estado excelente. Solo tienen un desconchón diminuto, cubierto con rotulador negro, así que probablemente ni siquiera sabrás dónde está. También incluyo los soportes originales de espuma, con los que se pueden transportar de forma segura en sus cajas 📦\n\nCaracterísticas: monitores activos de campo cercano de dos vías; tweeters X-ART; woofers de 5,5 pulgadas; respuesta de frecuencia de 50 Hz a 50 kHz; amplificación de 50 W + 50 W por monitor; entradas XLR y RCA. Por el valor y el peso de los monitores, se prefiere mucho la recogida en persona en Glinde, a unos 10 minutos de Hamburgo 🔊",
-      "zh": "这是我搬家出售物品里的“最终 Boss”，也是我最难割舍的一件。要不是现在确实更需要钱，我不会卖掉它们。❤️‍🩹 这是一对 ADAM Audio A5X 有源录音室监听音箱，是送给真正热爱音乐的人一份绝佳的礼物。它们既适合日常听音乐，也适合严肃的音频工作，例如混音、音乐制作和声音设计 🎶\n\n几年前，这个型号仍在销售时，我以约 1000 € 的价格购入了全新的音箱。它们状态极佳，只有一处非常小的磕碰，已用黑色记号笔遮盖，所以你很可能根本找不到它。还附带原装泡沫固定件，可以让音箱安全地装在原包装盒内运输 📦\n\n参数：有源两分频近场监听音箱；X-ART 高音单元；5.5 英寸低音单元；频率响应 50 Hz–50 kHz；每只音箱配备 50 W + 50 W 功放；XLR 和 RCA 输入接口。由于音箱价值较高且比较重，强烈建议在格林德自取，距离汉堡约 10 分钟车程 🔊",
-      "tr": "Taşınma satışımın son boss’u — ve vedalaşması benim için en zor olan şey. Satmak istemezdim ama şu anda ne yazık ki paraya daha çok ihtiyacım var. ❤️‍🩹 Bunlar bir çift aktif ADAM Audio A5X stüdyo monitörü; müziği gerçekten seven biri için adeta bir hediye. Hem normal müzik dinlemek hem de ciddi ses çalışmaları, miksaj, prodüksiyon ve ses tasarımı için uygunlar 🎶\n\nBirkaç yıl önce, bu model hâlâ satılırken onları yeni olarak yaklaşık 1.000 €’ya aldım. Monitörler mükemmel durumda. Sadece siyah kalemle kapatılmış küçücük bir çizik var; büyük ihtimalle nerede olduğunu bile fark etmezsiniz. Kutularında güvenle taşınabilmeleri için orijinal köpük tutucuları da mevcut 📦\n\nÖzellikler: aktif iki yollu yakın alan monitörleri; X-ART tweeter’lar; 5,5 inç woofer’lar; 50 Hz–50 kHz frekans aralığı; her monitörde 50 W + 50 W amplifikasyon; XLR ve RCA girişleri. Monitörlerin değeri ve ağırlığı nedeniyle Glinde’den elden teslim çok tercih edilir — Hamburg’a yaklaşık 10 dakika uzaklıkta 🔊",
-      "fa": "باس نهاییِ حراج وسایل من — چیزی که جداشدن از آن برایم از همه سخت‌تر است. اگر الان به پول نیاز نداشتم، آن‌ها را نمی‌فروختم. ❤️‍🩹 این یک جفت مانیتور استودیویی اکتیو ADAM Audio A5X است؛ هدیه‌ای واقعی برای کسانی که موسیقی را واقعاً دوست دارند. هم برای شنیدن معمولی موسیقی مناسب‌اند و هم برای کار حرفه‌ای صدا: میکس، پروداکشن و طراحی صدا 🎶\n\nچند سال پیش، وقتی این مدل هنوز فروخته می‌شد، آن‌ها را نو با قیمت حدود ۱۰۰۰ یورو خریدم. مانیتورها در وضعیت بسیار عالی هستند. فقط یک پریدگی بسیار کوچک دارند که با ماژیک مشکی پوشانده شده؛ احتمالاً حتی متوجه نمی‌شوید کجاست. نگهدارنده‌های فومی اصلی هم همراهشان هستند تا بتوان مانیتورها را با خیال راحت در جعبه‌هایشان جابه‌جا کرد 📦\n\nمشخصات: مانیتورهای اکتیو دوطرفهٔ میدان نزدیک؛ توییترهای X-ART؛ ووفرهای ۵٫۵ اینچی؛ بازهٔ فرکانسی ۵۰ هرتز تا ۵۰ کیلوهرتز؛ توان ۵۰ وات + ۵۰ وات برای هر مانیتور؛ ورودی‌های XLR و RCA. به‌دلیل ارزش و وزن مانیتورها، تحویل حضوری در گلینده بسیار ترجیح دارد — حدود ۱۰ دقیقه با هامبورگ فاصله دارد 🔊",
-      "ar": "هذه هي «الزعيم الأخير» في بيع أغراضي — والشيء الأصعب بالنسبة لي أن أودّعه. لم أكن لأبيعها، لكنني للأسف بحاجة إلى المال أكثر في الوقت الحالي. ❤️‍🩹 إنها زوج من شاشات الاستوديو النشطة ADAM Audio A5X، هدية حقيقية لمن يحب الموسيقى فعلًا. تناسب الاستماع العادي للموسيقى وكذلك العمل الجاد في الصوت: الميكساج، والإنتاج، وتصميم الصوت 🎶\n\nاشتريتها جديدة قبل عدة سنوات بحوالي 1000 €، عندما كان هذا الموديل لا يزال يُباع. الشاشات بحالة ممتازة. يوجد خدش صغير جدًا فقط، غطيته بقلم أسود، لذلك على الأرجح لن تلاحظوا حتى مكانه. كما تتوفر حوامل الفوم الأصلية، ويمكن بواسطتها نقل الشاشات بأمان داخل صناديقها 📦\n\nالمواصفات: شاشات مجال قريب نشطة ثنائية المسار؛ مكبرات صوت عالية X-ART؛ مكبرات ترددات منخفضة بقياس 5.5 بوصة؛ نطاق ترددي من 50 هرتز إلى 50 كيلوهرتز؛ تضخيم 50 واط + 50 واط لكل شاشة؛ مداخل XLR وRCA. بسبب قيمة الشاشات ووزنها، يُفضّل بشدة الاستلام الشخصي من غلينده، على بُعد نحو 10 دقائق من هامبورغ 🔊"
-    }
   },
   {
     "id": 22,
